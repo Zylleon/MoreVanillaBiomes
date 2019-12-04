@@ -1,0 +1,463 @@
+Looking for neighbors
+Verse.Log:Message(String, Boolean)
+VanillaBiomes.BiomeWorker_Iceberg:GetScore(Tile, Int32)
+RimWorld.Planet.WorldGenStep_Terrain:BiomeFrom(Tile, Int32)
+RimWorld.Planet.WorldGenStep_Terrain:GenerateTileFor(Int32)
+RimWorld.Planet.WorldGenStep_Terrain:GenerateGridIntoWorld()
+RimWorld.Planet.WorldGenStep_Terrain:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Neighbors: 6
+Verse.Log:Message(String, Boolean)
+VanillaBiomes.BiomeWorker_Iceberg:GetScore(Tile, Int32)
+RimWorld.Planet.WorldGenStep_Terrain:BiomeFrom(Tile, Int32)
+RimWorld.Planet.WorldGenStep_Terrain:GenerateTileFor(Int32)
+RimWorld.Planet.WorldGenStep_Terrain:GenerateGridIntoWorld()
+RimWorld.Planet.WorldGenStep_Terrain:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Trying to find a tile
+Verse.Log:Message(String, Boolean)
+VanillaBiomes.BiomeWorker_Iceberg:GetScore(Tile, Int32)
+RimWorld.Planet.WorldGenStep_Terrain:BiomeFrom(Tile, Int32)
+RimWorld.Planet.WorldGenStep_Terrain:GenerateTileFor(Int32)
+RimWorld.Planet.WorldGenStep_Terrain:GenerateGridIntoWorld()
+RimWorld.Planet.WorldGenStep_Terrain:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Error in WorldGenStep: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at VanillaBiomes.BiomeWorker_Iceberg.GetScore (RimWorld.Planet.Tile tile, Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Terrain.BiomeFrom (RimWorld.Planet.Tile ws, Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Terrain.GenerateTileFor (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Terrain.GenerateGridIntoWorld () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Terrain.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenerator.GenerateWorld (Single planetCoverage, System.String seedString, OverallRainfall overallRainfall, OverallTemperature overallTemperature) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Error in WorldGenStep: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Lakes+<GenerateLakes>c__AnonStorey0.<>m__0 (Int32 tid) [0x00000] in <filename unknown>:0 
+  at Verse.WorldFloodFiller.FloodFill (Int32 rootTile, System.Predicate`1 passCheck, System.Func`3 processor, Int32 maxTilesToProcess, IEnumerable`1 extraRootTiles) [0x00000] in <filename unknown>:0 
+  at Verse.WorldFloodFiller.FloodFill (Int32 rootTile, System.Predicate`1 passCheck, System.Action`1 processor, Int32 maxTilesToProcess, IEnumerable`1 extraRootTiles) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Lakes.GenerateLakes () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Lakes.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenerator.GenerateWorld (Single planetCoverage, System.String seedString, OverallRainfall overallRainfall, OverallTemperature overallTemperature) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Error in WorldGenStep: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldPathGrid.CalculatedMovementDifficultyAt (Int32 tile, Boolean perceivedStatic, Nullable`1 ticksAbs, System.Text.StringBuilder explanation) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldPathGrid.RecalculatePerceivedMovementDifficultyAt (Int32 tile, Nullable`1 ticksAbs) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldPathGrid.RecalculateAllPerceivedPathCosts (Nullable`1 ticksAbs) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldPathGrid.RecalculateAllPerceivedPathCosts () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Rivers.GenerateRivers () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Rivers.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenerator.GenerateWorld (Single planetCoverage, System.String seedString, OverallRainfall overallRainfall, OverallTemperature overallTemperature) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Error in WorldGenStep: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.TileFinder+<RandomSettlementTileFor>c__AnonStorey0.<>m__0 (Int32 x) [0x00000] in <filename unknown>:0 
+  at Verse.GenCollection.TryRandomElementByWeight[Int32] (IEnumerable`1 source, System.Func`2 weightSelector, System.Int32& result) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.TileFinder.RandomSettlementTileFor (RimWorld.Faction faction, Boolean mustBeAutoChoosable, System.Predicate`1 extraValidator) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_AncientSites.GenerateAncientSites () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_AncientSites.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenerator.GenerateWorld (Single planetCoverage, System.String seedString, OverallRainfall overallRainfall, OverallTemperature overallTemperature) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Error in WorldGenStep: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldPathGrid.CalculatedMovementDifficultyAt (Int32 tile, Boolean perceivedStatic, Nullable`1 ticksAbs, System.Text.StringBuilder explanation) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldPathGrid.RecalculatePerceivedMovementDifficultyAt (Int32 tile, Nullable`1 ticksAbs) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldPathGrid.RecalculateAllPerceivedPathCosts (Nullable`1 ticksAbs) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_AncientRoads.GenerateAncientRoads () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_AncientRoads.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenerator.GenerateWorld (Single planetCoverage, System.String seedString, OverallRainfall overallRainfall, OverallTemperature overallTemperature) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Error in WorldGenStep: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.TileFinder+<RandomSettlementTileFor>c__AnonStorey0.<>m__0 (Int32 x) [0x00000] in <filename unknown>:0 
+  at Verse.GenCollection.TryRandomElementByWeight[Int32] (IEnumerable`1 source, System.Func`2 weightSelector, System.Int32& result) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.TileFinder.RandomSettlementTileFor (RimWorld.Faction faction, Boolean mustBeAutoChoosable, System.Predicate`1 extraValidator) [0x00000] in <filename unknown>:0 
+  at RimWorld.FactionGenerator.NewGeneratedFaction (RimWorld.FactionDef facDef) [0x00000] in <filename unknown>:0 
+  at RimWorld.FactionGenerator.GenerateFactionsIntoWorld () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Factions.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenerator.GenerateWorld (Single planetCoverage, System.String seedString, OverallRainfall overallRainfall, OverallTemperature overallTemperature) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Error in WorldGenStep: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.TileFinder+<RandomSettlementTileFor>c__AnonStorey0.<>m__0 (Int32 x) [0x00000] in <filename unknown>:0 
+  at Verse.GenCollection.TryRandomElementByWeight[Int32] (IEnumerable`1 source, System.Func`2 weightSelector, System.Int32& result) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.TileFinder.RandomSettlementTileFor (RimWorld.Faction faction, Boolean mustBeAutoChoosable, System.Predicate`1 extraValidator) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Roads.GenerateRoadEndpoints () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Roads.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenerator.GenerateWorld (Single planetCoverage, System.String seedString, OverallRainfall overallRainfall, OverallTemperature overallTemperature) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def Island: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Island.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.CalculateRootsAndPossiblyAllowedTiles () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def Archipelago: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Archipelago.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Cluster.CalculateRootTiles () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Cluster.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def Peninsula: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Peninsula.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Protrusion.CalculateRoots () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Protrusion.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def Bay: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Bay.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Protrusion.CalculateRoots () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Protrusion.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def Lake: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Biome.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.CalculateRootsAndPossiblyAllowedTiles () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def Sea: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Biome.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.CalculateRootsAndPossiblyAllowedTiles () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def OceanBay: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Bay.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Protrusion.CalculateRoots () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Protrusion.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def Ocean: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Biome.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.CalculateRootsAndPossiblyAllowedTiles () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def OuterOcean: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_OuterOcean.CanTraverse (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_OuterOcean.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_OuterOcean.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def MountainRange: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_MountainRange.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Cluster.CalculateRootTiles () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Cluster.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def Desert: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Biome.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.CalculateRootsAndPossiblyAllowedTiles () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def TemperateSwamp: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Biome.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.CalculateRootsAndPossiblyAllowedTiles () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def TropicalSwamp: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Biome.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.CalculateRootsAndPossiblyAllowedTiles () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def ColdBog: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Biome.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.CalculateRootsAndPossiblyAllowedTiles () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def TemperateForest: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Biome.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.CalculateRootsAndPossiblyAllowedTiles () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def TropicalRainforest: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Biome.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.CalculateRootsAndPossiblyAllowedTiles () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def BorealForest: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Biome.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.CalculateRootsAndPossiblyAllowedTiles () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def AridShrubland: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Biome.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.CalculateRootsAndPossiblyAllowedTiles () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def IceSheet: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Biome.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.CalculateRootsAndPossiblyAllowedTiles () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Could not generate world features of def Tundra: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.get_Item (Int32 tileID) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_Biome.IsRoot (Int32 tile) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.CalculateRootsAndPossiblyAllowedTiles () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.FeatureWorker_FloodFill.GenerateWhereAppropriate () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenStep_Features.GenerateFresh (System.String seed) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+RimWorld.Planet.WorldGenStep_Features:GenerateFresh(String)
+RimWorld.Planet.WorldGenerator:GenerateWorld(Single, String, OverallRainfall, OverallTemperature)
+RimWorld.Page_CreateWorldParams:<CanDoNext>m__0()
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
+
+Exception from asynchronous event: System.ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[RimWorld.Planet.Tile].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.<TilesToRawData>m__0 (Int32 i) [0x00000] in <filename unknown>:0 
+  at Verse.DataSerializeUtility.SerializeUshort (Int32 elements, System.Func`2 reader) [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.TilesToRawData () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGrid.StandardizeTileData () [0x00000] in <filename unknown>:0 
+  at RimWorld.Planet.WorldGenerator.GenerateWorld (Single planetCoverage, System.String seedString, OverallRainfall overallRainfall, OverallTemperature overallTemperature) [0x00000] in <filename unknown>:0 
+  at RimWorld.Page_CreateWorldParams.<CanDoNext>m__0 () [0x00000] in <filename unknown>:0 
+  at Verse.LongEventHandler.RunEventFromAnotherThread (System.Action action) [0x00000] in <filename unknown>:0 
+Verse.Log:Error(String, Boolean)
+Verse.LongEventHandler:RunEventFromAnotherThread(Action)
+Verse.LongEventHandler:<UpdateCurrentAsynchronousEvent>m__1()
