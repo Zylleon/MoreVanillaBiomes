@@ -3,7 +3,7 @@
 
 
 <BiomeDef>							<!-- Iceberg -->
-	<defName>ZBiome_Iceberg</defName>
+	<defName>ZBiome_Iceberg_NoBeach</defName>
 	<label>iceberg</label>
 	<description>Chunks of sea ice floating on water. There is no soil for plants to grow, no minerals to mine, and almost no animal life.</description>
 	<workerClass>VanillaBiomes.BiomeWorker_Iceberg</workerClass>

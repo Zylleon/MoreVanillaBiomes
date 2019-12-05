@@ -3,7 +3,7 @@
 
 
 <BiomeDef>							<!-- Sandbar -->
-    <defName>ZBiome_Sandbar</defName>
+    <defName>ZBiome_Sandbar_NoBeach</defName>
     <label>sandbar</label>
     <description>Small, flat sandbars scattered in water. Little solid ground to build on, few animals, and little if any arable land.</description>
     <workerClass>VanillaBiomes.BiomeWorker_Sandbar</workerClass>
