@@ -11,8 +11,12 @@ namespace VanillaBiomes
     {
         public override float GetScore(Tile tile, int tileID)
         {
-            return 100;
+            //if (tile.WaterCovered)
+            //{
+            //    return -100f;
+            //}
 
+            return 100f;
 
         }
     }
