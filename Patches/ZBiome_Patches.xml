@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="Plant_Daylily"]</xpath>
+		<attribute>Name</attribute>
+		<value>DaylilyPlant</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[defName="Plant_Rose"]</xpath>
+		<attribute>Name</attribute>
+		<value>RosePlant</value>
+	</Operation>
+
+</Patch>

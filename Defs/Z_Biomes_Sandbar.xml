@@ -10,7 +10,6 @@
 	<canAutoChoose>false</canAutoChoose>
 	<allowRoads>false</allowRoads>
 	<allowRivers>false</allowRivers>
-	
     <animalDensity>0.2</animalDensity>
     <plantDensity>0.35</plantDensity>
     <settlementSelectionWeight>0.01</settlementSelectionWeight>

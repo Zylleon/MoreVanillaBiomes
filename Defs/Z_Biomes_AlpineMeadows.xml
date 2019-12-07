@@ -6,8 +6,8 @@
 	<defName>ZBiome_AlpineMeadow</defName>
 	<label>alpine meadow</label>
 	<description>High altitude with rich soil and lots of flowers</description>
-	<texture>World/Biomes/Purple</texture>
-	<workerClass>VanillaBiomes.BiomeWorker_NoTest</workerClass>
+	<texture>World/Biomes/ZBiomes_AlpineMeadow</texture>
+	<workerClass>VanillaBiomes.BiomeWorker_AlpineMeadow</workerClass>
 	<!--<canAutoChoose>false</canAutoChoose>-->
     <!--<allowRoads>false</allowRoads>-->
     <!--<allowRivers>false</allowRivers>-->
@@ -16,27 +16,23 @@
     <movementDifficulty>1.5</movementDifficulty>
 	
 	<animalDensity>0.5</animalDensity>
-	<plantDensity>0.5</plantDensity>
-	<wildPlantRegrowDays>17</wildPlantRegrowDays>
+	<plantDensity>0.9</plantDensity>
+	<wildPlantRegrowDays>22</wildPlantRegrowDays>
 	<!--<hasVirtualPlants>false</hasVirtualPlants>-->
-	<forageability>0.5</forageability>
+	<forageability>0.75</forageability>
 	<foragedFood>RawBerries</foragedFood>
 
 	<soundsAmbient>
       <li>Ambient_NightInsects_Standard</li>
     </soundsAmbient>
-	<diseaseMtbDays>90</diseaseMtbDays>
-	<diseases>
+	<diseaseMtbDays>60</diseaseMtbDays>
+    <diseases>
       <li>
         <diseaseInc>Disease_Flu</diseaseInc>
         <commonality>100</commonality>
       </li>
       <li>
         <diseaseInc>Disease_Plague</diseaseInc>
-        <commonality>100</commonality>
-      </li>
-      <li>
-        <diseaseInc>Disease_Malaria</diseaseInc>
         <commonality>100</commonality>
       </li>
       <li>
@@ -64,17 +60,16 @@
         <diseaseInc>Disease_AnimalPlague</diseaseInc>
         <commonality>100</commonality>
       </li>
-	</diseases>
-	
+    </diseases>
 	<terrainsByFertility>
       <li>
         <terrain>Soil</terrain>
         <min>-999</min>
-        <max>0.87</max>
+        <max>0.73</max>
       </li>
       <li>
         <terrain>SoilRich</terrain>
-        <min>0.87</min>
+        <min>0.73</min>
         <max>999</max>
       </li>
     </terrainsByFertility>
@@ -85,11 +80,11 @@
           <li>
             <terrain>SoilRich</terrain>
             <min>0.73</min>
-            <max>0.80</max>
+            <max>0.85</max>
           </li>
           <li>
             <terrain>Mud</terrain>
-            <min>0.80</min>
+            <min>0.85</min>
             <max>0.93</max>
           </li>
           <li>
@@ -104,8 +99,19 @@
           </li>
         </thresholds>
       </li>
+	  
+	  <li>
+        <perlinFrequency>0.05</perlinFrequency>
+        <thresholds>
+          <li>
+            <terrain>SoilRich</terrain>
+            <min>-999</min>
+            <max>-0.70</max>
+          </li>
+        </thresholds>
+      </li>
     </terrainPatchMakers>
-		<baseWeatherCommonalities>
+	<baseWeatherCommonalities>
       <Clear>18</Clear>
       <Fog>1</Fog>
       <Rain>2</Rain>
@@ -116,41 +122,49 @@
       <SnowHard>4</SnowHard>
     </baseWeatherCommonalities>
     <wildPlants>
-			<Plant_Rose>10.</Plant_Rose>
-			<Plant_Grass>5.0</Plant_Grass>
-			<Plant_TallGrass>2.0</Plant_TallGrass>
-			<Plant_Brambles>1.0</Plant_Brambles>
-			<Plant_Dandelion>0.5</Plant_Dandelion>
-			<Plant_Bush>0.6</Plant_Bush>
-			<Plant_TreeOak>0.5</Plant_TreeOak>
-			<Plant_TreePoplar>0.5</Plant_TreePoplar>
-			<Plant_Berry>0.05</Plant_Berry>
-			<Plant_HealrootWild>0.05</Plant_HealrootWild>
-		</wildPlants>
-    <wildAnimals>
-			<Hare>1.0</Hare>
-			<Squirrel>1.0</Squirrel>
-			<Rat>1.0</Rat>
-			<Deer>0.5</Deer>
-			<WildBoar>0.5</WildBoar>
-			<Turkey>0.5</Turkey>
-			<Raccoon>0.5</Raccoon>
-      <Ibex>0.5</Ibex>
-      <Muffalo>0.5</Muffalo>
-      <Alpaca>0.5</Alpaca>
-      <Boomalope>0.4</Boomalope>
-      <Boomrat>0.4</Boomrat>
-      <Tortoise>0.3</Tortoise>
-      <Gazelle>0.3</Gazelle>
-      <Megasloth>0.2</Megasloth>
-      <Rhinoceros>0.1</Rhinoceros>
-      <Bear_Grizzly>0.07</Bear_Grizzly>
-      <Wolf_Timber>0.07</Wolf_Timber>
-      <Fox_Red>0.07</Fox_Red>
-      <Cougar>0.07</Cougar>
-      <Lynx>0.07</Lynx>
-      <Warg>0.07</Warg>
-    </wildAnimals>
+		<ZBiome_Plant_WildRose>2.5</ZBiome_Plant_WildRose>
+		<ZBiome_Plant_WildDaylily>2.0</ZBiome_Plant_WildDaylily>
+		<Plant_Dandelion>1.5</Plant_Dandelion>
+		<Plant_Astragalus>0.1</Plant_Astragalus>
+		
+		<Plant_Grass>8.0</Plant_Grass>
+		<Plant_TallGrass>3.0</Plant_TallGrass>
+		<Plant_Brambles>1.0</Plant_Brambles>
+		<Plant_Bush>1.0</Plant_Bush>
+		<Plant_Moss>3.0</Plant_Moss>
+		
+		<Plant_TreePine>0.5</Plant_TreePine>
+		<Plant_TreeBirch>0.05</Plant_TreeBirch>
+		<Plant_TreePoplar>0.2</Plant_TreePoplar>
+		
+		<Plant_Berry>0.1</Plant_Berry>
+		<Plant_HealrootWild>0.1</Plant_HealrootWild>
+
+	</wildPlants>
+	<wildAnimals>
+		<Hare>1.5</Hare>
+		<Squirrel>1.5</Squirrel>
+		<Rat>1.0</Rat>
+		<Deer>1.0</Deer>
+		<WildBoar>0.5</WildBoar>
+		<Turkey>0.5</Turkey>
+		<Raccoon>0.5</Raccoon>
+		<Ibex>0.5</Ibex>
+		<Muffalo>0.5</Muffalo>
+		<Alpaca>0.2</Alpaca>
+		<Boomalope>0.2</Boomalope>
+		<Boomrat>0.2</Boomrat>
+		<Gazelle>0.5</Gazelle>
+		<Megasloth>0.2</Megasloth>
+		
+		<Rhinoceros>0.03</Rhinoceros>
+		
+		<Fox_Red>0.12</Fox_Red>
+		<Bear_Grizzly>0.03</Bear_Grizzly>
+		<Wolf_Timber>0.07</Wolf_Timber>
+		<Cougar>0.05</Cougar>
+		<Warg>0.07</Warg>
+	</wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
       <li>Alpaca</li>
