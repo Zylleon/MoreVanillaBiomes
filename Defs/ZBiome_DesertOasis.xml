@@ -15,7 +15,7 @@
 	<settlementSelectionWeight>0.5</settlementSelectionWeight>
     <movementDifficulty>1.5</movementDifficulty>
 	
-	<animalDensity>0.5</animalDensity>
+	<animalDensity>1.5</animalDensity>
 	<plantDensity>0.5</plantDensity>
 	<wildPlantRegrowDays>17</wildPlantRegrowDays>
 	<!--<hasVirtualPlants>false</hasVirtualPlants>-->
@@ -123,20 +123,20 @@
       <SnowGentle>4</SnowGentle>
       <SnowHard>4</SnowHard>
     </baseWeatherCommonalities>
-     <wildPlants>
-			<Plant_Grass>6</Plant_Grass>
-			<Plant_PincushionCactus>1</Plant_PincushionCactus>
-			<Plant_Alocasia>0.5</Plant_Alocasia>
-			<Plant_SaguaroCactus>0.25</Plant_SaguaroCactus>
-			<Plant_Dandelion>1</Plant_Dandelion>
-			<Plant_TreeDrago>0.5</Plant_TreeDrago>
-			<Plant_TreePalm>0.5</Plant_TreePalm>
-			<Plant_Agave>0.25</Plant_Agave>
-			<Plant_Bush>0.75</Plant_Bush>
-			<Plant_HealrootWild>0.05</Plant_HealrootWild>
-			<Plant_Clivia>0.07</Plant_Clivia>
-			<Plant_Chokevine>0.4</Plant_Chokevine>
-		</wildPlants>
+	<wildPlants>
+		<Plant_Grass>6</Plant_Grass>
+		<Plant_PincushionCactus>1</Plant_PincushionCactus>
+		<Plant_Alocasia>0.5</Plant_Alocasia>
+		<Plant_SaguaroCactus>0.25</Plant_SaguaroCactus>
+		<Plant_Dandelion>1</Plant_Dandelion>
+		<Plant_TreeDrago>0.5</Plant_TreeDrago>
+		<Plant_TreePalm>0.5</Plant_TreePalm>
+		<Plant_Agave>0.25</Plant_Agave>
+		<Plant_Bush>0.75</Plant_Bush>
+		<Plant_HealrootWild>0.05</Plant_HealrootWild>
+		<Plant_Clivia>0.07</Plant_Clivia>
+		<Plant_Chokevine>0.4</Plant_Chokevine>
+	</wildPlants>
     <wildAnimals>
       <Iguana>1.2</Iguana>
       <Dromedary>0.7</Dromedary>
@@ -150,6 +150,7 @@
     <allowedPackAnimals>
       <li>Muffalo</li>
       <li>Dromedary</li>
+	  <li>Elephant</li>
     </allowedPackAnimals>
 	</BiomeDef>
 

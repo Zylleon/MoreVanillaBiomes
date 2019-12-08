@@ -15,7 +15,7 @@
 	<settlementSelectionWeight>0.5</settlementSelectionWeight>
     <movementDifficulty>1.5</movementDifficulty>
 	
-	<animalDensity>0.5</animalDensity>
+	<animalDensity>3.0</animalDensity>
 	<plantDensity>0.9</plantDensity>
 	<wildPlantRegrowDays>22</wildPlantRegrowDays>
 	<!--<hasVirtualPlants>false</hasVirtualPlants>-->

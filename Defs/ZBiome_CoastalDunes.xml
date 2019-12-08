@@ -6,7 +6,7 @@
     <label>coastal dunes</label>
     <description>Low lying sandy area with lots of water.</description>
     <workerClass>VanillaBiomes.BiomeWorker_CoastalDunes</workerClass>
-    <animalDensity>1.8</animalDensity>
+    <animalDensity>2.5</animalDensity>
     <plantDensity>0.7</plantDensity>
     <settlementSelectionWeight>0.95</settlementSelectionWeight>
     <movementDifficulty>1</movementDifficulty>

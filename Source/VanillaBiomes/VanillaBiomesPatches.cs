@@ -11,14 +11,14 @@ using RimWorld.Planet;
 namespace VanillaBiomes
 {
     [StaticConstructorOnStartup]
-    static class HarmonyPatches
+    static class VanillaBiomesPatches
     {
 
-        static HarmonyPatches()
+        static VanillaBiomesPatches()
         {
             HarmonyInstance harmony = HarmonyInstance.Create("rimworld.vanillabiomes");
             MethodInfo targetmethod = AccessTools.Method(typeof(RimWorld.Planet.World), "CoastDirectionAt");
-            HarmonyMethod prefixmethod = new HarmonyMethod(typeof(VanillaBiomes.HarmonyPatches).GetMethod("CoastDirectionAt_Prefix"));
+            HarmonyMethod prefixmethod = new HarmonyMethod(typeof(VanillaBiomes.VanillaBiomesPatches).GetMethod("CoastDirectionAt_Prefix"));
 
             // patch the targetmethod, by calling prefixmethod before it runs, with no postfixmethod (i.e. null)
             harmony.Patch(targetmethod, prefixmethod, null);
@@ -159,26 +159,81 @@ namespace VanillaBiomes
 
         private static void AddAnimalsToBiomes()
         {
-            //foreach (PawnKindDef current in DefDatabase<PawnKindDef>.AllDefs)
-            //{
-            //    if (current.RaceProps.wildBiomes != null && current.defName != "Cobra")
-            //    {
-            //        for (int j = 0; j < current.RaceProps.wildBiomes.Count; j++)
-            //        {
-            //            if (current.RaceProps.wildBiomes[j].biome.defName == "AridShrubland")
-            //            {
-            //                AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
-            //                AnimalBiomeRecord newRecord2 = new AnimalBiomeRecord();
-            //                newRecord1.biome = BiomeDef.Named("DesertArchipelago");
-            //                newRecord2.biome = BiomeDef.Named("DesertArchipelago_Fresh");
-            //                newRecord1.commonality = current.RaceProps.wildBiomes[j].commonality;
-            //                newRecord2.commonality = current.RaceProps.wildBiomes[j].commonality;
-            //                current.RaceProps.wildBiomes.Add(newRecord1);
-            //                current.RaceProps.wildBiomes.Add(newRecord2);
-            //            }
-            //        }
-            //    }
-            //}
+            foreach (PawnKindDef current in DefDatabase<PawnKindDef>.AllDefs)
+            {
+                if (current.RaceProps.wildBiomes != null)
+                {
+                    for (int j = 0; j < current.RaceProps.wildBiomes.Count; j++)
+                    {
+                        //Iceberg
+                        if (current.RaceProps.wildBiomes[j].biome.defName == "SeaIce")
+                        {
+                            AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
+                            newRecord1.biome = BiomeDef.Named("ZBiome_Iceberg_NoBeach");
+                            newRecord1.commonality = current.RaceProps.wildBiomes[j].commonality;
+                            current.RaceProps.wildBiomes.Add(newRecord1);
+                        }
+
+                        //Meadow
+                        if (current.RaceProps.wildBiomes[j].biome.defName == "BorealForest")
+                        {
+                            AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
+                            newRecord1.biome = BiomeDef.Named("ZBiome_AlpineMeadow");
+                            newRecord1.commonality = current.RaceProps.wildBiomes[j].commonality;
+                            if (current.RaceProps.predator && current.RaceProps.maxPreyBodySize >= 0.9f)
+                            {
+                                newRecord1.commonality *= 0.5f;
+                            }
+                            current.RaceProps.wildBiomes.Add(newRecord1);
+                        }
+
+                        //Grasslands
+                        if (current.RaceProps.wildBiomes[j].biome.defName == "AridShrubland")
+                        {
+                            AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
+                            newRecord1.biome = BiomeDef.Named("ZBiome_Grasslands");
+                            newRecord1.commonality = current.RaceProps.wildBiomes[j].commonality;
+                            current.RaceProps.wildBiomes.Add(newRecord1);
+                        }
+
+
+                        //Sandbar, Dunes, Oasis
+                        if (current.RaceProps.wildBiomes[j].biome.defName == "ExtremeDesert")
+                        {
+                            AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
+                            newRecord1.biome = BiomeDef.Named("ZBiome_CoastalDunes");
+                            newRecord1.commonality = current.RaceProps.wildBiomes[j].commonality;
+                            current.RaceProps.wildBiomes.Add(newRecord1);
+
+                            AnimalBiomeRecord newRecord2 = new AnimalBiomeRecord();
+                            newRecord2.biome = BiomeDef.Named("ZBiome_DesertOasis");
+                            newRecord2.commonality = current.RaceProps.wildBiomes[j].commonality;
+                            current.RaceProps.wildBiomes.Add(newRecord2);
+
+                            AnimalBiomeRecord newRecord3 = new AnimalBiomeRecord();
+                            newRecord3.biome = BiomeDef.Named("ZBiome_Sandbar_NoBeach");
+                            newRecord3.commonality = current.RaceProps.wildBiomes[j].commonality;
+                            current.RaceProps.wildBiomes.Add(newRecord3);
+                        }
+
+                        if (current.RaceProps.wildBiomes[j].biome.defName == "Desert")
+                        {
+                            AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
+                            newRecord1.biome = BiomeDef.Named("ZBiome_CoastalDunes");
+                            newRecord1.commonality = current.RaceProps.wildBiomes[j].commonality;
+                            current.RaceProps.wildBiomes.Add(newRecord1);
+
+                            AnimalBiomeRecord newRecord2 = new AnimalBiomeRecord();
+                            newRecord2.biome = BiomeDef.Named("ZBiome_DesertOasis");
+                            newRecord2.commonality = current.RaceProps.wildBiomes[j].commonality;
+                            current.RaceProps.wildBiomes.Add(newRecord2);
+
+                        }
+
+
+                    }
+                }
+            }
         }
 
     }
