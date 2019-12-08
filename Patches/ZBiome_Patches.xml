@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+<!-- Events -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName = "AmbrosiaSprout"]/allowedBiomes</xpath>
+		<value>
+			<li>ZBiome_AlpineMeadow</li>
+			<li>ZBiome_DesertOasis</li>
+			<li>ZBiome_CoastalDunes</li>
+			<li>ZBiome_Grasslands</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName = "HerdMigration"]/allowedBiomes</xpath>
+		<value>
+			<li>ZBiome_Iceberg_NoBeach</li>
+			<li>ZBiome_Sandbar_NoBeach</li>
+			<li>ZBiome_CoastalDunes</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName = "Alphabeavers"]/allowedBiomes</xpath>
+		<value>
+			<li>ZBiome_Grasslands</li>
+			<li>ZBiome_DesertOasis</li>
+			<li>ZBiome_CoastalDunes</li>
+			<li>ZBiome_AlpineMeadow</li>
+		</value>
+	</Operation>
+
+<!-- So wild roses and daylilies can inherit -->
 	<Operation Class="PatchOperationAttributeSet">
 		<xpath>Defs/ThingDef[defName="Plant_Daylily"]</xpath>
 		<attribute>Name</attribute>

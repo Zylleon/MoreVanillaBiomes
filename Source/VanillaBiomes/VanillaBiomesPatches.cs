@@ -55,6 +55,22 @@ namespace VanillaBiomes
 
                     if (current.plant.wildBiomes != null)
                     {
+                        //Sandbar
+                        if (current.plant.wildBiomes.Any(b => b.biome.defName == "ExtremeDesert"))
+                        {
+                            PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
+                            newRecord1.biome = BiomeDef.Named("ZBiome_Sandbar_NoBeach");
+                            newRecord1.commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "ExtremeDesert").FirstOrDefault().commonality;
+                            current.plant.wildBiomes.Add(newRecord1);
+                        }
+                        else if (current.plant.wildBiomes.Any(b => b.biome.defName == "Desert"))
+                        {
+                            PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
+                            newRecord1.biome = BiomeDef.Named("ZBiome_Sandbar_NoBeach");
+                            newRecord1.commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "Desert").FirstOrDefault().commonality;
+                            current.plant.wildBiomes.Add(newRecord1);
+                        }
+
                         for (int j = 0; j < current.plant.wildBiomes.Count; j++)
                         {
                             // icebergs
@@ -62,22 +78,6 @@ namespace VanillaBiomes
                             {
                                 PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
                                 newRecord1.biome = BiomeDef.Named("ZBiome_Iceberg_NoBeach");
-                                newRecord1.commonality = current.plant.wildBiomes[j].commonality;
-                                current.plant.wildBiomes.Add(newRecord1);
-                            }
-
-                            //sandbar
-                            if (current.plant.wildBiomes[j].biome.defName == "Desert")
-                            {
-                                PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
-                                newRecord1.biome = BiomeDef.Named("ZBiome_Sandbar_NoBeach");
-                                newRecord1.commonality = current.plant.wildBiomes[j].commonality;
-                                current.plant.wildBiomes.Add(newRecord1);
-                            }
-                            if (current.plant.wildBiomes[j].biome.defName == "ExtremeDesert")
-                            {
-                                PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
-                                newRecord1.biome = BiomeDef.Named("ZBiome_Sandbar_NoBeach");
                                 newRecord1.commonality = current.plant.wildBiomes[j].commonality;
                                 current.plant.wildBiomes.Add(newRecord1);
                             }
@@ -96,8 +96,6 @@ namespace VanillaBiomes
                                 {
                                     newRecord1.commonality *= 2f;
                                 }
-
-
                                 current.plant.wildBiomes.Add(newRecord1);
                             }
 
@@ -163,6 +161,33 @@ namespace VanillaBiomes
             {
                 if (current.RaceProps.wildBiomes != null)
                 {
+                    //Dunes, Oasis
+                    if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "Desert"))
+                    {
+                        AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
+                        newRecord1.biome = BiomeDef.Named("ZBiome_CoastalDunes");
+                        newRecord1.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "Desert").FirstOrDefault().commonality;
+                        current.RaceProps.wildBiomes.Add(newRecord1);
+
+                        AnimalBiomeRecord newRecord2 = new AnimalBiomeRecord();
+                        newRecord2.biome = BiomeDef.Named("ZBiome_DesertOasis");
+                        newRecord2.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "Desert").FirstOrDefault().commonality;
+                        current.RaceProps.wildBiomes.Add(newRecord2);
+                    }
+                    else if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "ExtremeDesert"))
+                    {
+                        AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
+                        newRecord1.biome = BiomeDef.Named("ZBiome_CoastalDunes");
+                        newRecord1.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "ExtremeDesert").FirstOrDefault().commonality;
+                        current.RaceProps.wildBiomes.Add(newRecord1);
+
+                        AnimalBiomeRecord newRecord2 = new AnimalBiomeRecord();
+                        newRecord2.biome = BiomeDef.Named("ZBiome_DesertOasis");
+                        newRecord2.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "Desert").FirstOrDefault().commonality;
+                        current.RaceProps.wildBiomes.Add(newRecord2);
+                    }
+
+
                     for (int j = 0; j < current.RaceProps.wildBiomes.Count; j++)
                     {
                         //Iceberg
@@ -197,39 +222,14 @@ namespace VanillaBiomes
                         }
 
 
-                        //Sandbar, Dunes, Oasis
+                        //Sandbar
                         if (current.RaceProps.wildBiomes[j].biome.defName == "ExtremeDesert")
                         {
-                            AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
-                            newRecord1.biome = BiomeDef.Named("ZBiome_CoastalDunes");
-                            newRecord1.commonality = current.RaceProps.wildBiomes[j].commonality;
-                            current.RaceProps.wildBiomes.Add(newRecord1);
-
-                            AnimalBiomeRecord newRecord2 = new AnimalBiomeRecord();
-                            newRecord2.biome = BiomeDef.Named("ZBiome_DesertOasis");
-                            newRecord2.commonality = current.RaceProps.wildBiomes[j].commonality;
-                            current.RaceProps.wildBiomes.Add(newRecord2);
-
                             AnimalBiomeRecord newRecord3 = new AnimalBiomeRecord();
                             newRecord3.biome = BiomeDef.Named("ZBiome_Sandbar_NoBeach");
                             newRecord3.commonality = current.RaceProps.wildBiomes[j].commonality;
                             current.RaceProps.wildBiomes.Add(newRecord3);
                         }
-
-                        if (current.RaceProps.wildBiomes[j].biome.defName == "Desert")
-                        {
-                            AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
-                            newRecord1.biome = BiomeDef.Named("ZBiome_CoastalDunes");
-                            newRecord1.commonality = current.RaceProps.wildBiomes[j].commonality;
-                            current.RaceProps.wildBiomes.Add(newRecord1);
-
-                            AnimalBiomeRecord newRecord2 = new AnimalBiomeRecord();
-                            newRecord2.biome = BiomeDef.Named("ZBiome_DesertOasis");
-                            newRecord2.commonality = current.RaceProps.wildBiomes[j].commonality;
-                            current.RaceProps.wildBiomes.Add(newRecord2);
-
-                        }
-
 
                     }
                 }
