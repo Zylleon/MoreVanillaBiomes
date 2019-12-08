@@ -6,7 +6,7 @@
 	<defName>ZBiome_DesertOasis</defName>
 	<label>desert oasis</label>
 	<description>Desert with a few small islands of life</description>
-	<texture>World/Biomes/ZBiomes_Oasis</texture>
+	<texture>World/Biomes/ZBiome_Oasis</texture>
 	<workerClass>VanillaBiomes.BiomeWorker_DesertOasis</workerClass>
 	<!--<canAutoChoose>false</canAutoChoose>-->
     <!--<allowRoads>false</allowRoads>-->

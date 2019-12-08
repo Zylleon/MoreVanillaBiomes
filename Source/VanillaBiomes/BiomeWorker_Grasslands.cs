@@ -8,7 +8,7 @@ using RimWorld;
 
 namespace VanillaBiomes
 {
-    public class BiomeWorker_TemperateGrasslands : BiomeWorker
+    public class BiomeWorker_Grasslands : BiomeWorker
     {
         public override float GetScore(Tile tile, int tileID)
         {

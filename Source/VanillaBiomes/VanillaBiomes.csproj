@@ -51,13 +51,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BiomeWorker_AlpineMeadow.cs" />
-    <Compile Include="BiomeWorker_Bog.cs" />
     <Compile Include="BiomeWorker_DesertOasis.cs" />
     <Compile Include="BiomeWorker_NoTest.cs" />
     <Compile Include="BiomeWorker_Sandbar.cs" />
     <Compile Include="BiomeWorker_Test.cs" />
     <Compile Include="BiomeWorker_CoastalDunes.cs" />
-    <Compile Include="BiomeWorker_TemperateGrasslands.cs" />
+    <Compile Include="BiomeWorker_Grasslands.cs" />
     <Compile Include="BiomeWorker_Iceberg.cs" />
     <Compile Include="HarmonyPatches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

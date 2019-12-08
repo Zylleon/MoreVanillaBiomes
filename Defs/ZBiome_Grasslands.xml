@@ -3,19 +3,19 @@
 
 
 <BiomeDef>							<!-- Temperate Grasslands -->
-    <defName>ZBiome_TemperateGrasslands</defName>
+    <defName>ZBiome_Grasslands</defName>
     <label>grasslands</label>
     <description>Open grasslands with few trees.</description>
-    <workerClass>VanillaBiomes.BiomeWorker_TemperateGrasslands</workerClass>
-    <animalDensity>3.7</animalDensity>
+    <workerClass>VanillaBiomes.BiomeWorker_Grasslands</workerClass>
+    <animalDensity>3.5</animalDensity>
     <plantDensity>0.95</plantDensity>
-	<wildPlantRegrowDays>17</wildPlantRegrowDays>
+	<wildPlantRegrowDays>22</wildPlantRegrowDays>
 	<forageability>0.75</forageability>
     <foragedFood>RawBerries</foragedFood>
 	
     <settlementSelectionWeight>0.8</settlementSelectionWeight>
     <movementDifficulty>1</movementDifficulty>
-    <texture>World/Biomes/ZBiomes_TemperateGrasslands</texture>
+    <texture>World/Biomes/ZBiome_Grasslands</texture>
 
     <soundsAmbient>
       <li>Ambient_NightInsects_Standard</li>

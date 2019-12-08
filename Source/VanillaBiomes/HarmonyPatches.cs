@@ -43,29 +43,5 @@ namespace VanillaBiomes
             return true;
         }
 
-
-        //[HarmonyPatch(typeof(World), "CoastDirectionAt", null)]
-        //public static class World_CoastDirectionAt
-        //{
-        //    public static bool CoastDirectionAt_Prefix(int tileID, ref Rot4 __result, ref World __instance)
-        //    {
-        //        Log.Message("Starting beach fix");
-        //        var world = Traverse.Create(__instance);
-        //        WorldGrid worldGrid = world.Field("grid").GetValue<WorldGrid>();
-        //        if (worldGrid[tileID].biome.defName.Contains("NoBeach"))
-        //        {
-        //            Log.Message("Should be no beach");
-        //            __result = Rot4.Invalid;
-        //            return false;
-        //        }
-        //        Log.Message("Beach should exist");
-        //        return true;
-        //    }
-        //}
-
-
-
     }
-
-
 }

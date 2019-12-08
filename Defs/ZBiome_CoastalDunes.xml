@@ -10,7 +10,7 @@
     <plantDensity>0.7</plantDensity>
     <settlementSelectionWeight>0.95</settlementSelectionWeight>
     <movementDifficulty>1</movementDifficulty>
-    <texture>World/Biomes/CoastalDunes</texture>
+    <texture>World/Biomes/ZBiome_CoastalDunes</texture>
     <forageability>0.5</forageability>
     <foragedFood>RawAgave</foragedFood>
     <wildPlantRegrowDays>27</wildPlantRegrowDays>

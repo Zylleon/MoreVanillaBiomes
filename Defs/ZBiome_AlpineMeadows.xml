@@ -6,7 +6,7 @@
 	<defName>ZBiome_AlpineMeadow</defName>
 	<label>alpine meadow</label>
 	<description>High altitude with rich soil and lots of flowers</description>
-	<texture>World/Biomes/ZBiomes_AlpineMeadow</texture>
+	<texture>World/Biomes/ZBiome_AlpineMeadow</texture>
 	<workerClass>VanillaBiomes.BiomeWorker_AlpineMeadow</workerClass>
 	<!--<canAutoChoose>false</canAutoChoose>-->
     <!--<allowRoads>false</allowRoads>-->
@@ -19,7 +19,7 @@
 	<plantDensity>0.9</plantDensity>
 	<wildPlantRegrowDays>22</wildPlantRegrowDays>
 	<!--<hasVirtualPlants>false</hasVirtualPlants>-->
-	<forageability>0.75</forageability>
+	<forageability>1</forageability>
 	<foragedFood>RawBerries</foragedFood>
 
 	<soundsAmbient>
@@ -115,11 +115,11 @@
       <Clear>18</Clear>
       <Fog>1</Fog>
       <Rain>2</Rain>
-      <DryThunderstorm>1</DryThunderstorm>
+      <DryThunderstorm>1.5</DryThunderstorm>
       <RainyThunderstorm>1</RainyThunderstorm>
       <FoggyRain>1</FoggyRain>
       <SnowGentle>4</SnowGentle>
-      <SnowHard>4</SnowHard>
+      <SnowHard>2</SnowHard>
     </baseWeatherCommonalities>
     <wildPlants>
 		<ZBiome_Plant_WildRose>2.5</ZBiome_Plant_WildRose>

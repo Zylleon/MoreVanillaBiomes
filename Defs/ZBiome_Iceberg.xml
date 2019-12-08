@@ -16,7 +16,7 @@
     <hasBedrock>false</hasBedrock>
 	<settlementSelectionWeight>0.01</settlementSelectionWeight>
     <movementDifficulty>1.5</movementDifficulty>
-		<texture>World/Biomes/ZBiomes_Iceberg</texture>
+		<texture>World/Biomes/ZBiome_Iceberg</texture>
     <forageability>0</forageability>
 		<soundsAmbient>
 			<li>Ambient_Wind_Desolate</li>

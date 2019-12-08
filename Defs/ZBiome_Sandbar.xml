@@ -14,14 +14,14 @@
     <plantDensity>0.35</plantDensity>
     <settlementSelectionWeight>0.01</settlementSelectionWeight>
     <movementDifficulty>1.5</movementDifficulty>
-    <texture>World/Biomes/Sandbar</texture>
+    <texture>World/Biomes/ZBiome_Sandbar</texture>
     <forageability>0.1</forageability>
 	<foragedFood>RawAgave</foragedFood>
     <wildPlantRegrowDays>30</wildPlantRegrowDays>
     <soundsAmbient>
       <li>Ambient_NightInsects_Standard</li>
     </soundsAmbient>
-    <diseaseMtbDays>40</diseaseMtbDays>
+    <diseaseMtbDays>70</diseaseMtbDays>
     <diseases>
       <li>
         <diseaseInc>Disease_Flu</diseaseInc>
@@ -29,15 +29,15 @@
       </li>
       <li>
         <diseaseInc>Disease_Plague</diseaseInc>
-        <commonality>100</commonality>
-      </li>
-      <li>
-        <diseaseInc>Disease_Malaria</diseaseInc>
-        <commonality>100</commonality>
+        <commonality>80</commonality>
       </li>
       <li>
         <diseaseInc>Disease_GutWorms</diseaseInc>
-        <commonality>50</commonality>
+        <commonality>60</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_MuscleParasites</diseaseInc>
+        <commonality>60</commonality>
       </li>
       <li>
         <diseaseInc>Disease_FibrousMechanites</diseaseInc>
@@ -47,19 +47,13 @@
         <diseaseInc>Disease_SensoryMechanites</diseaseInc>
         <commonality>30</commonality>
       </li>
-
-      <li>
-        <diseaseInc>Disease_MuscleParasites</diseaseInc>
-        <commonality>50</commonality>
-      </li>
-      
       <li>
         <diseaseInc>Disease_AnimalFlu</diseaseInc>
         <commonality>100</commonality>
       </li>
       <li>
         <diseaseInc>Disease_AnimalPlague</diseaseInc>
-        <commonality>100</commonality>
+        <commonality>80</commonality>
       </li>
     </diseases>
     <terrainsByFertility>
@@ -135,13 +129,13 @@
     </terrainPatchMakers>
     <baseWeatherCommonalities>
       <Clear>18</Clear>
-      <Fog>1</Fog>
+      <Fog>0.5</Fog>
       <Rain>2</Rain>
       <DryThunderstorm>1</DryThunderstorm>
       <RainyThunderstorm>1</RainyThunderstorm>
-      <FoggyRain>1</FoggyRain>
-      <SnowGentle>4</SnowGentle>
-      <SnowHard>4</SnowHard>
+      <FoggyRain>0.5</FoggyRain>
+      <SnowGentle>3</SnowGentle>
+      <SnowHard>3</SnowHard>
     </baseWeatherCommonalities>
     <wildPlants>
       	<Plant_Grass>6</Plant_Grass>
@@ -153,31 +147,19 @@
 		<Plant_Bush>0.45</Plant_Bush>
     </wildPlants>
     <wildAnimals>
-      <Hare>1.0</Hare>
-      <Squirrel>1.0</Squirrel>
-      <Rat>1.0</Rat>
-      <Tortoise>0.6</Tortoise>
-      <Deer>0.5</Deer>
-      <WildBoar>0.5</WildBoar>
-      <Turkey>0.5</Turkey>
-      <Raccoon>0.5</Raccoon>
-      <Ibex>0.5</Ibex>
-      <Muffalo>0.5</Muffalo>
-      <Alpaca>0.5</Alpaca>
-      <Boomalope>0.4</Boomalope>
-      <Boomrat>0.4</Boomrat>
-      <Megasloth>0.2</Megasloth>
-      <Rhinoceros>0.1</Rhinoceros>
-      <Bear_Grizzly>0.07</Bear_Grizzly>
-      <Wolf_Timber>0.07</Wolf_Timber>
-      <Fox_Red>0.07</Fox_Red>
+      <Iguana>1.2</Iguana>
+      <Dromedary>0.3</Dromedary>
+      <Boomalope>0.6</Boomalope>
+	  <Boomrat>0.6</Boomrat>
+      <Ostrich>0.6</Ostrich>
+      <Emu>0.6</Emu>
+      <Gazelle>0.6</Gazelle>
       <Cougar>0.07</Cougar>
-      <Lynx>0.07</Lynx>
-      <Warg>0.07</Warg>
+      <Fox_Fennec>0.07</Fox_Fennec>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
-      <li>Alpaca</li>
+      <li>Dromedary</li>
     </allowedPackAnimals>
 </BiomeDef>
   
