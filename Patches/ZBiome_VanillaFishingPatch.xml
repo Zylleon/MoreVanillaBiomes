@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>Vanilla Fishing Expanded</modName>
+				<yourMod>More Vanilla Biomes</yourMod>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeCold"]/biomes</xpath>
+				<value>
+					<li>ZBiome_Iceberg_NoBeach</li>
+					<li>ZBiome_AlpineMeadow</li>	
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeWarm"]/biomes</xpath>
+				<value>
+					<li>ZBiome_AlpineMeadow</li>
+					<li>ZBiome_Grasslands</li>	
+					<li>ZBiome_Sandbar_NoBeach</li>
+					<li>ZBiome_CoastalDunes</li>			
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeHot"]/biomes</xpath>
+				<value>
+					<li>ZBiome_DesertOasis</li>	
+					<li>ZBiome_Grasslands</li>		
+					<li>ZBiome_Sandbar_NoBeach</li>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+
+
+</Patch>
+
