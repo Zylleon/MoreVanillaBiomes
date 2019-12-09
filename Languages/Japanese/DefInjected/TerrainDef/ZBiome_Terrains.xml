@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ZBiome_WaterChestDeep.label>海(渡)</ZBiome_WaterChestDeep.label>
+  <ZBiome_WaterChestDeep.tools.water.label>水面</ZBiome_WaterChestDeep.tools.water.label>
+
+  <ZBiome_WaterOceanChestDeep.label>浅海(渡)</ZBiome_WaterOceanChestDeep.label>
+  <ZBiome_WaterOceanChestDeep.tools.water.label>水面</ZBiome_WaterOceanChestDeep.tools.water.label>
+
+</LanguageData>
