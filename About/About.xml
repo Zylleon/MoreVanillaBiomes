@@ -4,20 +4,58 @@
   <author>Zylle</author>
   <supportedVersions><li>1.0</li></supportedVersions>
   <description>
-Adds six new vanilla-friendly biomes.
+[h1]Features[/h1]
+More Vanilla Biomes adds more map variety without overhauling the game. Includes six new vanilla-friendly biomes.
 
+[b]Grasslands:[/b] Warm, with poor soil, lots of grass, and few trees.
 
-Grasslands: Warm, with poor soil, lots of grass, and few trees.
+[b]Coastal Dunes:[/b] Low-lying sandy area with lots of water. 
 
-Coastal Dunes: Low-lying sandy area with lots of water. 
+[b]Sandbar:[/b] Smooth, flat, sandy islands with little if any vegetation or arable land. Warning: It is possible (though unlikely) to get a sandbar map with NO solid land!
 
-Sandbar: Smooth, flat, sandy islands with little if any vegetation or arable land. Warning: It is possible (though unlikely) to get a sandbar map with NO solid land!
+[b]Alpine Meadow:[/b] A beautiful area with fertile soil, lots of flowers, and few predators.
 
-Alpine Meadow: A beautiful area with fertile soil, lots of flowers, and few predators.
+[b]Oasis:[/b] Desert with groundwater close to the surface, making small lakes that support pockets thick vegetation.
 
-Oasis: Desert with groundwater close to the surface, forming small lakes and pockets of rich soil with thick vegetation.
+[b]Iceberg:[/b] Frigid chunks of ice floating on the ocean. Who would want to live here?
 
-Iceberg: Frigid chunks of ice floating on the ocean. Who would want to live here?
+[h1]Compatibility[/h1]
+This mod is meant to be as widely compatible as possible. Please report any issues.
+
+If you use mods that add wild plants or animals, the new biomes will spawn modded plants and animals based on which vanilla biome(s) the plants and animals spawn in.
+
+Compatible with other biome mods including Alpha Biomes, Advanced Biomes, Archipelagos,and Nature's Pretty Sweet.
+
+Mods that change world generation may cause strange results, please report any issues.
+
+[b]Save Our Ship 2:[/b] I added More Vanilla Biomes to my 7-year ongoing game with 90 other mods and made settlements in two of the new biomes (coastal dunes and alpine meadows) on my second planet. Do this at your own risk, save first, and as always report any problems. 
+
+Supports Camouflage and Stealth.
+
+[b]Fishing-- compatible with[/b]: 
+Vanilla Fishing Expanded
+FishIndustry
+[RF] Fishing [1.0]
+
+[h1]Recommended[/h1]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1095331978]Prepare Landing[/url] to help find the biome of your choice
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=761315214]Map Reroll[/url] if playing on maps without much solid ground.
+Your choice of gravel visibility mod, especially if playing in Grasslands or Dunes. Some options are [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1613910454]Gravel[/url], [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1541281864]Where's the Gravel?[/url], and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1561838700]Soil Contrast[/url]
+
+[h1]Incompatibility[/h1]
+Terra Project: Makes extensive changes to world generation that I can't work around.
+
+Please report any other incompatibilities you find.
+
+[h1]Credits:[/h1]
+This mod uses code borrowed from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1539309846]Rainbeau's Archipelagos[/url]
+
+This mod uses ModCheck and Harmony, which are included with this mod
+
+Japanese translation by Proxyer 
+
+[url=https://github.com/Zylleon/MoreVanillaBiomes/releases/latest]Github link[/url]
+
 
 	
 	
