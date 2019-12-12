@@ -44,7 +44,6 @@ namespace VanillaBiomes
 
 
         // adapted from RF-Archipelagos
-
         private static void AddPlantsToBiomes()
         {
 
@@ -146,6 +145,20 @@ namespace VanillaBiomes
 
                             }
 
+
+                            //Marsh
+                            if (current.plant.wildBiomes[j].biome.defName == "ColdBog")
+                            {
+                                PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
+                                newRecord1.biome = BiomeDef.Named("ZBiome_Marsh");
+                                newRecord1.commonality = current.plant.wildBiomes[j].commonality;
+                                if (current.plant.IsTree)
+                                {
+                                    newRecord1.commonality *= 0.3f;
+                                }
+                                current.plant.wildBiomes.Add(newRecord1);
+                            }
+
                         }
 
                     }
@@ -154,7 +167,7 @@ namespace VanillaBiomes
         }
 
 
-
+        // adapted from RF-Archipelagos
         private static void AddAnimalsToBiomes()
         {
             foreach (PawnKindDef current in DefDatabase<PawnKindDef>.AllDefs)
@@ -229,6 +242,15 @@ namespace VanillaBiomes
                             newRecord3.biome = BiomeDef.Named("ZBiome_Sandbar_NoBeach");
                             newRecord3.commonality = current.RaceProps.wildBiomes[j].commonality;
                             current.RaceProps.wildBiomes.Add(newRecord3);
+                        }
+
+                        //Marsh
+                        if (current.RaceProps.wildBiomes[j].biome.defName == "ColdBog")
+                        {
+                            AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
+                            newRecord1.biome = BiomeDef.Named("ZBiome_Marsh");
+                            newRecord1.commonality = current.RaceProps.wildBiomes[j].commonality;
+                            current.RaceProps.wildBiomes.Add(newRecord1);
                         }
 
                     }
