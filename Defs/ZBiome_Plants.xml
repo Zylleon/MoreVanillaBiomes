@@ -22,6 +22,8 @@
 	<pathCost>10</pathCost>
 	<altitudeLayer>LowPlant</altitudeLayer>
 	<plant>
+		<wildClusterRadius>6</wildClusterRadius>
+		<wildClusterWeight>17</wildClusterWeight>
 		<dieIfLeafless>false</dieIfLeafless>
 		<sowTags Inherit="False" />
 		<growDays>2.5</growDays>

@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+Arctic
+Desert
+Jungle
+Stone
+Urban
+Woodland
+-->
+
 <Patch>
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -53,6 +63,15 @@
 				 <value>
 					<li Class="CompCamo.CompCamoDefs">
 					<CamoType>Desert</CamoType>
+					</li>
+				 </value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/BiomeDef[defName="ZBiome_Marsh"]</xpath>
+				 <value>
+					<li Class="CompCamo.CompCamoDefs">
+					<CamoType>Woodland</CamoType>
 					</li>
 				 </value>
 			</li>

@@ -2,10 +2,10 @@
 <Defs>
 
   
-<BiomeDef>							<!-- Bog -->
-	<defName>ZBiome_Bog</defName>
-	<label>Bog</label>
-	<description>Flat and swampy. Dense vegetation, but few trees.</description>
+<BiomeDef>							<!-- Cloud Forest -->
+	<defName>ZBiome_CloudForest</defName>
+	<label>cloud forest</label>
+	<description>Aptly named for the costant fog</description>
 	<texture>World/Biomes/Purple</texture>
 	<workerClass>VanillaBiomes.BiomeWorker_NoTest</workerClass>
 	<!--<canAutoChoose>false</canAutoChoose>-->
@@ -15,11 +15,11 @@
 	<settlementSelectionWeight>0.5</settlementSelectionWeight>
     <movementDifficulty>1.5</movementDifficulty>
 	
-	<animalDensity>0.5</animalDensity>
-	<plantDensity>0.5</plantDensity>
+	<animalDensity>4.0</animalDensity>
+	<plantDensity>0.85</plantDensity>
 	<wildPlantRegrowDays>17</wildPlantRegrowDays>
 	<!--<hasVirtualPlants>false</hasVirtualPlants>-->
-	<forageability>0.5</forageability>
+	<forageability>1.0</forageability>
 	<foragedFood>RawBerries</foragedFood>
 
 	<soundsAmbient>
@@ -80,11 +80,11 @@
 	  <li>
         <terrain>Mud</terrain>
         <min>0.2</min>
-        <max>0.3</max>
+        <max>0.35</max>
       </li>
       <li>
         <terrain>Soil</terrain>
-        <min>0.3</min>
+        <min>0.35</min>
         <max>0.9</max>
       </li>
       <li>
@@ -129,82 +129,63 @@
           </li>
         </thresholds>
       </li>
-	  <li>											<!-- Decorates the rivulets -->
-        <perlinFrequency>0.05</perlinFrequency>
-		<perlinLacunarity>1</perlinLacunarity>
-		<perlinPersistence>0.8</perlinPersistence>
-		<minFertility>0.10</minFertility>
-		<maxFertility>0.75</maxFertility>
-        <thresholds>
-		  <li>
-            <terrain>Marsh</terrain>
-            <min>-0.25</min>
-            <max>0</max>
-          </li>
-		  <li>
-            <terrain>Mud</terrain>
-            <min>0</min>
-            <max>0.15</max>
-          </li>
-		   <li>
-            <terrain>Marsh</terrain>
-            <min>0.15</min>
-            <max>0.25</max>
-          </li>
-        </thresholds>
-      </li>
-
     </terrainPatchMakers>
 	
 	<baseWeatherCommonalities>
-      <Clear>18</Clear>
-      <Fog>1</Fog>
-      <Rain>2</Rain>
+      <Clear>12</Clear>
+      <Fog>3</Fog>
+      <Rain>1</Rain>
       <DryThunderstorm>1</DryThunderstorm>
       <RainyThunderstorm>1</RainyThunderstorm>
-      <FoggyRain>1</FoggyRain>
+      <FoggyRain>2</FoggyRain>
       <SnowGentle>4</SnowGentle>
       <SnowHard>4</SnowHard>
     </baseWeatherCommonalities>
     <wildPlants>
-			<Plant_Grass>5.0</Plant_Grass>
-			<Plant_TallGrass>2.0</Plant_TallGrass>
-			<Plant_Brambles>1.0</Plant_Brambles>
-			<Plant_Dandelion>0.5</Plant_Dandelion>
-			<Plant_Bush>0.6</Plant_Bush>
-			<Plant_TreeOak>0.5</Plant_TreeOak>
-			<Plant_TreePoplar>0.5</Plant_TreePoplar>
-			<Plant_Berry>0.05</Plant_Berry>
-			<Plant_HealrootWild>0.05</Plant_HealrootWild>
-		</wildPlants>
-    <wildAnimals>
-			<Hare>1.0</Hare>
-			<Squirrel>1.0</Squirrel>
-			<Rat>1.0</Rat>
-			<Deer>0.5</Deer>
-			<WildBoar>0.5</WildBoar>
-			<Turkey>0.5</Turkey>
-			<Raccoon>0.5</Raccoon>
-      <Ibex>0.5</Ibex>
-      <Muffalo>0.5</Muffalo>
-      <Alpaca>0.5</Alpaca>
-      <Boomalope>0.4</Boomalope>
-      <Boomrat>0.4</Boomrat>
-      <Tortoise>0.3</Tortoise>
-      <Gazelle>0.3</Gazelle>
-      <Megasloth>0.2</Megasloth>
-      <Rhinoceros>0.1</Rhinoceros>
-      <Bear_Grizzly>0.07</Bear_Grizzly>
-      <Wolf_Timber>0.07</Wolf_Timber>
-      <Fox_Red>0.07</Fox_Red>
-      <Cougar>0.07</Cougar>
-      <Lynx>0.07</Lynx>
-      <Warg>0.07</Warg>
+		<Plant_TreeOak>0.8</Plant_TreeOak>
+		<Plant_TreeWillow>0.5</Plant_TreeWillow>
+		<Plant_TreeBirch>0.3</Plant_TreeBirch>
+		<Plant_TreeBamboo>0.3</Plant_TreeBamboo>
+		
+		<Plant_Moss>3.0</Plant_Moss>
+		
+		<Plant_Grass>0.5</Plant_Grass>
+		<Plant_Brambles>2.0</Plant_Brambles>
+		<Plant_Rafflesia>0.0008</Plant_Rafflesia>
+		
+		<Plant_Dandelion>0.6</Plant_Dandelion>
+		<ZBiome_Plant_WildDaylily>0.5</ZBiome_Plant_WildDaylily>
+		
+		<Plant_Bush>0.5</Plant_Bush>
+		<Plant_ShrubLow>0.5</Plant_ShrubLow>
+		
+		<Plant_Berry>0.05</Plant_Berry>
+		<Plant_HealrootWild>0.05</Plant_HealrootWild>
+	</wildPlants>
+	<wildAnimals>
+		<Rat>1</Rat>
+		<Squirrel>1</Squirrel>
+		<Monkey>1</Monkey>
+		<Boomalope>0.5</Boomalope>
+		<Capybara>0.5</Capybara>
+		<Cassowary>0.5</Cassowary>
+		<Tortoise>0.5</Tortoise>
+		<Chinchilla>0.5</Chinchilla>
+		<WildBoar>0.5</WildBoar>
+		<Elephant>0.5</Elephant>
+		<Rhinoceros>0.5</Rhinoceros>
+		<Alpaca>0.5</Alpaca>
+		<Iguana>0.3</Iguana>
+		<Cobra>0.15</Cobra>
+		<Panther>0.15</Panther>
+		<Cougar>0.2</Cougar>
+		<Lynx>0.07</Lynx>
     </wildAnimals>
     <allowedPackAnimals>
-      <li>Muffalo</li>
-      <li>Alpaca</li>
-    </allowedPackAnimals>
+		<li>Muffalo</li>
+		<li>Elephant</li>
+		<li>Alpaca</li>
+	</allowedPackAnimals>
 </BiomeDef>
 
   

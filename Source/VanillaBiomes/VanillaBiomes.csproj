@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="BiomeWorker_AlpineMeadow.cs" />
     <Compile Include="BiomeWorker_DesertOasis.cs" />
+    <Compile Include="BiomeWorker_Marsh.cs" />
     <Compile Include="BiomeWorker_NoTest.cs" />
     <Compile Include="BiomeWorker_Sandbar.cs" />
     <Compile Include="BiomeWorker_Test.cs" />

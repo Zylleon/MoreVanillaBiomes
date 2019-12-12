@@ -12,7 +12,8 @@
 				<xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeCold"]/biomes</xpath>
 				<value>
 					<li>ZBiome_Iceberg_NoBeach</li>
-					<li>ZBiome_AlpineMeadow</li>	
+					<li>ZBiome_AlpineMeadow</li>
+					<li>ZBiome_Marsh</li>					
 				</value>
 			</li>
 
@@ -22,7 +23,8 @@
 					<li>ZBiome_AlpineMeadow</li>
 					<li>ZBiome_Grasslands</li>	
 					<li>ZBiome_Sandbar_NoBeach</li>
-					<li>ZBiome_CoastalDunes</li>			
+					<li>ZBiome_CoastalDunes</li>
+					<li>ZBiome_Marsh</li>					
 				</value>
 			</li>
 			
