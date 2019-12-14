@@ -20,6 +20,10 @@ namespace VanillaBiomes
 
         public override float GetScore(Tile tile, int tileID)
         {
+            if (!BiomeSettings.spawnIceberg)
+            {
+                return -100f;
+            }
             if (!tile.WaterCovered)
             {
                 return -100f;
@@ -28,26 +32,26 @@ namespace VanillaBiomes
             {
                 return -100f;
             }
-            
-            if (tile.temperature > -21.05f && tile.temperature < -21f)
+
+            if (tile.temperature < -21.45f || tile.temperature > -12f)
             {
-                return 100;
+                return 0f;
             }
 
-            // -21.3
-            if (tile.temperature > -21.33f && tile.temperature < -21.3f)
+            if (Rand.Value < 0.93f)
             {
-                return 100;
+                return -100f;
             }
 
-            if (tile.elevation < -25 && tile.elevation > -30 && tile.temperature < -15f && tile.temperature > -21f)
+            if (tile.temperature < -20.5f)
             {
-                return 100;
-                //float score = BiomeWorker_IceSheet.PermaIceScore(tile) - 23f;
-                //Log.Message("Tile score: " + score);
-                //return score;
+                return -21f + -tile.temperature * 2f;
             }
 
+            if(tile.elevation > -75f)
+            {
+                return -1f - tile.temperature;
+            }
 
             return -100;
 

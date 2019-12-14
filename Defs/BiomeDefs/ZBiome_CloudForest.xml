@@ -5,7 +5,7 @@
 <BiomeDef>							<!-- Cloud Forest -->
 	<defName>ZBiome_CloudForest</defName>
 	<label>cloud forest</label>
-	<description>Aptly named for the costant fog</description>
+	<description>Testing. Aptly named for the costant fog</description>
 	<texture>World/Biomes/Purple</texture>
 	<workerClass>VanillaBiomes.BiomeWorker_NoTest</workerClass>
 	<!--<canAutoChoose>false</canAutoChoose>-->
@@ -132,15 +132,17 @@
     </terrainPatchMakers>
 	
 	<baseWeatherCommonalities>
-      <Clear>12</Clear>
-      <Fog>3</Fog>
-      <Rain>1</Rain>
+      <Clear>10</Clear>
+      <Fog>6</Fog>
+      <Rain>2</Rain>
       <DryThunderstorm>1</DryThunderstorm>
-      <RainyThunderstorm>1</RainyThunderstorm>
-      <FoggyRain>2</FoggyRain>
+      <RainyThunderstorm>2</RainyThunderstorm>
+      <FoggyRain>4</FoggyRain>
       <SnowGentle>4</SnowGentle>
       <SnowHard>4</SnowHard>
     </baseWeatherCommonalities>
+	
+	
     <wildPlants>
 		<Plant_TreeOak>0.8</Plant_TreeOak>
 		<Plant_TreeWillow>0.5</Plant_TreeWillow>

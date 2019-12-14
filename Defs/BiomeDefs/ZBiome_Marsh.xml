@@ -2,7 +2,7 @@
 <Defs>
 
   
-<BiomeDef>							<!-- Bog -->
+<BiomeDef>							<!-- Marsh -->
 	<defName>ZBiome_Marsh</defName>
 	<label>Marsh</label>
 	<description>Flat and swampy. Dense vegetation, but few trees.</description>

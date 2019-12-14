@@ -12,6 +12,11 @@ namespace VanillaBiomes
     {
         public override float GetScore(Tile tile, int tileID)
         {
+
+            if(!BiomeSettings.spawnAlpineMeadow)
+            {
+                return -100f;
+            }
             if (tile.WaterCovered)
             {
                 return -100f;

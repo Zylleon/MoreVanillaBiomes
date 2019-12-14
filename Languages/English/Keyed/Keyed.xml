@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Settings -->
+  <ZB_ModName>More Vanilla Biomes</ZB_ModName>
+  <ZB_CheckboxMeadow>allow Alpine Meadows</ZB_CheckboxMeadow>
+  <ZB_CheckboxDunes>allow Coastal Dunes</ZB_CheckboxDunes>
+  <ZB_CheckboxOasis>allow Desert Oasis</ZB_CheckboxOasis>
+  <ZB_CheckboxGrasslands>allow Grasslands</ZB_CheckboxGrasslands>
+  <ZB_CheckboxIceberg>allow Icebergs</ZB_CheckboxIceberg>
+  <ZB_CheckboxMarsh>allow Marshes</ZB_CheckboxMarsh>
+  <ZB_CheckboxSandbar>allow Sandbars</ZB_CheckboxSandbar>
+  
+</LanguageData>
