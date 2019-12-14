@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Settings -->
+  <ZB_ModName>More Vanilla Biomes</ZB_ModName>
+  <ZB_CheckboxMeadow>高山草原</ZB_CheckboxMeadow>
+  <ZB_CheckboxDunes>海岸砂丘</ZB_CheckboxDunes>
+  <ZB_CheckboxOasis>砂漠オアシス</ZB_CheckboxOasis>
+  <ZB_CheckboxGrasslands>草原</ZB_CheckboxGrasslands>
+  <ZB_CheckboxIceberg>氷山</ZB_CheckboxIceberg>
+  <ZB_CheckboxMarsh>沼地</ZB_CheckboxMarsh>
+  <ZB_CheckboxSandbar>砂州</ZB_CheckboxSandbar>
+  
+</LanguageData>
