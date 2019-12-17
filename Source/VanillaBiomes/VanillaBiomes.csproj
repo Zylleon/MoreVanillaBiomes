@@ -60,6 +60,7 @@
     <Compile Include="BiomeWorker_Grasslands.cs" />
     <Compile Include="BiomeWorker_Iceberg.cs" />
     <Compile Include="BiomeSettings.cs" />
+    <Compile Include="VanillaBiomesDefOf.cs" />
     <Compile Include="VanillaBiomesPatches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
