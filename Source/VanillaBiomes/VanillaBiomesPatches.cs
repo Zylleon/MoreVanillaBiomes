@@ -24,12 +24,154 @@ namespace VanillaBiomes
             harmony.Patch(targetmethod, prefixmethod, null);
 
             AddAnimalsWildBiomes();
-            //AddPlantsWildBiomes();
+            AddPlantsWildBiomes();
+
+            //AddBiomesWildPlants();
+
+            //TestPlantsOld();
+            //TestPlantsOldB();
+
+            //TestPlantsNew();
+            //TestPlantsNewB();
 
 
-
-            AddBiomesWildPlants();
         }
+
+        private static void TestPlantsOld()
+        {
+            Log.Message("---Old version 1---");
+            foreach (ThingDef current in DefDatabase<ThingDef>.AllDefsListForReading)
+            {
+                if (current.plant?.wildBiomes != null)
+                {
+                    if (!current.plant.wildBiomes.Any(w => w.biome.defName.Contains("ZBiome")))
+                    {
+                        for (int j = 0; j < current.plant.wildBiomes.Count; j++)
+                        {
+                            if (current.plant.wildBiomes[j].biome.defName == "TemperateForest")
+                            {
+                                Log.Message("-----------------------------");
+                                Log.Message("Plant: " + current.defName);
+                                Log.Message("Found commonality: " + current.plant.wildBiomes[j].commonality);
+
+                                PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
+                                newRecord1.biome = BiomeDef.Named("ZBiome_AlpineMeadow");
+                                newRecord1.commonality = current.plant.wildBiomes[j].commonality;
+                                Log.Message("Added commonality to record: " + newRecord1.commonality);
+
+                                current.plant.wildBiomes.Add(newRecord1);
+                                Log.Message("Added to plant with commonality: " + current.plant.wildBiomes.Where(bi => bi.biome.defName == "ZBiome_AlpineMeadow").FirstOrDefault().commonality);
+                                Log.Message("BIOME RESULT---: " + VanillaBiomesDefOf.ZBiome_AlpineMeadow.CommonalityOfPlant(current));
+                            }                    
+                        }
+                    }
+                }
+            }
+        }
+
+
+        private static void TestPlantsOldB()
+        {
+            Log.Message("---Old version 2---");
+
+            foreach (ThingDef current in DefDatabase<ThingDef>.AllDefsListForReading)
+            {
+                if (current.plant?.wildBiomes != null)
+                {
+                    if (!current.plant.wildBiomes.Any(w => w.biome.defName.Contains("ZBiome")))
+                    {
+                        if (current.plant.wildBiomes.Any(b => b.biome.defName == "TemperateForest"))
+                        {
+                            Log.Message("-----------------------------");
+                            Log.Message("Plant: " + current.defName);
+                            Log.Message("Found commonality: " + current.plant.wildBiomes.Where(bi => bi.biome.defName == "TemperateForest").FirstOrDefault().commonality);
+
+                            PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
+                            newRecord1.biome = BiomeDef.Named("ZBiome_AlpineMeadow");
+                            newRecord1.commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "TemperateForest").FirstOrDefault().commonality;
+                            Log.Message("Added commonality to record: " + newRecord1.commonality);
+
+                            current.plant.wildBiomes.Add(newRecord1);
+                            Log.Message("Added to plant with commonality: " + current.plant.wildBiomes.Where(bi => bi.biome.defName == "ZBiome_AlpineMeadow").FirstOrDefault().commonality);
+                            Log.Message("BIOME RESULT---: " + VanillaBiomesDefOf.ZBiome_AlpineMeadow.CommonalityOfPlant(current));
+                        }
+                    }
+                }
+            }
+        }
+        
+
+
+        private static void TestPlantsNew()
+        {
+            Log.Message("---New version 1---");
+            foreach (ThingDef current in DefDatabase<ThingDef>.AllDefsListForReading)
+            {
+                if (current.plant != null)
+                {
+                    if (BiomeDefOf.TemperateForest.CommonalityOfPlant(current) > 0f && VanillaBiomesDefOf.ZBiome_AlpineMeadow.CommonalityOfPlant(current) == 0f)
+                    {
+                        try
+                        {
+                            Log.Message("-----------------------------");
+                            Log.Message("Plant: " + current.defName);
+                            Log.Message("Found commonality: " + BiomeDefOf.TemperateForest.CommonalityOfPlant(current));
+
+                            PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
+                            newRecord1.biome = BiomeDef.Named("ZBiome_AlpineMeadow");
+                            newRecord1.commonality = BiomeDefOf.TemperateForest.CommonalityOfPlant(current);
+                            Log.Message("Added commonality to record: " + newRecord1.commonality);
+
+                            current.plant.wildBiomes.Add(newRecord1);
+                            Log.Message("Added to plant with commonality: " + current.plant.wildBiomes.Where(bi => bi.biome.defName == "ZBiome_AlpineMeadow").FirstOrDefault().commonality);
+                            Log.Message("BIOME RESULT---: " + VanillaBiomesDefOf.ZBiome_AlpineMeadow.CommonalityOfPlant(current));
+                        }
+                        catch (Exception ex)
+                        {
+                            Log.Message(ex.Message);
+                        }
+                    }
+                }
+            }
+        }
+
+
+        private static void TestPlantsNewB()
+        {
+            Log.Message("---New version 2---");
+
+            foreach (ThingDef current in DefDatabase<ThingDef>.AllDefsListForReading)
+            {
+                if (current.plant != null)
+                {
+                    if (BiomeDefOf.TemperateForest.CommonalityOfPlant(current) > 0f && VanillaBiomesDefOf.ZBiome_AlpineMeadow.CommonalityOfPlant(current) == 0f)
+                    {
+                        try
+                        {
+                            Log.Message("-----------------------------");
+                            Log.Message("Plant: " + current.defName);
+                            Log.Message("Found commonality: " + current.plant.wildBiomes.Where(bi => bi.biome.defName == "TemperateForest").FirstOrDefault().commonality);
+
+                            PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
+                            newRecord1.biome = BiomeDef.Named("ZBiome_AlpineMeadow");
+                            newRecord1.commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "TemperateForest").FirstOrDefault().commonality;
+                            Log.Message("Added commonality to record: " + current.plant.wildBiomes.Where(bi => bi.biome.defName == "TemperateForest").FirstOrDefault().commonality);
+
+                            current.plant.wildBiomes.Add(newRecord1);
+                            Log.Message("Added to plant with commonality: " + current.plant.wildBiomes.Where(bi => bi.biome.defName == "ZBiome_AlpineMeadow").FirstOrDefault().commonality);
+                            Log.Message("BIOME RESULT---: " + VanillaBiomesDefOf.ZBiome_AlpineMeadow.CommonalityOfPlant(current));
+
+                        }
+                        catch (Exception ex)
+                        {
+                            Log.Message(ex.Message);
+                        }
+                    }
+                }
+            }
+        }
+
+
 
 
         // from RF-Archipelagos
@@ -46,24 +188,22 @@ namespace VanillaBiomes
         }
 
 
+
+
+
+        #region gahhhhhh
         // adapted from RF-Archipelagos
         private static void AddPlantsWildBiomes()
         {
 
             foreach (ThingDef current in DefDatabase<ThingDef>.AllDefsListForReading)
             {
-                if (current.plant != null)
-                {
-                    Log.Message("Possibly found plant" + current.defName);
-                }
                 if (current.plant?.wildBiomes != null)
                 {
-                    Log.Message("Found a plant: " + current.defName);
 
                     // to check if it's in any of these biomes already
                     if (!current.plant.wildBiomes.Any(w => w.biome.defName.Contains("ZBiome")))
                     {
-                        Log.Message("Adding a plant: " + current.defName);
 
 
                         //Sandbar
@@ -303,28 +443,48 @@ namespace VanillaBiomes
         {
             //BiomeDef meadow = VanillaBiomesDefOf.ZBiome_AlpineMeadow;
 
-           
-                foreach (ThingDef plant in BiomeDefOf.TemperateForest.AllWildPlants)
+            foreach (ThingDef current in DefDatabase<ThingDef>.AllDefsListForReading)
             {
-                try
+                if (current.plant != null)
                 {
-                    PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
-                    Log.Message("Made new record for: " + plant.defName);
-                    newRecord1.biome = BiomeDef.Named("ZBiome_AlpineMeadow");
-                    Log.Message("added my biome");
+                    if (BiomeDefOf.TemperateForest.CommonalityOfPlant(current) > 0f && VanillaBiomesDefOf.ZBiome_AlpineMeadow.CommonalityOfPlant(current) == 0f)
+                    {
+                        Log.Message("Found plant: " + current.defName);
 
-                    newRecord1.commonality = BiomeDefOf.TemperateForest.CommonalityOfPlant(plant);
-                    Log.Message("added commonality: " + newRecord1.commonality);
+                        try
+                        {
+                            PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
+                            //Log.Message("Made new record for: " + current.defName);
+                            newRecord1.biome = BiomeDef.Named("ZBiome_AlpineMeadow");
 
-                    plant.plant.wildBiomes.Add(newRecord1);
-                }
-                catch(Exception ex)
-                {
-                    Log.Message(ex.Message);
+                            //newRecord1.commonality = BiomeDefOf.TemperateForest.CommonalityOfPlant(current);
+                            //Log.Message("Plant: " + current.defName + " Commonality: " + BiomeDefOf.TemperateForest.CommonalityOfPlant(current));
+
+                            newRecord1.commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "TemperateForest").FirstOrDefault().commonality;
+                            Log.Message("Plant: " + current.defName + " Commonality: " + current.plant.wildBiomes.Where(bi => bi.biome.defName == "TemperateForest").FirstOrDefault().commonality);
+
+                            Log.Message("Record: " + newRecord1.commonality);
+
+                            //if(current.plant.wildBiomes == null)
+                            //{
+                            //    current.plant.wildBiomes = new List<PlantBiomeRecord>();
+                            //}
+
+
+                            current.plant.wildBiomes.Add(newRecord1);
+                            Log.Message("Biome commonality: " + VanillaBiomesDefOf.ZBiome_AlpineMeadow.CommonalityOfPlant(current));
+                            Log.Message("Plant biome record commonality: " + current.plant.wildBiomes.Where(bi => bi.biome.defName == "ZBiome_AlpineMeadow").FirstOrDefault().commonality);
+
+                        }
+                        catch (Exception ex)
+                        {
+                            Log.Message(ex.Message);
+                        }
+                    }
                 }
 
             }
         }
-
+        #endregion
     }
 }
