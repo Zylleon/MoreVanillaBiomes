@@ -5,11 +5,11 @@
 <BiomeDef>							<!-- Temperate Grasslands -->
     <defName>ZBiome_Grasslands</defName>
     <label>grasslands</label>
-    <description>Open grasslands with few trees.</description>
+    <description>Grasslands with few trees. Herds of grazing animals roam here. Soil is generally poor.</description>
     <workerClass>VanillaBiomes.BiomeWorker_Grasslands</workerClass>
-    <animalDensity>3.5</animalDensity>
+    <animalDensity>3.0</animalDensity>
     <plantDensity>0.95</plantDensity>
-	<wildPlantRegrowDays>22</wildPlantRegrowDays>
+	<wildPlantRegrowDays>26</wildPlantRegrowDays>
 	<forageability>0.75</forageability>
     <foragedFood>RawBerries</foragedFood>
 	
