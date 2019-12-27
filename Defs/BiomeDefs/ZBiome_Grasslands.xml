@@ -113,22 +113,22 @@
       <Clear>18</Clear>
       <Fog>1</Fog>
       <Rain>1.5</Rain>
-      <DryThunderstorm>1</DryThunderstorm>
+      <DryThunderstorm>2</DryThunderstorm>
       <RainyThunderstorm>1</RainyThunderstorm>
       <FoggyRain>0.5</FoggyRain>
       <SnowGentle>4</SnowGentle>
       <SnowHard>4</SnowHard>
     </baseWeatherCommonalities>
     <wildPlants>
-			<Plant_Grass>6.0</Plant_Grass>
-			<Plant_TallGrass>2.9</Plant_TallGrass>
-			<Plant_Chokevine>0.8</Plant_Chokevine>
-			<Plant_Dandelion>0.65</Plant_Dandelion>
-			<Plant_Bush>0.65</Plant_Bush>
-			<Plant_PincushionCactus>0.6</Plant_PincushionCactus>
-			<Plant_TreeDrago>0.2</Plant_TreeDrago>
-			<Plant_Berry>0.075</Plant_Berry>
-		</wildPlants>
+		<Plant_Grass>6.0</Plant_Grass>
+		<Plant_TallGrass>2.9</Plant_TallGrass>
+		<Plant_Chokevine>0.8</Plant_Chokevine>
+		<Plant_Dandelion>0.65</Plant_Dandelion>
+		<Plant_Bush>0.65</Plant_Bush>
+		<Plant_PincushionCactus>0.6</Plant_PincushionCactus>
+		<Plant_TreeDrago>0.2</Plant_TreeDrago>
+		<Plant_Berry>0.075</Plant_Berry>
+	</wildPlants>
     <wildAnimals>
 		<Hare>1.15</Hare>
 		<Rat>1.15</Rat>

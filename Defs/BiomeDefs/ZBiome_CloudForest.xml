@@ -25,7 +25,7 @@
 	<soundsAmbient>
       <li>Ambient_NightInsects_Standard</li>
     </soundsAmbient>
-	<diseaseMtbDays>90</diseaseMtbDays>
+	<diseaseMtbDays>60</diseaseMtbDays>
 	<diseases>
       <li>
         <diseaseInc>Disease_Flu</diseaseInc>
@@ -132,12 +132,12 @@
     </terrainPatchMakers>
 	
 	<baseWeatherCommonalities>
-      <Clear>10</Clear>
+      <Clear>8</Clear>
       <Fog>6</Fog>
       <Rain>2</Rain>
       <DryThunderstorm>1</DryThunderstorm>
       <RainyThunderstorm>2</RainyThunderstorm>
-      <FoggyRain>4</FoggyRain>
+      <FoggyRain>8</FoggyRain>
       <SnowGentle>4</SnowGentle>
       <SnowHard>4</SnowHard>
     </baseWeatherCommonalities>
