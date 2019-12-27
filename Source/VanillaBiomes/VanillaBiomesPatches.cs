@@ -220,31 +220,6 @@ namespace VanillaBiomes
                         }
 
 
-                        //Grasslands
-                        //Dunes, Oasis
-                        if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "AridShrubland"))
-                        {
-                            AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
-                            newRecord1.biome = BiomeDef.Named("ZBiome_Grasslands");
-                            newRecord1.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "AridShrubland").FirstOrDefault().commonality;
-                            if (current.RaceProps.herdAnimal)
-                            {
-                                newRecord1.commonality *= 1.5f;
-                            }
-                            else
-                            {
-                                newRecord1.commonality *= 0.5f;
-                            }
-
-                            current.RaceProps.wildBiomes.Add(newRecord1);
-
-                            AnimalBiomeRecord newRecord2 = new AnimalBiomeRecord();
-                            newRecord2.biome = BiomeDef.Named("ZBiome_DesertOasis");
-                            newRecord2.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "Desert").FirstOrDefault().commonality;
-                            current.RaceProps.wildBiomes.Add(newRecord2);
-                        }
-
-
                         for (int j = 0; j < current.RaceProps.wildBiomes.Count; j++)
                         {
                             //Iceberg
@@ -276,6 +251,14 @@ namespace VanillaBiomes
                                 newRecord1.biome = BiomeDef.Named("ZBiome_Grasslands");
                                 newRecord1.commonality = current.RaceProps.wildBiomes[j].commonality;
                                 current.RaceProps.wildBiomes.Add(newRecord1);
+                                if (current.RaceProps.herdAnimal)
+                                {
+                                    newRecord1.commonality *= 1.5f;
+                                }
+                                else
+                                {
+                                    newRecord1.commonality *= 0.5f;
+                                }
                             }
 
 
