@@ -5,20 +5,15 @@
 <BiomeDef>							<!-- Cloud Forest -->
 	<defName>ZBiome_CloudForest</defName>
 	<label>cloud forest</label>
-	<description>Testing. Aptly named for the costant fog</description>
-	<texture>World/Biomes/Purple</texture>
-	<workerClass>VanillaBiomes.BiomeWorker_NoTest</workerClass>
-	<!--<canAutoChoose>false</canAutoChoose>-->
-    <!--<allowRoads>false</allowRoads>-->
-    <!--<allowRivers>false</allowRivers>-->
-	<!--<hasBedrock>false</hasBedrock>-->
+	<description>Aptly named for the constant fog. Plants from a more temperate era still grow here, and animals frequently wander up the slopes from the forests below.</description>
+	<texture>World/Biomes/ZBiome_CloudForest</texture>
+	<workerClass>VanillaBiomes.BiomeWorker_CloudForest</workerClass>
 	<settlementSelectionWeight>0.5</settlementSelectionWeight>
     <movementDifficulty>1.5</movementDifficulty>
 	
 	<animalDensity>4.0</animalDensity>
 	<plantDensity>0.85</plantDensity>
 	<wildPlantRegrowDays>17</wildPlantRegrowDays>
-	<!--<hasVirtualPlants>false</hasVirtualPlants>-->
 	<forageability>1.0</forageability>
 	<foragedFood>RawBerries</foragedFood>
 
@@ -37,11 +32,11 @@
       </li>
       <li>
         <diseaseInc>Disease_Malaria</diseaseInc>
-        <commonality>100</commonality>
+        <commonality>110</commonality>
       </li>
       <li>
         <diseaseInc>Disease_GutWorms</diseaseInc>
-        <commonality>50</commonality>
+        <commonality>70</commonality>
       </li>
       <li>
         <diseaseInc>Disease_FibrousMechanites</diseaseInc>
@@ -55,6 +50,10 @@
         <diseaseInc>Disease_MuscleParasites</diseaseInc>
         <commonality>50</commonality>
       </li>
+	   <li>
+        <diseaseInc>Disease_SleepingSickness</diseaseInc>
+        <commonality>10</commonality>
+      </li>
       
       <li>
         <diseaseInc>Disease_AnimalFlu</diseaseInc>
@@ -67,56 +66,61 @@
 	</diseases>
 	
 	<terrainsByFertility>
-	 <li>
-        <terrain>WaterDeep</terrain>
-        <min>-999</min>
-        <max>0.09</max>
-      </li>
-	  <li>
-        <terrain>WaterShallow</terrain>
-        <min>0.09</min>
-        <max>0.2</max>
-      </li>
-	  <li>
-        <terrain>Mud</terrain>
-        <min>0.2</min>
-        <max>0.35</max>
-      </li>
-      <li>
-        <terrain>Soil</terrain>
-        <min>0.35</min>
-        <max>0.9</max>
-      </li>
-      <li>
-        <terrain>SoilRich</terrain>
-        <min>0.9</min>
-        <max>999</max>
-      </li>
+		<li>
+			<terrain>Soil</terrain>
+			<min>-999</min>
+			<max>0.87</max>
+		</li>
+		<li>
+			<terrain>SoilRich</terrain>
+			<min>0.87</min>
+			<max>999</max>
+		</li>
     </terrainsByFertility>
 	
 	
     <terrainPatchMakers>
-		 <li>
+	  <li>
         <perlinFrequency>0.027</perlinFrequency>
         <thresholds>
           <li>
             <terrain>SoilRich</terrain>
-            <min>-0.05</min>
-            <max>0.32</max>
+            <min>0.25</min>
+            <max>0.55</max>
           </li>
           <li>
             <terrain>Mud</terrain>
-            <min>0.32</min>
-            <max>0.6</max>
+            <min>0.55</min>
+            <max>0.8</max>
           </li>
           <li>
             <terrain>WaterShallow</terrain>
-            <min>0.6</min>
+            <min>0.8</min>
+            <max>1.15</max>
+          </li>
+		  <li>
+            <terrain>WaterDeep</terrain>
+            <min>1.15</min>
             <max>999</max>
           </li>
         </thresholds>
       </li>
-      <li>											<!-- Adds the rivulets -->
+	  
+		<li>
+			<perlinFrequency>0.04</perlinFrequency>
+			<perlinLacunarity>1.8</perlinLacunarity>
+			<maxFertility>0.4</maxFertility>
+			<thresholds>
+				<li>
+					<terrain>WaterShallow</terrain>
+					<min>-0.65</min>
+					<max>-0.4</max>
+				</li>
+				
+			</thresholds>
+		</li>
+  <!-- 
+      <li>											Adds the rivulets 
         <perlinFrequency>0.05</perlinFrequency>
 		<perlinLacunarity>1</perlinLacunarity>
 		<minFertility>0.10</minFertility>
@@ -129,6 +133,7 @@
           </li>
         </thresholds>
       </li>
+	  -->
     </terrainPatchMakers>
 	
 	<baseWeatherCommonalities>

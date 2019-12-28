@@ -14,6 +14,7 @@
 				<li>ZBiome_DesertOasis</li>
 				<li>ZBiome_Grasslands</li>
 				<li>ZBiome_CoastalDunes</li>
+				<li>ZBiome_CloudForest</li>
 			</value>
 		</li>
 		<li Class="PatchOperationAdd">
@@ -23,6 +24,7 @@
 				<li>ZBiome_Grasslands</li>
 				<li>ZBiome_CoastalDunes</li>
 				<li>ZBiome_Marsh</li>
+				<li>ZBiome_CloudForest</li>
 			</value>
 		</li>
 		
@@ -35,8 +37,11 @@
 				<li>ZBiome_DesertOasis</li>
 				<li>ZBiome_CoastalDunes</li>
 				<li>ZBiome_Marsh</li>
+				<li>ZBiome_CloudForest</li>
+				<li>ZBiome_CloudForest</li>
 			</value>
 		</li>
+		
 		<li Class="PatchOperationAdd">
 			<xpath>Defs/PawnKindDef[defName = "PawnKindDefFishBlueblade"]/naturalBiomes</xpath>
 			<value>
@@ -57,6 +62,7 @@
 				<li>ZBiome_Grasslands</li>
 				<li>ZBiome_Sandbar_NoBeach</li>
 				<li>ZBiome_DesertOasis</li>
+				<li>ZBiome_CloudForest</li>
 			</value>
 		</li>
 		</operations>

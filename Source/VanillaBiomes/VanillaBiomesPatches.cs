@@ -65,8 +65,6 @@ namespace VanillaBiomes
                     // to check if it's in any of these biomes already
                     if (!current.plant.wildBiomes.Any(w => w.biome.defName.Contains("ZBiome")))
                     {
-
-
                         //Sandbar
                         if (current.plant.wildBiomes.Any(b => b.biome.defName == "ExtremeDesert"))
                         {
@@ -85,9 +83,6 @@ namespace VanillaBiomes
 
                         for (int j = 0; j < current.plant.wildBiomes.Count; j++)
                         {
-
-
-
                             // icebergs
                             if (current.plant.wildBiomes[j].biome.defName == "SeaIce")
                             {
@@ -127,7 +122,6 @@ namespace VanillaBiomes
                                 current.plant.wildBiomes.Add(newRecord1);
                             }
 
-                            //Dunes, Oasis
                             if (current.plant.wildBiomes[j].biome.defName == "AridShubland")
                             {
                                 if (current.plant.purpose == PlantPurpose.Food)
@@ -157,6 +151,26 @@ namespace VanillaBiomes
                                     newRecord2.biome = BiomeDef.Named("ZBiome_DesertOasis");
                                     newRecord2.commonality = current.plant.wildBiomes[j].commonality;
                                     current.plant.wildBiomes.Add(newRecord2);
+                                }
+
+                                if (!current.plant.IsTree)
+                                {
+                                    PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
+                                    newRecord1.biome = BiomeDef.Named("ZBiome_CloudForest");
+                                    newRecord1.commonality = current.plant.wildBiomes[j].commonality;
+                                    current.plant.wildBiomes.Add(newRecord1);
+                                }
+
+                            }
+
+                            if (current.plant.wildBiomes[j].biome.defName == "TemperateForest")
+                            {
+                                if (current.plant.IsTree)
+                                {
+                                    PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
+                                    newRecord1.biome = BiomeDef.Named("ZBiome_CloudForest");
+                                    newRecord1.commonality = current.plant.wildBiomes[j].commonality;
+                                    current.plant.wildBiomes.Add(newRecord1);
                                 }
 
                             }
@@ -219,6 +233,21 @@ namespace VanillaBiomes
                             current.RaceProps.wildBiomes.Add(newRecord2);
                         }
 
+                        //Cloud Forest
+                        if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "TropicalRainforest"))
+                        {
+                            AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
+                            newRecord1.biome = BiomeDef.Named("ZBiome_CloudForest");
+                            newRecord1.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "TropicalRainforest").FirstOrDefault().commonality;
+                            current.RaceProps.wildBiomes.Add(newRecord1);
+                        }
+                        else if (current.RaceProps.baseBodySize <= 0.5f && current.RaceProps.wildBiomes.Any(b => b.biome.defName == "TemperateForest"))
+                        {
+                            AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
+                            newRecord1.biome = BiomeDef.Named("ZBiome_CloudForest");
+                            newRecord1.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "TropicalRainforest").FirstOrDefault().commonality;
+                            current.RaceProps.wildBiomes.Add(newRecord1);
+                        }
 
                         for (int j = 0; j < current.RaceProps.wildBiomes.Count; j++)
                         {

@@ -18,6 +18,7 @@ namespace VanillaBiomes
         public static bool spawnIceberg = true;
         public static bool spawnMarsh = true;
         public static bool spawnSandbar = true;
+        public static bool spawnCloudForest = true;
         public static bool spawnModdedPlantsAnimals = true;
 
 
@@ -33,6 +34,7 @@ namespace VanillaBiomes
             Scribe_Values.Look(ref spawnIceberg, "spawnIceberg", true);
             Scribe_Values.Look(ref spawnMarsh, "spawnMarsh", true);
             Scribe_Values.Look(ref spawnSandbar, "spawnSandbar", true);
+            Scribe_Values.Look(ref spawnCloudForest, "spawnCloudForest", true);
             Scribe_Values.Look(ref spawnModdedPlantsAnimals, "spawnModdedPlantsAnimals", true);
         }
     }
@@ -61,6 +63,7 @@ namespace VanillaBiomes
             listingStandard.CheckboxLabeled("ZB_CheckboxIceberg".Translate(), ref BiomeSettings.spawnIceberg);
             listingStandard.CheckboxLabeled("ZB_CheckboxMarsh".Translate(), ref BiomeSettings.spawnMarsh);
             listingStandard.CheckboxLabeled("ZB_CheckboxSandbar".Translate(), ref BiomeSettings.spawnSandbar);
+            listingStandard.CheckboxLabeled("ZB_CheckboxCloudForest".Translate(), ref BiomeSettings.spawnCloudForest);
             listingStandard.GapLine();
             listingStandard.CheckboxLabeled("ZB_CheckboxModdedThings".Translate(), ref BiomeSettings.spawnModdedPlantsAnimals, "ZB_CheckboxModdedThingsDesc".Translate());
 
