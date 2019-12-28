@@ -10,6 +10,7 @@
   <ZB_CheckboxIceberg>allow Icebergs</ZB_CheckboxIceberg>
   <ZB_CheckboxMarsh>allow Marshes</ZB_CheckboxMarsh>
   <ZB_CheckboxSandbar>allow Sandbars</ZB_CheckboxSandbar>
+  <ZB_CheckboxCloudForest>allow Cloud Forests</ZB_CheckboxCloudForest>
   
   <ZB_CheckboxModdedThings>spawn modded plants and animals (requires restart to take effect)</ZB_CheckboxModdedThings>
   <ZB_CheckboxModdedThingsDesc>If unchecked, these biomes will not spawn plants and animals from other mods. Modded plants and animals may still spawn wild if enabled by another mod or patch.\n\nRestart the game after changing this.</ZB_CheckboxModdedThingsDesc>
