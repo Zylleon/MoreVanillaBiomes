@@ -19,9 +19,13 @@ namespace VanillaBiomes
             HarmonyInstance harmony = HarmonyInstance.Create("rimworld.vanillabiomes");
             MethodInfo targetmethod = AccessTools.Method(typeof(RimWorld.Planet.World), "CoastDirectionAt");
             HarmonyMethod prefixmethod = new HarmonyMethod(typeof(VanillaBiomes.VanillaBiomesPatches).GetMethod("CoastDirectionAt_Prefix"));
-
-            // patch the targetmethod, by calling prefixmethod before it runs, with no postfixmethod (i.e. null)
             harmony.Patch(targetmethod, prefixmethod, null);
+
+
+            targetmethod = AccessTools.Method(typeof(RimWorld.GenStep_ScatterDeepResourceLumps), "Generate");
+            prefixmethod = new HarmonyMethod(typeof(VanillaBiomes.VanillaBiomesPatches).GetMethod("ScatterDeepResourceLumps_Prefix"));
+            harmony.Patch(targetmethod, prefixmethod, null);
+
 
             if (BiomeSettings.spawnModdedPlantsAnimals)
             {
@@ -34,6 +38,18 @@ namespace VanillaBiomes
         }
 
 
+        public static bool ScatterDeepResourceLumps_Prefix(Map map, GenStepParams parms)
+        {
+            if(map.Biome.defName == "ZBiome_Sandbar_NoBeach")
+            {
+                GenStep_OceanDeepResources deepLumps = new GenStep_OceanDeepResources();
+                deepLumps.Generate(map, parms);
+
+                return false;
+            }
+
+            return true;
+        }
 
         // from RF-Archipelagos
         public static bool CoastDirectionAt_Prefix(int tileID, ref Rot4 __result, ref World __instance)
