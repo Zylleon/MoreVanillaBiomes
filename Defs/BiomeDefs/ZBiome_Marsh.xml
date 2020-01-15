@@ -4,7 +4,7 @@
   
 <BiomeDef>							<!-- Marsh -->
 	<defName>ZBiome_Marsh</defName>
-	<label>Marsh</label>
+	<label>marsh</label>
 	<description>Flat and swampy. Dense vegetation, but few trees.</description>
 	<texture>World/Biomes/ZBiome_Marsh</texture>
 	<workerClass>VanillaBiomes.BiomeWorker_Marsh</workerClass>

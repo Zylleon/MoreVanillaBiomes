@@ -208,6 +208,30 @@
 			  </value>
 			</li>
 			
+			<li Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="ModCheck.isModLoaded">
+						<modName>Vanilla Factions Expanded - Medieval</modName>
+						<yourMod>More Vanilla Biomes</yourMod>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/BiomeDef[defName="ZBiome_AlpineMeadow"]/wildPlants/RC2_PlantGrapes</xpath>
+						<value>
+							<VFEM_Plant_Grape>0.0000000000000001</VFEM_Plant_Grape>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/BiomeDef[defName="ZBiome_CloudForest"]/wildPlants/RC2_PlantGrapes</xpath>
+						<value>
+							<VFEM_Plant_Grape>0.0000000000000001</VFEM_Plant_Grape>
+						</value>
+					</li>
+				</operations>
+			</li>
+				
 		</operations>
 	</Operation>
 </Patch>
