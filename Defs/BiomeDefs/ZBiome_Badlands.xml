@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+   
+<BiomeDef>							<!-- Badlands -->
+	<defName>ZBiome_Badlands</defName>
+	<label>badlands</label>
+	<description>NOT PLAYABLE. This biome is in testing. \n\nIt should not show up on the world map. A lot of things won't work. It is not finished.\n\nThis biome may be deleted later.</description>
+	<texture>World/Biomes/Purple</texture>
+	<workerClass>VanillaBiomes.BiomeWorker_NoTest</workerClass>
+	<!--<canAutoChoose>false</canAutoChoose>-->
+    <!--<allowRoads>false</allowRoads>-->
+    <!--<allowRivers>false</allowRivers>-->
+	<!--<hasBedrock>false</hasBedrock>-->
+	<settlementSelectionWeight>0.5</settlementSelectionWeight>
+    <movementDifficulty>1.5</movementDifficulty>
+	<animalDensity>0.0</animalDensity>
+	<plantDensity>0.0</plantDensity>
+	<wildPlantRegrowDays>22</wildPlantRegrowDays>
+	<!--<hasVirtualPlants>false</hasVirtualPlants>-->
+	<forageability>1</forageability>
+	<foragedFood>RawBerries</foragedFood>
+
+	<soundsAmbient>
+      <li>Ambient_NightInsects_Standard</li>
+    </soundsAmbient>
+	<diseaseMtbDays>60</diseaseMtbDays>
+    <diseases>
+      <li>
+        <diseaseInc>Disease_Flu</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_Plague</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_GutWorms</diseaseInc>
+        <commonality>50</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_FibrousMechanites</diseaseInc>
+        <commonality>30</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_SensoryMechanites</diseaseInc>
+        <commonality>30</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_MuscleParasites</diseaseInc>
+        <commonality>50</commonality>
+      </li>
+      
+      <li>
+        <diseaseInc>Disease_AnimalFlu</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_AnimalPlague</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+    </diseases>
+	<terrainsByFertility>
+	  <li>
+        <terrain>Sand</terrain>
+        <min>-999</min>
+        <max>999</max>
+      </li>
+      <!--
+	  <li>
+        <terrain>ZBiome_BrokenAsphalt</terrain>
+        <min>0.5</min>
+        <max>999</max>
+      </li>
+	  -->
+    </terrainsByFertility>
+
+    <terrainPatchMakers>
+	<li>
+        <perlinFrequency>0.025</perlinFrequency>
+		<perlinLacunarity>4.0</perlinLacunarity>
+        <thresholds>
+		  <li>
+            <terrain>Sandstone_Rough</terrain>
+            <min>-0.7</min>
+            <max>-0.5</max>
+          </li>
+		  <li>
+            <terrain>Sandstone_Rough</terrain>
+            <min>0.52</min>
+            <max>0.6</max>
+          </li>
+          <li>
+            <terrain>PackedDirt</terrain>
+            <min>0.70</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+      <li>
+        <perlinFrequency>0.05</perlinFrequency>
+		<perlinLacunarity>4.0</perlinLacunarity>
+        <thresholds>
+		  <li>
+            <terrain>Sand</terrain>
+            <min>-999</min>
+            <max>-0.5</max>
+          </li>
+          <li>
+            <terrain>Sandstone_Rough</terrain>
+            <min>0.50</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+    </terrainPatchMakers>
+
+	<baseWeatherCommonalities>
+      <Clear>18</Clear>
+      <Fog>1</Fog>
+      <Rain>2</Rain>
+      <DryThunderstorm>1.5</DryThunderstorm>
+      <RainyThunderstorm>1</RainyThunderstorm>
+      <FoggyRain>1</FoggyRain>
+      <SnowGentle>4</SnowGentle>
+      <SnowHard>2</SnowHard>
+    </baseWeatherCommonalities>
+    <wildPlants>
+		<ZBiome_Plant_WildRose>2.5</ZBiome_Plant_WildRose>
+		<ZBiome_Plant_WildDaylily>2.0</ZBiome_Plant_WildDaylily>
+		<Plant_Dandelion>1.5</Plant_Dandelion>
+		<Plant_Astragalus>0.1</Plant_Astragalus>
+		
+		<Plant_Grass>8.0</Plant_Grass>
+		<Plant_TallGrass>3.0</Plant_TallGrass>
+		<Plant_Brambles>1.0</Plant_Brambles>
+		<Plant_Bush>1.0</Plant_Bush>
+		<Plant_Moss>3.0</Plant_Moss>
+		
+		<Plant_TreePine>0.5</Plant_TreePine>
+		<Plant_TreeBirch>0.05</Plant_TreeBirch>
+		<Plant_TreePoplar>0.2</Plant_TreePoplar>
+		
+		<Plant_Berry>0.1</Plant_Berry>
+		<Plant_HealrootWild>0.1</Plant_HealrootWild>
+
+	</wildPlants>
+	<wildAnimals>
+		<Hare>1.5</Hare>
+		<Squirrel>1.5</Squirrel>
+		<Rat>1.0</Rat>
+		<Deer>1.0</Deer>
+		<WildBoar>0.5</WildBoar>
+		<Turkey>0.5</Turkey>
+		<Raccoon>0.5</Raccoon>
+		<Ibex>0.5</Ibex>
+		<Muffalo>0.5</Muffalo>
+		<Alpaca>0.2</Alpaca>
+		<Boomalope>0.2</Boomalope>
+		<Boomrat>0.2</Boomrat>
+		<Gazelle>0.5</Gazelle>
+		<Megasloth>0.15</Megasloth>
+		
+		<Rhinoceros>0.03</Rhinoceros>
+		
+		<Fox_Red>0.12</Fox_Red>
+		<Bear_Grizzly>0.03</Bear_Grizzly>
+		<Wolf_Timber>0.07</Wolf_Timber>
+		<Cougar>0.05</Cougar>
+		<Warg>0.07</Warg>
+	</wildAnimals>
+    <allowedPackAnimals>
+      <li>Muffalo</li>
+      <li>Alpaca</li>
+    </allowedPackAnimals>
+	</BiomeDef>
+
+  
+</Defs>

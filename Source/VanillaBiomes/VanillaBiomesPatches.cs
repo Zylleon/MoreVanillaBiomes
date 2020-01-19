@@ -26,15 +26,116 @@ namespace VanillaBiomes
             prefixmethod = new HarmonyMethod(typeof(VanillaBiomes.VanillaBiomesPatches).GetMethod("ScatterDeepResourceLumps_Prefix"));
             harmony.Patch(targetmethod, prefixmethod, null);
 
+            targetmethod = AccessTools.Method(typeof(RimWorld.GenStep_Terrain), "TerrainFrom");
+            prefixmethod = new HarmonyMethod(typeof(VanillaBiomes.VanillaBiomesPatches).GetMethod("TerrainFrom_Prefix"));
+            harmony.Patch(targetmethod, prefixmethod, null);
+
+            targetmethod = AccessTools.Method(typeof(RimWorld.GenStep_ElevationFertility), "Generate");
+            prefixmethod = new HarmonyMethod(typeof(VanillaBiomes.VanillaBiomesPatches).GetMethod("GenstepElevationFertility_Prefix"));
+            harmony.Patch(targetmethod, prefixmethod, null);
 
             if (BiomeSettings.spawnModdedPlantsAnimals)
             {
                 AddAnimalsWildBiomes();
                 AddPlantsWildBiomes();
-
-
             }
+        }
 
+
+        public static bool GenstepElevationFertility_Prefix(Map map, GenStepParams parms)
+        {
+            if (map.Biome.defName == "ZBiome_Badlands")
+            {
+                GenStep_Badlands_ElevationFertility elevationFertility = new GenStep_Badlands_ElevationFertility();
+                elevationFertility.Generate(map, parms);
+
+                return false;
+            }
+            return true;
+        }
+
+
+
+        public static bool TerrainFrom_Prefix(IntVec3 c, Map map, float elevation, float fertility, RiverMaker river, bool preferSolid, ref TerrainDef __result)
+        {
+            if(map.Biome.defName == "ZBiome_Badlands")
+            {
+                // Set default first because of return types changing. Original sets this last.
+                __result = TerrainDefOf.Sand;
+
+                TerrainDef terrainDef = null;
+                if (river != null)
+                {
+                    terrainDef = river.TerrainAt(c, true);
+                }
+                if (terrainDef == null && preferSolid)
+                {
+                    __result = GenStep_RocksFromGrid.RockDefAt(c).building.naturalTerrain;
+                    return false;
+                }
+                TerrainDef terrainDef2 = BeachMaker.BeachTerrainAt(c, map.Biome);
+                if (terrainDef2 == TerrainDefOf.WaterOceanDeep)
+                {
+                    __result = terrainDef2;
+                    return false;
+                }
+                if (terrainDef != null && terrainDef.IsRiver)
+                {
+                    __result = terrainDef;
+                    return false;
+                }
+                if (terrainDef2 != null)
+                {
+                    __result = terrainDef2;
+                    return false;
+                }
+                if (terrainDef != null)
+                {
+                    __result = terrainDef;
+                    return false;
+                }
+                for (int i = 0; i < map.Biome.terrainPatchMakers.Count; i++)
+                {
+                    terrainDef2 = map.Biome.terrainPatchMakers[i].TerrainAt(c, map, fertility);
+                    if (terrainDef2 != null)
+                    {
+                        __result = terrainDef2;
+                        return false;
+                    }
+                }
+                if (elevation > 0.35f && elevation < 0.50f)
+                {
+                    __result = TerrainDefOf.Gravel;
+                    return false;
+                }
+                if (elevation >= 0.50f)
+                {
+                    __result = GenStep_RocksFromGrid.RockDefAt(c).building.naturalTerrain;
+                    return false;
+                }
+                terrainDef2 = TerrainThreshold.TerrainAtValue(map.Biome.terrainsByFertility, fertility);
+                if (terrainDef2 != null)
+                {
+                    __result = terrainDef2;
+                    return false;
+                }
+                //if (!GenStep_Terrain.debug_WarnedMissingTerrain)
+                //{
+                //    Log.Error(string.Concat(new object[]
+                //    {
+                //    "No terrain found in biome ",
+                //    map.Biome.defName,
+                //    " for elevation=",
+                //    elevation,
+                //    ", fertility=",
+                //    fertility
+                //    }), false);
+                //    GenStep_Terrain.debug_WarnedMissingTerrain = true;
+                //}
+
+                return false;
+            }
+            return true;
         }
 
 
@@ -47,7 +148,6 @@ namespace VanillaBiomes
 
                 return false;
             }
-
             return true;
         }
 
@@ -63,7 +163,6 @@ namespace VanillaBiomes
             }
             return true;
         }
-
 
 
 

@@ -16,5 +16,30 @@
     <waterDepthShader>Map/WaterDepth</waterDepthShader>
     <renderPrecedence>396</renderPrecedence>
   </TerrainDef>
-
+  
+<!--
+  <TerrainDef>
+    <defName>ZBiome_BrokenAsphalt</defName>
+    <label>broken asphalt</label>
+    <texturePath>Terrain/Surfaces/BrokenAsphalt</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>370</renderPrecedence>
+    <pathCost>0</pathCost>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-2</Cleanliness>
+    </statBases>
+    <scatterType>Rocky</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
+    <fertility>0.0</fertility>
+    <tags>
+      <li>Road</li>
+    </tags>
+  </TerrainDef>
+-->
 </Defs>
