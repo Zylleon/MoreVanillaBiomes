@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ZBiome_WaterChestDeep.label>eau peu profonde</ZBiome_WaterChestDeep.label>
+  <ZBiome_WaterChestDeep.tools.water.label>eau</ZBiome_WaterChestDeep.tools.water.label>
+
+  <ZBiome_WaterOceanChestDeep.label>océan peu profond</ZBiome_WaterOceanChestDeep.label>
+  <ZBiome_WaterOceanChestDeep.tools.water.label>eau</ZBiome_WaterOceanChestDeep.tools.water.label>
+
+</LanguageData>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Settings -->
+  <ZB_ModName>More Vanilla Biomes</ZB_ModName>
+  <ZB_CheckboxMeadow>permettre Praire Alpine</ZB_CheckboxMeadow>
+  <ZB_CheckboxDunes>permettre Dunes côtières</ZB_CheckboxDunes>
+  <ZB_CheckboxOasis>permettre Oasis du Désert</ZB_CheckboxOasis>
+  <ZB_CheckboxGrasslands>Permettre Prairie</ZB_CheckboxGrasslands>
+  <ZB_CheckboxIceberg>Permettre Icebergs</ZB_CheckboxIceberg> 
+  <ZB_CheckboxMarsh>Permettre Marais</ZB_CheckboxMarsh>
+  <ZB_CheckboxSandbar>Permettre Banc de Sable</ZB_CheckboxSandbar>
+  <ZB_CheckboxCloudForest>Permettre Forêts des Nuages</ZB_CheckboxCloudForest>
+
+  <ZB_CheckboxModdedThings>Autoriser l'apparition de plantes et animaux issus du mod (requiert un redémarrage pour prendre effet)</ZB_CheckboxModdedThings>
+  <ZB_CheckboxModdedThingsDesc>Si non-cochés, les biomes ne feront pas apparaître les animaux et plantes issus d'autres mods. Les plantes et animaux moddés pourront toujours apparaître si autorisés par un autre mod ou patch. \n\n Redémarrez le jeu après avoir changé ce paramètre</ZB_CheckboxModdedThingsDesc>
+
+</LanguageData>
