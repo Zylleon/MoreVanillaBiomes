@@ -7,7 +7,7 @@
 <BiomeDef>							<!-- Badlands -->
 	<defName>ZBiome_Badlands</defName>
 	<label>badlands</label>
-	<description>NOT PLAYABLE. This biome is in testing. \n\nIt should not show up on the world map. A lot of things won't work. It is not finished.\n\nThis biome may be deleted later.</description>
+	<description>NOT PLAYABLE. This biome is in testing. It might be deleted at any time.\n\nIt should not show up on the world map. A lot of things won't work. It is not finished.</description>
 	<texture>World/Biomes/Purple</texture>
 	<workerClass>VanillaBiomes.BiomeWorker_NoTest</workerClass>
 	<!--<canAutoChoose>false</canAutoChoose>-->
@@ -17,14 +17,14 @@
 	<settlementSelectionWeight>0.5</settlementSelectionWeight>
     <movementDifficulty>1.5</movementDifficulty>
 	<animalDensity>0.0</animalDensity>
-	<plantDensity>0.0</plantDensity>
-	<wildPlantRegrowDays>22</wildPlantRegrowDays>
+	<plantDensity>0.5</plantDensity>
+	<wildPlantRegrowDays>32</wildPlantRegrowDays>
 	<!--<hasVirtualPlants>false</hasVirtualPlants>-->
 	<forageability>1</forageability>
 	<foragedFood>RawBerries</foragedFood>
 
 	<soundsAmbient>
-      <li>Ambient_NightInsects_Standard</li>
+      <li>Ambient_Wind_Desolate</li>
     </soundsAmbient>
 	<diseaseMtbDays>60</diseaseMtbDays>
     <diseases>
@@ -64,7 +64,7 @@
     </diseases>
 	<terrainsByFertility>
 	  <li>
-        <terrain>Sand</terrain>
+        <terrain>PackedDirt</terrain>
         <min>-999</min>
         <max>999</max>
       </li>
@@ -93,7 +93,7 @@
             <max>0.6</max>
           </li>
           <li>
-            <terrain>PackedDirt</terrain>
+            <terrain>Sand</terrain>
             <min>0.70</min>
             <max>999</max>
           </li>
@@ -101,7 +101,7 @@
       </li>
       <li>
         <perlinFrequency>0.05</perlinFrequency>
-		<perlinLacunarity>4.0</perlinLacunarity>
+		<perlinLacunarity>3.0</perlinLacunarity>
         <thresholds>
 		  <li>
             <terrain>Sand</terrain>
@@ -128,6 +128,8 @@
       <SnowHard>2</SnowHard>
     </baseWeatherCommonalities>
     <wildPlants>
+		<BurnedTree>1.0</BurnedTree>
+	<!--
 		<ZBiome_Plant_WildRose>2.5</ZBiome_Plant_WildRose>
 		<ZBiome_Plant_WildDaylily>2.0</ZBiome_Plant_WildDaylily>
 		<Plant_Dandelion>1.5</Plant_Dandelion>
@@ -145,7 +147,7 @@
 		
 		<Plant_Berry>0.1</Plant_Berry>
 		<Plant_HealrootWild>0.1</Plant_HealrootWild>
-
+-->
 	</wildPlants>
 	<wildAnimals>
 		<Hare>1.5</Hare>
