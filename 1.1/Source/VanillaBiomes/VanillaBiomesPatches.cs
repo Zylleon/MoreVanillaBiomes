@@ -5,7 +5,7 @@ using System.Text;
 using System.Reflection;
 using RimWorld;
 using Verse;
-using Harmony;
+using HarmonyLib;
 using RimWorld.Planet;
 
 namespace VanillaBiomes
@@ -16,22 +16,11 @@ namespace VanillaBiomes
 
         static VanillaBiomesPatches()
         {
-            HarmonyInstance harmony = HarmonyInstance.Create("rimworld.vanillabiomes");
+            //HarmonyInstance harmony = HarmonyInstance.Create("rimworld.vanillabiomes");
+            Harmony harmony = new Harmony("rimworld.vanillabiomes");
+
             MethodInfo targetmethod = AccessTools.Method(typeof(RimWorld.Planet.World), "CoastDirectionAt");
             HarmonyMethod prefixmethod = new HarmonyMethod(typeof(VanillaBiomes.VanillaBiomesPatches).GetMethod("CoastDirectionAt_Prefix"));
-            harmony.Patch(targetmethod, prefixmethod, null);
-
-
-            targetmethod = AccessTools.Method(typeof(RimWorld.GenStep_ScatterDeepResourceLumps), "Generate");
-            prefixmethod = new HarmonyMethod(typeof(VanillaBiomes.VanillaBiomesPatches).GetMethod("ScatterDeepResourceLumps_Prefix"));
-            harmony.Patch(targetmethod, prefixmethod, null);
-
-            targetmethod = AccessTools.Method(typeof(RimWorld.GenStep_Terrain), "TerrainFrom");
-            prefixmethod = new HarmonyMethod(typeof(VanillaBiomes.VanillaBiomesPatches).GetMethod("TerrainFrom_Prefix"));
-            harmony.Patch(targetmethod, prefixmethod, null);
-
-            targetmethod = AccessTools.Method(typeof(RimWorld.GenStep_ElevationFertility), "Generate");
-            prefixmethod = new HarmonyMethod(typeof(VanillaBiomes.VanillaBiomesPatches).GetMethod("GenstepElevationFertility_Prefix"));
             harmony.Patch(targetmethod, prefixmethod, null);
 
             if (BiomeSettings.spawnModdedPlantsAnimals)
@@ -41,19 +30,9 @@ namespace VanillaBiomes
             }
         }
 
-        public static bool ScatterDeepResourceLumps_Prefix(Map map, GenStepParams parms)
-        {
-            if(map.Biome.defName == "ZBiome_Sandbar_NoBeach")
-            {
-                GenStep_OceanDeepResources deepLumps = new GenStep_OceanDeepResources();
-                deepLumps.Generate(map, parms);
 
-                return false;
-            }
-            return true;
-        }
 
-        // from RF-Archipelagos
+        //from RF-Archipelagos
         public static bool CoastDirectionAt_Prefix(int tileID, ref Rot4 __result, ref World __instance)
         {
             var world = Traverse.Create(__instance);
@@ -69,7 +48,8 @@ namespace VanillaBiomes
 
 
 
-        #region gahhhhhh
+        #region modded plants and animals
+
         // adapted from RF-Archipelagos
         private static void AddPlantsWildBiomes()
         {

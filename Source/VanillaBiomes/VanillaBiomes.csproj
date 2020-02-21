@@ -35,7 +35,7 @@
       <HintPath>packages\Lib.Harmony.1.2.0.1\lib\net35\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Users\brian\Documents\Rimworld Mods\1-0 assemblies\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -45,7 +45,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Users\brian\Documents\Rimworld Mods\1-0 assemblies\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -54,14 +54,11 @@
     <Compile Include="BiomeWorker_CloudForest.cs" />
     <Compile Include="BiomeWorker_DesertOasis.cs" />
     <Compile Include="BiomeWorker_Marsh.cs" />
-    <Compile Include="BiomeWorker_NoTest.cs" />
     <Compile Include="BiomeWorker_Sandbar.cs" />
-    <Compile Include="BiomeWorker_Test.cs" />
     <Compile Include="BiomeWorker_CoastalDunes.cs" />
     <Compile Include="BiomeWorker_Grasslands.cs" />
     <Compile Include="BiomeWorker_Iceberg.cs" />
     <Compile Include="BiomeSettings.cs" />
-    <Compile Include="GenStep_Badlands_ElevationFertility.cs" />
     <Compile Include="GenStep_OceanDeepResources.cs" />
     <Compile Include="VanillaBiomesDefOf.cs" />
     <Compile Include="VanillaBiomesPatches.cs" />

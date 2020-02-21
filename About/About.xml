@@ -2,7 +2,10 @@
 <ModMetaData>
   <name>More Vanilla Biomes</name>
   <author>Zylle</author>
-  <supportedVersions><li>1.0</li></supportedVersions>
+  <supportedVersions>
+	<li>1.0</li>
+	<li>1.1</li>
+   </supportedVersions>
   <description>
 [h1]Features[/h1]
 More Vanilla Biomes adds more map variety without overhauling the game. Includes seven new vanilla-friendly biomes.
