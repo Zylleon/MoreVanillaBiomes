@@ -8,17 +8,11 @@
 	<description>High altitude with rich soil and lots of flowers. Summers are peaceful and beautiful, but stock up for harsh winters.</description>
 	<texture>World/Biomes/ZBiome_AlpineMeadow</texture>
 	<workerClass>VanillaBiomes.BiomeWorker_AlpineMeadow</workerClass>
-	<!--<canAutoChoose>false</canAutoChoose>-->
-    <!--<allowRoads>false</allowRoads>-->
-    <!--<allowRivers>false</allowRivers>-->
-	<!--<hasBedrock>false</hasBedrock>-->
 	<settlementSelectionWeight>0.5</settlementSelectionWeight>
     <movementDifficulty>1.5</movementDifficulty>
-	
 	<animalDensity>2.5</animalDensity>
 	<plantDensity>0.9</plantDensity>
 	<wildPlantRegrowDays>22</wildPlantRegrowDays>
-	<!--<hasVirtualPlants>false</hasVirtualPlants>-->
 	<forageability>1</forageability>
 	<foragedFood>RawBerries</foragedFood>
 
@@ -77,39 +71,35 @@
       <li>
         <perlinFrequency>0.015</perlinFrequency>
         <thresholds>
+		  <li>
+            <terrain>SoilRich</terrain>
+            <min>-999</min>
+            <max>-0.78</max>
+          </li>
+		  
           <li>
             <terrain>SoilRich</terrain>
-            <min>0.73</min>
-            <max>0.85</max>
+            <min>0.65</min>
+            <max>0.78</max>
           </li>
           <li>
             <terrain>Mud</terrain>
-            <min>0.85</min>
-            <max>0.93</max>
+            <min>0.78</min>
+            <max>0.85</max>
           </li>
           <li>
             <terrain>WaterShallow</terrain>
-            <min>0.93</min>
-            <max>1.06</max>
+            <min>0.85</min>
+            <max>1.0</max>
           </li>
           <li>
             <terrain>WaterDeep</terrain>
-            <min>1.06</min>
+            <min>1.0</min>
             <max>999</max>
           </li>
         </thresholds>
       </li>
-	  
-	  <li>
-        <perlinFrequency>0.05</perlinFrequency>
-        <thresholds>
-          <li>
-            <terrain>SoilRich</terrain>
-            <min>-999</min>
-            <max>-0.70</max>
-          </li>
-        </thresholds>
-      </li>
+
     </terrainPatchMakers>
 	<baseWeatherCommonalities>
       <Clear>18</Clear>

@@ -20,23 +20,21 @@ namespace VanillaBiomes
             {
                 return -100f;
             }
-            if (tile.temperature < -10f)
+            if (tile.temperature < 10f || tile.temperature > 25f)
             {
                 return 0f;
             }
 
-            if (tile.rainfall < 600f || tile.rainfall >= 2000f)
+            if (tile.rainfall < 500f || tile.rainfall >= 1800f)
             {
                 return 0f;
             }
-
-            //return 19.5f + (tile.temperature - 15f) * 1.5f + (tile.rainfall - 600) / 150f;        //TESTED version A
-            //return 30f + (tile.temperature - 15f) * 1.5f - (tile.rainfall - 900) / 150f;          // B
-            //return 20f + (tile.temperature - 15f) * 1.5f - (tile.rainfall - 1200) / 150f;         // C
-            //return 19f + (tile.temperature - 15f) * 1.5f + Math.Max(tile.rainfall - 600, 1200 - tile.rainfall) / 150f;     // D
-
+            if(tile.rainfall < 900f)
+            {
+                return tile.temperature + 1f;
+            }
+            
             return 19.5f + (tile.temperature - 15f) * 1.5f + Math.Max(tile.rainfall - 600, 1200 - tile.rainfall) / 150f;    //E 
-
 
         }
     }

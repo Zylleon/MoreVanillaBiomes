@@ -85,12 +85,12 @@
         <thresholds>
           <li>
             <terrain>SoilRich</terrain>
-            <min>0.25</min>
-            <max>0.55</max>
+            <min>0.30</min>
+            <max>0.65</max>
           </li>
           <li>
             <terrain>Mud</terrain>
-            <min>0.55</min>
+            <min>0.65</min>
             <max>0.8</max>
           </li>
           <li>
@@ -137,8 +137,8 @@
     </terrainPatchMakers>
 	
 	<baseWeatherCommonalities>
-      <Clear>8</Clear>
-      <Fog>6</Fog>
+      <Clear>6</Clear>
+      <Fog>12</Fog>
       <Rain>2</Rain>
       <DryThunderstorm>1</DryThunderstorm>
       <RainyThunderstorm>2</RainyThunderstorm>

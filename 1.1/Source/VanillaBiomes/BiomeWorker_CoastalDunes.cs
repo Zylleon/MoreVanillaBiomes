@@ -19,7 +19,7 @@ namespace VanillaBiomes
             {
                 return -100f;
             }
-            if (tile.temperature < -10f)
+            if (tile.temperature < -5f)
             {
                 return 0f;
             }
@@ -51,7 +51,7 @@ namespace VanillaBiomes
                     break;
             }
 
-            return hills + (250 - tile.elevation) / 6f + 2f * (tile.temperature - 15f);
+            return hills + (250 - tile.elevation) / 6f + 2f * (tile.temperature - 18f);
 
             // Mostly works, revert here if needed
             //return -15f + (200 - tile.elevation) / 5f + 1.5f * (tile.temperature - 15f);

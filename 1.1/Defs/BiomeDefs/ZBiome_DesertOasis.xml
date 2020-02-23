@@ -8,17 +8,13 @@
 	<description>Desert with a few small islands of life</description>
 	<texture>World/Biomes/ZBiome_Oasis</texture>
 	<workerClass>VanillaBiomes.BiomeWorker_DesertOasis</workerClass>
-	<!--<canAutoChoose>false</canAutoChoose>-->
-    <!--<allowRoads>false</allowRoads>-->
-    <!--<allowRivers>false</allowRivers>-->
-	<!--<hasBedrock>false</hasBedrock>-->
+
 	<settlementSelectionWeight>0.5</settlementSelectionWeight>
     <movementDifficulty>1.5</movementDifficulty>
 	
 	<animalDensity>1.5</animalDensity>
 	<plantDensity>0.7</plantDensity>
 	<wildPlantRegrowDays>17</wildPlantRegrowDays>
-	<!--<hasVirtualPlants>false</hasVirtualPlants>-->
 	<forageability>0.5</forageability>
 	<foragedFood>RawAgave</foragedFood>
 
@@ -80,7 +76,7 @@
     </terrainsByFertility>
     <terrainPatchMakers>
       <li>
-        <perlinFrequency>0.03</perlinFrequency>
+        <perlinFrequency>0.025</perlinFrequency>
 		<perlinLacunarity>1.8</perlinLacunarity>
         <thresholds>
 		<li>
@@ -108,7 +104,6 @@
             <min>-0.53</min>
             <max>-0.45</max>
           </li>
-		  
         </thresholds>
       </li>
 	  
@@ -157,5 +152,4 @@
     </allowedPackAnimals>
 	</BiomeDef>
 
-  
 </Defs>

@@ -297,7 +297,6 @@
     <Compile Include="BiomeWorker_CloudForest.cs" />
     <Compile Include="BiomeWorker_DesertOasis.cs" />
     <Compile Include="BiomeWorker_Marsh.cs" />
-    <Compile Include="BiomeWorker_Sandbar.cs" />
     <Compile Include="BiomeWorker_CoastalDunes.cs" />
     <Compile Include="BiomeWorker_Grasslands.cs" />
     <Compile Include="BiomeWorker_Iceberg.cs" />

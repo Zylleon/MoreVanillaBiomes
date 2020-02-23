@@ -28,7 +28,7 @@ namespace VanillaBiomes
             {
                 return 0f;
             }
-            if (tile.swampiness < 0.35f)
+            if (tile.swampiness < 0.5f)
             {
                 return 0f;
             }

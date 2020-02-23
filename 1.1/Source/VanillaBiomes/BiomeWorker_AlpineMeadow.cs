@@ -40,7 +40,7 @@ namespace VanillaBiomes
                 hills = 2f;
             }
 
-            return 10f - hills + (tile.elevation - 600f) / 80f;
+            return 11f - hills + (tile.elevation - 600f) / 80f;
 
         }
     }

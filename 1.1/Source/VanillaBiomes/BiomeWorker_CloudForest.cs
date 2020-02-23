@@ -37,10 +37,10 @@ namespace VanillaBiomes
             float hills = 0;
             if (tile.hilliness == Hilliness.LargeHills)
             {
-                hills = 3f;
+                hills = 5f;
             }
 
-            return 16f + tile.temperature - hills + (tile.elevation - 600f) / 60f;
+            return 16f + tile.temperature - hills + (tile.elevation - 650f) / 60f;
 
         }
     }

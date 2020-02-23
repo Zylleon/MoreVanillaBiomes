@@ -10,7 +10,6 @@ namespace VanillaBiomes
     public static class VanillaBiomesDefOf
     {
         public static BiomeDef ExtremeDesert;
-        public static BiomeDef ZBiome_Sandbar_NoBeach;
         public static BiomeDef ZBiome_AlpineMeadow;
     }
 }

@@ -28,8 +28,9 @@ namespace VanillaBiomes
                 AddAnimalsWildBiomes();
                 AddPlantsWildBiomes();
             }
-        }
 
+            Log.Message("More Vanilla Biomes initialized");
+        }
 
 
         //from RF-Archipelagos
@@ -62,21 +63,6 @@ namespace VanillaBiomes
                     // to check if it's in any of these biomes already
                     if (!current.plant.wildBiomes.Any(w => w.biome.defName.Contains("ZBiome")))
                     {
-                        //Sandbar
-                        if (current.plant.wildBiomes.Any(b => b.biome.defName == "ExtremeDesert"))
-                        {
-                            PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
-                            newRecord1.biome = BiomeDef.Named("ZBiome_Sandbar_NoBeach");
-                            newRecord1.commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "ExtremeDesert").FirstOrDefault().commonality;
-                            current.plant.wildBiomes.Add(newRecord1);
-                        }
-                        else if (current.plant.wildBiomes.Any(b => b.biome.defName == "Desert"))
-                        {
-                            PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
-                            newRecord1.biome = BiomeDef.Named("ZBiome_Sandbar_NoBeach");
-                            newRecord1.commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "Desert").FirstOrDefault().commonality;
-                            current.plant.wildBiomes.Add(newRecord1);
-                        }
 
                         for (int j = 0; j < current.plant.wildBiomes.Count; j++)
                         {
@@ -286,16 +272,6 @@ namespace VanillaBiomes
                                 }
                                 current.RaceProps.wildBiomes.Add(newRecord1);
 
-                            }
-
-
-                            //Sandbar
-                            if (current.RaceProps.wildBiomes[j].biome.defName == "ExtremeDesert")
-                            {
-                                AnimalBiomeRecord newRecord3 = new AnimalBiomeRecord();
-                                newRecord3.biome = BiomeDef.Named("ZBiome_Sandbar_NoBeach");
-                                newRecord3.commonality = current.RaceProps.wildBiomes[j].commonality;
-                                current.RaceProps.wildBiomes.Add(newRecord3);
                             }
 
                             //Marsh
