@@ -137,8 +137,8 @@
     </terrainPatchMakers>
 	
 	<baseWeatherCommonalities>
-      <Clear>8</Clear>
-      <Fog>6</Fog>
+      <Clear>6</Clear>
+      <Fog>12</Fog>
       <Rain>2</Rain>
       <DryThunderstorm>1</DryThunderstorm>
       <RainyThunderstorm>2</RainyThunderstorm>

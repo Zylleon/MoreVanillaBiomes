@@ -142,7 +142,7 @@
       <Rain>2</Rain>
       <DryThunderstorm>1</DryThunderstorm>
       <RainyThunderstorm>2</RainyThunderstorm>
-      <FoggyRain>8</FoggyRain>
+      <FoggyRain>10</FoggyRain>
       <SnowGentle>4</SnowGentle>
       <SnowHard>4</SnowHard>
     </baseWeatherCommonalities>
