@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
-
-	<Operation Class="PatchOperationFindMod">
+<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>FishIndustry</li>
 		</mods>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/PawnKindDef[defName = "PawnKindDefFishSduiggles"]/naturalBiomes</xpath>
-			<value>
-				<li>ZBiome_DesertOasis</li>
-				<li>ZBiome_Grasslands</li>
-				<li>ZBiome_CoastalDunes</li>
-				<li>ZBiome_CloudForest</li>
-			</value>	
-		</match>
-	</Operation>
-		
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>FishIndustry</li>
-		</mods>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/PawnKindDef[defName = "PawnKindDefFishSeasnake"]/naturalBiomes</xpath>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd"> 
+					<xpath>Defs/PawnKindDef[defName = "PawnKindDefFishSduiggles"]/naturalBiomes</xpath>
+					<value>
+						<li>ZBiome_DesertOasis</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_CoastalDunes</li>
+						<li>ZBiome_CloudForest</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>Defs/PawnKindDef[defName = "PawnKindDefFishSeasnake"]/naturalBiomes</xpath>
 			<value>
 				<li>ZBiome_AlpineMeadow</li>
 				<li>ZBiome_Grasslands</li>
@@ -30,56 +25,40 @@
 				<li>ZBiome_Marsh</li>
 				<li>ZBiome_CloudForest</li>
 			</value>
-		</match>
-	</Operation>
-		
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>FishIndustry</li>
-		</mods>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/PawnKindDef[defName = "PawnKindDefFishMashgon"]/naturalBiomes</xpath>
-			<value>
-				<li>ZBiome_AlpineMeadow</li>
-				<li>ZBiome_Grasslands</li>
-				<li>ZBiome_DesertOasis</li>
-				<li>ZBiome_CoastalDunes</li>
-				<li>ZBiome_Marsh</li>
-				<li>ZBiome_CloudForest</li>
-				<li>ZBiome_CloudForest</li>
-			</value>
-		</match>
-	</Operation>
-	
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>FishIndustry</li>
-		</mods>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/PawnKindDef[defName = "PawnKindDefFishBlueblade"]/naturalBiomes</xpath>
-			<value>
-				<li>ZBiome_CoastalDunes</li>
-				<li>ZBiome_Iceberg_NoBeach</li>
-				<li>ZBiome_Grasslands</li>
-				<li>ZBiome_DesertOasis</li>
-				<li>ZBiome_AlpineMeadow</li>
-				<li>ZBiome_Marsh</li>
-			</value>
-		</match>
-	</Operation>
-		
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>FishIndustry</li>
-		</mods>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/PawnKindDef[defName = "PawnKindDefFishTailteeth"]/naturalBiomes</xpath>
-			<value>
-				<li>ZBiome_CoastalDunes</li>
-				<li>ZBiome_Grasslands</li>
-				<li>ZBiome_DesertOasis</li>
-				<li>ZBiome_CloudForest</li>
-			</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>Defs/PawnKindDef[defName = "PawnKindDefFishMashgon"]/naturalBiomes</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_DesertOasis</li>
+						<li>ZBiome_CoastalDunes</li>
+						<li>ZBiome_Marsh</li>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_CloudForest</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>Defs/PawnKindDef[defName = "PawnKindDefFishBlueblade"]/naturalBiomes</xpath>
+					<value>
+						<li>ZBiome_CoastalDunes</li>
+						<li>ZBiome_Iceberg_NoBeach</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_DesertOasis</li>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_Marsh</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>Defs/PawnKindDef[defName = "PawnKindDefFishTailteeth"]/naturalBiomes</xpath>
+					<value>
+						<li>ZBiome_CoastalDunes</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_DesertOasis</li>
+						<li>ZBiome_CloudForest</li>
+					</value>
+				</li>
+			</operations>
 		</match>
 	</Operation>
 	

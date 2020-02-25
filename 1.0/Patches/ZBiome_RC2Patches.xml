@@ -1,30 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationSequence">
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>[1.0] RimCuisine 2 Core</li>
+	</mods>
+	<match Class="PatchOperationSequence">
 		<success>Always</success>
-		<operations>
-		
-			<li Class="ModCheck.isModLoaded">
-				<modName>[1.0] RimCuisine 2 Core</modName>
-				<yourMod>More Vanilla Biomes</yourMod>
-			</li>
-			
-			<!--
-			<li Class="PatchOperationAdd">
-			  <xpath>/Defs/BiomeDef[defName = "ZBiome_Iceberg_NoBeach"]/wildPlants</xpath>
-			  <value>
-				<RC2_PlantOats>0.0000000000000001</RC2_PlantOats>
-				<RC2_PlantBeet>0.0000000000000001</RC2_PlantBeet>
-				<RC2_PlantAsparagus>0.0000000000000001</RC2_PlantAsparagus>
-				<RC2_PlantSugarBeet>0.0000000000000001</RC2_PlantSugarBeet>
-				<RC2_PlantOnion>0.02</RC2_PlantOnion>
-				<RC2_PlantJuniper>0.05</RC2_PlantJuniper>
-				<RC2_PlantBarley>0.05</RC2_PlantBarley>
-				<RC2_PlantMushroom>0.03</RC2_PlantMushroom>
-			  </value>
-			</li>
-			-->
-			
+		<operations> 
 			<li Class="PatchOperationAdd">
 			  <xpath>/Defs/BiomeDef[defName = "ZBiome_Marsh"]/wildPlants</xpath>
 			  <value>
@@ -208,31 +190,32 @@
 			  </value>
 			</li>
 			
-			<li Class="PatchOperationSequence">
-				<success>Always</success>
-				<operations>
-					<li Class="ModCheck.isModLoaded">
-						<modName>Vanilla Factions Expanded - Medieval</modName>
-						<yourMod>More Vanilla Biomes</yourMod>
-					</li>
+			<li Class="PatchOperationFindMod"> 
+			 <mods>
+				<li>Vanilla Factions Expanded - Medieval</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				 <success>Always</success> 
+				 <operations> 
+					 <li Class="PatchOperationReplace"> 
+						 <xpath>/Defs/BiomeDef[defName="ZBiome_AlpineMeadow"]/wildPlants/RC2_PlantGrapes</xpath> 
+						 <value> 
+							 <VFEM_Plant_Grape>0.0000000000000001</VFEM_Plant_Grape> 
+						 </value> 
+					 </li> 
 					
-					<li Class="PatchOperationReplace">
-						<xpath>/Defs/BiomeDef[defName="ZBiome_AlpineMeadow"]/wildPlants/RC2_PlantGrapes</xpath>
-						<value>
-							<VFEM_Plant_Grape>0.0000000000000001</VFEM_Plant_Grape>
-						</value>
-					</li>
-					
-					<li Class="PatchOperationReplace">
-						<xpath>/Defs/BiomeDef[defName="ZBiome_CloudForest"]/wildPlants/RC2_PlantGrapes</xpath>
-						<value>
-							<VFEM_Plant_Grape>0.0000000000000001</VFEM_Plant_Grape>
-						</value>
-					</li>
-				</operations>
-			</li>
-				
-		</operations>
-	</Operation>
+					 <li Class="PatchOperationReplace"> 
+						 <xpath>/Defs/BiomeDef[defName="ZBiome_CloudForest"]/wildPlants/RC2_PlantGrapes</xpath> 
+						 <value> 
+							 <VFEM_Plant_Grape>0.0000000000000001</VFEM_Plant_Grape> 
+						 </value> 
+					 </li> 
+				 </operations> 
+				 </match>
+			 </li> 
+				 
+		</operations> 
+		</match>
+	</Operation> 
 </Patch>
 
