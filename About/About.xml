@@ -7,6 +7,14 @@
 	<li>1.1</li>
    </supportedVersions>
    <packageId>zylle.MoreVanillaBiomes</packageId>
+   <modDependencies>
+    <li>
+        <packageId>brrainz.harmony</packageId>
+        <displayName>Harmony</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+        <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+</modDependencies>
   <description>
 [h1]Features[/h1]
 More Vanilla Biomes adds more map variety without overhauling the game. Includes seven new vanilla-friendly biomes.

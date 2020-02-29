@@ -48,7 +48,6 @@ namespace VanillaBiomes
 
 
 
-
         #region modded plants and animals
 
         // adapted from RF-Archipelagos
