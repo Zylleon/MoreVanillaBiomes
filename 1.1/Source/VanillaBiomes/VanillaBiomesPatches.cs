@@ -19,9 +19,13 @@ namespace VanillaBiomes
             //HarmonyInstance harmony = HarmonyInstance.Create("rimworld.vanillabiomes");
             Harmony harmony = new Harmony("rimworld.vanillabiomes");
 
-            MethodInfo targetmethod = AccessTools.Method(typeof(RimWorld.Planet.World), "CoastDirectionAt");
-            HarmonyMethod prefixmethod = new HarmonyMethod(typeof(VanillaBiomes.VanillaBiomesPatches).GetMethod("CoastDirectionAt_Prefix"));
+            MethodInfo targetmethod = AccessTools.Method(typeof(RimWorld.BeachMaker), "Init");
+            HarmonyMethod prefixmethod = new HarmonyMethod(typeof(VanillaBiomes.VanillaBiomesPatches).GetMethod("BeachMaker_Prefix"));
             harmony.Patch(targetmethod, prefixmethod, null);
+
+            //MethodInfo targetmethod = AccessTools.Method(typeof(RimWorld.Planet.World), "CoastDirectionAt");
+            //HarmonyMethod prefixmethod = new HarmonyMethod(typeof(VanillaBiomes.VanillaBiomesPatches).GetMethod("CoastDirectionAt_Prefix"));
+            //harmony.Patch(targetmethod, prefixmethod, null);
 
             if (BiomeSettings.spawnModdedPlantsAnimals)
             {
@@ -33,18 +37,27 @@ namespace VanillaBiomes
         }
 
 
-        //from RF-Archipelagos
-        public static bool CoastDirectionAt_Prefix(int tileID, ref Rot4 __result, ref World __instance)
+        public static bool BeachMaker_Prefix(Map map)
         {
-            var world = Traverse.Create(__instance);
-            WorldGrid worldGrid = world.Field("grid").GetValue<WorldGrid>();
-            if (worldGrid[tileID].biome.defName.Contains("NoBeach"))
+            if (map.Biome.defName.Contains("NoBeach"))
             {
-                __result = Rot4.Invalid;
                 return false;
             }
             return true;
         }
+
+        //from RF-Archipelagos
+        //public static bool CoastDirectionAt_Prefix(int tileID, ref Rot4 __result, ref World __instance)
+        //{
+        //    var world = Traverse.Create(__instance);
+        //    WorldGrid worldGrid = world.Field("grid").GetValue<WorldGrid>();
+        //    if (worldGrid[tileID].biome.defName.Contains("NoBeach"))
+        //    {
+        //        __result = Rot4.Invalid;
+        //        return false;
+        //    }
+        //    return true;
+        //}
 
 
 
@@ -62,6 +75,21 @@ namespace VanillaBiomes
                     // to check if it's in any of these biomes already
                     if (!current.plant.wildBiomes.Any(w => w.biome.defName.Contains("ZBiome")))
                     {
+                        //Sandbar
+                        if (current.plant.wildBiomes.Any(b => b.biome.defName == "ExtremeDesert"))
+                        {
+                            PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
+                            newRecord1.biome = BiomeDef.Named("ZBiome_Sandbar_NoBeach");
+                            newRecord1.commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "ExtremeDesert").FirstOrDefault().commonality;
+                            current.plant.wildBiomes.Add(newRecord1);
+                        }
+                        else if (current.plant.wildBiomes.Any(b => b.biome.defName == "Desert"))
+                        {
+                            PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
+                            newRecord1.biome = BiomeDef.Named("ZBiome_Sandbar_NoBeach");
+                            newRecord1.commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "Desert").FirstOrDefault().commonality;
+                            current.plant.wildBiomes.Add(newRecord1);
+                        }
 
                         for (int j = 0; j < current.plant.wildBiomes.Count; j++)
                         {
@@ -271,6 +299,16 @@ namespace VanillaBiomes
                                 }
                                 current.RaceProps.wildBiomes.Add(newRecord1);
 
+                            }
+
+
+                            //Sandbar
+                            if (current.RaceProps.wildBiomes[j].biome.defName == "ExtremeDesert")
+                            {
+                                AnimalBiomeRecord newRecord3 = new AnimalBiomeRecord();
+                                newRecord3.biome = BiomeDef.Named("ZBiome_Sandbar_NoBeach");
+                                newRecord3.commonality = current.RaceProps.wildBiomes[j].commonality;
+                                current.RaceProps.wildBiomes.Add(newRecord3);
                             }
 
                             //Marsh

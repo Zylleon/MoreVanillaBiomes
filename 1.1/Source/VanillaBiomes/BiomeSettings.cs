@@ -20,6 +20,9 @@ namespace VanillaBiomes
         public static bool spawnCloudForest = true;
         public static bool spawnModdedPlantsAnimals = true;
 
+        public static bool spawnSandbar = true;
+
+
 
         /// <summary>
         /// The part that writes our settings to file. Note that saving is by ref.
@@ -34,6 +37,9 @@ namespace VanillaBiomes
             Scribe_Values.Look(ref spawnMarsh, "spawnMarsh", true);
             Scribe_Values.Look(ref spawnCloudForest, "spawnCloudForest", true);
             Scribe_Values.Look(ref spawnModdedPlantsAnimals, "spawnModdedPlantsAnimals", true);
+
+            Scribe_Values.Look(ref spawnSandbar, "spawnSandbar", true);
+
         }
     }
 
@@ -61,7 +67,13 @@ namespace VanillaBiomes
             listingStandard.CheckboxLabeled("ZB_CheckboxIceberg".Translate(), ref BiomeSettings.spawnIceberg);
             listingStandard.CheckboxLabeled("ZB_CheckboxMarsh".Translate(), ref BiomeSettings.spawnMarsh);
             listingStandard.CheckboxLabeled("ZB_CheckboxCloudForest".Translate(), ref BiomeSettings.spawnCloudForest);
+
+
+            listingStandard.CheckboxLabeled("ZB_CheckboxSandbar".Translate(), ref BiomeSettings.spawnSandbar);
+
+
             listingStandard.GapLine();
+
             listingStandard.CheckboxLabeled("ZB_CheckboxModdedThings".Translate(), ref BiomeSettings.spawnModdedPlantsAnimals, "ZB_CheckboxModdedThingsDesc".Translate());
 
 

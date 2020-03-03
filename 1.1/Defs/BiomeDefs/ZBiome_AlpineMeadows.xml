@@ -108,8 +108,8 @@
       <DryThunderstorm>1.5</DryThunderstorm>
       <RainyThunderstorm>1</RainyThunderstorm>
       <FoggyRain>1</FoggyRain>
-      <SnowGentle>4</SnowGentle>
-      <SnowHard>2</SnowHard>
+      <SnowGentle>2</SnowGentle>
+      <SnowHard>4</SnowHard>
     </baseWeatherCommonalities>
     <wildPlants>
 		<ZBiome_Plant_WildRose>2.5</ZBiome_Plant_WildRose>
