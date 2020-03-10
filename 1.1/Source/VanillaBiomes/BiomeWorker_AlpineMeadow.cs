@@ -21,7 +21,7 @@ namespace VanillaBiomes
             {
                 return -100f;
             }
-            if (tile.temperature < -10f || tile.temperature > 15f)
+            if (tile.temperature < -7f || tile.temperature > 12f)
             {
                 return 0f;
             }

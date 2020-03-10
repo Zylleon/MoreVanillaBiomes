@@ -211,7 +211,7 @@ namespace VanillaBiomes
         {
             foreach (PawnKindDef current in DefDatabase<PawnKindDef>.AllDefs)
             {
-                if (current.RaceProps.wildBiomes != null)
+                if (current.RaceProps?.wildBiomes != null)
                 {
                     // to check if it's in any of these biomes already
                     if (!current.RaceProps.wildBiomes.Any(w => w.biome.defName.Contains("ZBiome")))
