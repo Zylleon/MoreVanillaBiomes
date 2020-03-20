@@ -16,24 +16,27 @@
     </li>
 </modDependencies>
   <description>
-[h1]Features[/h1]
-More Vanilla Biomes adds more map variety without overhauling the game. Includes seven new vanilla-friendly biomes.
+Features:
+More Vanilla Biomes adds more map variety without overhauling the game. Includes eight new vanilla-friendly biomes.
 
-[b]Marsh:[/b] Marshy terrain with dense plants but few trees. Temperate to cold.
+Marsh: Marshy terrain with dense plants but few trees. Temperate to cold.
 
-[b]Grasslands:[/b] Warm, with poor soil, lots of grass, and few trees.
+Grasslands: Warm, with poor soil, lots of grass, and few trees.
 
-[b]Coastal Dunes:[/b] Low-lying sandy area with lots of water. 
+Coastal Dunes: Low-lying sandy area with lots of water. 
 
-[b]Sandbar:[/b] Smooth, flat, sandy islands with little if any vegetation or arable land. Warning: It is possible (though unlikely) to get a sandbar map with NO solid land!
+Sandbar: Smooth, flat, sandy islands with little if any vegetation or arable land.
 
-[b]Alpine Meadow:[/b] A beautiful area with fertile soil, lots of flowers, and few predators.
+Alpine Meadow: A beautiful area with fertile soil, lots of flowers, and few predators. The summers are mild and bountiful, and the winters are cold and harsh.
 
-[b]Oasis:[/b] Desert with groundwater close to the surface, making small lakes that support pockets thick vegetation.
+Oasis: Desert with groundwater close to the surface, making small lakes that support pockets thick vegetation.
 
-[b]Iceberg:[/b] Frigid chunks of ice floating on the ocean. Who would want to live here?
+Iceberg: Frigid chunks of ice floating on the ocean. Who would want to live here?
 
-[h1]Compatibility[/h1]
+Cloud Forest:  Found at the tops of tropical mountains and named for the constant fog. Animals frequently wander up the slopes from the forests below.
+
+-------------------------
+Compatibility
 This mod is meant to be as widely compatible as possible. Please report any issues.
 
 If you use mods that add wild plants or animals, the new biomes will spawn modded plants and animals based on which vanilla biome(s) the plants and animals spawn in.
@@ -42,35 +45,41 @@ Compatible with other biome mods including Alpha Biomes, Advanced Biomes, Archip
 
 Mods that change world generation may cause strange results, please report any issues.
 
-[b]Save Our Ship 2:[/b] I added More Vanilla Biomes to my 7-year ongoing game with 90 other mods and made settlements in two of the new biomes (coastal dunes and alpine meadows) on my second planet. Do this at your own risk, save first, and as always report any problems. 
+Save Our Ship 2: I added More Vanilla Biomes to my 7-year ongoing game with 90 other mods and made settlements in two of the new biomes (coastal dunes and alpine meadows) on my second planet. Do this at your own risk, save first, and as always report any problems. 
 
 Supports Camouflage and Stealth.
 
-[b]Fishing-- compatible with[/b]: 
+Fishing-- compatible with: 
 Vanilla Fishing Expanded
 FishIndustry
 [RF] Fishing [1.0]
 
-[h1]Recommended[/h1]
+Recommended
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1095331978]Prepare Landing[/url] to help find the biome of your choice
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=761315214]Map Reroll[/url] if playing on maps without much solid ground.
 Your choice of gravel visibility mod, especially if playing in Grasslands or Dunes. Some options are [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1613910454]Gravel[/url], [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1541281864]Where's the Gravel?[/url], and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1561838700]Soil Contrast[/url]
 
-[h1]Incompatibility[/h1]
+Incompatibility
 Terra Project: Makes extensive changes to world generation that I can't work around.
 
 Please report any other incompatibilities you find.
 
-[h1]Credits:[/h1]
+-------------------------
+Credits:
 This mod uses code borrowed from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1539309846]Rainbeau's Archipelagos[/url]
 
-This mod uses ModCheck and Harmony, which are included with this mod
+Translations:
+Japanese by Proxyer 
+French by DrTCS
+Simplified Chinese by 第四天灾
 
-Japanese translation by Proxyer 
-French translation by DrTCS
+-------------------------
+Links:
+Get it on Github: https://github.com/Zylleon/MoreVanillaBiomes/releases/latest
+Discord: https://discord.gg/CQrsbEV
+My other mods: https://steamcommunity.com/profiles/76561197998830956/myworkshopfiles/?appid=294100
 
-[url=https://github.com/Zylleon/MoreVanillaBiomes/releases/latest]Github link[/url]
-
+Support me: https://ko-fi.com/zylleon
 
 	
 	
