@@ -57,26 +57,26 @@
       <li>
         <terrain>WaterOceanDeep</terrain>
         <min>-999</min>
-        <max>0.1</max>
+        <max>0.08</max>
       </li>
 	  <li>
         <terrain>WaterOceanShallow</terrain>
-        <min>-999</min>
-        <max>0.27</max>
+        <min>0.08</min>
+        <max>0.23</max>
       </li>
 	  <li>
         <terrain>Sand</terrain>
-        <min>0.27</min>
-        <max>0.5</max>
+        <min>0.23</min>
+        <max>0.43</max>
       </li>
 	  <li>
         <terrain>Gravel</terrain>
-        <min>0.5</min>
-        <max>0.6</max>
+        <min>0.43</min>
+        <max>0.55</max>
       </li>
       <li>
         <terrain>Soil</terrain>
-        <min>0.6</min>
+        <min>0.55</min>
         <max>0.90</max>
       </li>
       <li>
@@ -87,7 +87,7 @@
     </terrainsByFertility>
 	<terrainPatchMakers>
       <li>
-        <perlinFrequency>0.05</perlinFrequency>
+        <perlinFrequency>0.045</perlinFrequency>
 		<perlinLacunarity>1</perlinLacunarity>
 		<minFertility>0.3</minFertility>
         <maxFertility>0.8</maxFertility>
@@ -117,21 +117,21 @@
       <SnowHard>4</SnowHard>
     </baseWeatherCommonalities>
     <wildPlants>
-			<Plant_Grass>3.0</Plant_Grass>
-			<Plant_TallGrass>3.0</Plant_TallGrass>
-			<Plant_Dandelion>0.8</Plant_Dandelion>
-			<Plant_Bush>0.7</Plant_Bush>
-			<Plant_PincushionCactus>0.6</Plant_PincushionCactus>
-			<Plant_Brambles>0.5</Plant_Brambles>
-			<Plant_Chokevine>0.8</Plant_Chokevine>
-			<Plant_Alocasia>0.8</Plant_Alocasia>
-			
-			<Plant_TreePalm>0.26</Plant_TreePalm>
-			<Plant_TreeCecropia>0.20</Plant_TreeCecropia>
-			<Plant_TreeCypress>1.72</Plant_TreeCypress>
-			
-			<Plant_Agave>0.2</Plant_Agave>
-			<Plant_HealrootWild>0.05</Plant_HealrootWild>
+		<Plant_Grass>3.0</Plant_Grass>
+		<Plant_TallGrass>3.0</Plant_TallGrass>
+		<Plant_Dandelion>0.8</Plant_Dandelion>
+		<Plant_Bush>0.7</Plant_Bush>
+		<Plant_PincushionCactus>0.6</Plant_PincushionCactus>
+		<Plant_Brambles>0.5</Plant_Brambles>
+		<Plant_Chokevine>0.8</Plant_Chokevine>
+		<Plant_Alocasia>0.8</Plant_Alocasia>
+		
+		<Plant_TreePalm>0.26</Plant_TreePalm>
+		<Plant_TreeCecropia>0.20</Plant_TreeCecropia>
+		<Plant_TreeCypress>1.72</Plant_TreeCypress>
+		
+		<Plant_Agave>0.2</Plant_Agave>
+		<Plant_HealrootWild>0.05</Plant_HealrootWild>
     </wildPlants>
     <wildAnimals>
       <Rat>1.3</Rat>

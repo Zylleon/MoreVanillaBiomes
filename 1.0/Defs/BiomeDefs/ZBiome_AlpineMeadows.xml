@@ -8,20 +8,13 @@
 	<description>High altitude with rich soil and lots of flowers. Summers are peaceful and beautiful, but stock up for harsh winters.</description>
 	<texture>World/Biomes/ZBiome_AlpineMeadow</texture>
 	<workerClass>VanillaBiomes.BiomeWorker_AlpineMeadow</workerClass>
-	<!--<canAutoChoose>false</canAutoChoose>-->
-    <!--<allowRoads>false</allowRoads>-->
-    <!--<allowRivers>false</allowRivers>-->
-	<!--<hasBedrock>false</hasBedrock>-->
 	<settlementSelectionWeight>0.5</settlementSelectionWeight>
     <movementDifficulty>1.5</movementDifficulty>
-	
 	<animalDensity>2.5</animalDensity>
 	<plantDensity>0.9</plantDensity>
 	<wildPlantRegrowDays>22</wildPlantRegrowDays>
-	<!--<hasVirtualPlants>false</hasVirtualPlants>-->
 	<forageability>1</forageability>
 	<foragedFood>RawBerries</foragedFood>
-
 	<soundsAmbient>
       <li>Ambient_NightInsects_Standard</li>
     </soundsAmbient>
@@ -142,10 +135,10 @@
 
 	</wildPlants>
 	<wildAnimals>
-		<Hare>1.5</Hare>
+		<Hare>2.0</Hare>
 		<Squirrel>1.5</Squirrel>
 		<Rat>1.0</Rat>
-		<Deer>1.0</Deer>
+		<Deer>1.3</Deer>
 		<WildBoar>0.5</WildBoar>
 		<Turkey>0.5</Turkey>
 		<Raccoon>0.5</Raccoon>
@@ -153,17 +146,18 @@
 		<Muffalo>0.5</Muffalo>
 		<Alpaca>0.2</Alpaca>
 		<Boomalope>0.2</Boomalope>
-		<Boomrat>0.2</Boomrat>
+		<Boomrat>0.1</Boomrat>
 		<Gazelle>0.5</Gazelle>
 		<Megasloth>0.15</Megasloth>
-		
-		<Rhinoceros>0.03</Rhinoceros>
+		<Rhinoceros>0.02</Rhinoceros>
 		
 		<Fox_Red>0.12</Fox_Red>
+		<Fox_Arctic>0.07</Fox_Arctic>
 		<Bear_Grizzly>0.03</Bear_Grizzly>
 		<Wolf_Timber>0.07</Wolf_Timber>
 		<Cougar>0.05</Cougar>
 		<Warg>0.07</Warg>
+		<Wolf_Arctic>0.03</Wolf_Arctic>
 	</wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>

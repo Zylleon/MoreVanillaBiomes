@@ -67,21 +67,21 @@
 	 <li>
         <terrain>WaterDeep</terrain>
         <min>-999</min>
-        <max>0.09</max>
+        <max>0.06</max>
       </li>
 	  <li>
         <terrain>WaterShallow</terrain>
-        <min>0.09</min>
+        <min>0.06</min>
         <max>0.2</max>
       </li>
 	  <li>
         <terrain>Mud</terrain>
         <min>0.2</min>
-        <max>0.3</max>
+        <max>0.27</max>
       </li>
       <li>
         <terrain>Soil</terrain>
-        <min>0.3</min>
+        <min>0.27</min>
         <max>0.9</max>
       </li>
       <li>
@@ -98,7 +98,7 @@
         <perlinFrequency>0.05</perlinFrequency>
 		<perlinLacunarity>1</perlinLacunarity>
 		<minFertility>0.20</minFertility>
-		<maxFertility>0.6</maxFertility>
+		<maxFertility>0.55</maxFertility>
         <thresholds>
 		  <li>
             <terrain>WaterShallow</terrain>
@@ -112,24 +112,19 @@
         <perlinFrequency>0.027</perlinFrequency>
 		<minFertility>0.15</minFertility>
         <thresholds>
-		  <li>
-            <terrain>MossyTerrain</terrain>
-            <min>-999</min>
-            <max>-0.5</max>
-          </li>
           <li>
             <terrain>SoilRich</terrain>
-            <min>0.3</min>
-            <max>0.45</max>
+            <min>0.33</min>
+            <max>0.5</max>
           </li>
           <li>
             <terrain>Mud</terrain>
-            <min>0.45</min>
-            <max>0.7</max>
+            <min>0.5</min>
+            <max>0.8</max>
           </li>
           <li>
             <terrain>WaterShallow</terrain>
-            <min>0.7</min>
+            <min>0.8</min>
             <max>999</max>
           </li>
         </thresholds>
