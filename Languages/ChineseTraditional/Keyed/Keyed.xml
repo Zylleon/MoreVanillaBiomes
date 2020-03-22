@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Settings -->
+  <ZB_ModName>更多原版生態群落</ZB_ModName>
+  <ZB_CheckboxMeadow>允許生成高山草原</ZB_CheckboxMeadow>
+  <ZB_CheckboxDunes>允許生成海岸沙丘</ZB_CheckboxDunes>
+  <ZB_CheckboxOasis>允許生成沙漠綠洲</ZB_CheckboxOasis>
+  <ZB_CheckboxGrasslands>允許生成草原</ZB_CheckboxGrasslands>
+  <ZB_CheckboxIceberg>允許生成冰山</ZB_CheckboxIceberg>
+  <ZB_CheckboxMarsh>允許生成濕地</ZB_CheckboxMarsh>
+  <ZB_CheckboxSandbar>允許生成沙洲</ZB_CheckboxSandbar>
+  <ZB_CheckboxCloudForest>允許生成迷霧森林</ZB_CheckboxCloudForest>
+
+  <ZB_CheckboxModdedThings>生成模組中的植物和動物（需要重啟遊戲才能生效）</ZB_CheckboxModdedThings>
+  <ZB_CheckboxModdedThingsDesc>如果不選中，此模組中的生態群落不會生成來自其他模組中的動物和植物。如果被另壹個模組或補丁激活，其中的動物或植物依舊會以野生的形式生成。（勾選此項後需要重新啟動遊戲）</ZB_CheckboxModdedThingsDesc>
+
+</LanguageData>
