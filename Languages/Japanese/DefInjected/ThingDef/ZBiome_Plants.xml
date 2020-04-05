@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <ZBiome_Plant_WildRose.label>バラ</ZBiome_Plant_WildRose.label>
   <ZBiome_Plant_WildRose.description>地球でもバラは美しい花で、太古から愛の象徴でした。</ZBiome_Plant_WildRose.description>
+
+  <ZBiome_Plant_WildDaylily.label>ユリ</ZBiome_Plant_WildDaylily.label>
   <ZBiome_Plant_WildDaylily.description>花びらが大きく、寿命の短い美しい花です。</ZBiome_Plant_WildDaylily.description>
 
 </LanguageData>
