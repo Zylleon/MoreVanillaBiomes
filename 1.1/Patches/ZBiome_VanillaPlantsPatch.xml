@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Plants Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_Marsh"]/wildPlants</xpath>
+				<value>
+					<VCE_PlumTree>0.01</VCE_PlumTree>
+					<VCE_PearTree>0.01</VCE_PearTree>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_AlpineMeadow"]/wildPlants</xpath>
+				<value>
+					<VCE_BearBerryBush>0.01</VCE_BearBerryBush>
+					<VCE_CherryTree>0.01</VCE_CherryTree>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_Grasslands"]/wildPlants</xpath>
+				<value>
+					<VCE_BearBerryBush>0.01</VCE_BearBerryBush>
+					<VCE_Opuntia>0.01</VCE_Opuntia>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_Sandbar_NoBeach"]/wildPlants</xpath>
+				<value>
+					<VCE_PeachTree>0.01</VCE_PeachTree>
+					<VCE_Opuntia>0.01</VCE_Opuntia>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_CoastalDunes"]/wildPlants</xpath>
+				<value>
+					<VCE_PeachTree>0.01</VCE_PeachTree>
+					<VCE_OrangeTree>0.01</VCE_OrangeTree>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_CloudForest"]/wildPlants</xpath>
+				<value>
+					<VCE_BananaTree>0.01</VCE_BananaTree>
+					<VCE_PlumTree>0.01</VCE_PlumTree>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_DesertOasis"]/wildPlants</xpath>
+				<value>
+					<VCE_Opuntia>0.01</VCE_Opuntia>
+					<VCE_OrangeTree>0.01</VCE_OrangeTree>
+				</value>
+			</li>
+			
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+
