@@ -32,6 +32,26 @@
 			<li>ZBiome_Marsh</li>
 		</value>
 	</Operation>
+	
+<!-- Anima trees (Royalty) -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName = "AnimaTreeSpawn"]/allowedBiomes</xpath>
+		<value>
+			<li>ZBiome_CloudForest</li>
+			<li>ZBiome_Marsh</li>
+			<li>ZBiome_Grasslands</li>
+			<li>ZBiome_CoastalDunes</li>
+			<li>ZBiome_AlpineMeadow</li>
+			<li>ZBiome_DesertOasis</li>
+		</value>
+		</match>
+	</Operation>
+	
+	
 
 <!-- So wild roses and daylilies can inherit -->
 	<Operation Class="PatchOperationAttributeSet">
