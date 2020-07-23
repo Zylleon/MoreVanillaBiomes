@@ -17,6 +17,7 @@
     <movementDifficulty>1.5</movementDifficulty>
     <texture>World/Biomes/ZBiome_Sandbar</texture>
     <forageability>0.1</forageability>
+    <isExtremeBiome>true</isExtremeBiome>
 	<foragedFood>RawAgave</foragedFood>
     <wildPlantRegrowDays>30</wildPlantRegrowDays>
     <soundsAmbient>

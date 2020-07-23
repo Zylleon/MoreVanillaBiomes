@@ -18,6 +18,7 @@
     <movementDifficulty>1.5</movementDifficulty>
 	<texture>World/Biomes/ZBiome_Iceberg</texture>
     <forageability>0</forageability>
+    <isExtremeBiome>true</isExtremeBiome>
 	<soundsAmbient>
 		<li>Ambient_Wind_Desolate</li>
 	</soundsAmbient>
