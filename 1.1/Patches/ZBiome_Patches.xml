@@ -33,21 +33,34 @@
 		</value>
 	</Operation>
 	
-<!-- Anima trees (Royalty) -->
+<!-- Anima trees (Royalty)
+PatchOperationTest is because this is no longer necessary on the unstable update -->
+
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Royalty</li>
 		</mods>
-		<match Class="PatchOperationAdd">
-		<xpath>Defs/IncidentDef[defName = "AnimaTreeSpawn"]/allowedBiomes</xpath>
-		<value>
-			<li>ZBiome_CloudForest</li>
-			<li>ZBiome_Marsh</li>
-			<li>ZBiome_Grasslands</li>
-			<li>ZBiome_CoastalDunes</li>
-			<li>ZBiome_AlpineMeadow</li>
-			<li>ZBiome_DesertOasis</li>
-		</value>
+		<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/IncidentDef[defName = "AnimaTreeSpawn"]/allowedBiomes</xpath>
+				<!--<success>Invert</success>-->
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>Defs/IncidentDef[defName = "AnimaTreeSpawn"]/allowedBiomes</xpath>
+				<value>
+					<li>ZBiome_CloudForest</li>
+					<li>ZBiome_Marsh</li>
+					<li>ZBiome_Grasslands</li>
+					<li>ZBiome_CoastalDunes</li>
+					<li>ZBiome_AlpineMeadow</li>
+					<li>ZBiome_DesertOasis</li>
+				</value>
+			</li>
+			
+		</operations>
 		</match>
 	</Operation>
 	
