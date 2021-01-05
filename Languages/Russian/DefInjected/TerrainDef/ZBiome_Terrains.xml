@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ZBiome_WaterChestDeep.label>мелководье </ZBiome_WaterChestDeep.label>
+  <ZBiome_WaterChestDeep.tools.water.label>вода </ZBiome_WaterChestDeep.tools.water.label>
+
+  <ZBiome_WaterOceanChestDeep.label>мелководный океан</ZBiome_WaterOceanChestDeep.label>
+  <ZBiome_WaterOceanChestDeep.tools.water.label>вода </ZBiome_WaterOceanChestDeep.tools.water.label>
+
+</LanguageData>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Settings -->
+  <ZB_ModName>More Vanilla Biomes</ZB_ModName>
+  <ZB_CheckboxMeadow>разрешить Альпийские луга</ZB_CheckboxMeadow>
+  <ZB_CheckboxDunes>разрешить Прибрежные дюны</ZB_CheckboxDunes>
+  <ZB_CheckboxOasis>разрешить Пустынный оазис</ZB_CheckboxOasis>
+  <ZB_CheckboxGrasslands>разрешить Пастбища</ZB_CheckboxGrasslands>
+  <ZB_CheckboxIceberg>разрешить Айсберги</ZB_CheckboxIceberg>
+  <ZB_CheckboxMarsh>разрешить Болота</ZB_CheckboxMarsh>
+  <ZB_CheckboxSandbar>разрешить Песчаные отмели</ZB_CheckboxSandbar>
+  <ZB_CheckboxCloudForest>разрешить Облачные леса</ZB_CheckboxCloudForest>
+  
+  <ZB_CheckboxModdedThings>создавать модифицированные растения и животных (требуется перезапуск, чтобы вступить в силу)</ZB_CheckboxModdedThings>
+  <ZB_CheckboxModdedThingsDesc>Если этот флажок не установлен, в этих биомах не будут появляться растения и животные из других модов. Измененные растения и животные могут по-прежнему появляться в дикой природе, если это разрешено другим модом или патчем. \ N \ nПосле изменения этого параметра перезапустите игру.</ZB_CheckboxModdedThingsDesc>
+</LanguageData>
