@@ -5,7 +5,7 @@
 <BiomeDef>							<!-- Desert Oasis -->
 	<defName>ZBiome_DesertOasis</defName>
 	<label>desert oasis</label>
-	<description>Desert with a few small islands of life</description>
+	<description>Desert with a few small islands of life.</description>
 	<texture>World/Biomes/ZBiome_Oasis</texture>
 	<workerClass>VanillaBiomes.BiomeWorker_DesertOasis</workerClass>
 
@@ -108,7 +108,7 @@
       </li>
 	  
     </terrainPatchMakers>
-		<baseWeatherCommonalities>
+	  <baseWeatherCommonalities>
       <Clear>18</Clear>
       <Fog>1</Fog>
       <Rain>2</Rain>

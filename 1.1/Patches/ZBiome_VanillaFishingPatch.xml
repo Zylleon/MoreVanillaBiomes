@@ -18,17 +18,9 @@
 				</li>
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeWarm"]/biomes</xpath>
-				<value>
-					<li>ZBiome_Grasslands</li>	
-					<li>ZBiome_CoastalDunes</li>			
-				</value>	
-				</li> 
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeCold"]/biomes</xpath>
 					<value>
-						<li>ZBiome_Iceberg_NoBeach</li>
-						<li>ZBiome_AlpineMeadow</li>
-						<li>ZBiome_Marsh</li>					
+						<li>ZBiome_Grasslands</li>	
+						<li>ZBiome_CoastalDunes</li>			
 					</value>	
 				</li> 
 				<li Class="PatchOperationAdd"> 

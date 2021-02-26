@@ -5,7 +5,7 @@
 <BiomeDef>							<!-- Temperate Grasslands -->
     <defName>ZBiome_Grasslands</defName>
     <label>grasslands</label>
-    <description>Grasslands with few trees. Herds of grazing animals roam here. Soil is generally poor.</description>
+    <description>Warm grassy plains with few trees. Herds of grazing animals roam here, though the soil is generally poor.</description>
     <workerClass>VanillaBiomes.BiomeWorker_Grasslands</workerClass>
     <animalDensity>3.0</animalDensity>
     <plantDensity>0.95</plantDensity>
@@ -149,10 +149,10 @@
 		<Lynx>0.07</Lynx>	  
 		<Wolf_Timber>0.07</Wolf_Timber>     
 		<Warg>0.07</Warg>
-		
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
+	  <li>Elephant</li>
       <li>Alpaca</li>
     </allowedPackAnimals>
   </BiomeDef>
