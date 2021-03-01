@@ -17,11 +17,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/BiomeDef[defName = "ZBiome_Grasslands"]/description</xpath>
 				<value>
-					<description>Warm grassy plains with few trees. Herds of grazing animals roam here, though the soil is generally poor.
-					
-					Compared to the rest of the savanna, this area has worse soil but more water and more frequent storms. You will see fewer creatures that are adapted for the desert.
-					
-					[Grasslands - More Vanilla Biomes]</description>
+					<description>Warm grassy plains with few trees. Herds of grazing animals roam here, though the soil is generally poor.\n\nCompared to the rest of the savanna, this area has worse soil but more water and more frequent storms. You will see fewer creatures that are adapted for the desert.\n\n[Grasslands - More Vanilla Biomes]</description>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
@@ -49,9 +45,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/BiomeDef[defName = "ZBiome_DesertOasis"]/description</xpath>
 				<value>
-					<description>An oasis with especially dense plants, attracting animals in search of food and shelter.
-					
-					[Desert Oasis - More Vanilla Biomes]</description>
+					<description>An oasis with especially dense plants, attracting animals in search of food and shelter.\n\n[Desert Oasis - More Vanilla Biomes]</description>
 				</value>
 			</li>
 			

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- ZBiome_AlpineMeadow -->
+
+  <ZBiome_NamerAlpineMeadow.rulePack.rulesStrings>
+    <li>r_name(p=0.3)->[ZBiome_meadow_adj][narrative_name]</li>
+    <li>r_name(p=0.15)->[ZBiome_meadow_adj][terrain_word]</li>
+
+    <li>ZBiome_meadow_adj->牧歌的な</li>
+    <li>ZBiome_meadow_adj->穏やかな</li>
+    <li>ZBiome_meadow_adj->夢の様な</li>
+    <li>ZBiome_meadow_adj->満開な</li>
+    <li>ZBiome_meadow_adj->花一面な</li>
+    <li>ZBiome_meadow_adj->花だらけな</li>
+    <li>ZBiome_meadow_adj->鮮やかな</li>
+    <li>ZBiome_meadow_adj->落ち着いた</li>
+
+    <li>terrain_word(p=3)->牧草地</li>
+    <li>terrain_word->高原</li>
+    <li>terrain_word->野原</li>
+    <li>terrain_word->緩い丘</li>
+  </ZBiome_NamerAlpineMeadow.rulePack.rulesStrings>
+
+
+  <!-- ZBiome_CloudForest -->
+
+  <ZBiome_NamerCloudForest.rulePack.rulesStrings>
+    <li>r_name(p=0.3)->[ZBiome_cloud_adj][narrative_name]</li>
+
+    <li>ZBiome_cloud_adj->湿った</li>
+    <li>ZBiome_cloud_adj->高温多湿な</li>
+    <li>ZBiome_cloud_adj->息苦しい</li>
+    <li>ZBiome_cloud_adj->生茂った</li>
+    <li>ZBiome_cloud_adj->鬱蒼とした</li>
+    <li>ZBiome_cloud_adj->霧深い</li>
+    <li>ZBiome_cloud_adj->霧中な</li>
+    <li>ZBiome_cloud_adj->隠された</li>
+    <li>ZBiome_cloud_adj->霧だらけな</li>
+    <li>ZBiome_cloud_adj->苔の蒸した</li>
+
+    <li>terrain_word(p=4)->森</li>
+    <li>terrain_word(p=2)->密林</li>
+    <li>terrain_word->低山帯</li>
+  </ZBiome_NamerCloudForest.rulePack.rulesStrings>
+
+
+  <!-- ZBiome_CoastalDunes -->
+
+  <ZBiome_NamerCoastalDunes.rulePack.rulesStrings>
+    <li>r_name(p=0.3)->[ZBiome_dunes_adj][narrative_name]</li>
+    <li>r_name(p=0.2)->[ZBiome_dunes_adj][terrain_word]</li>
+
+    <li>ZBiome_dunes_adj->砂だらけな</li>
+    <li>ZBiome_dunes_adj->海辺の</li>
+    <li>ZBiome_dunes_adj->潮風が吹く</li>
+    <li>ZBiome_dunes_adj->日で温められた</li>
+
+    <li>terrain_word(p=3)->浜辺</li>
+    <li>terrain_word(p=3)->砂丘</li>
+    <li>terrain_word->沿岸</li>
+    <li>terrain_word->砂地</li>
+    <li>terrain_word->海岸線</li>
+    <li>terrain_word->岸辺</li>
+    <li>terrain_word->海岸</li>
+  </ZBiome_NamerCoastalDunes.rulePack.rulesStrings>
+
+
+  <!-- ZBiome_Iceberg_NoBeach -->
+
+  <ZBiome_NamerIceberg.rulePack.rulesStrings>
+    <li>terrain_word(p=3)->流氷</li>
+    <li>terrain_word->氷山</li>
+    <li>terrain_word->浮氷</li>
+    <li>terrain_word->小氷山</li>
+    <li>terrain_word->氷塊</li>
+    <li>terrain_word->氷河</li>
+  </ZBiome_NamerIceberg.rulePack.rulesStrings>
+
+
+  <!-- ZBiome_Grasslands -->
+
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings>
+    <li>terrain_word(p=3)->草地</li>
+    <li>terrain_word->大草原</li>
+    <li>terrain_word->平原</li>
+    <li>terrain_word->ステップ</li>
+    <li>terrain_word->原野</li>
+    <li>terrain_word->サバンナ</li>
+    <li>terrain_word->草原</li>
+  </ZBiome_NamerGrasslands.rulePack.rulesStrings>
+
+</LanguageData>
