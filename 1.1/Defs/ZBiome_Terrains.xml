@@ -7,6 +7,9 @@
     <texturePath>Terrain/Surfaces/WaterChestDeepRamp</texturePath>
     <waterDepthShader>Map/WaterDepth</waterDepthShader>
     <renderPrecedence>394</renderPrecedence>
+		<affordances>
+			<li>Bridgeable</li>
+		</affordances>
   </TerrainDef>
 
   <TerrainDef ParentName="WaterChestDeepBase">
@@ -15,6 +18,9 @@
     <texturePath>Terrain/Surfaces/WaterChestDeepRamp</texturePath>
     <waterDepthShader>Map/WaterDepth</waterDepthShader>
     <renderPrecedence>396</renderPrecedence>
+		<affordances>
+			<li>Bridgeable</li>
+		</affordances>
   </TerrainDef>
   
 </Defs>
