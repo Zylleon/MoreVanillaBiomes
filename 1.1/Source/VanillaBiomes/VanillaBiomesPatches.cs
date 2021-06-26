@@ -224,11 +224,14 @@ namespace VanillaBiomes
                             newRecord1.biome = BiomeDef.Named("ZBiome_CoastalDunes");
                             newRecord1.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "Desert").FirstOrDefault().commonality;
                             current.RaceProps.wildBiomes.Add(newRecord1);
+                            Log.Message(String.Format("{0} added to {1}", current.label, "Coastal Dunes"));
 
                             AnimalBiomeRecord newRecord2 = new AnimalBiomeRecord();
                             newRecord2.biome = BiomeDef.Named("ZBiome_DesertOasis");
                             newRecord2.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "Desert").FirstOrDefault().commonality;
                             current.RaceProps.wildBiomes.Add(newRecord2);
+                            Log.Message(String.Format("{0} added to {1}", current.label, "Desert Oasis"));
+
                         }
                         else if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "ExtremeDesert"))
                         {
@@ -236,11 +239,14 @@ namespace VanillaBiomes
                             newRecord1.biome = BiomeDef.Named("ZBiome_CoastalDunes");
                             newRecord1.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "ExtremeDesert").FirstOrDefault().commonality;
                             current.RaceProps.wildBiomes.Add(newRecord1);
+                            Log.Message(String.Format("{0} added to {1}", current.label, "Coastal Dunes"));
 
                             AnimalBiomeRecord newRecord2 = new AnimalBiomeRecord();
                             newRecord2.biome = BiomeDef.Named("ZBiome_DesertOasis");
                             newRecord2.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "ExtremeDesert").FirstOrDefault().commonality;
                             current.RaceProps.wildBiomes.Add(newRecord2);
+                            Log.Message(String.Format("{0} added to {1}", current.label, "Desert Oasis"));
+
                         }
 
                         //Cloud Forest
@@ -250,6 +256,8 @@ namespace VanillaBiomes
                             newRecord1.biome = BiomeDef.Named("ZBiome_CloudForest");
                             newRecord1.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "TropicalRainforest").FirstOrDefault().commonality;
                             current.RaceProps.wildBiomes.Add(newRecord1);
+                            Log.Message(String.Format("{0} added to {1}", current.label, "Tropical Rainforest"));
+
                         }
                         else if (current.RaceProps.baseBodySize <= 0.5f && current.RaceProps.wildBiomes.Any(b => b.biome.defName == "TemperateForest"))
                         {
@@ -257,6 +265,7 @@ namespace VanillaBiomes
                             newRecord1.biome = BiomeDef.Named("ZBiome_CloudForest");
                             newRecord1.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "TemperateForest").FirstOrDefault().commonality;
                             current.RaceProps.wildBiomes.Add(newRecord1);
+                            Log.Message(String.Format("{0} added to {1}", current.label, "Clout Forest"));
                         }
 
                         for (int j = 0; j < current.RaceProps.wildBiomes.Count; j++)
@@ -268,6 +277,8 @@ namespace VanillaBiomes
                                 newRecord1.biome = BiomeDef.Named("ZBiome_Iceberg_NoBeach");
                                 newRecord1.commonality = current.RaceProps.wildBiomes[j].commonality;
                                 current.RaceProps.wildBiomes.Add(newRecord1);
+                                Log.Message(String.Format("{0} added to {1}", current.label, "Iceberg"));
+
                             }
 
                             //Meadow
@@ -281,6 +292,8 @@ namespace VanillaBiomes
                                     newRecord1.commonality *= 0.5f;
                                 }
                                 current.RaceProps.wildBiomes.Add(newRecord1);
+                                Log.Message(String.Format("{0} added to {1}", current.label, "Alpine Meadow"));
+
                             }
 
                             //Grasslands
@@ -298,6 +311,7 @@ namespace VanillaBiomes
                                     newRecord1.commonality *= 0.5f;
                                 }
                                 current.RaceProps.wildBiomes.Add(newRecord1);
+                                Log.Message(String.Format("{0} added to {1}", current.label, "Grasslands"));
 
                             }
 
@@ -309,6 +323,8 @@ namespace VanillaBiomes
                                 newRecord3.biome = BiomeDef.Named("ZBiome_Sandbar_NoBeach");
                                 newRecord3.commonality = current.RaceProps.wildBiomes[j].commonality;
                                 current.RaceProps.wildBiomes.Add(newRecord3);
+                                Log.Message(String.Format("{0} added to {1}", current.label, "Sandbar"));
+
                             }
 
                             //Marsh
@@ -318,6 +334,8 @@ namespace VanillaBiomes
                                 newRecord1.biome = BiomeDef.Named("ZBiome_Marsh");
                                 newRecord1.commonality = current.RaceProps.wildBiomes[j].commonality;
                                 current.RaceProps.wildBiomes.Add(newRecord1);
+                                Log.Message(String.Format("{0} added to {1}", current.label, "Marsh"));
+
                             }
 
                         }
