@@ -46,20 +46,6 @@ namespace VanillaBiomes
             return true;
         }
 
-        //from RF-Archipelagos
-        //public static bool CoastDirectionAt_Prefix(int tileID, ref Rot4 __result, ref World __instance)
-        //{
-        //    var world = Traverse.Create(__instance);
-        //    WorldGrid worldGrid = world.Field("grid").GetValue<WorldGrid>();
-        //    if (worldGrid[tileID].biome.defName.Contains("NoBeach"))
-        //    {
-        //        __result = Rot4.Invalid;
-        //        return false;
-        //    }
-        //    return true;
-        //}
-
-
 
         #region modded plants and animals
 

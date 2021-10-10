@@ -12,12 +12,13 @@
 		<dieIfLeafless>false</dieIfLeafless>
 		<sowTags Inherit="False" />
 		<growDays>2.5</growDays>
+        <lifespanDaysPerGrowDays>9</lifespanDaysPerGrowDays>
     </plant>
   </ThingDef>
 
   <ThingDef ParentName="DaylilyPlant">
     <defName>ZBiome_Plant_WildDaylily</defName>
-    <description>A beautiful flower with wide petals and a short lifespan.</description>
+    <description>A beautiful yellow flower with wide petals.</description>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
 	<pathCost>10</pathCost>
 	<altitudeLayer>LowPlant</altitudeLayer>
@@ -27,6 +28,7 @@
 		<dieIfLeafless>false</dieIfLeafless>
 		<sowTags Inherit="False" />
 		<growDays>2.5</growDays>
+        <lifespanDaysPerGrowDays>15</lifespanDaysPerGrowDays>
     </plant>
   </ThingDef>
 

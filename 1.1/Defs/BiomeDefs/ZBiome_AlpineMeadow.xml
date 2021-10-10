@@ -12,7 +12,7 @@
     <movementDifficulty>1.5</movementDifficulty>
 	<animalDensity>2.5</animalDensity>
 	<plantDensity>0.9</plantDensity>
-	<wildPlantRegrowDays>22</wildPlantRegrowDays>
+	<wildPlantRegrowDays>19</wildPlantRegrowDays>
 	<forageability>1</forageability>
 	<foragedFood>RawBerries</foragedFood>
 
