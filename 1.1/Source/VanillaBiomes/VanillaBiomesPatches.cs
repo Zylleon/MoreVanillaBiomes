@@ -79,6 +79,7 @@ namespace VanillaBiomes
 
                         for (int j = 0; j < current.plant.wildBiomes.Count; j++)
                         {
+                            
                             // icebergs
                             if (current.plant.wildBiomes[j].biome.defName == "SeaIce")
                             {
@@ -105,8 +106,8 @@ namespace VanillaBiomes
                                 current.plant.wildBiomes.Add(newRecord1);
                             }
 
-                            //Grasslands
-                            if (current.plant.wildBiomes[j].biome.defName == "AridShubland")
+                            // Grasslands
+                            if (current.plant.wildBiomes[j].biome.defName == "AridShrubland")
                             {
                                 PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
                                 newRecord1.biome = BiomeDef.Named("ZBiome_Grasslands");
@@ -118,7 +119,8 @@ namespace VanillaBiomes
                                 current.plant.wildBiomes.Add(newRecord1);
                             }
 
-                            if (current.plant.wildBiomes[j].biome.defName == "AridShubland")
+                            // Dunes and Oasis
+                            if (current.plant.wildBiomes[j].biome.defName == "AridShrubland")
                             {
                                 if (current.plant.purpose == PlantPurpose.Food)
                                 {
@@ -170,7 +172,7 @@ namespace VanillaBiomes
                                 }
 
                             }
-
+                            
 
                             //Marsh
                             if (current.plant.wildBiomes[j].biome.defName == "ColdBog")
