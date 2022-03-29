@@ -23,6 +23,7 @@ namespace VanillaBiomes
             HarmonyMethod prefixmethod = new HarmonyMethod(typeof(VanillaBiomes.VanillaBiomesPatches).GetMethod("BeachMaker_Prefix"));
             harmony.Patch(targetmethod, prefixmethod, null);
 
+            harmony.PatchAll();
             //MethodInfo targetmethod = AccessTools.Method(typeof(RimWorld.Planet.World), "CoastDirectionAt");
             //HarmonyMethod prefixmethod = new HarmonyMethod(typeof(VanillaBiomes.VanillaBiomesPatches).GetMethod("CoastDirectionAt_Prefix"));
             //harmony.Patch(targetmethod, prefixmethod, null);
@@ -315,7 +316,19 @@ namespace VanillaBiomes
         }
 
 
-
         #endregion
+    }
+
+
+    [HarmonyPatch(typeof(GenStep_Terrain), "TerrainFrom")]
+    static class RockyTerrainPatch
+    {
+        static void Postfix(IntVec3 c, ref TerrainDef __result)
+        {
+            if (__result == TerrainDef.Named("Sandstone_Rough"))
+            {
+                __result = GenStep_RocksFromGrid.RockDefAt(c).building.naturalTerrain;
+            }
+        }
     }
 }

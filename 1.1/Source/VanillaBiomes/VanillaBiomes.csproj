@@ -34,8 +34,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=2.0.0.4, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Lib.Harmony.2.0.0.4\lib\net35\0Harmony.dll</HintPath>
+    <Reference Include="0Harmony, Version=2.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Lib.Harmony.2.2.1\lib\net472\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
@@ -295,6 +295,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BiomeWorker_AlpineMeadow.cs" />
+    <Compile Include="BiomeWorker_Badlands.cs" />
     <Compile Include="BiomeWorker_CloudForest.cs" />
     <Compile Include="BiomeWorker_DesertOasis.cs" />
     <Compile Include="BiomeWorker_Marsh.cs" />
