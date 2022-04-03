@@ -32,6 +32,14 @@
 					<RB_Plant_Hive_Arid>0.01</RB_Plant_Hive_Arid>
 				</value>
 			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_Badlands"]/wildPlants</xpath>
+				<value>
+					<RB_Plant_Hive_Temperate>0.01</RB_Plant_Hive_Temperate>
+					<RB_Plant_Hive_Arid>0.01</RB_Plant_Hive_Arid>
+				</value>
+			</li>
 			
 			<li Class="PatchOperationAdd"> 
 				<xpath>/Defs/BiomeDef[defName = "ZBiome_Sandbar_NoBeach"]/wildPlants</xpath>

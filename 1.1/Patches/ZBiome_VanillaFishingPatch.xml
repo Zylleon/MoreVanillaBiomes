@@ -21,6 +21,7 @@
 					<value>
 						<li>ZBiome_Grasslands</li>	
 						<li>ZBiome_CoastalDunes</li>			
+						<li>ZBiome_Badlands</li>			
 					</value>	
 				</li> 
 				<li Class="PatchOperationAdd"> 

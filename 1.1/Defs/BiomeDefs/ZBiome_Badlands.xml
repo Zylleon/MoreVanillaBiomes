@@ -6,18 +6,18 @@
 	<defName>ZBiome_Badlands</defName>
 	<label>badlands</label>
 	<description>Barren and rocky, with little life.</description>
-	<texture>World/Biomes/ZBiome_Oasis</texture>
+	<texture>World/Biomes/ZBiome_Badlands</texture>
 	<workerClass>VanillaBiomes.BiomeWorker_Badlands</workerClass>
-
 	<settlementSelectionWeight>0.3</settlementSelectionWeight>
     <movementDifficulty>1.0</movementDifficulty>
 	
-    <wildPlantsCareAboutLocalFertility>false</wildPlantsCareAboutLocalFertility>
-	<animalDensity>0.5</animalDensity>
+    <wildPlantsCareAboutLocalFertility>true</wildPlantsCareAboutLocalFertility>
+	
+	<animalDensity>0.7</animalDensity>
 	<plantDensity>0.3</plantDensity>
 	<wildPlantRegrowDays>28</wildPlantRegrowDays>
-	<forageability>0.0</forageability>
-	<!-- <foragedFood>RawAgave</foragedFood> -->
+	<forageability>0.1</forageability>
+	<foragedFood>RawBerries</foragedFood>
 
 	<soundsAmbient>
       <!-- <li>Ambient_NightInsects_Standard</li> -->
@@ -91,7 +91,7 @@
 				</li>
 				<li>
 					<terrain>Sandstone_Rough</terrain>
-					<min>0.47</min>
+					<min>0.37</min>
 					<max>999</max>
 				</li>
 			</thresholds>
@@ -129,21 +129,27 @@
 		<Plant_PincushionCactus>1</Plant_PincushionCactus>
 		<!-- <Plant_SaguaroCactus>0.25</Plant_SaguaroCactus> -->
 		<Plant_Dandelion>1</Plant_Dandelion>
-		<Plant_TreeDrago>0.4</Plant_TreeDrago>
+		<Plant_TreeOak>0.4</Plant_TreeOak>
 		
-		<Plant_Agave>0.05</Plant_Agave>
+		<!-- <Plant_Agave>0.05</Plant_Agave> -->
+        <Plant_Berry>0.05</Plant_Berry>
 		<Plant_Bush>0.5</Plant_Bush>
 		
 	</wildPlants>
     <wildAnimals>
-      <Iguana>1.2</Iguana>
 	  <Rat>1.5</Rat>
-      <Dromedary>0.2</Dromedary>
+      <Iguana>0.8</Iguana>
+      <Dromedary>0.15</Dromedary>
       <Boomalope>0.4</Boomalope>
 	  <Boomrat>0.5</Boomrat>
       <Ostrich>0.2</Ostrich>
       <Donkey>0.1</Donkey>
-	  <GuineaPig>0.08</GuineaPig>
+	  <GuineaPig>0.01</GuineaPig>
+	  
+	  <Megascarab>0.2</Megascarab>
+	  <Spelopede>0.05</Spelopede>
+	  <Megaspider>0.01</Megaspider>
+	  
       <Fox_Fennec>0.07</Fox_Fennec>
 	  <Warg>0.2</Warg>
     </wildAnimals>

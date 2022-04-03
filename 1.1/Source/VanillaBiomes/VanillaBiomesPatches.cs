@@ -172,6 +172,14 @@ namespace VanillaBiomes
                                     current.plant.wildBiomes.Add(newRecord1);
                                 }
 
+                                // Badlands
+                                if(!current.plant.wildBiomes.Any(b => b.biome.defName == "TemperateSwamp"))
+                                {
+                                    PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
+                                    newRecord1.biome = BiomeDef.Named("ZBiome_Badlands");
+                                    newRecord1.commonality = current.plant.wildBiomes[j].commonality;
+                                    current.plant.wildBiomes.Add(newRecord1);
+                                }
                             }
                             
 
@@ -307,6 +315,24 @@ namespace VanillaBiomes
                                 newRecord1.biome = BiomeDef.Named("ZBiome_Marsh");
                                 newRecord1.commonality = current.RaceProps.wildBiomes[j].commonality;
                                 current.RaceProps.wildBiomes.Add(newRecord1);
+                            }
+
+
+                            //Badlands
+                            if (current.RaceProps.wildBiomes[j].biome.defName == "TemperateForest")
+                            {
+                                
+                                if (!current.RaceProps.wildBiomes.Any(b => b.biome.defName == "TemperateSwamp"))
+                                {
+                                    AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
+                                    newRecord1.biome = BiomeDef.Named("ZBiome_Badlands");
+                                    newRecord1.commonality = current.RaceProps.wildBiomes[j].commonality;
+                                    if(!current.RaceProps.predator && current.RaceProps.baseBodySize > 1.0)
+                                    {
+                                        newRecord1.commonality *= 0.5f;
+                                    }
+                                    current.RaceProps.wildBiomes.Add(newRecord1);
+                                }
                             }
 
                         }

@@ -10,6 +10,7 @@
 			<li>ZBiome_CoastalDunes</li>
 			<li>ZBiome_Grasslands</li>
 			<li>ZBiome_CloudForest</li>
+			<li>ZBiome_Badlands</li>
 		</value>
 	</Operation>
 
@@ -19,6 +20,7 @@
 			<li>ZBiome_Iceberg_NoBeach</li>
 			<li>ZBiome_CoastalDunes</li>
 			<li>ZBiome_Sandbar_NoBeach</li>
+			<li>ZBiome_Badlands</li>
 		</value>
 	</Operation>
 	
@@ -30,6 +32,7 @@
 			<li>ZBiome_CoastalDunes</li>
 			<li>ZBiome_AlpineMeadow</li>
 			<li>ZBiome_Marsh</li>
+			<li>ZBiome_Badlands</li>
 		</value>
 	</Operation>
 	

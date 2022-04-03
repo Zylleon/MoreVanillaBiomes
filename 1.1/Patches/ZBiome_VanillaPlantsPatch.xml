@@ -32,7 +32,15 @@
 					<VCE_Opuntia>0.01</VCE_Opuntia>
 				</value>
 			</li>
-			
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_Badlands"]/wildPlants</xpath>
+				<value>
+					<VCE_BearBerryBush>0.01</VCE_BearBerryBush>
+					<VCE_Opuntia>0.01</VCE_Opuntia>
+				</value>
+			</li>
+
 			<li Class="PatchOperationAdd"> 
 				<xpath>/Defs/BiomeDef[defName = "ZBiome_Sandbar_NoBeach"]/wildPlants</xpath>
 				<value>

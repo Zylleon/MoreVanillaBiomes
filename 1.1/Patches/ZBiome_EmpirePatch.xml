@@ -273,6 +273,40 @@
 				</value>
 			</li>
 		
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+					<FactionColonies.BiomeResourceDef>
+						<defName>ZBiome_Badlands</defName>
+						<label>badlands</label>
+						<canSettle>true</canSettle>
+						<BaseProductionAdditive> <!-- 0 is default -->
+							<li>0</li> <!-- Food -->
+							<li>1.1</li> <!-- Weapons -->
+							<li>1</li> <!-- Apparel -->
+							<li>0.25</li> <!-- Animals -->
+							<li>0.1</li> <!-- Logging -->
+							<li>1.25</li> <!-- Mining -->
+							<li>1</li> <!-- Research -->
+							<li>1</li> <!-- Power -->
+							<li>1</li> <!-- Medicine -->
+						</BaseProductionAdditive>
+						<BaseProductionMultiplicative> <!-- 1 is default -->
+							<li>0.75</li> <!-- Food -->
+							<li>1</li> <!-- Weapons -->
+							<li>1</li> <!-- Apparel -->
+							<li>1</li> <!-- Animals -->
+							<li>0.75</li> <!-- Logging -->
+							<li>1</li> <!-- Mining -->
+							<li>1</li> <!-- Research -->
+							<li>1</li> <!-- Power -->
+							<li>1</li> <!-- Medicine -->
+						</BaseProductionMultiplicative>
+					</FactionColonies.BiomeResourceDef>	
+				</value>
+			</li>
+			
+
 		<!-- Other -->
 			<li Class="PatchOperationAdd"> 
 				<xpath>/Defs/FactionColonies.BuildingFCDef[defName = "deforestationCamp"]/applicableBiomes</xpath>
