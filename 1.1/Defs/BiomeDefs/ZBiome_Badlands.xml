@@ -2,7 +2,7 @@
 <Defs>
 
    
-<BiomeDef>							<!-- Desert Oasis -->
+<BiomeDef>						
 	<defName>ZBiome_Badlands</defName>
 	<label>badlands</label>
 	<description>Barren and rocky, with little life.</description>
@@ -127,11 +127,9 @@
 	<wildPlants>
 		<Plant_Grass>6</Plant_Grass>
 		<Plant_PincushionCactus>1</Plant_PincushionCactus>
-		<!-- <Plant_SaguaroCactus>0.25</Plant_SaguaroCactus> -->
 		<Plant_Dandelion>1</Plant_Dandelion>
 		<Plant_TreeOak>0.4</Plant_TreeOak>
 		
-		<!-- <Plant_Agave>0.05</Plant_Agave> -->
         <Plant_Berry>0.05</Plant_Berry>
 		<Plant_Bush>0.5</Plant_Bush>
 		

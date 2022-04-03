@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   
+<BiomeDef>							
+	<defName>ZBiome_GlacialShield</defName>
+	<label>badlands</label>
+	<description>Icy, cold and rocky, but with thick stands of forests where the soil allows.</description>
+	<texture>World/Biomes/Purple</texture>
+	<workerClass>VanillaBiomes.BiomeWorker_GlacialShield</workerClass>
+	<settlementSelectionWeight>0.3</settlementSelectionWeight>
+    <movementDifficulty>1.0</movementDifficulty>
+	
+    <wildPlantsCareAboutLocalFertility>true</wildPlantsCareAboutLocalFertility>
+	
+	<animalDensity>2.5</animalDensity>
+	<plantDensity>0.6</plantDensity>
+	<wildPlantRegrowDays>22</wildPlantRegrowDays>
+	<forageability>0.1</forageability>
+	<foragedFood>RawBerries</foragedFood>
+
+	<soundsAmbient>
+      <li>Ambient_NightInsects_Standard</li>
+    </soundsAmbient>
+    <diseaseMtbDays>65</diseaseMtbDays>
+    <diseases>
+      <li>
+        <diseaseInc>Disease_Flu</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_Plague</diseaseInc>
+        <commonality>80</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_GutWorms</diseaseInc>
+        <commonality>50</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_FibrousMechanites</diseaseInc>
+        <commonality>30</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_SensoryMechanites</diseaseInc>
+        <commonality>30</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_MuscleParasites</diseaseInc>
+        <commonality>50</commonality>
+      </li>
+      
+      <li>
+        <diseaseInc>Disease_AnimalFlu</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_AnimalPlague</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+    </diseases>
+	
+	<terrainsByFertility>
+      <li>
+        <terrain>Ice</terrain>
+        <min>-999</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <terrainPatchMakers>	  
+	 <li>
+        <perlinFrequency>0.015</perlinFrequency>
+        <thresholds>
+          <li>
+            <terrain>Soil</terrain>
+            <min>0.47</min>
+            <max>0.60</max>
+          </li>
+          <li>
+            <terrain>SoilRich</terrain>
+            <min>0.60</min>
+            <max>0.77</max>
+          </li>
+          <li>
+            <terrain>WaterShallow</terrain>
+            <min>0.77</min>
+            <max>1.06</max>
+          </li>
+          <li>
+            <terrain>WaterDeep</terrain>
+            <min>1.06</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+      <li>
+        <perlinFrequency>0.017</perlinFrequency>
+		<perlinLacunarity>1.8</perlinLacunarity>
+        <thresholds>
+			<li>
+				<terrain>Sandstone_Rough</terrain>
+				<min>-999</min>
+				<max>-0.35</max>
+			</li>
+			<li>
+				<terrain>Gravel</terrain>
+				<min>0.4</min>
+				<max>0.65</max>
+			</li>
+			<li>
+				<terrain>Soil</terrain>
+				<min>0.65</min>
+				<max>0.8</max>
+			</li>
+			<li>
+				<terrain>SoilRich</terrain>
+				<min>0.8</min>
+				<max>999</max>
+			</li>
+		  </thresholds>
+      </li>
+    </terrainPatchMakers>
+	  <baseWeatherCommonalities>
+      <Clear>18</Clear>
+      <Fog>1</Fog>
+      <Rain>1.5</Rain>
+      <DryThunderstorm>1.0</DryThunderstorm>
+      <RainyThunderstorm>1.0</RainyThunderstorm>
+      <FoggyRain>1</FoggyRain>
+      <SnowGentle>4</SnowGentle>
+      <SnowHard>4</SnowHard>
+    </baseWeatherCommonalities>
+	<wildPlants>
+      <Plant_Grass>3.5</Plant_Grass>
+      <Plant_Moss>2.8</Plant_Moss>
+      <Plant_Bush>2.0</Plant_Bush>
+      <Plant_Brambles>1.4</Plant_Brambles>
+      <Plant_Astragalus>0.1</Plant_Astragalus>
+      <Plant_Dandelion>0.1</Plant_Dandelion>
+	  
+      <Plant_Berry>0.16</Plant_Berry>
+      <Plant_HealrootWild>0.16</Plant_HealrootWild>
+	  
+      <Plant_TreePine>5.0</Plant_TreePine>
+      <Plant_TreeBirch>1.5</Plant_TreeBirch>
+      <!-- <Plant_TreePoplar>1.2</Plant_TreePoplar> -->
+    </wildPlants>
+    <wildAnimals>
+      <Yak>0.12</Yak>
+      <Horse>0.15</Horse>
+      <Squirrel>0.5</Squirrel>
+	  <Snowhare>1.5</Snowhare>
+      <Hare>1</Hare>
+      <Rat>0.3</Rat>
+      <Elk>1.0</Elk>
+      <Caribou>1.0</Caribou>
+      <Muffalo>0.5</Muffalo>
+      <Raccoon>0.3</Raccoon>
+      <Turkey>0.2</Turkey>
+      <Deer>0.3</Deer>
+      <Megasloth>0.15</Megasloth>
+	  
+      <Fox_Arctic>0.1</Fox_Arctic>
+      <Bear_Grizzly>0.07</Bear_Grizzly>
+      <Bear_Polar>0.07</Bear_Polar>
+      <Wolf_Timber>0.07</Wolf_Timber>
+      <Wolf_Arctic>0.07</Wolf_Arctic>
+      <Lynx>0.07</Lynx>
+      <Warg>0.07</Warg>
+    </wildAnimals>
+    <allowedPackAnimals>
+      <li>Muffalo</li>
+    </allowedPackAnimals>
+	</BiomeDef>
+
+</Defs>
