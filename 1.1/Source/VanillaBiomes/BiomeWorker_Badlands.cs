@@ -36,7 +36,7 @@ namespace VanillaBiomes
             }
 			
 
-			float output = 16f + (tile.temperature - 7f) + (tile.rainfall - 600f) / 180f;
+			float output = 16f + (tile.temperature - 7f) + (tile.rainfall - 600f) / 200f;
 			if (tile.hilliness == Hilliness.Flat)
             {
 				output -= 0.85f;

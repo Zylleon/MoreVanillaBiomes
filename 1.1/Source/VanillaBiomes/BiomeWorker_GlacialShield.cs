@@ -18,9 +18,27 @@ namespace VanillaBiomes
 			{
 				return -100f;
 			}
-			
-			return -100f;
 
+			if (tile.swampiness > 0f)
+            {
+				return -100f;
+            }
+			if(tile.temperature < -23f)
+            {
+				return -100f;
+            }
+			if (tile.temperature > -7f)
+            {
+				return -100f;
+            }
+			if(tile.rainfall < 200f)
+            {
+				return 0f;
+            }
+
+			float score = 1f - 1.1f * tile.temperature;
+			score += ((float)tile.hilliness - 2.5f);
+            return score;
 		}
     }
 }

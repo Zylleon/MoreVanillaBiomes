@@ -4,9 +4,9 @@
    
 <BiomeDef>							
 	<defName>ZBiome_GlacialShield</defName>
-	<label>badlands</label>
-	<description>Icy, cold and rocky, but with thick stands of forests where the soil allows.</description>
-	<texture>World/Biomes/Purple</texture>
+	<label>glacial shield</label>
+	<description>Where the glacier meets the tundra, this area is icy, rocky, and cold almost year-round. Thick stands of forest are concentrated in patches of soil and around lakes, attracting wildlife.</description>
+	<texture>World/Biomes/ZBiome_GlacialShield</texture>
 	<workerClass>VanillaBiomes.BiomeWorker_GlacialShield</workerClass>
 	<settlementSelectionWeight>0.3</settlementSelectionWeight>
     <movementDifficulty>1.0</movementDifficulty>

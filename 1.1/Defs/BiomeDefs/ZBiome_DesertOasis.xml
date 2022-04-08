@@ -5,7 +5,7 @@
 <BiomeDef>							<!-- Desert Oasis -->
 	<defName>ZBiome_DesertOasis</defName>
 	<label>desert oasis</label>
-	<description>Desert with a few small islands of life.</description>
+	<description>Desert with a few small islands of life. Much of the limited arable land is concentrated around pools of life-giving water.</description>
 	<texture>World/Biomes/ZBiome_Oasis</texture>
 	<workerClass>VanillaBiomes.BiomeWorker_DesertOasis</workerClass>
 

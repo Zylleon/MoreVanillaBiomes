@@ -5,7 +5,7 @@
 <BiomeDef>						
 	<defName>ZBiome_Badlands</defName>
 	<label>badlands</label>
-	<description>Barren and rocky, with little life.</description>
+	<description>Rocky, dry and desolate, these temperate regions feature little life.</description>
 	<texture>World/Biomes/ZBiome_Badlands</texture>
 	<workerClass>VanillaBiomes.BiomeWorker_Badlands</workerClass>
 	<settlementSelectionWeight>0.3</settlementSelectionWeight>
@@ -13,14 +13,12 @@
 	
     <wildPlantsCareAboutLocalFertility>true</wildPlantsCareAboutLocalFertility>
 	
-	<animalDensity>0.7</animalDensity>
+	<animalDensity>0.6</animalDensity>
 	<plantDensity>0.3</plantDensity>
 	<wildPlantRegrowDays>28</wildPlantRegrowDays>
 	<forageability>0.1</forageability>
 	<foragedFood>RawBerries</foragedFood>
-
 	<soundsAmbient>
-      <!-- <li>Ambient_NightInsects_Standard</li> -->
       <li>Ambient_Wind_Desolate</li>
     </soundsAmbient>
 	<diseaseMtbDays>90</diseaseMtbDays>
@@ -144,9 +142,9 @@
       <Donkey>0.1</Donkey>
 	  <GuineaPig>0.01</GuineaPig>
 	  
-	  <Megascarab>0.2</Megascarab>
-	  <Spelopede>0.05</Spelopede>
-	  <Megaspider>0.01</Megaspider>
+	  <Megascarab>0.3</Megascarab>
+	  <Spelopede>0.1</Spelopede>
+	  <Megaspider>0.05</Megaspider>
 	  
       <Fox_Fennec>0.07</Fox_Fennec>
 	  <Warg>0.2</Warg>
