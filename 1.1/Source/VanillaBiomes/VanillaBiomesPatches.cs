@@ -78,6 +78,25 @@ namespace VanillaBiomes
                             current.plant.wildBiomes.Add(newRecord1);
                         }
 
+                        else if (current.plant.wildBiomes.Any(b => b.biome.defName == "Tundra"))
+                        {
+                            PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
+                            newRecord1.biome = BiomeDef.Named("ZBiome_GlacialShield");
+                            newRecord1.commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "Tundra").FirstOrDefault().commonality;
+                            if (current.plant.IsTree)
+                            {
+                                newRecord1.commonality *= 1.7f;
+                            }
+                            if (current.plant.purpose == PlantPurpose.Beauty || current.plant.purpose == PlantPurpose.Food)
+                            {
+                                newRecord1.commonality *= 1.2f;
+                            }
+
+
+                            current.plant.wildBiomes.Add(newRecord1);
+                        }
+
+
                         for (int j = 0; j < current.plant.wildBiomes.Count; j++)
                         {
                             
@@ -256,6 +275,62 @@ namespace VanillaBiomes
                             current.RaceProps.wildBiomes.Add(newRecord1);
                         }
 
+                        //Badlands
+                        if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "TemperateForest"))
+                        {
+                            if (!current.RaceProps.wildBiomes.Any(b => b.biome.defName == "TemperateSwamp"))
+                            {
+                                AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
+                                newRecord1.biome = BiomeDef.Named("ZBiome_Badlands");
+                                newRecord1.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "TemperateForest").FirstOrDefault().commonality;
+                                if (!current.RaceProps.predator && current.RaceProps.baseBodySize > 1.0)    // less large herbivores
+                                {
+                                    newRecord1.commonality *= 0.5f;
+                                }
+                                current.RaceProps.wildBiomes.Add(newRecord1);
+                            }
+                            else if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "AridShrubland"))
+                            {
+                                AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
+                                newRecord1.biome = BiomeDef.Named("ZBiome_Badlands");
+                                newRecord1.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "TemperateForest").FirstOrDefault().commonality;
+                                newRecord1.commonality *= 0.5f;
+                                if (!current.RaceProps.predator && current.RaceProps.baseBodySize > 1.0)    // less large herbivores
+                                {
+                                    newRecord1.commonality *= 0.5f;
+                                }
+                                current.RaceProps.wildBiomes.Add(newRecord1);
+                            }
+                        }
+
+                        // Glacial Shield
+                        if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "Tundra"))
+                        {
+                            AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
+                            newRecord1.biome = BiomeDef.Named("ZBiome_GlacialShield");
+                            newRecord1.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "Tundra").FirstOrDefault().commonality;
+                            current.RaceProps.wildBiomes.Add(newRecord1);
+                        }
+                        else if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "IceSheet"))
+                        {
+                            AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
+                            newRecord1.biome = BiomeDef.Named("ZBiome_GlacialShield");
+                            newRecord1.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "IceSheet").FirstOrDefault().commonality;
+                            current.RaceProps.wildBiomes.Add(newRecord1);
+                        }
+                        else if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "BorealForest"))
+                        {
+                            if (!current.RaceProps.wildBiomes.Any(b => b.biome.defName == "TemperateForest"))
+                            {
+                                AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
+                                newRecord1.biome = BiomeDef.Named("ZBiome_GlacialShield");
+                                newRecord1.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "BorealForest").FirstOrDefault().commonality;
+                                newRecord1.commonality *= 0.5f;
+                                current.RaceProps.wildBiomes.Add(newRecord1);
+                            }
+                        }
+                        
+                        
                         for (int j = 0; j < current.RaceProps.wildBiomes.Count; j++)
                         {
                             //Iceberg
@@ -318,22 +393,7 @@ namespace VanillaBiomes
                             }
 
 
-                            //Badlands
-                            if (current.RaceProps.wildBiomes[j].biome.defName == "TemperateForest")
-                            {
-                                
-                                if (!current.RaceProps.wildBiomes.Any(b => b.biome.defName == "TemperateSwamp"))
-                                {
-                                    AnimalBiomeRecord newRecord1 = new AnimalBiomeRecord();
-                                    newRecord1.biome = BiomeDef.Named("ZBiome_Badlands");
-                                    newRecord1.commonality = current.RaceProps.wildBiomes[j].commonality;
-                                    if(!current.RaceProps.predator && current.RaceProps.baseBodySize > 1.0)
-                                    {
-                                        newRecord1.commonality *= 0.5f;
-                                    }
-                                    current.RaceProps.wildBiomes.Add(newRecord1);
-                                }
-                            }
+                            
 
                         }
                     }

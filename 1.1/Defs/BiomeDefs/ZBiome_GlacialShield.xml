@@ -13,7 +13,7 @@
 	
     <wildPlantsCareAboutLocalFertility>true</wildPlantsCareAboutLocalFertility>
 	
-	<animalDensity>2.5</animalDensity>
+	<animalDensity>2.0</animalDensity>
 	<plantDensity>0.6</plantDensity>
 	<wildPlantRegrowDays>22</wildPlantRegrowDays>
 	<forageability>0.1</forageability>
@@ -142,30 +142,28 @@
 	  
       <Plant_TreePine>5.0</Plant_TreePine>
       <Plant_TreeBirch>1.5</Plant_TreeBirch>
-      <!-- <Plant_TreePoplar>1.2</Plant_TreePoplar> -->
     </wildPlants>
     <wildAnimals>
       <Yak>0.12</Yak>
       <Horse>0.15</Horse>
       <Squirrel>0.5</Squirrel>
 	  <Snowhare>1.5</Snowhare>
-      <Hare>1</Hare>
+      <Hare>0.1</Hare>
       <Rat>0.3</Rat>
-      <Elk>1.0</Elk>
+      <Elk>0.7</Elk>
       <Caribou>1.0</Caribou>
       <Muffalo>0.5</Muffalo>
-      <Raccoon>0.3</Raccoon>
-      <Turkey>0.2</Turkey>
-      <Deer>0.3</Deer>
-      <Megasloth>0.15</Megasloth>
+      <Raccoon>0.2</Raccoon>
+      <Turkey>0.05</Turkey>
+      <Deer>0.2</Deer>
+      <Megasloth>0.35</Megasloth>
 	  
       <Fox_Arctic>0.1</Fox_Arctic>
-      <Bear_Grizzly>0.07</Bear_Grizzly>
-      <Bear_Polar>0.07</Bear_Polar>
-      <Wolf_Timber>0.07</Wolf_Timber>
-      <Wolf_Arctic>0.07</Wolf_Arctic>
+      <Bear_Grizzly>0.03</Bear_Grizzly>
+      <Bear_Polar>0.08</Bear_Polar>
+      <Wolf_Arctic>0.08</Wolf_Arctic>
       <Lynx>0.07</Lynx>
-      <Warg>0.07</Warg>
+      <Warg>0.08</Warg>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>

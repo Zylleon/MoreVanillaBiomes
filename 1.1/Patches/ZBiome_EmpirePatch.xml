@@ -282,10 +282,43 @@
 						<canSettle>true</canSettle>
 						<BaseProductionAdditive> <!-- 0 is default -->
 							<li>0</li> <!-- Food -->
+							<li>.75</li> <!-- Weapons -->
+							<li>.75</li> <!-- Apparel -->
+							<li>.7</li> <!-- Animals -->
+							<li>0.2</li> <!-- Logging -->
+							<li>0</li> <!-- Mining -->
+							<li>1.25</li> <!-- Research -->
+							<li>.5</li> <!-- Power -->
+							<li>0</li> <!-- Medicine -->
+						</BaseProductionAdditive>
+						<BaseProductionMultiplicative> <!-- li is default -->
+							<li>1</li> <!-- Food -->
+							<li>1</li> <!-- Weapons -->
+							<li>1</li> <!-- Apparel -->
+							<li>1</li> <!-- Animals -->
+							<li>1</li> <!-- Logging -->
+							<li>1</li> <!-- Mining -->
+							<li>1</li> <!-- Research -->
+							<li>1</li> <!-- Power -->
+							<li>1</li> <!-- Medicine -->
+						</BaseProductionMultiplicative>
+					</FactionColonies.BiomeResourceDef>	
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+					<FactionColonies.BiomeResourceDef>
+						<defName>ZBiome_GlacialShield</defName>
+						<label>badlands</label>
+						<canSettle>true</canSettle>
+						<BaseProductionAdditive> <!-- 0 is default -->
+							<li>0.5</li> <!-- Food -->
 							<li>1.1</li> <!-- Weapons -->
 							<li>1</li> <!-- Apparel -->
 							<li>0.25</li> <!-- Animals -->
-							<li>0.1</li> <!-- Logging -->
+							<li>0.25</li> <!-- Logging -->
 							<li>1.25</li> <!-- Mining -->
 							<li>1</li> <!-- Research -->
 							<li>1</li> <!-- Power -->

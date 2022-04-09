@@ -21,6 +21,7 @@
 					<xpath>Defs/PawnKindDef[defName = "PawnKindDefFishSeasnake"]/naturalBiomes</xpath>
 			<value>
 				<li>ZBiome_AlpineMeadow</li>
+				<li>ZBiome_GlacialShield</li>
 				<li>ZBiome_Grasslands</li>
 				<li>ZBiome_CoastalDunes</li>
 				<li>ZBiome_Marsh</li>
@@ -39,6 +40,7 @@
 						<li>ZBiome_CloudForest</li>
 						<li>ZBiome_Sandbar_NoBeach</li>
 						<li>ZBiome_Badlands</li>
+						<li>ZBiome_GlacialShield</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd"> 
@@ -52,6 +54,7 @@
 						<li>ZBiome_Marsh</li>
 						<li>ZBiome_Sandbar_NoBeach</li>
 						<li>ZBiome_Badlands</li>
+						<li>ZBiome_GlacialShield</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd"> 

@@ -51,7 +51,27 @@
 				 <RC2_PlantWheat>0.0000000000000001</RC2_PlantWheat> 
 			   </value> 
 			 </li> 
-			
+			 <li Class="PatchOperationAdd"> 
+			   <xpath>/Defs/BiomeDef[defName = "ZBiome_GlacialShield"]/wildPlants</xpath> 
+			   <value> 
+				 <RC2_PlantOats>0.0000000000000001</RC2_PlantOats> 
+				 <RC2_PlantBeet>0.0000000000000001</RC2_PlantBeet> 
+				 <RC2_PlantSugarBeet>0.0000000000000001</RC2_PlantSugarBeet> 
+				 <RC2_PlantCarrot>0.07</RC2_PlantCarrot> 
+				 <RC2_PlantOnion>0.16</RC2_PlantOnion> 
+				 <RC2_PlantJuniper>0.25</RC2_PlantJuniper> 
+				 <RC2_PlantSugarMapleTree>0.025</RC2_PlantSugarMapleTree> 
+				 <RC2_PlantBeeTree>0.02</RC2_PlantBeeTree> 
+				 <RC2_PlantBarley>0.2</RC2_PlantBarley> 
+				 <RC2_PlantMushroom>0.12</RC2_PlantMushroom> 
+				 <RC2_PlantSnapPeas>0.0000000000000001</RC2_PlantSnapPeas> 
+				 <RC2_PlantEggPlant>0.0000000000000001</RC2_PlantEggPlant> 
+				 <RC2_PlantPumpkin>0.0000000000000001</RC2_PlantPumpkin> 
+				 <RC2_PlantAppletree>0.015</RC2_PlantAppletree> 
+				 <RC2_PlantCherryTree>0.003</RC2_PlantCherryTree> 
+				 <RC2_PlantWheat>0.0000000000000001</RC2_PlantWheat> 
+			   </value> 
+			 </li> 
 			 <li Class="PatchOperationAdd"> 
 			   <xpath>/Defs/BiomeDef[defName = "ZBiome_CoastalDunes"]/wildPlants</xpath> 
 			   <value> 

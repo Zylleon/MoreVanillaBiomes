@@ -73,6 +73,14 @@
 				</value>
 			</li>
 			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_GlacialShield"]/wildPlants</xpath>
+				<value>
+					<RB_Plant_Hive_Arid>0.01</RB_Plant_Hive_Arid>
+					<RB_Plant_Hive_Arctic>0.01</RB_Plant_Hive_Arctic>
+				</value>
+			</li>
+			
 			</operations>
 		</match>
 	</Operation>
