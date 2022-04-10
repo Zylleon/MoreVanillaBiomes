@@ -11,6 +11,8 @@
   <ZB_CheckboxMarsh>気候有効：沼地</ZB_CheckboxMarsh>
   <ZB_CheckboxSandbar>気候有効：砂州</ZB_CheckboxSandbar>
   <ZB_CheckboxCloudForest>気候有効：霧の森</ZB_CheckboxCloudForest>
+  <ZB_CheckboxBadlands>気候有効：悪地</ZB_CheckboxBadlands>
+  <ZB_CheckboxGlacialShield>気候有効：氷河盾状地</ZB_CheckboxGlacialShield>
 
   <ZB_CheckboxModdedThings>Modで追加された動植物を生成する（有効化には再起動が必要）</ZB_CheckboxModdedThings>
   <ZB_CheckboxModdedThingsDesc>チェックされていない場合、これらの気候マップには他のMODで追加された植物や動物は生成されません。しかしModで追加された動植物は別のMODかパッチによって有効化されている場合は、野生で発生する可能性があります。\n\nこの設定を変更した後は、ゲームを再起動してください。</ZB_CheckboxModdedThingsDesc>
