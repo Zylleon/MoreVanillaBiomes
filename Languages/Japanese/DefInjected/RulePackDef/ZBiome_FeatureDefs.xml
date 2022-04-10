@@ -90,4 +90,48 @@
     <li>terrain_word->草原</li>
   </ZBiome_NamerGrasslands.rulePack.rulesStrings>
 
+  <!-- ZBiome_NamerBadlands -->
+
+  <ZBiome_NamerBadlands.rulePack.rulesStrings>
+    <li>r_name(p=0.3)->[ZBiome_badlands_adj][narrative_name]</li>
+    <li>r_name(p=0.15)->[ZBiome_badlands_adj][terrain_word]</li>
+
+    <li>ZBiome_badlands_adj->乾燥した</li>
+    <li>ZBiome_badlands_adj->ほこりまみれな</li>
+    <li>ZBiome_badlands_adj->岩だらけな</li>
+    <li>ZBiome_badlands_adj->ゴツゴツした</li>
+    <li>ZBiome_badlands_adj->石だらけの</li>
+    <li>ZBiome_badlands_adj->でこぼこな</li>
+    <li>ZBiome_badlands_adj->敵意に満ちた</li>
+    <li>ZBiome_badlands_adj->生命のない</li>
+    <li>ZBiome_badlands_adj->荒涼とした</li>
+    <li>ZBiome_badlands_adj->不毛な</li>
+
+    <li>terrain_word(p=3)->荒れ地</li>
+    <li>terrain_word->悪地</li>
+    <li>terrain_word->痩せ地</li>
+    <li>terrain_word->荒れ地</li>
+    <li>terrain_word->荒廃地</li>
+  </ZBiome_NamerBadlands.rulePack.rulesStrings>
+
+  <!-- ZBiome_GlacialShield -->
+
+  <ZBiome_NamerGlacialShield.rulePack.rulesStrings>
+    <li>r_name(p=0.3)->[ZBiome_glacialshield_adj][narrative_name]</li>
+    <li>r_name(p=0.15)->[ZBiome_glacialshield_adj][terrain_word]</li>
+
+    <li>ZBiome_glacialshield_adj->針葉樹</li>
+    <li>ZBiome_glacialshield_adj->松の多い</li>
+    <li>ZBiome_glacialshield_adj->北極の</li>
+    <li>ZBiome_glacialshield_adj->氷河の</li>
+    <li>ZBiome_glacialshield_adj->石だらけの</li>
+    <li>ZBiome_glacialshield_adj->険しい</li>
+
+    <li>terrain_word(p=3)->林</li>
+    <li>terrain_word->タイガ</li>
+    <li>terrain_word->松林</li>
+    <li>terrain_word->盾状地</li>
+    <li>terrain_word->台地</li>
+  </ZBiome_NamerGlacialShield.rulePack.rulesStrings>
+
 </LanguageData>
