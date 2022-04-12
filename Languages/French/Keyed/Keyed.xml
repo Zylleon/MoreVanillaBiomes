@@ -3,16 +3,18 @@
 
   <!-- Settings -->
   <ZB_ModName>More Vanilla Biomes</ZB_ModName>
-  <ZB_CheckboxMeadow>permettre Praire Alpine</ZB_CheckboxMeadow>
-  <ZB_CheckboxDunes>permettre Dunes côtières</ZB_CheckboxDunes>
-  <ZB_CheckboxOasis>permettre Oasis du Désert</ZB_CheckboxOasis>
-  <ZB_CheckboxGrasslands>Permettre Prairie</ZB_CheckboxGrasslands>
-  <ZB_CheckboxIceberg>Permettre Icebergs</ZB_CheckboxIceberg> 
-  <ZB_CheckboxMarsh>Permettre Marais</ZB_CheckboxMarsh>
-  <ZB_CheckboxSandbar>Permettre Banc de Sable</ZB_CheckboxSandbar>
-  <ZB_CheckboxCloudForest>Permettre Forêts des Nuages</ZB_CheckboxCloudForest>
+  <ZB_CheckboxMeadow>autoriser les prairies alpine</ZB_CheckboxMeadow>
+  <ZB_CheckboxDunes>autoriser les dunes côtières</ZB_CheckboxDunes>
+  <ZB_CheckboxOasis>autoriser les oasis du désert</ZB_CheckboxOasis>
+  <ZB_CheckboxGrasslands>autoriser les prairie</ZB_CheckboxGrasslands>
+  <ZB_CheckboxIceberg>autoriser les icebergs</ZB_CheckboxIceberg> 
+  <ZB_CheckboxMarsh>autoriser les marais</ZB_CheckboxMarsh>
+  <ZB_CheckboxSandbar>autoriser les bancs de sable</ZB_CheckboxSandbar>
+  <ZB_CheckboxCloudForest>autoriser les forêts des nuages</ZB_CheckboxCloudForest>
+  <ZB_CheckboxBadlands>autoriser les terres désolées</ZB_CheckboxBadlands>
+  <ZB_CheckboxGlacialShield>autoriser les boucliers glaciaire</ZB_CheckboxGlacialShield>
 
-  <ZB_CheckboxModdedThings>Autoriser l'apparition de plantes et animaux issus du mod (requiert un redémarrage pour prendre effet)</ZB_CheckboxModdedThings>
+  <ZB_CheckboxModdedThings>Autoriser les plantes et animaux issus de mods (requiert un redémarrage pour prendre effet)</ZB_CheckboxModdedThings>
   <ZB_CheckboxModdedThingsDesc>Si non-cochés, les biomes ne feront pas apparaître les animaux et plantes issus d'autres mods. Les plantes et animaux moddés pourront toujours apparaître si autorisés par un autre mod ou patch. \n\n Redémarrez le jeu après avoir changé ce paramètre</ZB_CheckboxModdedThingsDesc>
 
 </LanguageData>

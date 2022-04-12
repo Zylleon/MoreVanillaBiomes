@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- ZBiome_AlpineMeadow -->
+
+  <ZBiome_NamerAlpineMeadow.rulePack.rulesStrings>
+    <li>r_name(p=0.3)->[ZBiome_meadow_adj][narrative_name]</li>
+    <li>r_name(p=0.15)->[ZBiome_meadow_adj][terrain_word]</li>
+
+	<li>ZBiome_meadow_adj->idyllique</li>
+	<li>ZBiome_meadow_adj->serein</li>
+	<li>ZBiome_meadow_adj->aérien</li>
+	<li>ZBiome_meadow_adj->floraison</li>
+	<li>ZBiome_meadow_adj->floraison</li>
+	<li>ZBiome_meadow_adj->floraison</li>
+	<li>ZBiome_meadow_adj->vibrant</li>
+	<li>ZBiome_meadow_adj->niché</li>
+
+	<li>terrain_word(p=3)->pré</li>
+	<li>terrain_word->plateau</li>
+        <li>terrain_word->champ</li>
+        <li>terrain_word->crête</li>
+  </ZBiome_NamerAlpineMeadow.rulePack.rulesStrings>
+
+
+  <!-- ZBiome_CloudForest -->
+
+  <ZBiome_NamerCloudForest.rulePack.rulesStrings>
+    <li>r_name(p=0.3)->[ZBiome_cloud_adj][narrative_name]</li>
+
+	<li>ZBiome_cloud_adj->humide</li>
+	<li>ZBiome_cloud_adj->torride</li>
+	<li>ZBiome_cloud_adj->étouffement</li>
+	<li>ZBiome_cloud_adj->envahi</li>
+	<li>ZBiome_cloud_adj->emmêlé</li>
+	<li>ZBiome_cloud_adj->brumeux</li>
+	<li>ZBiome_cloud_adj->nuageux</li>
+	<li>ZBiome_cloud_adj->masqué</li>
+	<li>ZBiome_cloud_adj->obscur</li>
+	<li>ZBiome_cloud_adj->moussu</li>
+
+	<li>terrain_word(p=4)->forêt</li>
+	<li>terrain_word(p=2)->jungle</li>
+	<li>terrain_word->montagne</li>
+  </ZBiome_NamerCloudForest.rulePack.rulesStrings>
+
+
+  <!-- ZBiome_CoastalDunes -->
+
+  <ZBiome_NamerCoastalDunes.rulePack.rulesStrings>
+    <li>r_name(p=0.3)->[ZBiome_dunes_adj][narrative_name]</li>
+    <li>r_name(p=0.2)->[ZBiome_dunes_adj][terrain_word]</li>
+
+	<li>ZBiome_dunes_adj->sablonneux</li>
+	<li>ZBiome_dunes_adj->bord de mer</li>
+	<li>ZBiome_dunes_adj->saumâtre</li>
+	<li>ZBiome_dunes_adj->réchauffé par le soleil</li>
+
+        <li>terrain_word(p=3)->plage</li>
+	<li>terrain_word(p=3)->dune</li>
+	<li>terrain_word->rive</li>
+	<li>terrain_word->sables</li>
+	<li>terrain_word->bord de mer</li>
+	<li>terrain_word->strand</li>
+	<li>terrain_word->côte</li>
+  </ZBiome_NamerCoastalDunes.rulePack.rulesStrings>
+
+
+  <!-- ZBiome_Iceberg_NoBeach -->
+
+  <ZBiome_NamerIceberg.rulePack.rulesStrings>
+	<li>terrain_word(p=3)->pack de glace</li>
+	<li>terrain_word->berge</li>
+	<li>terrain_word->banquise</li>
+	<li>terrain_word->iceberg</li>
+	<li>terrain_word->morceau</li>
+	<li>terrain_word->glacier</li>
+  </ZBiome_NamerIceberg.rulePack.rulesStrings>
+
+
+  <!-- ZBiome_Grasslands -->
+
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings>
+	<li>terrain_word(p=3)->prairies</li>
+	<li>terrain_word->prairie</li>
+	<li>terrain_word->plaines</li>
+	<li>terrain_word->steppes</li>
+	<li>terrain_word->champ</li>
+	<li>terrain_word->savane</li>
+  </ZBiome_NamerGrasslands.rulePack.rulesStrings>
+
+  <!-- ZBiome_NamerBadlands -->
+
+  <ZBiome_NamerBadlands.rulePack.rulesStrings>
+    <li>r_name(p=0.3)->[ZBiome_badlands_adj][narrative_name]</li>
+    <li>r_name(p=0.15)->[ZBiome_badlands_adj][terrain_word]</li>
+
+	<li>ZBiome_badlands_adj->sec</li>
+	<li>ZBiome_badlands_adj->poussiéreux</li>
+	<li>ZBiome_badlands_adj->rocheux</li>
+	<li>ZBiome_badlands_adj->escarpé</li>
+	<li>ZBiome_badlands_adj->pierreux</li>
+	<li>ZBiome_badlands_adj->robuste</li>
+	<li>ZBiome_badlands_adj->hostile</li>
+	<li>ZBiome_badlands_adj->mort</li>
+	<li>ZBiome_badlands_adj->désolé</li>
+	<li>ZBiome_badlands_adj->stérile</li>
+
+        <li>terrain_word(p=3)->déchets</li>
+	<li>terrain_word->badlands</li>
+        <li>terrain_word->landes</li>
+        <li>terrain_word->terre en friche</li>
+        <li>terrain_word->désolation</li>
+  </ZBiome_NamerBadlands.rulePack.rulesStrings>
+
+  <!-- ZBiome_GlacialShield -->
+
+  <ZBiome_NamerGlacialShield.rulePack.rulesStrings>
+    <li>r_name(p=0.3)->[ZBiome_glacialshield_adj][narrative_name]</li>
+    <li>r_name(p=0.15)->[ZBiome_glacialshield_adj][terrain_word]</li>
+
+	<li>ZBiome_glacialshield_adj->conifère</li>
+	<li>ZBiome_glacialshield_adj->pin</li>
+	<li>ZBiome_glacialshield_adj->arctique</li>
+	<li>ZBiome_glacialshield_adj->glaciaire</li>
+	<li>ZBiome_glacialshield_adj->pierreux</li>
+	<li>ZBiome_glacialshield_adj->robuste</li>
+
+        <li>terrain_word(p=3)->forêt</li>
+	<li>terrain_word->taïga</li>
+        <li>terrain_word->pins</li>
+        <li>terrain_word->bouclier</li>
+        <li>terrain_word->plateau</li>
+  </ZBiome_NamerGlacialShield.rulePack.rulesStrings>
+
+</LanguageData>
