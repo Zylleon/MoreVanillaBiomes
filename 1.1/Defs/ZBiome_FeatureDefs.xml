@@ -79,6 +79,8 @@
 		<li>terrain_word->plateau</li>
         <li>terrain_word->field</li>
         <li>terrain_word->ridge</li>
+        <li>terrain_word->pass</li>
+        <li>terrain_word->valley</li>
       </rulesStrings>
     </rulePack>
 </RulePackDef>
@@ -117,11 +119,12 @@
 		<li>ZBiome_cloud_adj->cloudy</li>
 		<li>ZBiome_cloud_adj->hidden</li>
 		<li>ZBiome_cloud_adj->murky</li>
+		<li>ZBiome_cloud_adj->thick</li>
 		<li>ZBiome_cloud_adj->mossy</li>
 		
 		<li>terrain_word(p=4)->forest</li>
         <li>terrain_word(p=2)->jungle</li>
-		<li>terrain_word->montane</li>
+		<li>terrain_word->mountain</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -156,6 +159,7 @@
 		<li>ZBiome_dunes_adj->seaside</li>
 		<li>ZBiome_dunes_adj->briny</li>
 		<li>ZBiome_dunes_adj->sun-warmed</li>
+		<li>ZBiome_dunes_adj->sun-bleached</li>
 		
         <li>terrain_word(p=3)->beach</li>
 		<li>terrain_word(p=3)->dune</li>
@@ -224,6 +228,17 @@
       <li>WorldFeatureNamerCommon</li>
     </include>
     <rulePack>
+	    <li>r_name->[ZBiome_grasslands_adj] [narrative_name]</li>
+		<li>r_name->[ZBiome_grasslands_adj] [terrain_word]</li>
+		
+		<li>ZBiome_grasslands_adj->grassy</li>
+		<li>ZBiome_grasslands_adj->endless</li>
+		<li>ZBiome_grasslands_adj->boundless</li>
+		<li>ZBiome_grasslands_adj->bare</li>
+		<li>ZBiome_grasslands_adj->vast</li>
+		<li>ZBiome_grasslands_adj->sun-baked</li>
+		<li>ZBiome_grasslands_adj->unending</li>
+	
       <rulesStrings>
         <li>terrain_word(p=3)->grasslands</li>
 		<li>terrain_word->prairie</li>
@@ -232,6 +247,7 @@
 		<li>terrain_word->field</li>
 		<li>terrain_word->savanna</li>
         <li>terrain_word->veldt</li>
+        <li>terrain_word->expanse</li>
       </rulesStrings>
     </rulePack>
 </RulePackDef>
@@ -316,6 +332,7 @@
         <li>terrain_word->pines</li>
         <li>terrain_word->shield</li>
         <li>terrain_word->plateau</li>
+        <li>terrain_word->glacier</li>
 		
       </rulesStrings>
     </rulePack>
