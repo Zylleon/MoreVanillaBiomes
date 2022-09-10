@@ -228,6 +228,7 @@
       <li>WorldFeatureNamerCommon</li>
     </include>
     <rulePack>
+      <rulesStrings>
 	    <li>r_name->[ZBiome_grasslands_adj] [narrative_name]</li>
 		<li>r_name->[ZBiome_grasslands_adj] [terrain_word]</li>
 		
@@ -238,8 +239,8 @@
 		<li>ZBiome_grasslands_adj->vast</li>
 		<li>ZBiome_grasslands_adj->sun-baked</li>
 		<li>ZBiome_grasslands_adj->unending</li>
-	
-      <rulesStrings>
+		<li>ZBiome_grasslands_adj->dry</li>
+		
         <li>terrain_word(p=3)->grasslands</li>
 		<li>terrain_word->prairie</li>
 		<li>terrain_word->plain</li>

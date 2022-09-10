@@ -31,7 +31,7 @@ namespace VanillaBiomes
             if (BiomeSettings.spawnModdedPlantsAnimals)
             {
                 AddAnimalsWildBiomes();
-                AddPlantsWildBiomes();
+                //AddPlantsWildBiomes();
             }
 
             Log.Message("More Vanilla Biomes initialized");
@@ -51,173 +51,236 @@ namespace VanillaBiomes
         #region modded plants and animals
 
         // adapted from RF-Archipelagos
-        private static void AddPlantsWildBiomes()
+
+        [HarmonyPatch(typeof(BiomeDef), "CachePlantCommonalitiesIfShould")]
+        public static class AddPlantsWildBiomes
         {
-
-            foreach (ThingDef current in DefDatabase<ThingDef>.AllDefsListForReading)
+            static bool Prefix(ref Dictionary<ThingDef, float> ___cachedPlantCommonalities, string ___defName, List<BiomePlantRecord> ___wildPlants)
             {
-                if (current.plant?.wildBiomes != null)
+                if (___cachedPlantCommonalities != null)
                 {
+                    return true;
+                }
 
-                    // to check if it's in any of these biomes already
-                    if (!current.plant.wildBiomes.Any(w => w.biome.defName.Contains("ZBiome")))
+                if(!___defName.Contains("ZBiome"))
+                {
+                    return true;
+                }
+
+                ___cachedPlantCommonalities = new Dictionary<ThingDef, float>();
+                for (int i = 0; i < ___wildPlants.Count; i++)
+                {
+                    if (___wildPlants[i].plant != null)
                     {
-                        //Sandbar
-                        if (current.plant.wildBiomes.Any(b => b.biome.defName == "ExtremeDesert"))
-                        {
-                            PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
-                            newRecord1.biome = BiomeDef.Named("ZBiome_Sandbar_NoBeach");
-                            newRecord1.commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "ExtremeDesert").FirstOrDefault().commonality;
-                            current.plant.wildBiomes.Add(newRecord1);
-                        }
-                        else if (current.plant.wildBiomes.Any(b => b.biome.defName == "Desert"))
-                        {
-                            PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
-                            newRecord1.biome = BiomeDef.Named("ZBiome_Sandbar_NoBeach");
-                            newRecord1.commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "Desert").FirstOrDefault().commonality;
-                            current.plant.wildBiomes.Add(newRecord1);
-                        }
-
-                        else if (current.plant.wildBiomes.Any(b => b.biome.defName == "Tundra"))
-                        {
-                            PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
-                            newRecord1.biome = BiomeDef.Named("ZBiome_GlacialShield");
-                            newRecord1.commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "Tundra").FirstOrDefault().commonality;
-                            if (current.plant.IsTree)
-                            {
-                                newRecord1.commonality *= 1.7f;
-                            }
-                            if (current.plant.purpose == PlantPurpose.Beauty || current.plant.purpose == PlantPurpose.Food)
-                            {
-                                newRecord1.commonality *= 1.2f;
-                            }
-
-
-                            current.plant.wildBiomes.Add(newRecord1);
-                        }
-
-
-                        for (int j = 0; j < current.plant.wildBiomes.Count; j++)
-                        {
-                            
-                            // icebergs
-                            if (current.plant.wildBiomes[j].biome.defName == "SeaIce")
-                            {
-                                PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
-                                newRecord1.biome = BiomeDef.Named("ZBiome_Iceberg_NoBeach");
-                                newRecord1.commonality = current.plant.wildBiomes[j].commonality;
-                                current.plant.wildBiomes.Add(newRecord1);
-                            }
-
-                            //Meadow
-                            if (current.plant.wildBiomes[j].biome.defName == "BorealForest")
-                            {
-                                PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
-                                newRecord1.biome = BiomeDef.Named("ZBiome_AlpineMeadow");
-                                newRecord1.commonality = current.plant.wildBiomes[j].commonality;
-                                if (current.plant.IsTree)
-                                {
-                                    newRecord1.commonality *= 0.4f;
-                                }
-                                else if (current.plant.purpose == PlantPurpose.Beauty)
-                                {
-                                    newRecord1.commonality *= 2f;
-                                }
-                                current.plant.wildBiomes.Add(newRecord1);
-                            }
-
-                            // Grasslands
-                            if (current.plant.wildBiomes[j].biome.defName == "AridShrubland")
-                            {
-                                PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
-                                newRecord1.biome = BiomeDef.Named("ZBiome_Grasslands");
-                                newRecord1.commonality = current.plant.wildBiomes[j].commonality;
-                                if (current.plant.IsTree)
-                                {
-                                    newRecord1.commonality *= 0.4f;
-                                }
-                                current.plant.wildBiomes.Add(newRecord1);
-                            }
-
-                            // Dunes and Oasis
-                            if (current.plant.wildBiomes[j].biome.defName == "AridShrubland")
-                            {
-                                if (current.plant.purpose == PlantPurpose.Food)
-                                {
-                                    PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
-                                    newRecord1.biome = BiomeDef.Named("ZBiome_CoastalDunes");
-                                    newRecord1.commonality = current.plant.wildBiomes[j].commonality;
-                                    current.plant.wildBiomes.Add(newRecord1);
-
-                                    PlantBiomeRecord newRecord2 = new PlantBiomeRecord();
-                                    newRecord2.biome = BiomeDef.Named("ZBiome_DesertOasis");
-                                    newRecord2.commonality = current.plant.wildBiomes[j].commonality;
-                                    current.plant.wildBiomes.Add(newRecord2);
-                                }
-                            }
-
-                            if (current.plant.wildBiomes[j].biome.defName == "TropicalRainforest")
-                            {
-                                if (current.plant.purpose != PlantPurpose.Food)
-                                {
-                                    PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
-                                    newRecord1.biome = BiomeDef.Named("ZBiome_CoastalDunes");
-                                    newRecord1.commonality = current.plant.wildBiomes[j].commonality;
-                                    current.plant.wildBiomes.Add(newRecord1);
-
-                                    PlantBiomeRecord newRecord2 = new PlantBiomeRecord();
-                                    newRecord2.biome = BiomeDef.Named("ZBiome_DesertOasis");
-                                    newRecord2.commonality = current.plant.wildBiomes[j].commonality;
-                                    current.plant.wildBiomes.Add(newRecord2);
-                                }
-
-                                if (!current.plant.IsTree)
-                                {
-                                    PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
-                                    newRecord1.biome = BiomeDef.Named("ZBiome_CloudForest");
-                                    newRecord1.commonality = current.plant.wildBiomes[j].commonality;
-                                    current.plant.wildBiomes.Add(newRecord1);
-                                }
-
-                            }
-
-                            if (current.plant.wildBiomes[j].biome.defName == "TemperateForest")
-                            {
-                                if (current.plant.IsTree)
-                                {
-                                    PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
-                                    newRecord1.biome = BiomeDef.Named("ZBiome_CloudForest");
-                                    newRecord1.commonality = current.plant.wildBiomes[j].commonality;
-                                    current.plant.wildBiomes.Add(newRecord1);
-                                }
-
-                                // Badlands
-                                if(!current.plant.wildBiomes.Any(b => b.biome.defName == "TemperateSwamp"))
-                                {
-                                    PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
-                                    newRecord1.biome = BiomeDef.Named("ZBiome_Badlands");
-                                    newRecord1.commonality = current.plant.wildBiomes[j].commonality;
-                                    current.plant.wildBiomes.Add(newRecord1);
-                                }
-                            }
-                            
-
-                            //Marsh
-                            if (current.plant.wildBiomes[j].biome.defName == "ColdBog")
-                            {
-                                PlantBiomeRecord newRecord1 = new PlantBiomeRecord();
-                                newRecord1.biome = BiomeDef.Named("ZBiome_Marsh");
-                                newRecord1.commonality = current.plant.wildBiomes[j].commonality;
-                                if (current.plant.IsTree)
-                                {
-                                    newRecord1.commonality *= 0.3f;
-                                }
-                                current.plant.wildBiomes.Add(newRecord1);
-                            }
-
-                        }
+                        ___cachedPlantCommonalities.Add(___wildPlants[i].plant, ___wildPlants[i].commonality);
                     }
                 }
+
+
+                foreach (ThingDef current in DefDatabase<ThingDef>.AllDefs)
+                {
+                    if (current.plant?.wildBiomes != null)
+                    {
+                        // add the plant if it's naturally in this biome
+                        for (int j = 0; j < current.plant.wildBiomes.Count; j++)
+                        {
+                            if (current.plant.wildBiomes[j].biome.defName == ___defName)
+                            {
+                                ___cachedPlantCommonalities.Add(current, current.plant.wildBiomes[j].commonality);
+                            }
+                        }
+
+                        // to check if it's in any of these biomes already
+                      
+                        if (!current.plant.wildBiomes.Any(w => w.biome.defName.Contains("ZBiome")))
+                        {
+                            //Alpine Meadow
+                            if (___defName == "ZBiome_AlpineMeadow")
+                            {
+                                if (current.plant.wildBiomes.Any(b => b.biome.defName == "BorealForest"))
+                                {
+                                    float commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "BorealForest").FirstOrDefault().commonality;
+                                    if (current.plant.IsTree)
+                                    {
+                                        commonality *= 0.4f;
+                                    }
+                                    if (current.plant.purpose == PlantPurpose.Beauty)
+                                    {
+                                        commonality *= 2f;
+                                    }
+                                    if (current.plant.purpose == PlantPurpose.Food)
+                                    {
+                                        commonality *= 1.4f;
+                                    }
+
+                                    ___cachedPlantCommonalities.Add(current, commonality);
+
+                                }
+                            }
+ 
+                            // Badlands
+                            if (___defName == "ZBiome_Badlands")
+                            {
+                                if (current.plant.wildBiomes.Any(b => b.biome.defName == "TemperateForest"))
+                                {
+                                    if (!current.plant.wildBiomes.Any(b => b.biome.defName == "TemperateSwamp"))
+                                    {
+                                        float commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "TemperateForest").FirstOrDefault().commonality;
+                                        ___cachedPlantCommonalities.Add(current, commonality);
+                                    }
+                                }
+                            }
+
+                            // Cloud Forest
+                            if (___defName == "ZBiome_CloudForest")
+                            {
+                                if (current.plant.wildBiomes.Any(b => b.biome.defName == "TropicalRainforest"))
+                                {
+                                    if (!current.plant.IsTree)
+                                    {
+                                        float commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "TropicalRainforest").FirstOrDefault().commonality;
+                                        if (current.plant.IsTree)
+                                        {
+                                            commonality *= 0.4f;
+                                        }
+                                        ___cachedPlantCommonalities.Add(current, commonality);
+                                    }
+                                }
+                                else if (current.plant.wildBiomes.Any(b => b.biome.defName == "TemperateForest"))
+                                {
+                                    if (current.plant.IsTree)
+                                    {
+                                        float commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "TemperateForest").FirstOrDefault().commonality;
+                                        if (current.plant.IsTree)
+                                        {
+                                            commonality *= 0.4f;
+                                        }
+                                        ___cachedPlantCommonalities.Add(current, commonality);
+                                    }
+                                }
+                            }
+
+                            // Coastal Dunes
+                            if (___defName == "ZBiome_CoastalDunes")
+                            {
+                                if (current.plant.wildBiomes.Any(b => b.biome.defName == "AridShrubland"))
+                                {
+                                    if (current.plant.purpose == PlantPurpose.Food)
+                                    {
+                                        float commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "AridShrubland").FirstOrDefault().commonality;
+                                        ___cachedPlantCommonalities.Add(current, commonality);
+                                    }
+
+                                }
+                                else if (current.plant.wildBiomes.Any(b => b.biome.defName == "TropicalRainforest"))
+                                {
+                                    if (current.plant.purpose != PlantPurpose.Food)
+                                    {
+                                        float commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "TropicalRainforest").FirstOrDefault().commonality;
+                                        ___cachedPlantCommonalities.Add(current, commonality);
+                                    }
+                                }
+                            }
+
+                            // Desert Oasis
+                            if (___defName == "ZBiome_DesertOasis")
+                            {
+                                if (current.plant.wildBiomes.Any(b => b.biome.defName == "AridShrubland"))
+                                {
+                                    if (current.plant.purpose == PlantPurpose.Food)
+                                    {
+                                        float commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "AridShrubland").FirstOrDefault().commonality;
+                                        ___cachedPlantCommonalities.Add(current, commonality);
+                                    }
+                                }
+                                else if (current.plant.wildBiomes.Any(b => b.biome.defName == "TropicalRainforest"))
+                                {
+                                    if (current.plant.purpose != PlantPurpose.Food)
+                                    {
+                                        float commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "TropicalRainforest").FirstOrDefault().commonality;
+                                        ___cachedPlantCommonalities.Add(current, commonality);
+                                    }
+                                }
+                            }
+
+                            // Glaial Shield
+                            if (___defName == "ZBiome_GlacialShield")
+                            {
+                                if (current.plant.wildBiomes.Any(b => b.biome.defName == "Tundra"))
+                                {
+                                    float commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "Tundra").FirstOrDefault().commonality;
+                                    if (current.plant.IsTree)
+                                    {
+                                        commonality *= 1.7f;
+                                    }
+                                    if (current.plant.purpose == PlantPurpose.Beauty || current.plant.purpose == PlantPurpose.Food)
+                                    {
+                                        commonality *= 1.2f;
+                                    }
+
+                                    ___cachedPlantCommonalities.Add(current, commonality);
+
+                                }
+                            }
+
+                            //Grasslands
+                            if (___defName == "ZBiome_Grasslands")
+                            {
+                                if (current.plant.wildBiomes.Any(b => b.biome.defName == "AridShrubland"))
+                                {
+                                    float commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "AridShrubland").FirstOrDefault().commonality;
+                                    if (current.plant.IsTree)
+                                    {
+                                        commonality *= 0.4f;
+                                    }
+                                    ___cachedPlantCommonalities.Add(current, commonality);
+                                }
+
+                            }
+
+                            // icebergs
+                            if (___defName == "ZBiome_Iceberg_NoBeach")
+                            {
+                                if (current.plant.wildBiomes.Any(b => b.biome.defName == "SeaIce"))
+                                {
+                                    ___cachedPlantCommonalities.Add(current, current.plant.wildBiomes.Where(bi => bi.biome.defName == "SeaIce").FirstOrDefault().commonality);
+                                }
+                            }
+ 
+                            //Marsh
+                            if (___defName == "ZBiome_Marsh")
+                            {
+                                if (current.plant.wildBiomes.Any(b => b.biome.defName == "ColdBog"))
+                                {
+                                    float commonality = current.plant.wildBiomes.Where(bi => bi.biome.defName == "ColdBog").FirstOrDefault().commonality;
+                                    if (current.plant.IsTree)
+                                    {
+                                        commonality *= 0.3f;
+                                    }
+                                    ___cachedPlantCommonalities.Add(current, commonality);
+                                }
+                            }
+ 
+                            //Sandbar
+                            if (___defName == "ZBiome_Sandbar_NoBeach")
+                            {
+                                if (current.plant.wildBiomes.Any(b => b.biome.defName == "ExtremeDesert"))
+                                {
+                                    ___cachedPlantCommonalities.Add(current, current.plant.wildBiomes.Where(bi => bi.biome.defName == "ExtremeDesert").FirstOrDefault().commonality);
+                                }
+                                else if (current.plant.wildBiomes.Any(b => b.biome.defName == "Desert"))
+                                {
+                                    ___cachedPlantCommonalities.Add(current, current.plant.wildBiomes.Where(bi => bi.biome.defName == "Desert").FirstOrDefault().commonality * 0.5f);
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+
+                return false;
+
             }
         }
 
