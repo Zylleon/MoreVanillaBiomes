@@ -20,6 +20,8 @@
     <li>terrain_word->高原</li>
     <li>terrain_word->野原</li>
     <li>terrain_word->緩い丘</li>
+    <li>terrain_word->道</li>
+    <li>terrain_word->低地</li>
   </ZBiome_NamerAlpineMeadow.rulePack.rulesStrings>
 
 
@@ -37,11 +39,12 @@
     <li>ZBiome_cloud_adj->霧中な</li>
     <li>ZBiome_cloud_adj->隠された</li>
     <li>ZBiome_cloud_adj->霧だらけな</li>
+    <li>ZBiome_cloud_adj->霧の濃い</li>
     <li>ZBiome_cloud_adj->苔の蒸した</li>
 
     <li>terrain_word(p=4)->森</li>
     <li>terrain_word(p=2)->密林</li>
-    <li>terrain_word->低山帯</li>
+    <li>terrain_word->山地</li>
   </ZBiome_NamerCloudForest.rulePack.rulesStrings>
 
 
@@ -55,6 +58,7 @@
     <li>ZBiome_dunes_adj->海辺の</li>
     <li>ZBiome_dunes_adj->潮風が吹く</li>
     <li>ZBiome_dunes_adj->日で温められた</li>
+    <li>ZBiome_dunes_adj->日に焼けた</li>
 
     <li>terrain_word(p=3)->浜辺</li>
     <li>terrain_word(p=3)->砂丘</li>
@@ -81,6 +85,18 @@
   <!-- ZBiome_Grasslands -->
 
   <ZBiome_NamerGrasslands.rulePack.rulesStrings>
+    <li>r_name->[ZBiome_grasslands_adj] [narrative_name]</li>
+    <li>r_name->[ZBiome_grasslands_adj] [terrain_word]</li>
+
+    <li>ZBiome_grasslands_adj->草だらけの</li>
+    <li>ZBiome_grasslands_adj->終わりのない</li>
+    <li>ZBiome_grasslands_adj->無限に続く</li>
+    <li>ZBiome_grasslands_adj->草木がない</li>
+    <li>ZBiome_grasslands_adj->広大な</li>
+    <li>ZBiome_grasslands_adj->日が照り付ける</li>
+    <li>ZBiome_grasslands_adj->果てしなく続く</li>
+    <li>ZBiome_grasslands_adj->乾いた</li>
+
     <li>terrain_word(p=3)->草地</li>
     <li>terrain_word->大草原</li>
     <li>terrain_word->平原</li>
@@ -88,6 +104,7 @@
     <li>terrain_word->原野</li>
     <li>terrain_word->サバンナ</li>
     <li>terrain_word->草原</li>
+    <li>terrain_word->広い土地</li>
   </ZBiome_NamerGrasslands.rulePack.rulesStrings>
 
   <!-- ZBiome_NamerBadlands -->
@@ -132,6 +149,7 @@
     <li>terrain_word->松林</li>
     <li>terrain_word->盾状地</li>
     <li>terrain_word->台地</li>
+    <li>terrain_word->氷河</li>
   </ZBiome_NamerGlacialShield.rulePack.rulesStrings>
 
 </LanguageData>
