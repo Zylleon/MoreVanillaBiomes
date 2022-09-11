@@ -324,27 +324,25 @@ namespace VanillaBiomes
 
                     if (current.RaceProps.wildBiomes != null)
                     {
-                        // to check if it's in any of these biomes already
-                        if (!current.RaceProps.wildBiomes.Any(w => w.biome.defName.Contains("ZBiome")))
+                        if ( !___cachedAnimalCommonalities.ContainsKey((current)) && current.modContentPack.PackageId != ModContentPack.CoreModPackageId)
                         {
                             //Alpine Meadow
                             if (___defName == "ZBiome_AlpineMeadow")
                             {
-                                if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "BorealForest"))
+                                if (BiomeDefOf.BorealForest.CommonalityOfAnimal(current) != 0)
                                 {
-                                    float commonality = current.RaceProps.wildBiomes.Where(b => b.biome.defName == "BorealForest").FirstOrDefault().commonality;
+                                    float commonality = BiomeDefOf.BorealForest.CommonalityOfAnimal(current);
                                     if (current.RaceProps.predator && current.RaceProps.maxPreyBodySize >= 0.9f)
                                     {
                                        commonality *= 0.5f;
                                     }
                                     ___cachedAnimalCommonalities.Add(current, commonality);
                                 }
-                                else if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "Tundra"))
+                                else if (BiomeDefOf.Tundra.CommonalityOfAnimal(current) != 0)
                                 {
                                     if (current.RaceProps.predator && current.RaceProps.maxPreyBodySize >= 0.9f)
                                     {
-                                        float commonality = current.RaceProps.wildBiomes.Where(b => b.biome.defName == "BorealForest").FirstOrDefault().commonality;
-                                        commonality *= 0.5f;
+                                        float commonality = BiomeDefOf.Tundra.CommonalityOfAnimal(current);
                                         ___cachedAnimalCommonalities.Add(current, commonality);
                                     }
                                 }
@@ -353,21 +351,20 @@ namespace VanillaBiomes
                             //Badlands
                             if (___defName == "ZBiome_Badlands")
                             {
-                                if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "TemperateForest"))
+                                if (BiomeDefOf.TemperateForest.CommonalityOfAnimal(current) != 0)
                                 {
-                                    if (!current.RaceProps.wildBiomes.Any(b => b.biome.defName == "TemperateSwamp"))
+                                    if (BiomeDef.Named("TemperateSwamp").CommonalityOfAnimal(current) == 0)
                                     {
-                                        float commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "TemperateForest").FirstOrDefault().commonality;
-
+                                        float commonality = BiomeDefOf.TemperateForest.CommonalityOfAnimal(current);
                                         if (!current.RaceProps.predator && current.RaceProps.baseBodySize > 1.0)    // less large herbivores
                                         {
                                             commonality *= 0.5f;
                                         }
                                         ___cachedAnimalCommonalities.Add(current, commonality);
                                     }
-                                    else if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "AridShrubland"))
+                                    else if (BiomeDefOf.AridShrubland.CommonalityOfAnimal(current) != 0)
                                     {
-                                        float commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "AridShrubland").FirstOrDefault().commonality;
+                                        float commonality = BiomeDefOf.AridShrubland.CommonalityOfAnimal(current);
                                         commonality *= 0.7f;
                                         if (!current.RaceProps.predator && current.RaceProps.baseBodySize > 1.0)    // less large herbivores
                                         {
@@ -381,14 +378,14 @@ namespace VanillaBiomes
                             // Cloud Forest
                             if (___defName == "ZBiome_CloudForest")
                             {
-                                if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "TropicalRainforest"))
+                                if (BiomeDefOf.TropicalRainforest.CommonalityOfAnimal(current) != 0)
                                 {
-                                    float commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "TropicalRainforest").FirstOrDefault().commonality;
+                                    float commonality = BiomeDefOf.TropicalRainforest.CommonalityOfAnimal(current);
                                     ___cachedAnimalCommonalities.Add(current, commonality);
                                 }
-                                else if (current.RaceProps.baseBodySize <= 0.5f && current.RaceProps.wildBiomes.Any(b => b.biome.defName == "TemperateForest"))
+                                else if (BiomeDefOf.TemperateForest.CommonalityOfAnimal(current) != 0)
                                 {
-                                    float commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "TemperateForest").FirstOrDefault().commonality;
+                                    float commonality = BiomeDefOf.TemperateForest.CommonalityOfAnimal(current);
                                     ___cachedAnimalCommonalities.Add(current, commonality);
                                 }
                             }
@@ -396,14 +393,14 @@ namespace VanillaBiomes
                             // Coastal Dunes
                             if (___defName == "ZBiome_CoastalDunes")
                             {
-                                if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "Desert"))
+                                if (BiomeDefOf.Desert.CommonalityOfAnimal(current) != 0)
                                 {
-                                    float commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "Desert").FirstOrDefault().commonality;
+                                    float commonality = BiomeDefOf.Desert.CommonalityOfAnimal(current);
                                     ___cachedAnimalCommonalities.Add(current, commonality);
                                 }
-                                else if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "ExtremeDesert"))
+                                else if (BiomeDefOf.ExtremeDesert.CommonalityOfAnimal(current) != 0)
                                 {
-                                    float commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "ExtremeDesert").FirstOrDefault().commonality;
+                                    float commonality = BiomeDefOf.ExtremeDesert.CommonalityOfAnimal(current);
                                     ___cachedAnimalCommonalities.Add(current, commonality);
                                 }
                             }
@@ -411,15 +408,24 @@ namespace VanillaBiomes
                             // Desert Oasis
                             if (___defName == "ZBiome_DesertOasis")
                             {
-                                if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "Desert"))
+                                if (BiomeDefOf.Desert.CommonalityOfAnimal(current) != 0)
                                 {
-                                    float commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "Desert").FirstOrDefault().commonality;
+                                    float commonality = BiomeDefOf.Desert.CommonalityOfAnimal(current);
                                     ___cachedAnimalCommonalities.Add(current, commonality);
                                 }
-                                else if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "ExtremeDesert"))
+                                else if (BiomeDefOf.ExtremeDesert.CommonalityOfAnimal(current) != 0)
                                 {
-                                    float commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "ExtremeDesert").FirstOrDefault().commonality;
+                                    float commonality = BiomeDefOf.ExtremeDesert.CommonalityOfAnimal(current);
                                     ___cachedAnimalCommonalities.Add(current, commonality);
+                                }
+                                else if (BiomeDefOf.TropicalRainforest.CommonalityOfAnimal(current) != 0)
+                                {
+                                    if (current.RaceProps.baseBodySize < 0.7f)
+                                    {
+                                        float commonality = BiomeDefOf.TropicalRainforest.CommonalityOfAnimal(current);
+                                        commonality *= 0.7f;
+                                        ___cachedAnimalCommonalities.Add(current, commonality);
+                                    }
                                 }
                             }
 
@@ -427,21 +433,21 @@ namespace VanillaBiomes
                             // Glacial Shield
                             if (___defName == "ZBiome_GlacialShield")
                             {
-                                if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "Tundra"))
+                                if (BiomeDefOf.Tundra.CommonalityOfAnimal(current) != 0)
                                 {
-                                    float commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "Tundra").FirstOrDefault().commonality;
+                                    float commonality = BiomeDefOf.Tundra.CommonalityOfAnimal(current);
                                     ___cachedAnimalCommonalities.Add(current, commonality);
                                 }
-                                else if (current.RaceProps.baseBodySize <= 0.5f && current.RaceProps.wildBiomes.Any(b => b.biome.defName == "IceSheet"))
+                                else if (current.RaceProps.baseBodySize <= 0.5f && BiomeDefOf.IceSheet.CommonalityOfAnimal(current) != 0)
                                 {
-                                    float commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "IceSheet").FirstOrDefault().commonality;
+                                    float commonality = BiomeDefOf.IceSheet.CommonalityOfAnimal(current);
                                     ___cachedAnimalCommonalities.Add(current, commonality);
                                 }
-                                else if (current.RaceProps.baseBodySize <= 0.5f && current.RaceProps.wildBiomes.Any(b => b.biome.defName == "BorealForest"))
+                                else if (current.RaceProps.baseBodySize <= 0.5f && BiomeDefOf.BorealForest.CommonalityOfAnimal(current) != 0)
                                 {
-                                    if (!current.RaceProps.wildBiomes.Any(b => b.biome.defName == "TemperateForest"))
+                                    if (BiomeDefOf.TemperateForest.CommonalityOfAnimal(current) == 0)
                                     {
-                                        float commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "BorealForest").FirstOrDefault().commonality;
+                                        float commonality = BiomeDefOf.BorealForest.CommonalityOfAnimal(current);
                                         ___cachedAnimalCommonalities.Add(current, commonality);
                                     }
                                 }
@@ -451,9 +457,9 @@ namespace VanillaBiomes
                             // Grasslands
                             if (___defName == "ZBiome_Grasslands")
                             {
-                                if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "AridShruland"))
+                                if (BiomeDef.Named("AridShrubland").CommonalityOfAnimal(current) != 0)
                                 {
-                                    float commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "AridShruland").FirstOrDefault().commonality;
+                                    float commonality = BiomeDef.Named("AridShrubland").CommonalityOfAnimal(current);
                                     if (current.RaceProps.herdAnimal)
                                     {
                                         commonality *= 1.5f;
@@ -470,9 +476,9 @@ namespace VanillaBiomes
                             // Iceberg
                             if (___defName == "ZBiome_Iceberg_NoBeach")
                             {
-                                if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "SeaIce"))
+                                if (BiomeDefOf.SeaIce.CommonalityOfAnimal(current) != 0)
                                 {
-                                    float commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "SeaIce").FirstOrDefault().commonality;
+                                    float commonality = BiomeDefOf.SeaIce.CommonalityOfAnimal(current);
                                     ___cachedAnimalCommonalities.Add(current, commonality);
                                 }
                             }
@@ -482,9 +488,9 @@ namespace VanillaBiomes
                             //Marsh
                             if (___defName == "ZBiome_Marsh")
                             {
-                                if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "ColdBog"))
+                                if (BiomeDef.Named("ColdBog").CommonalityOfAnimal(current) != 0)
                                 {
-                                    float commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "ColdBog").FirstOrDefault().commonality;
+                                    float commonality = BiomeDef.Named("ColdBog").CommonalityOfAnimal(current);
                                     ___cachedAnimalCommonalities.Add(current, commonality);
                                 }
                             }
@@ -494,9 +500,9 @@ namespace VanillaBiomes
                             // Sandbar
                             if (___defName == "ZBiome_Sandbar_NoBeach")
                             {
-                                if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "ExtremeDesert"))
+                                if (BiomeDefOf.ExtremeDesert.CommonalityOfAnimal(current) != 0)
                                 {
-                                    float commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "ExtremeDesert").FirstOrDefault().commonality;
+                                    float commonality = BiomeDefOf.ExtremeDesert.CommonalityOfAnimal(current);
                                     ___cachedAnimalCommonalities.Add(current, commonality);
                                 }
                             }
