@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Empire</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+		<!-- BiomeResourceDefs -->
+			<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+						<FactionColonies.BiomeResourceDef>
+							<defName>ZBiome_Sandbar_NoBeach</defName>
+							<label>sandbar</label>
+							<canSettle>true</canSettle>
+							<BaseProductionAdditive> <!-- 0 is default -->
+								<li>.25</li> <!-- Food -->
+								<li>1</li> <!-- Weapons -->
+								<li>1</li> <!-- Apparel -->
+								<li>0</li> <!-- Animals -->
+								<li>0</li> <!-- Logging -->
+								<li>1.5</li> <!-- Mining -->
+								<li>1</li> <!-- Research -->
+								<li>1</li> <!-- Power -->
+								<li>.5</li> <!-- Medicine -->
+							</BaseProductionAdditive>
+							<BaseProductionMultiplicative> <!-- li is default -->
+								<li>1</li> <!-- Food -->
+								<li>1</li> <!-- Weapons -->
+								<li>1</li> <!-- Apparel -->
+								<li>1</li> <!-- Animals -->
+								<li>1</li> <!-- Logging -->
+								<li>1</li> <!-- Mining -->
+								<li>1</li> <!-- Research -->
+								<li>1.25</li> <!-- Power -->
+								<li>1</li> <!-- Medicine -->
+							</BaseProductionMultiplicative>
+						</FactionColonies.BiomeResourceDef>	
+					</value>
+				</li>
+				
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+					<FactionColonies.BiomeResourceDef>
+						<defName>ZBiome_CoastalDunes</defName>
+						<label>coastal dunes</label>
+						<canSettle>true</canSettle>
+						<BaseProductionAdditive> <!-- 0 is default -->
+							<li>1</li> <!-- Food -->
+							<li>1</li> <!-- Weapons -->
+							<li>1</li> <!-- Apparel -->
+							<li>0.75</li> <!-- Animals -->
+							<li>0.75</li> <!-- Logging -->
+							<li>1.25</li> <!-- Mining -->
+							<li>1</li> <!-- Research -->
+							<li>1.25</li> <!-- Power -->
+							<li>1.25</li> <!-- Medicine -->
+						</BaseProductionAdditive>
+						<BaseProductionMultiplicative> <!-- li is default -->
+							<li>1</li> <!-- Food -->
+							<li>1</li> <!-- Weapons -->
+							<li>1</li> <!-- Apparel -->
+							<li>1</li> <!-- Animals -->
+							<li>1</li> <!-- Logging -->
+							<li>1</li> <!-- Mining -->
+							<li>1</li> <!-- Research -->
+							<li>1</li> <!-- Power -->
+							<li>1</li> <!-- Medicine -->
+						</BaseProductionMultiplicative>
+					</FactionColonies.BiomeResourceDef>	
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+					<FactionColonies.BiomeResourceDef>
+						<defName>ZBiome_DesertOasis</defName>
+						<label>desert oasis</label>
+						<canSettle>true</canSettle>
+						<BaseProductionAdditive> <!-- 0 is default -->
+							<li>1.25</li> <!-- Food -->
+							<li>1</li> <!-- Weapons -->
+							<li>1</li> <!-- Apparel -->
+							<li>1.5</li> <!-- Animals -->
+							<li>0.75</li> <!-- Logging -->
+							<li>1</li> <!-- Mining -->
+							<li>1.25</li> <!-- Research -->
+							<li>1</li> <!-- Power -->
+							<li>1</li> <!-- Medicine -->
+						</BaseProductionAdditive>
+						<BaseProductionMultiplicative> <!-- li is default -->
+							<li>1</li> <!-- Food -->
+							<li>1</li> <!-- Weapons -->
+							<li>1</li> <!-- Apparel -->
+							<li>0.75</li> <!-- Animals -->
+							<li>1</li> <!-- Logging -->
+							<li>1</li> <!-- Mining -->
+							<li>1</li> <!-- Research -->
+							<li>1</li> <!-- Power -->
+							<li>1</li> <!-- Medicine -->
+						</BaseProductionMultiplicative>
+					</FactionColonies.BiomeResourceDef>	
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+					<FactionColonies.BiomeResourceDef>
+						<defName>ZBiome_Grasslands</defName>
+						<label>grasslands</label>
+						<canSettle>true</canSettle>
+						<BaseProductionAdditive> <!-- 0 is default -->
+							<li>0.75</li> <!-- Food -->
+							<li>1</li> <!-- Weapons -->
+							<li>1</li> <!-- Apparel -->
+							<li>1.25</li> <!-- Animals -->
+							<li>0.5</li> <!-- Logging -->
+							<li>1</li> <!-- Mining -->
+							<li>1</li> <!-- Research -->
+							<li>1</li> <!-- Power -->
+							<li>1</li> <!-- Medicine -->
+						</BaseProductionAdditive>
+						<BaseProductionMultiplicative> <!-- li is default -->
+							<li>1</li> <!-- Food -->
+							<li>1</li> <!-- Weapons -->
+							<li>1</li> <!-- Apparel -->
+							<li>1</li> <!-- Animals -->
+							<li>1</li> <!-- Logging -->
+							<li>1</li> <!-- Mining -->
+							<li>1</li> <!-- Research -->
+							<li>1</li> <!-- Power -->
+							<li>1</li> <!-- Medicine -->
+						</BaseProductionMultiplicative>
+					</FactionColonies.BiomeResourceDef>	
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+					<FactionColonies.BiomeResourceDef>
+						<defName>ZBiome_CloudForest</defName>
+						<label>cloud forest</label>
+						<canSettle>true</canSettle>
+						<BaseProductionAdditive> <!-- 0 is default -->
+							<li>1.5</li> <!-- Food -->
+							<li>1</li> <!-- Weapons -->
+							<li>1</li> <!-- Apparel -->
+							<li>1.5</li> <!-- Animals -->
+							<li>1.5</li> <!-- Logging -->
+							<li>1</li> <!-- Mining -->
+							<li>1.25</li> <!-- Research -->
+							<li>0.75</li> <!-- Power -->
+							<li>1.25</li> <!-- Medicine -->
+						</BaseProductionAdditive>
+						<BaseProductionMultiplicative> <!-- li is default -->
+							<li>.75</li> <!-- Food -->
+							<li>1</li> <!-- Weapons -->
+							<li>1</li> <!-- Apparel -->
+							<li>1</li> <!-- Animals -->
+							<li>1</li> <!-- Logging -->
+							<li>.75</li> <!-- Mining -->
+							<li>1</li> <!-- Research -->
+							<li>1</li> <!-- Power -->
+							<li>1</li> <!-- Medicine -->
+						</BaseProductionMultiplicative>
+					</FactionColonies.BiomeResourceDef>	
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+					<FactionColonies.BiomeResourceDef>
+						<defName>ZBiome_AlpineMeadow</defName>
+						<label>alpine meadow</label>
+						<canSettle>true</canSettle>
+						<BaseProductionAdditive> <!-- 0 is default -->
+							<li>1.25</li> <!-- Food -->
+							<li>1</li> <!-- Weapons -->
+							<li>1</li> <!-- Apparel -->
+							<li>1.5</li> <!-- Animals -->
+							<li>1.5</li> <!-- Logging -->
+							<li>1</li> <!-- Mining -->
+							<li>1</li> <!-- Research -->
+							<li>1</li> <!-- Power -->
+							<li>1</li> <!-- Medicine -->
+						</BaseProductionAdditive>
+						<BaseProductionMultiplicative> <!-- li is default -->
+							<li>1</li> <!-- Food -->
+							<li>1</li> <!-- Weapons -->
+							<li>1</li> <!-- Apparel -->
+							<li>1</li> <!-- Animals -->
+							<li>1</li> <!-- Logging -->
+							<li>1</li> <!-- Mining -->
+							<li>1</li> <!-- Research -->
+							<li>1</li> <!-- Power -->
+							<li>1</li> <!-- Medicine -->
+						</BaseProductionMultiplicative>
+					</FactionColonies.BiomeResourceDef>	
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+					<FactionColonies.BiomeResourceDef>
+						<defName>ZBiome_Marsh</defName>
+						<label>marsh</label>
+						<canSettle>true</canSettle>
+						<BaseProductionAdditive> <!-- 0 is default -->
+							<li>1</li> <!-- Food -->
+							<li>1</li> <!-- Weapons -->
+							<li>1</li> <!-- Apparel -->
+							<li>1.5</li> <!-- Animals -->
+							<li>0.75</li> <!-- Logging -->
+							<li>1</li> <!-- Mining -->
+							<li>1.25</li> <!-- Research -->
+							<li>1</li> <!-- Power -->
+							<li>1</li> <!-- Medicine -->
+						</BaseProductionAdditive>
+						<BaseProductionMultiplicative> <!-- li is default -->
+							<li>.75</li> <!-- Food -->
+							<li>1</li> <!-- Weapons -->
+							<li>1</li> <!-- Apparel -->
+							<li>1</li> <!-- Animals -->
+							<li>.75</li> <!-- Logging -->
+							<li>1</li> <!-- Mining -->
+							<li>1</li> <!-- Research -->
+							<li>1</li> <!-- Power -->
+							<li>1</li> <!-- Medicine -->
+						</BaseProductionMultiplicative>
+					</FactionColonies.BiomeResourceDef>	
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+					<FactionColonies.BiomeResourceDef>
+						<defName>ZBiome_Iceberg_NoBeach</defName>
+						<label>iceberg</label>
+						<canSettle>true</canSettle>
+						<BaseProductionAdditive> <!-- 0 is default -->
+							<li>0</li> <!-- Food -->
+							<li>.5</li> <!-- Weapons -->
+							<li>.5</li> <!-- Apparel -->
+							<li>.1</li> <!-- Animals -->
+							<li>0</li> <!-- Logging -->
+							<li>0</li> <!-- Mining -->
+							<li>1.5</li> <!-- Research -->
+							<li>.5</li> <!-- Power -->
+							<li>0</li> <!-- Medicine -->
+						</BaseProductionAdditive>
+						<BaseProductionMultiplicative> <!-- li is default -->
+							<li>1</li> <!-- Food -->
+							<li>1</li> <!-- Weapons -->
+							<li>1</li> <!-- Apparel -->
+							<li>1</li> <!-- Animals -->
+							<li>1</li> <!-- Logging -->
+							<li>1</li> <!-- Mining -->
+							<li>1</li> <!-- Research -->
+							<li>1</li> <!-- Power -->
+							<li>1</li> <!-- Medicine -->
+						</BaseProductionMultiplicative>
+					</FactionColonies.BiomeResourceDef>	
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+					<FactionColonies.BiomeResourceDef>
+						<defName>ZBiome_Badlands</defName>
+						<label>badlands</label>
+						<canSettle>true</canSettle>
+						<BaseProductionAdditive> <!-- 0 is default -->
+							<li>0</li> <!-- Food -->
+							<li>.75</li> <!-- Weapons -->
+							<li>.75</li> <!-- Apparel -->
+							<li>.7</li> <!-- Animals -->
+							<li>0.2</li> <!-- Logging -->
+							<li>0</li> <!-- Mining -->
+							<li>1.25</li> <!-- Research -->
+							<li>.5</li> <!-- Power -->
+							<li>0</li> <!-- Medicine -->
+						</BaseProductionAdditive>
+						<BaseProductionMultiplicative> <!-- li is default -->
+							<li>1</li> <!-- Food -->
+							<li>1</li> <!-- Weapons -->
+							<li>1</li> <!-- Apparel -->
+							<li>1</li> <!-- Animals -->
+							<li>1</li> <!-- Logging -->
+							<li>1</li> <!-- Mining -->
+							<li>1</li> <!-- Research -->
+							<li>1</li> <!-- Power -->
+							<li>1</li> <!-- Medicine -->
+						</BaseProductionMultiplicative>
+					</FactionColonies.BiomeResourceDef>	
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+					<FactionColonies.BiomeResourceDef>
+						<defName>ZBiome_GlacialShield</defName>
+						<label>badlands</label>
+						<canSettle>true</canSettle>
+						<BaseProductionAdditive> <!-- 0 is default -->
+							<li>0.5</li> <!-- Food -->
+							<li>1.1</li> <!-- Weapons -->
+							<li>1</li> <!-- Apparel -->
+							<li>0.25</li> <!-- Animals -->
+							<li>0.25</li> <!-- Logging -->
+							<li>1.25</li> <!-- Mining -->
+							<li>1</li> <!-- Research -->
+							<li>1</li> <!-- Power -->
+							<li>1</li> <!-- Medicine -->
+						</BaseProductionAdditive>
+						<BaseProductionMultiplicative> <!-- 1 is default -->
+							<li>0.75</li> <!-- Food -->
+							<li>1</li> <!-- Weapons -->
+							<li>1</li> <!-- Apparel -->
+							<li>1</li> <!-- Animals -->
+							<li>0.75</li> <!-- Logging -->
+							<li>1</li> <!-- Mining -->
+							<li>1</li> <!-- Research -->
+							<li>1</li> <!-- Power -->
+							<li>1</li> <!-- Medicine -->
+						</BaseProductionMultiplicative>
+					</FactionColonies.BiomeResourceDef>	
+				</value>
+			</li>
+			
+
+		<!-- Other -->
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/FactionColonies.BuildingFCDef[defName = "deforestationCamp"]/applicableBiomes</xpath>
+				<value>
+					<li>ZBiome_CloudForest</li>
+				</value>
+			</li>
+			
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+
