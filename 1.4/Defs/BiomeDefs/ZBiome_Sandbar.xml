@@ -152,6 +152,8 @@
 		<Plant_Dandelion>0.5</Plant_Dandelion>
 		<Plant_Agave>0.25</Plant_Agave>
 		<Plant_Bush>0.45</Plant_Bush>
+      <Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">1</Plant_PebbleCactus>
+      <Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">5</Plant_GrayGrass>
     </wildPlants>
     <wildAnimals>
       <Iguana>1.2</Iguana>
@@ -167,6 +169,10 @@
       <Cougar>0.07</Cougar>
       <Fox_Fennec>0.07</Fox_Fennec>
     </wildAnimals>
+    <pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+      <Iguana>1</Iguana>
+      <Megascarab>1</Megascarab>
+    </pollutionWildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
       <li>Dromedary</li>

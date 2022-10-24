@@ -132,6 +132,8 @@
 		
 		<Plant_Agave>0.2</Plant_Agave>
 		<Plant_HealrootWild>0.05</Plant_HealrootWild>
+      <Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">2</Plant_GrayGrass>
+      <Plant_RatPalm MayRequire="Ludeon.RimWorld.Biotech">0.3</Plant_RatPalm>
     </wildPlants>
     <wildAnimals>
       <Rat>1.3</Rat>
@@ -152,6 +154,15 @@
 	  <Donkey>0.1</Donkey>
 	  
     </wildAnimals>
+    <pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+      <Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.4</Toxalope>
+      <Iguana>1</Iguana>
+      <Rat>1</Rat>
+      <Raccoon>0.5</Raccoon>
+      <Boomrat>0.4</Boomrat>
+      <Boomalope>0.2</Boomalope>
+      <Warg>0.05</Warg>
+    </pollutionWildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
       <li>Dromedary</li>

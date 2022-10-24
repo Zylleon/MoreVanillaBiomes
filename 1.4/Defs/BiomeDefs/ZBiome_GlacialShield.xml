@@ -142,6 +142,9 @@
 	  
       <Plant_TreePine>5.0</Plant_TreePine>
       <Plant_TreeBirch>1.5</Plant_TreeBirch>
+      <Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">1</Plant_Ripthorn>
+      <Plant_TreeGrayPine MayRequire="Ludeon.RimWorld.Biotech">4</Plant_TreeGrayPine>
+      <Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">9.0</Plant_GrayGrass>
     </wildPlants>
     <wildAnimals>
       <Yak>0.12</Yak>
@@ -165,6 +168,12 @@
       <Lynx>0.07</Lynx>
       <Warg>0.08</Warg>
     </wildAnimals>
+	 <pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+      <WasteRat MayRequire="Ludeon.RimWorld.Biotech">1</WasteRat>
+      <Rat>0.5</Rat>
+      <Raccoon>0.25</Raccoon>
+      <Warg>0.05</Warg>
+    </pollutionWildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
     </allowedPackAnimals>
