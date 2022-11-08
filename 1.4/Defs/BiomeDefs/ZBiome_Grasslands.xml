@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<BiomeDef>							<!-- Temperate Grasslands -->
+    <defName>ZBiome_Grasslands</defName>
+    <label>grasslands</label>
+    <description>Warm grassy plains with few trees. Herds of grazing animals roam here, though the soil is generally poor.</description>
+    <workerClass>VanillaBiomes.BiomeWorker_Grasslands</workerClass>
+    <animalDensity>3.0</animalDensity>
+    <plantDensity>0.95</plantDensity>
+	<wildPlantRegrowDays>26</wildPlantRegrowDays>
+	<forageability>0.75</forageability>
+    <foragedFood>RawBerries</foragedFood>
+	
+    <settlementSelectionWeight>0.8</settlementSelectionWeight>
+    <movementDifficulty>1</movementDifficulty>
+    <texture>World/Biomes/ZBiome_Grasslands</texture>
+
+    <soundsAmbient>
+      <li>Ambient_NightInsects_Standard</li>
+    </soundsAmbient>
+    <diseaseMtbDays>50</diseaseMtbDays>
+    <diseases>
+      <li>
+        <diseaseInc>Disease_Flu</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_Plague</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_Malaria</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_GutWorms</diseaseInc>
+        <commonality>50</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_FibrousMechanites</diseaseInc>
+        <commonality>30</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_SensoryMechanites</diseaseInc>
+        <commonality>30</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_MuscleParasites</diseaseInc>
+        <commonality>50</commonality>
+      </li>
+      
+      <li>
+        <diseaseInc>Disease_AnimalFlu</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_AnimalPlague</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+    </diseases>
+    <terrainsByFertility>
+	  <li>
+        <terrain>Sand</terrain>
+        <min>-999</min>
+        <max>0.08</max>
+      </li>
+	  <li>
+        <terrain>Gravel</terrain>
+        <min>0.08</min>
+        <max>0.48</max>
+      </li>
+      <li>
+        <terrain>Soil</terrain>
+        <min>0.48</min>
+        <max>0.92</max>
+      </li>
+      <li>
+        <terrain>SoilRich</terrain>
+        <min>0.91</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <terrainPatchMakers>
+      <li>
+        <perlinFrequency>0.015</perlinFrequency>
+        <thresholds>
+          <li>
+            <terrain>SoilRich</terrain>
+            <min>0.71</min>
+            <max>0.80</max>
+          </li>
+          <li>
+            <terrain>Mud</terrain>
+            <min>0.80</min>
+            <max>0.93</max>
+          </li>
+          <li>
+            <terrain>WaterShallow</terrain>
+            <min>0.93</min>
+            <max>1.06</max>
+          </li>
+          <li>
+            <terrain>WaterDeep</terrain>
+            <min>1.06</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+    </terrainPatchMakers>
+    <baseWeatherCommonalities>
+      <Clear>18</Clear>
+      <Fog>1</Fog>
+      <Rain>1.5</Rain>
+      <DryThunderstorm>2</DryThunderstorm>
+      <RainyThunderstorm>1</RainyThunderstorm>
+      <FoggyRain>0.5</FoggyRain>
+      <SnowGentle>4</SnowGentle>
+      <SnowHard>4</SnowHard>
+    </baseWeatherCommonalities>
+    <wildPlants>
+		<Plant_Grass>6.0</Plant_Grass>
+		<Plant_TallGrass>2.9</Plant_TallGrass>
+		<Plant_Chokevine>0.8</Plant_Chokevine>
+		<Plant_Dandelion>0.65</Plant_Dandelion>
+		<Plant_Bush>0.65</Plant_Bush>
+		<Plant_PincushionCactus>0.6</Plant_PincushionCactus>
+		<Plant_TreeDrago>0.2</Plant_TreeDrago>
+		<Plant_Berry>0.075</Plant_Berry>
+      <Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">2</Plant_GrayGrass>
+      <Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">0.8</Plant_Ripthorn>
+      <Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">0.6</Plant_PebbleCactus>
+	</wildPlants>
+    <wildAnimals>
+		<Hare>1.15</Hare>
+		<Rat>1.15</Rat>
+		<Gazelle>0.5</Gazelle>
+		<Ibex>0.5</Ibex>
+		<Muffalo>0.5</Muffalo>
+		<Elephant>0.5</Elephant>
+		<Boomalope>0.45</Boomalope>
+		<Boomrat>0.45</Boomrat>
+		<Rhinoceros>0.3</Rhinoceros>
+		<Cougar>0.11</Cougar>
+		<Monkey>0.1</Monkey>	  
+		<Bison>0.08</Bison>
+		<Donkey>0.20</Donkey>
+		<GuineaPig>0.03</GuineaPig>
+		<Horse>0.15</Horse>
+		<Bear_Grizzly>0.07</Bear_Grizzly>
+		<Lynx>0.07</Lynx>	  
+		<Wolf_Timber>0.07</Wolf_Timber>     
+		<Warg>0.07</Warg>
+    </wildAnimals>
+    <pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+      <Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.4</Toxalope>
+      <WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.1</WasteRat>
+      <Iguana>1</Iguana>
+      <Rat>0.6</Rat>
+      <Boomalope>0.4</Boomalope>
+      <Boomrat>0.4</Boomrat>
+      <Warg>0.05</Warg>
+    </pollutionWildAnimals>
+    <allowedPackAnimals>
+      <li>Muffalo</li>
+	  <li>Elephant</li>
+      <li>Alpaca</li>
+    </allowedPackAnimals>
+  </BiomeDef>
+  
+
+</Defs>

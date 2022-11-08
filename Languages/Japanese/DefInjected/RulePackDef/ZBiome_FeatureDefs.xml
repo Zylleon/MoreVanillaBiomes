@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <!-- ZBiome_AlpineMeadow -->
@@ -131,6 +131,7 @@
     <li>terrain_word->荒廃地</li>
   </ZBiome_NamerBadlands.rulePack.rulesStrings>
 
+
   <!-- ZBiome_GlacialShield -->
 
   <ZBiome_NamerGlacialShield.rulePack.rulesStrings>
@@ -151,5 +152,6 @@
     <li>terrain_word->台地</li>
     <li>terrain_word->氷河</li>
   </ZBiome_NamerGlacialShield.rulePack.rulesStrings>
+
 
 </LanguageData>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+  <ThingDef ParentName="RosePlant">
+    <defName>ZBiome_Plant_WildRose</defName>
+    <description>A beautiful flower, the rose has been a symbol of love since Earth's ancient era.</description>
+	<hideAtSnowDepth>0.5</hideAtSnowDepth>
+	<pathCost>10</pathCost>
+	<altitudeLayer>LowPlant</altitudeLayer>
+    <plant>
+		<dieIfLeafless>false</dieIfLeafless>
+		<sowTags Inherit="False" />
+		<growDays>2.5</growDays>
+        <lifespanDaysPerGrowDays>9</lifespanDaysPerGrowDays>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="DaylilyPlant">
+    <defName>ZBiome_Plant_WildDaylily</defName>
+    <description>A beautiful yellow flower with wide petals.</description>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+	<pathCost>10</pathCost>
+	<altitudeLayer>LowPlant</altitudeLayer>
+	<plant>
+		<wildClusterRadius>6</wildClusterRadius>
+		<wildClusterWeight>17</wildClusterWeight>
+		<dieIfLeafless>false</dieIfLeafless>
+		<sowTags Inherit="False" />
+		<growDays>2.5</growDays>
+        <lifespanDaysPerGrowDays>15</lifespanDaysPerGrowDays>
+    </plant>
+  </ThingDef>
+
+
+</Defs>
