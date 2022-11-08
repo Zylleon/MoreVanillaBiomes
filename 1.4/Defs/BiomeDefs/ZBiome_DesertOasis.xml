@@ -161,6 +161,20 @@
       <li>Dromedary</li>
 	  <li>Elephant</li>
     </allowedPackAnimals>
+
+    <modExtensions>
+        <li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
+            <allowLandforms>true</allowLandforms>
+            <allowBiomeTransitions>true</allowBiomeTransitions>
+            <disallowedLandforms>
+                <li>Badlands</li>
+                <li>DesertPlateau</li>
+                <li>DryLake</li>
+                <li>IceOasis</li>
+            </disallowedLandforms>
+        </li>
+    </modExtensions>
+    
 	</BiomeDef>
 
 </Defs>
