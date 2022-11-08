@@ -228,25 +228,25 @@
       <li>WorldFeatureNamerCommon</li>
     </include>
     <rulePack>
-	
+
       <rulesStrings>
-	    <li>r_name->[ZBiome_grasslands_adj] [narrative_name]</li>
-		<li>r_name->[ZBiome_grasslands_adj] [terrain_word]</li>
-		
-		<li>ZBiome_grasslands_adj->grassy</li>
-		<li>ZBiome_grasslands_adj->endless</li>
-		<li>ZBiome_grasslands_adj->boundless</li>
-		<li>ZBiome_grasslands_adj->bare</li>
-		<li>ZBiome_grasslands_adj->vast</li>
-		<li>ZBiome_grasslands_adj->sun-baked</li>
-		<li>ZBiome_grasslands_adj->unending</li>
-		
+        <li>r_name->[ZBiome_grasslands_adj] [narrative_name]</li>
+        <li>r_name->[ZBiome_grasslands_adj] [terrain_word]</li>
+
+        <li>ZBiome_grasslands_adj->grassy</li>
+        <li>ZBiome_grasslands_adj->endless</li>
+        <li>ZBiome_grasslands_adj->boundless</li>
+        <li>ZBiome_grasslands_adj->bare</li>
+        <li>ZBiome_grasslands_adj->vast</li>
+        <li>ZBiome_grasslands_adj->sun-baked</li>
+        <li>ZBiome_grasslands_adj->unending</li>
+
         <li>terrain_word(p=3)->grasslands</li>
-		<li>terrain_word->prairie</li>
-		<li>terrain_word->plain</li>
-		<li>terrain_word->steppe</li>
-		<li>terrain_word->field</li>
-		<li>terrain_word->savanna</li>
+        <li>terrain_word->prairie</li>
+        <li>terrain_word->plain</li>
+        <li>terrain_word->steppe</li>
+        <li>terrain_word->field</li>
+        <li>terrain_word->savanna</li>
         <li>terrain_word->veldt</li>
         <li>terrain_word->expanse</li>
       </rulesStrings>
