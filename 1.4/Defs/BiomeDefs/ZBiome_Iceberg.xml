@@ -132,6 +132,16 @@
 	<allowedPackAnimals>
 		<li>Muffalo</li>
 	</allowedPackAnimals>
+
+	<modExtensions>
+		<li Class="GeologicalLandforms.BiomeProperties" MayRequire="m00nl1ght.GeologicalLandforms">
+			<allowLandforms>false</allowLandforms>
+			<allowBiomeTransitions>false</allowBiomeTransitions>
+			<isWaterCovered>true</isWaterCovered>
+			<beachTerrain>Ice</beachTerrain>
+		</li>
+	</modExtensions>
+	
 </BiomeDef>
 
   
