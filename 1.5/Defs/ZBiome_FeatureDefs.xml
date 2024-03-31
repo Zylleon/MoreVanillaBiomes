@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- General rules -->
+
+<!-- Biomes 
+
+      ZBiome_AlpineMeadow
+	  ZBiome_CloudForest
+	  ZBiome_CoastalDunes
+	  ZBiome_DesertOasis
+	  ZBiome_Grasslands
+	  ZBiome_Iceberg_NoBeach
+	  ZBiome_Marsh
+	  ZBiome_Sandbar_NoBeach
+	  ZBiome_Badlands
+	  ZBiome_GlacialShield
+
+
+<FeatureDef>
+    <defName>ZBiome_Features</defName>
+    <workerClass>FeatureWorker_Biome</workerClass>
+    <order>125</order>
+    <minSize>3</minSize>
+    <maxSize>200</maxSize>
+    <rootBiomes>
+      <li>ZBiome_AlpineMeadow</li>
+	  <li>ZBiome_CloudForest</li>
+	  <li>ZBiome_CoastalDunes</li>
+	  <li>ZBiome_DesertOasis</li>
+	  <li>ZBiome_Grasslands</li>
+	  <li>ZBiome_Iceberg_NoBeach</li>
+	  <li>ZBiome_Marsh</li>
+	  <li>ZBiome_Sandbar_NoBeach</li>
+    </rootBiomes>
+	<acceptableBiomes>
+      <li>Ocean</li>
+    </acceptableBiomes>
+    <nameMaker>NamerArchipelago</nameMaker>
+</FeatureDef>
+-->
+
+
+<!-- ZBiome_AlpineMeadow -->
+<FeatureDef>
+    <defName>ZBiome_AlpineMeadow</defName>
+    <workerClass>FeatureWorker_Biome</workerClass>
+    <order>195</order>
+	<minSize>10</minSize>
+    <rootBiomes>
+      <li>ZBiome_AlpineMeadow</li>
+    </rootBiomes>
+    <acceptableBiomes>
+      <li>BorealForest</li>
+    </acceptableBiomes>
+    <nameMaker>ZBiome_NamerAlpineMeadow</nameMaker>
+</FeatureDef>
+  
+<RulePackDef>
+    <defName>ZBiome_NamerAlpineMeadow</defName>
+    <include>
+      <li>WorldFeatureNamerCommon</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+	    <li>r_name(p=0.3)->[ZBiome_meadow_adj] [narrative_name]</li>
+		<li>r_name(p=0.15)->[ZBiome_meadow_adj] [terrain_word]</li>
+		
+		<li>ZBiome_meadow_adj->idyllic</li>
+		<li>ZBiome_meadow_adj->serene</li>
+		<li>ZBiome_meadow_adj->aerial</li>
+		<li>ZBiome_meadow_adj->blossoming</li>
+		<li>ZBiome_meadow_adj->blooming</li>
+		<li>ZBiome_meadow_adj->flowering</li>
+		<li>ZBiome_meadow_adj->vibrant</li>
+		<li>ZBiome_meadow_adj->nestled</li>
+		
+        <li>terrain_word(p=3)->meadow</li>
+		<li>terrain_word->plateau</li>
+        <li>terrain_word->field</li>
+        <li>terrain_word->ridge</li>
+        <li>terrain_word->pass</li>
+        <li>terrain_word->valley</li>
+      </rulesStrings>
+    </rulePack>
+</RulePackDef>
+
+<!-- ZBiome_CloudForest -->
+<FeatureDef>
+    <defName>ZBiome_CloudForest</defName>
+    <workerClass>FeatureWorker_Biome</workerClass>
+    <order>195</order>
+	<minSize>30</minSize>
+    <rootBiomes>
+      <li>ZBiome_CloudForest</li>
+    </rootBiomes>
+    <acceptableBiomes>
+      <li>TropicalRainforest</li>
+      <li>TemperateForest</li>
+    </acceptableBiomes>
+    <nameMaker>ZBiome_NamerCloudForest</nameMaker>
+</FeatureDef>
+  
+<RulePackDef>
+    <defName>ZBiome_NamerCloudForest</defName>
+    <include>
+      <li>WorldFeatureNamerCommon</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+	    <li>r_name(p=0.3)->[ZBiome_cloud_adj] [narrative_name]</li>
+		
+		<li>ZBiome_cloud_adj->wet</li>
+		<li>ZBiome_cloud_adj->steamy</li>
+		<li>ZBiome_cloud_adj->choking</li>
+		<li>ZBiome_cloud_adj->overgrown</li>
+		<li>ZBiome_cloud_adj->tangled</li>
+		<li>ZBiome_cloud_adj->misty</li>
+		<li>ZBiome_cloud_adj->cloudy</li>
+		<li>ZBiome_cloud_adj->hidden</li>
+		<li>ZBiome_cloud_adj->murky</li>
+		<li>ZBiome_cloud_adj->thick</li>
+		<li>ZBiome_cloud_adj->mossy</li>
+		
+		<li>terrain_word(p=4)->forest</li>
+        <li>terrain_word(p=2)->jungle</li>
+		<li>terrain_word->mountain</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+<!-- ZBiome_CoastalDunes -->
+<FeatureDef>
+    <defName>ZBiome_CoastalDunes</defName>
+    <workerClass>FeatureWorker_Biome</workerClass>
+    <order>305</order>
+    <rootBiomes>
+      <li>ZBiome_CoastalDunes</li>
+    </rootBiomes>
+    <acceptableBiomes>
+      <li>TemperateForest</li>
+      <li>Desert</li>
+      <li>AridShrubland</li>
+    </acceptableBiomes>
+    <nameMaker>ZBiome_NamerCoastalDunes</nameMaker>
+</FeatureDef>
+  
+<RulePackDef>
+    <defName>ZBiome_NamerCoastalDunes</defName>
+    <include>
+      <li>WorldFeatureNamerCommon</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+	    <li>r_name(p=0.3)->[ZBiome_dunes_adj] [narrative_name]</li>
+		<li>r_name(p=0.2)->[ZBiome_dunes_adj] [terrain_word]</li>
+		
+		<li>ZBiome_dunes_adj->sandy</li>
+		<li>ZBiome_dunes_adj->seaside</li>
+		<li>ZBiome_dunes_adj->briny</li>
+		<li>ZBiome_dunes_adj->sun-warmed</li>
+		<li>ZBiome_dunes_adj->sun-bleached</li>
+		
+        <li>terrain_word(p=3)->beach</li>
+		<li>terrain_word(p=3)->dune</li>
+		<li>terrain_word->shore</li>
+		<li>terrain_word->sands</li>
+		<li>terrain_word->seaboard</li>
+		<li>terrain_word->strand</li>
+		<li>terrain_word->coast</li>
+      </rulesStrings>
+    </rulePack>
+</RulePackDef>
+
+
+<!-- ZBiome_Iceberg_NoBeach -->
+<FeatureDef>
+    <defName>ZBiome_Iceberg</defName>
+    <workerClass>FeatureWorker_Biome</workerClass>
+    <order>305</order>
+    <rootBiomes>
+      <li>ZBiome_Iceberg_NoBeach</li>
+    </rootBiomes>
+    <acceptableBiomes>
+      <li>Ocean</li>
+      <li>IceSheet</li>
+    </acceptableBiomes>
+    <nameMaker>ZBiome_NamerIceberg</nameMaker>
+</FeatureDef>
+  
+<RulePackDef>
+    <defName>ZBiome_NamerIceberg</defName>
+    <include>
+      <li>WorldFeatureNamerCommon</li>
+    </include>
+    <rulePack>
+      <rulesStrings>	
+        <li>terrain_word(p=3)->ice pack</li>
+		<li>terrain_word->berg</li>
+		<li>terrain_word->floe</li>
+		<li>terrain_word->growler</li>
+		<li>terrain_word->chunk</li>
+		<li>terrain_word->glacier</li>
+      </rulesStrings>
+    </rulePack>
+</RulePackDef>
+
+
+<!-- ZBiome_Grasslands -->
+<FeatureDef>
+    <defName>ZBiome_Grasslands</defName>
+    <workerClass>FeatureWorker_Biome</workerClass>
+    <order>435</order>
+    <rootBiomes>
+      <li>ZBiome_Grasslands</li>
+    </rootBiomes>
+    <acceptableBiomes>
+      <li>TemperateForest</li>
+      <li>Desert</li>
+      <li>AridShrubland</li>
+    </acceptableBiomes>
+    <nameMaker>ZBiome_NamerGrasslands</nameMaker>
+</FeatureDef>
+  
+<RulePackDef>
+    <defName>ZBiome_NamerGrasslands</defName>
+    <include>
+      <li>WorldFeatureNamerCommon</li>
+    </include>
+    <rulePack>
+	
+      <rulesStrings>
+	    <li>r_name->[ZBiome_grasslands_adj] [narrative_name]</li>
+		<li>r_name->[ZBiome_grasslands_adj] [terrain_word]</li>
+		
+		<li>ZBiome_grasslands_adj->grassy</li>
+		<li>ZBiome_grasslands_adj->endless</li>
+		<li>ZBiome_grasslands_adj->boundless</li>
+		<li>ZBiome_grasslands_adj->bare</li>
+		<li>ZBiome_grasslands_adj->vast</li>
+		<li>ZBiome_grasslands_adj->sun-baked</li>
+		<li>ZBiome_grasslands_adj->unending</li>
+		
+        <li>terrain_word(p=3)->grasslands</li>
+		<li>terrain_word->prairie</li>
+		<li>terrain_word->plain</li>
+		<li>terrain_word->steppe</li>
+		<li>terrain_word->field</li>
+		<li>terrain_word->savanna</li>
+        <li>terrain_word->veldt</li>
+        <li>terrain_word->expanse</li>
+      </rulesStrings>
+    </rulePack>
+</RulePackDef>
+
+
+<!-- ZBiome_Badlands -->
+<FeatureDef>
+    <defName>ZBiome_Badlands</defName>
+    <workerClass>FeatureWorker_Biome</workerClass>
+    <order>195</order>
+	<minSize>8</minSize>
+    <rootBiomes>
+      <li>ZBiome_Badlands</li>
+    </rootBiomes>
+    <nameMaker>ZBiome_NamerBadlands</nameMaker>
+</FeatureDef>
+  
+<RulePackDef>
+    <defName>ZBiome_NamerBadlands</defName>
+    <include>
+      <li>WorldFeatureNamerCommon</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+	    <li>r_name(p=0.3)->[ZBiome_badlands_adj] [narrative_name]</li>
+		<li>r_name(p=0.15)->[ZBiome_badlands_adj] [terrain_word]</li>
+		
+		<li>ZBiome_badlands_adj->dry</li>
+		<li>ZBiome_badlands_adj->dusty</li>
+		<li>ZBiome_badlands_adj->rocky</li>
+		<li>ZBiome_badlands_adj->craggy</li>
+		<li>ZBiome_badlands_adj->stony</li>
+		<li>ZBiome_badlands_adj->rugged</li>
+		<li>ZBiome_badlands_adj->hostile</li>
+		<li>ZBiome_badlands_adj->dead</li>
+		<li>ZBiome_badlands_adj->desolate</li>
+		<li>ZBiome_badlands_adj->barren</li>
+		
+        <li>terrain_word(p=3)->wastes</li>
+		<li>terrain_word->badlands</li>
+        <li>terrain_word->barrens</li>
+        <li>terrain_word->wasteland</li>
+        <li>terrain_word->desolation</li>
+      </rulesStrings>
+    </rulePack>
+</RulePackDef>
+
+<!-- ZBiome_GlacialShield -->
+<FeatureDef>
+    <defName>ZBiome_GlacialShield</defName>
+    <workerClass>FeatureWorker_Biome</workerClass>
+    <order>195</order>
+	<minSize>10</minSize>
+    <rootBiomes>
+      <li>ZBiome_GlacialShield</li>
+    </rootBiomes>
+    <acceptableBiomes>
+      <li>Tundra</li>
+    </acceptableBiomes>
+    <nameMaker>ZBiome_NamerGlacialShield</nameMaker>
+</FeatureDef>
+  
+<RulePackDef>
+    <defName>ZBiome_NamerGlacialShield</defName>
+    <include>
+      <li>WorldFeatureNamerCommon</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+	    <li>r_name(p=0.3)->[ZBiome_glacialshield_adj] [narrative_name]</li>
+		<li>r_name(p=0.15)->[ZBiome_glacialshield_adj] [terrain_word]</li>
+		
+		<li>ZBiome_glacialshield_adj->coniferous</li>
+		<li>ZBiome_glacialshield_adj->pine</li>
+		<li>ZBiome_glacialshield_adj->arctic</li>
+		<li>ZBiome_glacialshield_adj->glacial</li>
+		<li>ZBiome_glacialshield_adj->stony</li>
+		<li>ZBiome_glacialshield_adj->rugged</li>
+		
+        <li>terrain_word(p=3)->forest</li>
+		<li>terrain_word->taiga</li>
+        <li>terrain_word->pines</li>
+        <li>terrain_word->shield</li>
+        <li>terrain_word->plateau</li>
+        <li>terrain_word->glacier</li>
+		
+      </rulesStrings>
+    </rulePack>
+</RulePackDef>
+
+
+</Defs>

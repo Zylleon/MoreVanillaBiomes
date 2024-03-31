@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimBees</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_Marsh"]/wildPlants</xpath>
+				<value>
+					<RB_Plant_Hive_Swamp>0.01</RB_Plant_Hive_Swamp>
+					<RB_Plant_Hive_Arctic>0.01</RB_Plant_Hive_Arctic>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_AlpineMeadow"]/wildPlants</xpath>
+				<value>
+					<RB_Plant_Hive_Arctic>0.01</RB_Plant_Hive_Arctic>
+					<RB_Plant_Hive_Mild>0.01</RB_Plant_Hive_Mild>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_Grasslands"]/wildPlants</xpath>
+				<value>
+					<RB_Plant_Hive_Temperate>0.01</RB_Plant_Hive_Temperate>
+					<RB_Plant_Hive_Arid>0.01</RB_Plant_Hive_Arid>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_Badlands"]/wildPlants</xpath>
+				<value>
+					<RB_Plant_Hive_Temperate>0.01</RB_Plant_Hive_Temperate>
+					<RB_Plant_Hive_Arid>0.01</RB_Plant_Hive_Arid>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_Sandbar_NoBeach"]/wildPlants</xpath>
+				<value>
+					<RB_Plant_Hive_Arid>0.01</RB_Plant_Hive_Arid>
+					<RB_Plant_Hive_Desert>0.01</RB_Plant_Hive_Desert>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_CoastalDunes"]/wildPlants</xpath>
+				<value>
+					<RB_Plant_Hive_Arid>0.01</RB_Plant_Hive_Arid>
+					<RB_Plant_Hive_Mild>0.01</RB_Plant_Hive_Mild>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_CloudForest"]/wildPlants</xpath>
+				<value>
+					<RB_Plant_Hive_Jungle>0.01</RB_Plant_Hive_Jungle>
+					<RB_Plant_Hive_Temperate>0.01</RB_Plant_Hive_Temperate>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_DesertOasis"]/wildPlants</xpath>
+				<value>
+					<RB_Plant_Hive_Jungle>0.01</RB_Plant_Hive_Jungle>
+					<RB_Plant_Hive_Arid>0.01</RB_Plant_Hive_Arid>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_GlacialShield"]/wildPlants</xpath>
+				<value>
+					<RB_Plant_Hive_Arid>0.01</RB_Plant_Hive_Arid>
+					<RB_Plant_Hive_Arctic>0.01</RB_Plant_Hive_Arctic>
+				</value>
+			</li>
+			
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+
