@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  
+  
+  <!-- 
+    The commented section does not work, because the german translation needs gendered nouns, thus the uncommented section is needed. 
+    I'll let the commented part be present, just because it's the 1:1 translation for reference 
+  -->
+  
+  <!-- ZBiome_AlpineMeadow --><!--
+  
+  <ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.0>r_name(p=0.3)->[ZBiome_meadow_adj] [narrative_name]</ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.0>
+  <ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.1>r_name(p=0.15)->[ZBiome_meadow_adj] [terrain_word]</ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.1>
+  <ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.2>ZBiome_meadow_adj->idyllische</ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.2>
+  <ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.3>ZBiome_meadow_adj->abgeschiedene</ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.3>
+  <ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.4>ZBiome_meadow_adj->weite</ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.4>
+  <ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.5>ZBiome_meadow_adj->blühende</ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.5>
+  <ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.6>ZBiome_meadow_adj->fruchtbare</ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.6>
+  <ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.7>ZBiome_meadow_adj->erblühende</ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.7>
+  <ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.8>ZBiome_meadow_adj->lebhafte</ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.8>
+  <ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.9>ZBiome_meadow_adj->reichhaltige</ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.9>
+  <ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.10>terrain_word(p=3)->Weide</ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.10>
+  <ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.11>terrain_word->Hochebene</ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.11>
+  <ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.12>terrain_word->Felder</ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.12>
+  <ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.13>terrain_word->Rinne</ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.13>
+  <ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.14>terrain_word->Kuhle</ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.14>
+  <ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.15>terrain_word->Senke</ZBiome_NamerAlpineMeadow.rulePack.rulesStrings.15>
+  
+  
+  --><!-- ZBiome_CloudForest --><!--
+  
+  <ZBiome_NamerCloudForest.rulePack.rulesStrings.0>r_name(p=0.3)->[ZBiome_cloud_adj] [narrative_name]</ZBiome_NamerCloudForest.rulePack.rulesStrings.0>
+  <ZBiome_NamerCloudForest.rulePack.rulesStrings.1>ZBiome_cloud_adj->nasser</ZBiome_NamerCloudForest.rulePack.rulesStrings.1>
+  <ZBiome_NamerCloudForest.rulePack.rulesStrings.2>ZBiome_cloud_adj->dunstiger</ZBiome_NamerCloudForest.rulePack.rulesStrings.2>
+  <ZBiome_NamerCloudForest.rulePack.rulesStrings.3>ZBiome_cloud_adj->stickiger</ZBiome_NamerCloudForest.rulePack.rulesStrings.3>
+  <ZBiome_NamerCloudForest.rulePack.rulesStrings.4>ZBiome_cloud_adj->überwucherter</ZBiome_NamerCloudForest.rulePack.rulesStrings.4>
+  <ZBiome_NamerCloudForest.rulePack.rulesStrings.5>ZBiome_cloud_adj->verwachsener</ZBiome_NamerCloudForest.rulePack.rulesStrings.5>
+  <ZBiome_NamerCloudForest.rulePack.rulesStrings.6>ZBiome_cloud_adj->nebliger</ZBiome_NamerCloudForest.rulePack.rulesStrings.6>
+  <ZBiome_NamerCloudForest.rulePack.rulesStrings.7>ZBiome_cloud_adj->bewölkter</ZBiome_NamerCloudForest.rulePack.rulesStrings.7>
+  <ZBiome_NamerCloudForest.rulePack.rulesStrings.8>ZBiome_cloud_adj->versteckter</ZBiome_NamerCloudForest.rulePack.rulesStrings.8>
+  <ZBiome_NamerCloudForest.rulePack.rulesStrings.9>ZBiome_cloud_adj->trüber</ZBiome_NamerCloudForest.rulePack.rulesStrings.9>
+  <ZBiome_NamerCloudForest.rulePack.rulesStrings.10>ZBiome_cloud_adj->dichter</ZBiome_NamerCloudForest.rulePack.rulesStrings.10>
+  <ZBiome_NamerCloudForest.rulePack.rulesStrings.11>ZBiome_cloud_adj->moosiger</ZBiome_NamerCloudForest.rulePack.rulesStrings.11>
+  <ZBiome_NamerCloudForest.rulePack.rulesStrings.12>terrain_word(p=4)->Wald</ZBiome_NamerCloudForest.rulePack.rulesStrings.12>
+  <ZBiome_NamerCloudForest.rulePack.rulesStrings.13>terrain_word(p=2)->Dschungel</ZBiome_NamerCloudForest.rulePack.rulesStrings.13>
+  <ZBiome_NamerCloudForest.rulePack.rulesStrings.14>terrain_word->Berg</ZBiome_NamerCloudForest.rulePack.rulesStrings.14>
+  
+  
+  --><!-- ZBiome_CoastalDunes --><!--
+  
+  <ZBiome_NamerCoastalDunes.rulePack.rulesStrings.0>r_name(p=0.3)->[ZBiome_dunes_adj] [narrative_name]</ZBiome_NamerCoastalDunes.rulePack.rulesStrings.0>
+  <ZBiome_NamerCoastalDunes.rulePack.rulesStrings.1>r_name(p=0.2)->[ZBiome_dunes_adj] [terrain_word]</ZBiome_NamerCoastalDunes.rulePack.rulesStrings.1>
+  <ZBiome_NamerCoastalDunes.rulePack.rulesStrings.2>ZBiome_dunes_adj->sandige</ZBiome_NamerCoastalDunes.rulePack.rulesStrings.2>
+  <ZBiome_NamerCoastalDunes.rulePack.rulesStrings.3>ZBiome_dunes_adj->salzige</ZBiome_NamerCoastalDunes.rulePack.rulesStrings.3>
+  <ZBiome_NamerCoastalDunes.rulePack.rulesStrings.4>ZBiome_dunes_adj->brackige</ZBiome_NamerCoastalDunes.rulePack.rulesStrings.4>
+  <ZBiome_NamerCoastalDunes.rulePack.rulesStrings.5>ZBiome_dunes_adj->sonnenwarme</ZBiome_NamerCoastalDunes.rulePack.rulesStrings.5>
+  <ZBiome_NamerCoastalDunes.rulePack.rulesStrings.6>ZBiome_dunes_adj->sonnengebräunte</ZBiome_NamerCoastalDunes.rulePack.rulesStrings.6>
+  <ZBiome_NamerCoastalDunes.rulePack.rulesStrings.7>terrain_word(p=3)->Bucht</ZBiome_NamerCoastalDunes.rulePack.rulesStrings.7>
+  <ZBiome_NamerCoastalDunes.rulePack.rulesStrings.8>terrain_word(p=3)->Düne</ZBiome_NamerCoastalDunes.rulePack.rulesStrings.8>
+  <ZBiome_NamerCoastalDunes.rulePack.rulesStrings.9>terrain_word->Uferdüne</ZBiome_NamerCoastalDunes.rulePack.rulesStrings.9>
+  <ZBiome_NamerCoastalDunes.rulePack.rulesStrings.10>terrain_word->Sandbank</ZBiome_NamerCoastalDunes.rulePack.rulesStrings.10>
+  <ZBiome_NamerCoastalDunes.rulePack.rulesStrings.11>terrain_word->Gestade</ZBiome_NamerCoastalDunes.rulePack.rulesStrings.11>
+  <ZBiome_NamerCoastalDunes.rulePack.rulesStrings.12>terrain_word->Strandküste</ZBiome_NamerCoastalDunes.rulePack.rulesStrings.12>
+  <ZBiome_NamerCoastalDunes.rulePack.rulesStrings.13>terrain_word->Küste</ZBiome_NamerCoastalDunes.rulePack.rulesStrings.13>
+  
+  
+  --><!-- ZBiome_Iceberg_NoBeach --><!--
+  <ZBiome_NamerIceberg.rulePack.rulesStrings.0>terrain_word(p=3)->Packeis</ZBiome_NamerIceberg.rulePack.rulesStrings.0>
+  <ZBiome_NamerIceberg.rulePack.rulesStrings.1>terrain_word->Berg</ZBiome_NamerIceberg.rulePack.rulesStrings.1>
+  <ZBiome_NamerIceberg.rulePack.rulesStrings.2>terrain_word->Eisscholle</ZBiome_NamerIceberg.rulePack.rulesStrings.2>
+  <ZBiome_NamerIceberg.rulePack.rulesStrings.3>terrain_word->Eishümpel</ZBiome_NamerIceberg.rulePack.rulesStrings.3>
+  <ZBiome_NamerIceberg.rulePack.rulesStrings.4>terrain_word->Brocken</ZBiome_NamerIceberg.rulePack.rulesStrings.4>
+  <ZBiome_NamerIceberg.rulePack.rulesStrings.5>terrain_word->Gletscher</ZBiome_NamerIceberg.rulePack.rulesStrings.5>
+  
+  
+  --><!-- ZBiome_Grasslands --><!--
+  
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings.0>r_name->[ZBiome_grasslands_adj] [narrative_name]</ZBiome_NamerGrasslands.rulePack.rulesStrings.0>
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings.1>r_name->[ZBiome_grasslands_adj] [terrain_word]</ZBiome_NamerGrasslands.rulePack.rulesStrings.1>
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings.2>ZBiome_grasslands_adj->grasbedeckte</ZBiome_NamerGrasslands.rulePack.rulesStrings.2>
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings.3>ZBiome_grasslands_adj->endlose</ZBiome_NamerGrasslands.rulePack.rulesStrings.3>
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings.4>ZBiome_grasslands_adj->grenzenlose</ZBiome_NamerGrasslands.rulePack.rulesStrings.4>
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings.5>ZBiome_grasslands_adj->freie</ZBiome_NamerGrasslands.rulePack.rulesStrings.5>
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings.6>ZBiome_grasslands_adj->ausgedehnte</ZBiome_NamerGrasslands.rulePack.rulesStrings.6>
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings.7>ZBiome_grasslands_adj->sonnige</ZBiome_NamerGrasslands.rulePack.rulesStrings.7>
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings.8>ZBiome_grasslands_adj->unendliche</ZBiome_NamerGrasslands.rulePack.rulesStrings.8>
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings.9>terrain_word(p=3)->Graslandschaft</ZBiome_NamerGrasslands.rulePack.rulesStrings.9>
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings.10>terrain_word->Prärie</ZBiome_NamerGrasslands.rulePack.rulesStrings.10>
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings.11>terrain_word->Ebene</ZBiome_NamerGrasslands.rulePack.rulesStrings.11>
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings.12>terrain_word->Steppe</ZBiome_NamerGrasslands.rulePack.rulesStrings.12>
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings.13>terrain_word->Felder</ZBiome_NamerGrasslands.rulePack.rulesStrings.13>
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings.14>terrain_word->Savanne</ZBiome_NamerGrasslands.rulePack.rulesStrings.14>
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings.15>terrain_word->Buschlandschaft</ZBiome_NamerGrasslands.rulePack.rulesStrings.15>
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings.16>terrain_word->Ausweitung</ZBiome_NamerGrasslands.rulePack.rulesStrings.16>
+  
+  
+  --><!-- ZBiome_Badlands --><!--
+  
+  <ZBiome_NamerBadlands.rulePack.rulesStrings.0>r_name(p=0.3)->[ZBiome_badlands_adj] [narrative_name]</ZBiome_NamerBadlands.rulePack.rulesStrings.0>
+  <ZBiome_NamerBadlands.rulePack.rulesStrings.1>r_name(p=0.15)->[ZBiome_badlands_adj] [terrain_word]</ZBiome_NamerBadlands.rulePack.rulesStrings.1>
+  <ZBiome_NamerBadlands.rulePack.rulesStrings.2>ZBiome_badlands_adj->trockene</ZBiome_NamerBadlands.rulePack.rulesStrings.2>
+  <ZBiome_NamerBadlands.rulePack.rulesStrings.3>ZBiome_badlands_adj->staubige</ZBiome_NamerBadlands.rulePack.rulesStrings.3>
+  <ZBiome_NamerBadlands.rulePack.rulesStrings.4>ZBiome_badlands_adj->felsige</ZBiome_NamerBadlands.rulePack.rulesStrings.4>
+  <ZBiome_NamerBadlands.rulePack.rulesStrings.5>ZBiome_badlands_adj->schroffe</ZBiome_NamerBadlands.rulePack.rulesStrings.5>
+  <ZBiome_NamerBadlands.rulePack.rulesStrings.6>ZBiome_badlands_adj->steinige</ZBiome_NamerBadlands.rulePack.rulesStrings.6>
+  <ZBiome_NamerBadlands.rulePack.rulesStrings.7>ZBiome_badlands_adj->zerfurchte</ZBiome_NamerBadlands.rulePack.rulesStrings.7>
+  <ZBiome_NamerBadlands.rulePack.rulesStrings.8>ZBiome_badlands_adj->gefährliche</ZBiome_NamerBadlands.rulePack.rulesStrings.8>
+  <ZBiome_NamerBadlands.rulePack.rulesStrings.9>ZBiome_badlands_adj->tote</ZBiome_NamerBadlands.rulePack.rulesStrings.9>
+  <ZBiome_NamerBadlands.rulePack.rulesStrings.10>ZBiome_badlands_adj->verwüstete</ZBiome_NamerBadlands.rulePack.rulesStrings.10>
+  <ZBiome_NamerBadlands.rulePack.rulesStrings.11>ZBiome_badlands_adj->zerklüftete</ZBiome_NamerBadlands.rulePack.rulesStrings.11>
+  <ZBiome_NamerBadlands.rulePack.rulesStrings.12>terrain_word(p=3)->Einöde</ZBiome_NamerBadlands.rulePack.rulesStrings.12>
+  <ZBiome_NamerBadlands.rulePack.rulesStrings.13>terrain_word->Ödnis</ZBiome_NamerBadlands.rulePack.rulesStrings.13>
+  <ZBiome_NamerBadlands.rulePack.rulesStrings.14>terrain_word->Wüstenei</ZBiome_NamerBadlands.rulePack.rulesStrings.14>
+  <ZBiome_NamerBadlands.rulePack.rulesStrings.15>terrain_word->Landschaft</ZBiome_NamerBadlands.rulePack.rulesStrings.15>
+  <ZBiome_NamerBadlands.rulePack.rulesStrings.16>terrain_word->Trostlosigkeit</ZBiome_NamerBadlands.rulePack.rulesStrings.16>
+  
+  
+  --><!-- ZBiome_GlacialShield --><!--
+  
+  <ZBiome_NamerGlacialShield.rulePack.rulesStrings.0>r_name(p=0.3)->[ZBiome_glacialshield_adj] [narrative_name]</ZBiome_NamerGlacialShield.rulePack.rulesStrings.0>
+  <ZBiome_NamerGlacialShield.rulePack.rulesStrings.1>r_name(p=0.15)->[ZBiome_glacialshield_adj] [terrain_word]</ZBiome_NamerGlacialShield.rulePack.rulesStrings.1>
+  <ZBiome_NamerGlacialShield.rulePack.rulesStrings.2>ZBiome_glacialshield_adj->zapfiger</ZBiome_NamerGlacialShield.rulePack.rulesStrings.2>
+  <ZBiome_NamerGlacialShield.rulePack.rulesStrings.3>ZBiome_glacialshield_adj->nadeliger</ZBiome_NamerGlacialShield.rulePack.rulesStrings.3>
+  <ZBiome_NamerGlacialShield.rulePack.rulesStrings.4>ZBiome_glacialshield_adj->arktischer</ZBiome_NamerGlacialShield.rulePack.rulesStrings.4>
+  <ZBiome_NamerGlacialShield.rulePack.rulesStrings.5>ZBiome_glacialshield_adj->eisiger</ZBiome_NamerGlacialShield.rulePack.rulesStrings.5>
+  <ZBiome_NamerGlacialShield.rulePack.rulesStrings.6>ZBiome_glacialshield_adj->steiniger</ZBiome_NamerGlacialShield.rulePack.rulesStrings.6>
+  <ZBiome_NamerGlacialShield.rulePack.rulesStrings.7>ZBiome_glacialshield_adj->rauer</ZBiome_NamerGlacialShield.rulePack.rulesStrings.7>
+  <ZBiome_NamerGlacialShield.rulePack.rulesStrings.8>terrain_word(p=3)->Wald</ZBiome_NamerGlacialShield.rulePack.rulesStrings.8>
+  <ZBiome_NamerGlacialShield.rulePack.rulesStrings.9>terrain_word->Forst</ZBiome_NamerGlacialShield.rulePack.rulesStrings.9>
+  <ZBiome_NamerGlacialShield.rulePack.rulesStrings.10>terrain_word->Nadelwald</ZBiome_NamerGlacialShield.rulePack.rulesStrings.10>
+  <ZBiome_NamerGlacialShield.rulePack.rulesStrings.11>terrain_word->Schild</ZBiome_NamerGlacialShield.rulePack.rulesStrings.11>
+  <ZBiome_NamerGlacialShield.rulePack.rulesStrings.12>terrain_word->Tannwald</ZBiome_NamerGlacialShield.rulePack.rulesStrings.12>
+  <ZBiome_NamerGlacialShield.rulePack.rulesStrings.13>terrain_word->Gletscher</ZBiome_NamerGlacialShield.rulePack.rulesStrings.13>
+  -->
+  
+  
+  <!-- ZBiome_AlpineMeadow -->
+  
+  <ZBiome_NamerAlpineMeadow.rulePack.rulesStrings>
+  
+    <li>r_name(p=0.1)->[ZBiome_meadow_adj]er [narrative_name_mas]</li>
+    <li>r_name(p=0.1)->[ZBiome_meadow_adj]e [narrative_name_fem]</li>
+    <li>r_name(p=0.1)->[ZBiome_meadow_adj]es [narrative_name_neu]</li>
+    <li>r_name(p=0.05)->[ZBiome_meadow_adj]er [terrain_word_mas]</li>
+    <li>r_name(p=0.08)->[ZBiome_meadow_adj]e [terrain_word_fem]</li>
+    <li>r_name(p=0.02)->[ZBiome_meadow_adj]es [terrain_word_neu]</li>
+    
+    <li>ZBiome_meadow_adj->idyllisch</li>
+    <li>ZBiome_meadow_adj->abgeschieden</li>
+    <li>ZBiome_meadow_adj->weit</li>
+    <li>ZBiome_meadow_adj->blühend</li>
+    <li>ZBiome_meadow_adj->fruchtbar</li>
+    <li>ZBiome_meadow_adj->erblühend</li>
+    <li>ZBiome_meadow_adj->lebhaft</li>
+    <li>ZBiome_meadow_adj->versteckt</li>
+    
+    <li>terrain_word_fem(p=3)->Weide</li>
+    <li>terrain_word_fem->Hochebene</li>
+    <li>terrain_word_fem->Felder</li>
+    <li>terrain_word_fem->Rinne</li>
+    <li>terrain_word_fem->Kuhle</li>
+    <li>terrain_word_fem->Senke</li>
+    <li>terrain_word_fem->Talsperre</li>
+    <li>terrain_word_mas->Kamm</li>
+    <li>terrain_word_mas->Bergrücken</li>
+    <li>terrain_word_mas->Grat</li>
+    <li>terrain_word_neu->Joch</li>
+    <li>terrain_word_neu->Plateau</li>
+    
+  </ZBiome_NamerAlpineMeadow.rulePack.rulesStrings>
+  
+  
+  <!-- ZBiome_CloudForest -->
+  
+  <ZBiome_NamerCloudForest.rulePack.rulesStrings>
+  
+    <li>r_name(p=0.2)->[ZBiome_cloud_adj]er [narrative_name_mas]</li>
+    <li>r_name(p=0.05)->[ZBiome_cloud_adj]e [narrative_name_fem]</li>
+    <li>r_name(p=0.05)->[ZBiome_cloud_adj]es [narrative_name_neu]</li>
+    
+    <li>ZBiome_cloud_adj->nass</li>
+    <li>ZBiome_cloud_adj->dunstig</li>
+    <li>ZBiome_cloud_adj->stickig</li>
+    <li>ZBiome_cloud_adj->überwuchert</li>
+    <li>ZBiome_cloud_adj->verwachsen</li>
+    <li>ZBiome_cloud_adj->neblig</li>
+    <li>ZBiome_cloud_adj->bewölkt</li>
+    <li>ZBiome_cloud_adj->versteckt</li>
+    <li>ZBiome_cloud_adj->trüb</li>
+    <li>ZBiome_cloud_adj->dicht</li>
+    <li>ZBiome_cloud_adj->moosig</li>
+
+    <li>terrain_word_mas(p=4)->Wald</li>
+    <li>terrain_word_mas(p=2)->Dschungel</li>
+    <li>terrain_word_mas->Höhenzug</li>
+    <li>terrain_word_mas->Forst</li>
+    <li>terrain_word_fem->Hügel</li>
+    <li>terrain_word_neu->Gehölz</li>
+  
+  </ZBiome_NamerCloudForest.rulePack.rulesStrings>
+  
+  
+  <!-- ZBiome_CoastalDunes -->
+  
+  <ZBiome_NamerCoastalDunes.rulePack.rulesStrings>
+    
+    <li>r_name(p=0.1)->[ZBiome_dunes_adj]er [narrative_name_mas]</li>
+    <li>r_name(p=0.1)->[ZBiome_dunes_adj]e [narrative_name_fem]</li>
+    <li>r_name(p=0.1)->[ZBiome_dunes_adj]es [narrative_name_neu]</li>
+    <li>r_name(p=0.05)->[ZBiome_dunes_adj]er [terrain_word_mas]</li>
+    <li>r_name(p=0.12)->[ZBiome_dunes_adj]e [terrain_word_fem]</li>
+    <li>r_name(p=0.04)->[ZBiome_dunes_adj]es [terrain_word_neu]</li>
+    
+    <li>ZBiome_dunes_adj->sandig</li>
+    <li>ZBiome_dunes_adj->salzig</li>
+    <li>ZBiome_dunes_adj->brackig</li>
+    <li>ZBiome_dunes_adj->sonnenwarm</li>
+    <li>ZBiome_dunes_adj->sonnengebräunt</li>
+    
+    <li>terrain_word_mas(p=3)->Strand</li>
+    <li>terrain_word_fem(p=3)->Düne</li>
+    <li>terrain_word_neu->Ufer</li>
+    <li>terrain_word_fem->Sandbank</li>
+    <li>terrain_word_fem->Gestade</li>
+    <li>terrain_word_fem->Strandküste</li>
+    <li>terrain_word_fem->Küste</li>
+    <li>terrain_word_fem->Bucht</li>
+    <li>terrain_word_mas->Streifen</li>
+    
+  </ZBiome_NamerCoastalDunes.rulePack.rulesStrings>
+  
+  
+  <!-- ZBiome_Iceberg_NoBeach -->
+  
+  <ZBiome_NamerIceberg.rulePack.rulesStrings>
+    
+    <li>terrain_word_neu(p=3)->Packeis</li>
+    <li>terrain_word_mas->Berg</li>
+    <li>terrain_word_fem->Eisscholle</li>
+    <li>terrain_word_mas->Eishümpel</li>
+    <li>terrain_word_mas->Brocken</li>
+    <li>terrain_word_neu->Eisschelf</li>
+    
+  </ZBiome_NamerIceberg.rulePack.rulesStrings>
+  
+  
+  <!-- ZBiome_Grasslands -->
+  
+  <ZBiome_NamerGrasslands.rulePack.rulesStrings>
+    
+    <li>r_name(p=0.1)->[ZBiome_grasslands_adj]er [narrative_name_mas]</li>
+    <li>r_name(p=0.1)->[ZBiome_grasslands_adj]e [narrative_name_fem]</li>
+    <li>r_name(p=0.1)->[ZBiome_grasslands_adj]es [narrative_name_neu]</li>
+    <li>r_name(p=0.04)->[ZBiome_grasslands_adj]er [terrain_word_mas]</li>
+    <li>r_name(p=0.13)->[ZBiome_grasslands_adj]e [terrain_word_fem]</li>
+    <li>r_name(p=0.13)->[ZBiome_grasslands_adj]es [terrain_word_neu]</li>
+    
+    <li>ZBiome_grasslands_adj->grasbedeckt</li>
+    <li>ZBiome_grasslands_adj->endlos</li>
+    <li>ZBiome_grasslands_adj->grenzenlos</li>
+    <li>ZBiome_grasslands_adj->frei</li>
+    <li>ZBiome_grasslands_adj->ausgedehnt</li>
+    <li>ZBiome_grasslands_adj->sonnig</li>
+    <li>ZBiome_grasslands_adj->unendlich</li>
+    
+    <li>terrain_word_neu(p=3)->Grasland</li>
+    <li>terrain_word_fem->Prärie</li>
+    <li>terrain_word_fem->Ebene</li>
+    <li>terrain_word_fem->Steppe</li>
+    <li>terrain_word_neu->Feld</li>
+    <li>terrain_word_fem->Savanne</li>
+    <li>terrain_word_neu->Buschland</li>
+    <li>terrain_word_fem->Ausdehnung</li>
+    <li>terrain_word_fem->Platte</li>
+    <li>terrain_word_neu->Tal</li>
+    <li>terrain_word_neu->Tiefland</li>
+    <li>terrain_word_mas->Boden</li>
+    
+  </ZBiome_NamerGrasslands.rulePack.rulesStrings>
+
+
+  <!-- ZBiome_NamerBadlands -->
+
+  <ZBiome_NamerBadlands.rulePack.rulesStrings>
+    
+    <li>r_name(p=0.1)->[ZBiome_badlands_adj]er [narrative_name_mas]</li>
+    <li>r_name(p=0.1)->[ZBiome_badlands_adj]e [narrative_name_fem]</li>
+    <li>r_name(p=0.1)->[ZBiome_badlands_adj]es [narrative_name_neu]</li>
+    <li>r_name(p=0.02)->[ZBiome_badlands_adj]er [terrain_word_mas]</li>
+    <li>r_name(p=0.08)->[ZBiome_badlands_adj]e [terrain_word_fem]</li>
+    <li>r_name(p=0.05)->[ZBiome_badlands_adj]es [terrain_word_neu]</li>
+    
+    <li>ZBiome_badlands_adj->trocken</li>
+    <li>ZBiome_badlands_adj->staubig</li>
+    <li>ZBiome_badlands_adj->felsig</li>
+    <li>ZBiome_badlands_adj->schroff</li>
+    <li>ZBiome_badlands_adj->steinig</li>
+    <li>ZBiome_badlands_adj->zerfurcht</li>
+    <li>ZBiome_badlands_adj->gefährlich</li>
+    <li>ZBiome_badlands_adj->tot</li>
+    <li>ZBiome_badlands_adj->verwüstet</li>
+    <li>ZBiome_badlands_adj->zerklüftet</li>
+    
+    <li>terrain_word_fem(p=3)->Einöde</li>
+    <li>terrain_word_fem->Ödnis</li>
+    <li>terrain_word_fem->Wüstenei</li>
+    <li>terrain_word_neu->Ödland</li>
+    <li>terrain_word_fem->Verwüstung</li>
+    <li>terrain_word_fem->Brachflur</li>
+    <li>terrain_word_neu->Brachland</li>
+    <li>terrain_word_neu->Ödbecken</li>
+    <li>terrain_word_fem->Wildnis</li>
+    <li>terrain_word_mas->Brachacker</li>
+    
+  </ZBiome_NamerBadlands.rulePack.rulesStrings>
+  
+  
+  <!-- ZBiome_GlacialShield -->
+  
+  <ZBiome_NamerGlacialShield.rulePack.rulesStrings>
+    
+    <li>r_name(p=0.1)->[ZBiome_glacialshield_adj]er [narrative_name_mas]</li>
+    <li>r_name(p=0.1)->[ZBiome_glacialshield_adj]e [narrative_name_fem]</li>
+    <li>r_name(p=0.1)->[ZBiome_glacialshield_adj]es [narrative_name_neu]</li>
+    <li>r_name(p=0.09)->[ZBiome_glacialshield_adj]er [terrain_word_mas]</li>
+    <li>r_name(p=0.03)->[ZBiome_glacialshield_adj]e [terrain_word_fem]</li>
+    <li>r_name(p=0.03)->[ZBiome_glacialshield_adj]es [terrain_word_neu]</li>
+    
+    <li>ZBiome_glacialshield_adj->zapfig</li>
+    <li>ZBiome_glacialshield_adj->boreal</li>
+    <li>ZBiome_glacialshield_adj->arktisch</li>
+    <li>ZBiome_glacialshield_adj->eisig</li>
+    <li>ZBiome_glacialshield_adj->steinig</li>
+    <li>ZBiome_glacialshield_adj->rau</li>
+    
+    <li>terrain_word_mas(p=3)->Wald</li>
+    <li>terrain_word_fem->Taiga</li>
+    <li>terrain_word_mas->Nadelwald</li>
+    <li>terrain_word_neu->Plateau</li>
+    <li>terrain_word_mas->Gletscher</li>
+    <li>terrain_word_mas->Eisschild</li>
+    <li>terrain_word_mas->Bergwald</li>
+    <li>terrain_word_mas->Ausläufer</li>
+    
+  </ZBiome_NamerGlacialShield.rulePack.rulesStrings>
+  
+  
+</LanguageData>

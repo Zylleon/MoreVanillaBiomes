@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  
+  
+  <!-- Settings -->
+  
+  <ZB_ModName>More Vanilla Biomes</ZB_ModName>
+  <ZB_CheckboxMeadow>Erlaube Gebirgsweide</ZB_CheckboxMeadow>
+  <ZB_CheckboxDunes>Erlaube Küstendünen</ZB_CheckboxDunes>
+  <ZB_CheckboxOasis>Erlaube Wüstenoasen</ZB_CheckboxOasis>
+  <ZB_CheckboxGrasslands>Erlaube Grasland</ZB_CheckboxGrasslands>
+  <ZB_CheckboxIceberg>Erlaube Eisberge</ZB_CheckboxIceberg>
+  <ZB_CheckboxMarsh>Erlaube Marsch</ZB_CheckboxMarsh>
+  <ZB_CheckboxSandbar>Erlaube Sandbänke</ZB_CheckboxSandbar>
+  <ZB_CheckboxCloudForest>Erlaube Nebelwälder</ZB_CheckboxCloudForest>
+  <ZB_CheckboxBadlands>Erlaube Brachland</ZB_CheckboxBadlands>
+  <ZB_CheckboxGlacialShield>Erlaube Gletscherrand</ZB_CheckboxGlacialShield>
+  
+  <ZB_CheckboxModdedThings>Modifizierte Pflanzen und Tiere spawnen lassen (Neustart erforderlich)</ZB_CheckboxModdedThings>
+  <ZB_CheckboxModdedThingsDesc>Wenn deaktiviert, spawnen in diesen Biomen keine Pflanzen und Tiere aus anderen Mods. Modifizierte Pflanzen und Tiere können trotzdem wild erscheinen, wenn sie durch einen anderen Mod oder Patch aktiviert sind.\n\nStarte das Spiel neu, nachdem du diese Einstellung geändert hast.</ZB_CheckboxModdedThingsDesc>
+  
+  
+</LanguageData>
