@@ -129,6 +129,9 @@
 		<Wolf_Arctic>0.1</Wolf_Arctic>
 		<Fox_Arctic>0.1</Fox_Arctic>
 	</wildAnimals>
+	<wildPlants>
+		<Plant_Grass>0.1</Plant_Grass>
+	</wildPlants>
 	<allowedPackAnimals>
 		<li>Muffalo</li>
 	</allowedPackAnimals>
