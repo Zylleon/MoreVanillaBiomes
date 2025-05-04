@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth: Extinct Animals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RG_Dodo"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_Grasslands>0.02</ZBiome_Grasslands>
+					</value>
+				</li>
+
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RG_Velociraptor"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_Marsh>0.1</ZBiome_Marsh>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+						<ZBiome_GlacialShield>0.15</ZBiome_GlacialShield>
+					</value>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

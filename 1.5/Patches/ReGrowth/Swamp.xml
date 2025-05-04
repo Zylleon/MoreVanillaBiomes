@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth: Swamp</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ZBiome_Marsh"]/wildPlants</xpath>
+				<value>
+					<RG_Plant_CreepStern>1.5</RG_Plant_CreepStern>
+					<RG_Plant_Dervish>0.08</RG_Plant_Dervish>
+					<RG_Plant_SwampPod>0.1</RG_Plant_SwampPod>
+					<RG_SychiCap>0.08</RG_SychiCap>
+					<RG_Plant_TreeWhiteWillow>0.05</RG_Plant_TreeWhiteWillow>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth: Core</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RG_Rabbit"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.5</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.25</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.9</ZBiome_GlacialShield>
+						<ZBiome_Grasslands>0.15</ZBiome_Grasslands>
+						<ZBiome_AlpineMeadow>0.5</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.15</ZBiome_Marsh>
+					</value>
+				</li>
+
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RG_Neutrolope"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0025</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.015</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RG_KiwiBird"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.35</ZBiome_CloudForest>
+
+					</value>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

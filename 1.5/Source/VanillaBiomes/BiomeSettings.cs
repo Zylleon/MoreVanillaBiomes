@@ -57,10 +57,10 @@ namespace VanillaBiomes
         {
             this.settings = GetSettings<BiomeSettings>();
             //LongEventHandler.ExecuteWhenFinished(PatchModdedLifeforms);
-            PatchModdedLifeforms();
+            //PatchModdedLifeforms();       TODO:  UNCOMMENT 
         }
 
-        private void PatchModdedLifeforms()
+        public void PatchModdedLifeforms()
         {
             if (BiomeSettings.spawnModdedPlantsAnimals)
             {
@@ -365,14 +365,18 @@ namespace VanillaBiomes
         // adapted from RF-Archipelagos
         private static void AddAnimalsWildBiomes()
         {
+            Log.Message("Adding animals.......");
+            Log.Message("Found animals: " + DefDatabase<PawnKindDef>.AllDefs.Count());
             foreach (PawnKindDef current in DefDatabase<PawnKindDef>.AllDefs)
             {
+                Log.Message(current.defName + " 1");
                 if (current.RaceProps?.wildBiomes != null)
                 {
+                    Log.Message(current.defName + " 2");
                     // to check if it's in any of these biomes already
                     if (!current.RaceProps.wildBiomes.Any(w => w.biome.defName.Contains("ZBiome")))
                     {
-
+                        Log.Message(current.defName + " 3");
                         //Dunes, Oasis
                         if (current.RaceProps.wildBiomes.Any(b => b.biome.defName == "Desert"))
                         {
@@ -382,6 +386,7 @@ namespace VanillaBiomes
                                 newRecord1.biome = BiomeDef.Named("ZBiome_CoastalDunes");
                                 newRecord1.commonality = current.RaceProps.wildBiomes.Where(bi => bi.biome.defName == "Desert").FirstOrDefault().commonality;
                                 current.RaceProps.wildBiomes.Add(newRecord1);
+                                Log.Message(String.Format("<{0}>{1}</{0}>", newRecord1.biome.defName, newRecord1.commonality));
                             }
                             catch
                             {
