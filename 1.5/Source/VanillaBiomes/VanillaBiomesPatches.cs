@@ -28,11 +28,11 @@ namespace VanillaBiomes
             //HarmonyMethod prefixmethod = new HarmonyMethod(typeof(VanillaBiomes.VanillaBiomesPatches).GetMethod("CoastDirectionAt_Prefix"));
             //harmony.Patch(targetmethod, prefixmethod, null);
 
-            if (BiomeSettings.spawnModdedPlantsAnimals)
-            {
-                AddAnimalsWildBiomes();
-                AddPlantsWildBiomes();
-            }
+            //These are now ONLY to tell me, personally, what to put in XML patches. The auto-patching no longer functions, and will not run unless these lines are uncommented.
+
+            //AddAnimalsWildBiomes();
+            //AddPlantsWildBiomes();
+            
 
             Log.Message("More Vanilla Biomes initialized......");
         }
