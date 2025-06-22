@@ -1,0 +1,2560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Jurassic Rimworld (Continued)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWOrnithosuchus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.075</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.075</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.1125</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWOrnithosuchusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWOuranosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWOuranosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWOviraptor"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0.15</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWOviraptorReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWPachycephalosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.05</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.1</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.15</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWPachycephalosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWPachyrhinosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.15</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWPachyrhinosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWParasaurolophus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWParasaurolophusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWParksosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWParksosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWPlatyhystrix"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWPlatyhystrixReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWPrestosuchus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.075</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.075</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.1125</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWPrestosuchusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWProtoceratops"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.075</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.075</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.1125</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWProtoceratopsReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWProtosolpuga"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.05</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.1</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWProtosolpugaReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWPsittacosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWPsittacosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWPteranodon"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.1</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWPteranodonReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWPulmonoscorpius"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWPulmonoscorpiusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWQantassaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.05</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWQantassaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWQuetzalcoatlus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.1</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWQuetzalcoatlusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWRajasaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.09</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.09</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWRhabdodon"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWRhabdodonReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWRhamphorhynchus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.1</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.1</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWRhamphorhynchusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWSaltasaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.045</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.135</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWSaltasaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWSarcosuchus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWSarcosuchusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWScutosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWScutosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWSegnosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.045</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.09</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWSegnosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWSpinosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0.045</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWSpinosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWStaurikosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWStaurikosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWStegosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWStegosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWStygimoloch"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.05</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.1</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.15</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWStygimolochReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWStyracosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWStyracosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWSuchomimus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWSuchomimusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWSupersaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.045</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.135</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWSupersaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWTanystropheus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.075</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.075</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.1125</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWTanystropheusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWTenontosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWTenontosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWTermitotron"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.05</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0.05</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.1</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWTermitotronReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWTherizinosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.045</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.09</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWTherizinosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWTitanoboa"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0.0375</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWTitanoboaReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWTorosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.15</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWTorosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWTriceratops"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWTriceratopsReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWTroodon"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0.15</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWTroodonReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWTupandactylus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.1</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWTupandactylusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWTyrannosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0.045</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWTyrannosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWUdanoceratops"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.075</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.075</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.1125</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWUdanoceratopsReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWValdosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWValdosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWVelociraptor"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0.15</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWVelociraptorReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWWonambi"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.0375</ZBiome_Grasslands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWWonambiReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWYangchuanosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.09</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWYangchuanosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWYi"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.05</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWYiReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWYurlunggur"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.0375</ZBiome_Grasslands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWYurlunggurReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWYutyrannus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0.09</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWYutyrannusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWZalmoxes"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWZalmoxesReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWZephyrosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWZephyrosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWCorythosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWCryolophosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0.09</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWCryolophosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWCyclosphaeroma"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWCyclosphaeromaReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDeinonychus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDeinonychusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDeinosuchus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDeinosuchusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDesmatosuchus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.075</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.075</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.01875</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.1125</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDesmatosuchusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDilophosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDilophosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDimetrodon"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.075</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.075</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.1125</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDimetrodonReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDinilysia"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.075</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.075</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.0375</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDinilysiaReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.075</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.075</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.0375</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDiplocaulus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDiplocaulusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDracorex"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.05</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.1</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDracorexReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDrinker"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDrinkerReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDromaeosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0.15</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWDromaeosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDryosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWDryosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+
+					<xpath>/Defs/ThingDef[defName = "JRWEdaphosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.075</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.075</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.1125</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+
+					<xpath>/Defs/ThingDef[defName = "JRWEdaphosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWEdmontosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWEdmontosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWEnigmosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.045</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.09</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWEnigmosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWEstemmenosuchus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWEstemmenosuchusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWEuoplocephalus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.15</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWEuoplocephalusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWEuphoberia"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWEuphoberiaReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWGallimimus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0.15</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWGallimimusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWGasosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.09</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.09</ZBiome_DesertOasis>
+						<ZBiome_Badlands>0.09</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.04</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWGasosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWGeosternbergia"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.1</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWGeosternbergiaReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWGeralinura"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.05</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.025</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.05</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.1</ZBiome_Sandbar_NoBeach>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWGeralinuraReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWGiganotosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0.045</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWGiganotosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWGigantophis"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0.0375</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWGigantophisReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWGorgonops"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.075</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.075</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.075</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.0375</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWGorgonopsReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWHalszkaraptor"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.05</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWHalszkaraptorReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWHolcorobeus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWHolcorobeusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWHomalocephale"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.05</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.1</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.15</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWHomalocephaleReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWHylonomus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWHylonomusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWHynerpeton"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWHynerpetonReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWHypsilophodon"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWHypsilophodonReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWIndominus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWIndoraptor"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWIschigualastia"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.1125</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWIschigualastiaReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWKaprosuchus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.075</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.075</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.1125</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWKaprosuchusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWKentrosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWKentrosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWKileskus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.045</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.135</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWKileskusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWKosmoceratops"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWKosmoceratopsReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWLycaenops"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.075</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.075</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.075</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.0375</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+
+					<xpath>/Defs/ThingDef[defName = "JRWLycaenopsReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWMacrelcana"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWMacrelcanaReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWManipulator"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWManipulatorReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWMeganeura"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWMeganeuraReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWMetriacanthosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0.09</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWMetriacanthosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWMicroceratus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.05</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWMicroceratusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWMochlodon"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWMochlodonReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWNanuqsaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0.09</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWNanuqsaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWNasutoceratops"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWNasutoceratopsReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWNyctosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.1</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWNyctosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWOphiacodon"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.075</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.075</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.1125</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWOphiacodonReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWAbrictosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWAbrictosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWAcrocanthosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.09</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWAcrocanthosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWAdalia"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWAdaliaReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWAgilisaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWAgilisaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWAlbertosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.075</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.075</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.075</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.0375</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWAlbertosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWAllosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.09</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWAllosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWAnkylosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.15</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWAnkylosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWAntarctopelta"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0.09</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.09</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWAntarctopeltaReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWApatosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.045</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.135</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWApatosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWArchaeopteryx"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.05</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWArchaeopteryxReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWArgentinosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.045</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.135</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWArgentinosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWArthropleura"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWArthropleuraReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWBagaceratops"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.075</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.075</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.1125</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWBagaceratopsReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWBaryonyx"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0.0375</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWBaryonyxReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWBaseopsis"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.05</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0.05</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.1</ZBiome_Sandbar_NoBeach>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWBaseopsisReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWBecklespinax"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.05</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.025</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWBecklespinaxReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWBeelzebufo"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWBeelzebufoReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWBernicia"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWBerniciaReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWBrachiosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0.045</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.09</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWBrachiosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWBrachytrachelopan"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.09</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.09</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.045</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.135</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWBrachytrachelopanReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWCaihong"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.05</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWCaihongReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWCamarasaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.045</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.135</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWCamarasaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWCamptosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWCamptosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWCarcharodontosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.09</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWCarcharodontosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWCarnotaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.09</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.09</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWCeratosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.09</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWCeratosaurusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWCoahuilaceratops"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWCoahuilaceratopsReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWCoelophysis"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0.045</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "JRWCoelophysisReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWCompsognathus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWCompsognathusReconstruct"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0</ZBiome_CloudForest>
+						<ZBiome_Badlands>0</ZBiome_Badlands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "JRWCorythosaurus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.075</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0375</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.075</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

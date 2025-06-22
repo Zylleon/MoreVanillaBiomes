@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth: Tundra</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ZBiome_AlpineMeadow"]/wildPlants</xpath>
+				<value>
+				
+					<RG_Plant_BramblesYellow>0.3</RG_Plant_BramblesYellow>
+					<RG_Plant_LupineIceland>0.2</RG_Plant_LupineIceland>
+					<RG_Tree_TundraTreePine>0.18</RG_Tree_TundraTreePine>
+					<RG_Plant_TundraCotton>0.25</RG_Plant_TundraCotton>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ZBiome_GlacialShield"]/wildPlants</xpath>
+				<value>
+					<RG_Plant_TundraGrass>3</RG_Plant_TundraGrass>
+					<RG_Plant_TundraTallGrass>1</RG_Plant_TundraTallGrass>
+					<RG_Plant_BramblesYellow>0.2</RG_Plant_BramblesYellow>
+					<RG_Tree_TundraTreePine>0.25</RG_Tree_TundraTreePine>
+				
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ZBiome_Iceberg_NoBeach"]/wildPlants</xpath>
+				<value>
+					<RG_Plant_LupineIceland>0.05</RG_Plant_LupineIceland>
+				
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ZBiome_Marsh"]/wildPlants</xpath>
+				<value>
+					<RG_Plant_TundraTallGrass>1.2</RG_Plant_TundraTallGrass>
+					<RG_Plant_Saxifraga>0.5</RG_Plant_Saxifraga>
+				
+					<RG_Plant_BramblesRed>0.4</RG_Plant_BramblesRed>
+					<RG_Plant_BramblesYellow>0.2</RG_Plant_BramblesYellow>
+				</value>
+			</li>
+			
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

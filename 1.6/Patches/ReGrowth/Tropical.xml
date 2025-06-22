@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth: Tropical</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ZBiome_CoastalDunes"]/wildPlants</xpath>
+				<value>
+					<RG_Plant_TropicalIvy>0.5</RG_Plant_TropicalIvy>
+					<RG_Plant_TropicalFern>0.2</RG_Plant_TropicalFern>
+					<RG_Plant_TreeDwarfPalm>0.9</RG_Plant_TreeDwarfPalm>
+					<RG_Plant_TallPalmTree>0.25</RG_Plant_TallPalmTree>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ZBiome_DesertOasis"]/wildPlants</xpath>
+				<value>
+					<RG_Plant_TropicalIvy>2.5</RG_Plant_TropicalIvy>
+					<RG_Plant_TropicalFern>0.4</RG_Plant_TropicalFern>
+					<RG_Plant_TreeDwarfPalm>0.3</RG_Plant_TreeDwarfPalm>
+					<RG_Plant_TallPalmTree>0.6</RG_Plant_TallPalmTree>
+					<RG_Plant_TropicalBrambles>0.4</RG_Plant_TropicalBrambles>
+					<RG_Plant_Bromeliad>0.6</RG_Plant_Bromeliad>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ZBiome_Grasslands"]/wildPlants</xpath>
+				<value>
+					<RG_Plant_TreeDwarfPalm>0.5</RG_Plant_TreeDwarfPalm>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ZBiome_CloudForest"]/wildPlants</xpath>
+				<value>
+					<RG_Plant_TropicalIvy>2.5</RG_Plant_TropicalIvy>
+					<RG_Plant_TropicalFern>0.4</RG_Plant_TropicalFern>
+					<RG_Plant_Bromeliad>0.6</RG_Plant_Bromeliad>
+					<RG_Plant_TropicalChokevine>1.5</RG_Plant_TropicalChokevine>
+				</value>
+			</li>
+			
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

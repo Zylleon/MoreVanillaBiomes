@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Erin's Wildlife</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ERN_Redpanda"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.2</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.2</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.1</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ERN_ptarmigan"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0.4</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.3</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ERN_Greyfox"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_Badlands>0.3</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.1</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.3</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ERN_Mink"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_Badlands>0.4</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.4</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.3</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ERN_Hedgehog"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.2</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.2</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.1</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ERN_Gartersnake"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+
+					</value>
+				</li>
+
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ERN_Armadillo"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.2</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.2</ZBiome_DesertOasis>
+						<ZBiome_Grasslands>0.15</ZBiome_Grasslands>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

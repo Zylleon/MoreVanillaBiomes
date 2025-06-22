@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth: Aspen</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="ZBiome_AlpineMeadow"]/wildPlants</xpath>
+					<value>
+						<RG_Plant_RedMountainFlower>0.8</RG_Plant_RedMountainFlower>
+						<RG_Plant_AspenFern>0.8</RG_Plant_AspenFern>
+						<RG_Plant_SaffronCushion>0.4</RG_Plant_SaffronCushion>
+						<RG_Plant_TreeAspenRed>0.7</RG_Plant_TreeAspenRed>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="ZBiome_GlacialShield"]/wildPlants</xpath>
+					<value>
+						<RG_Plant_Deathbell>0.5</RG_Plant_Deathbell>
+						<RG_Plant_AspenFern>0.6</RG_Plant_AspenFern>
+						<RG_Plant_TreeAspenYellow>0.7</RG_Plant_TreeAspenYellow>
+					</value>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

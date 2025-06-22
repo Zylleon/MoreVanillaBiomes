@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "VG_Plant_TreeBamboo"]/plant/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.05</ZBiome_CloudForest>
+						<ZBiome_CoastalDunes>0.06</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.06</ZBiome_DesertOasis>
+						<ZBiome_AlpineMeadow>0.012</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "Wild_PlantPlumeria"]/plant/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0.012</ZBiome_GlacialShield>
+						<ZBiome_Badlands>0.01</ZBiome_Badlands>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0.02</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "Plant_VG_Grass"]/plant/wildBiomes</xpath>
+					<value>
+						<ZBiome_Sandbar_NoBeach>1</ZBiome_Sandbar_NoBeach>
+						<ZBiome_Badlands>3</ZBiome_Badlands>
+						<ZBiome_CoastalDunes>1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>1</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>1</ZBiome_CloudForest>
+						<ZBiome_Grasslands>3</ZBiome_Grasslands>
+						<ZBiome_AlpineMeadow>1</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "WildAppletree"]/plant/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.01</ZBiome_Badlands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "WildBananaTree"]/plant/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "WildorangeTree"]/plant/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "WildPeachTree"]/plant/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.01</ZBiome_Badlands>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "WildDateTree"]/plant/wildBiomes</xpath>
+					<value>
+						<ZBiome_Sandbar_NoBeach>0.01</ZBiome_Sandbar_NoBeach>
+						<ZBiome_Grasslands>0.004</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "WildFigTree"]/plant/wildBiomes</xpath>
+					<value>
+						<ZBiome_Sandbar_NoBeach>0.01</ZBiome_Sandbar_NoBeach>
+						<ZBiome_Grasslands>0.004</ZBiome_Grasslands>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "WildCoconuttree"]/plant/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "WildPlantCherrytree"]/plant/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.01</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.004</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "WildPlantpineapple"]/plant/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "WildPlantcloudberry"]/plant/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "WildPlantgooseberry"]/plant/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "Plantmushroom"]/plant/wildBiomes</xpath>
+					<value>
+						<ZBiome_Badlands>0.05</ZBiome_Badlands>
+						<ZBiome_CoastalDunes>0.05</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.05</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.05</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ST_WildHoneyTree"]/plant/wildBiomes</xpath>
+					<value>
+						<ZBiome_Sandbar_NoBeach>0.01</ZBiome_Sandbar_NoBeach>
+						<ZBiome_Badlands>0.01</ZBiome_Badlands>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+						<ZBiome_Grasslands>0.01</ZBiome_Grasslands>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "PlantTreeIronwood"]/plant/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0.04</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.03</ZBiome_Marsh>
+
+					</value>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

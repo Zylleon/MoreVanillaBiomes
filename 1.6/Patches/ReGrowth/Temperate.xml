@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth: Temperate</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ZBiome_AlpineMeadow"]/wildPlants</xpath>
+				<value>
+					<RG_Plant_BlueDandelion>0.2</RG_Plant_BlueDandelion>
+					<RG_Plant_RedDandelion>0.2</RG_Plant_RedDandelion>
+				</value>
+			</li>
+
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ZBiome_Badlands"]/wildPlants</xpath>
+				<value>
+					
+					<RG_Plant_GrasslandTallGrass>1.5</RG_Plant_GrasslandTallGrass>
+					
+				</value>
+			</li>
+			
+			
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ZBiome_CloudForest"]/wildPlants</xpath>
+				<value>
+					
+					<RG_Plant_TreeCornish>0.25</RG_Plant_TreeCornish>
+					
+					<RG_Plant_TemperateFern>0.6</RG_Plant_TemperateFern>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ZBiome_CoastalDunes"]/wildPlants</xpath>
+				<value>
+					
+					<RG_Plant_GrasslandTallGrass>2</RG_Plant_GrasslandTallGrass>
+					
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ZBiome_DesertOasis"]/wildPlants</xpath>
+				<value>
+					
+					<RG_Plant_BlueDandelion>0.15</RG_Plant_BlueDandelion>
+					<RG_Plant_RedDandelion>0.3</RG_Plant_RedDandelion>
+					
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ZBiome_Grasslands"]/wildPlants</xpath>
+				<value>
+					
+					<RG_Plant_GrasslandTallGrass>4</RG_Plant_GrasslandTallGrass>
+					<RG_Plant_RedDandelion>0.35</RG_Plant_RedDandelion>
+					
+				</value>
+			</li>
+			
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

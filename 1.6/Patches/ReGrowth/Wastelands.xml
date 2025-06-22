@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth: Wastelands</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/BiomeDef[defName = "ZBiome_AlpineMeadow"]/pollutionWildAnimals</xpath>
+						<value>
+							<RG_Toxirrel>0.5</RG_Toxirrel>
+							<RG_Toxbeaver>0.07</RG_Toxbeaver>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/BiomeDef[defName = "ZBiome_Badlands"]/pollutionWildAnimals</xpath>
+						<value>
+							<RG_Toxbeaver>0.05</RG_Toxbeaver>
+							<RG_Rimclaw>0.05</RG_Rimclaw>
+
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/BiomeDef[defName = "ZBiome_CloudForest"]/pollutionWildAnimals</xpath>
+						<value>
+							<RG_Toxirrel>0.5</RG_Toxirrel>
+							<RG_Rimclaw>0.15</RG_Rimclaw>
+
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/BiomeDef[defName = "ZBiome_CoastalDunes"]/pollutionWildAnimals</xpath>
+						<value>
+
+							<RG_Toxbeaver>0.1</RG_Toxbeaver>
+							<RG_Rimclaw>0.05</RG_Rimclaw>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/BiomeDef[defName = "ZBiome_DesertOasis"]/pollutionWildAnimals</xpath>
+						<value>
+
+							<RG_Toxirrel>0.5</RG_Toxirrel>
+							<RG_Rimclaw>0.10</RG_Rimclaw>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/BiomeDef[defName = "ZBiome_GlacialShield"]/pollutionWildAnimals</xpath>
+						<value>
+
+							<RG_Toxirrel>0.5</RG_Toxirrel>
+							<RG_Toxbeaver>0.07</RG_Toxbeaver>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/BiomeDef[defName = "ZBiome_Grasslands"]/pollutionWildAnimals</xpath>
+						<value>
+
+							<RG_Toxirrel>0.5</RG_Toxirrel>
+							<RG_Toxbeaver>0.05</RG_Toxbeaver>
+							<RG_Rimclaw>0.05</RG_Rimclaw>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/BiomeDef[defName = "ZBiome_Marsh"]/pollutionWildAnimals</xpath>
+						<value>
+
+							<RG_Toxirrel>0.5</RG_Toxirrel>
+							<RG_Toxbeaver>0.07</RG_Toxbeaver>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/BiomeDef[defName = "ZBiome_Sandbar_NoBeach"]/pollutionWildAnimals</xpath>
+						<value>
+							<RG_Rimclaw>0.15</RG_Rimclaw>
+
+						</value>
+					</li>
+
+				</operations>
+			</match>
+		</Operation>
+	</Patch>
+

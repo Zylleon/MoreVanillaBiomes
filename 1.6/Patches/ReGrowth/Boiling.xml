@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth: Boiling</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="ZBiome_CloudForest"]/wildPlants</xpath>
+					<value>
+			<RG_Plant_AmitisFlower>0.085</RG_Plant_AmitisFlower>
+			<RG_Plant_LuzincFlower>0.07</RG_Plant_LuzincFlower>
+			<RG_Plant_BoilingMoss>0.5</RG_Plant_BoilingMoss>
+			<RG_Plant_PurpuraCushion>0.2</RG_Plant_PurpuraCushion>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

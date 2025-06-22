@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth: Boreal</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+				<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ZBiome_AlpineMeadow"]/wildPlants</xpath>
+				<value>
+					<RG_Plant_TigerLily>0.6</RG_Plant_TigerLily>
+					<RG_Plant_BorealFern>2.0</RG_Plant_BorealFern>
+					<RG_Plant_Coldheart>0.3</RG_Plant_Coldheart>
+					<RG_Plant_RimReed>0.4</RG_Plant_RimReed>
+					<RG_Plant_BlueTreePine>0.4</RG_Plant_BlueTreePine>
+					<RG_Plant_LargeTreePine>0.7</RG_Plant_LargeTreePine>
+					<RG_Plant_OrangeTreePine>0.2</RG_Plant_OrangeTreePine>
+					<RG_Potokus>0.05</RG_Potokus>
+					<RG_Plant_Potokus>0.000000000000001</RG_Plant_Potokus>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ZBiome_GlacialShield"]/wildPlants</xpath>
+				<value>
+					<RG_Plant_TigerLily>0.3</RG_Plant_TigerLily>
+					<RG_Plant_RimReed>0.25</RG_Plant_RimReed>
+					<RG_Plant_BorealFern>1.0</RG_Plant_BorealFern>
+					<RG_Plant_Coldheart>0.4</RG_Plant_Coldheart>
+					<RG_Plant_BlueTreePine>0.04</RG_Plant_BlueTreePine>
+					<RG_Plant_LargeTreePine>0.02</RG_Plant_LargeTreePine>
+					<RG_Plant_OrangeTreePine>0.005</RG_Plant_OrangeTreePine>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ZBiome_Marsh"]/wildPlants</xpath>
+				<value>
+					<RG_Plant_BorealFern>1.0</RG_Plant_BorealFern>
+					<RG_Plant_Coldheart>0.05</RG_Plant_Coldheart>
+					<RG_Plant_LargeTreePine>0.02</RG_Plant_LargeTreePine>
+					<RG_Plant_OrangeTreePine>0.25</RG_Plant_OrangeTreePine>
+				</value>
+			</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

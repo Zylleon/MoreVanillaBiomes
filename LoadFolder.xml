@@ -30,4 +30,10 @@
 		<li IfModActive="SaucyPigeon.RealisticPlanets">RealisticPlanets</li>
 		<li IfModActive="WindowsXP.RealisticPlanets">RealisticPlanets</li>
 	 </v1.5>
+	 <v1.6>
+		<li>\</li>
+		<li>1.6</li>
+		<li IfModActive="SaucyPigeon.RealisticPlanets">RealisticPlanets</li>
+		<li IfModActive="WindowsXP.RealisticPlanets">RealisticPlanets</li>
+	 </v1.6>
 </loadFolders>

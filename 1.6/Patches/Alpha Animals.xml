@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_AcanthamoebaGiganteaSmall"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.005</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.005</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.005</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.005</ZBiome_Grasslands>
+					</value>
+				</li>
+
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Aerofleet"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.2</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.2</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.05</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.4</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.05</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.3</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_AngelMothLarva"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.05</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.05</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.04</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.035</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.075</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_AngelMoth"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.05</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.05</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.04</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.035</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.075</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_AnimaColossus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.005</ZBiome_CloudForest>
+						<ZBiome_Marsh>0.007</ZBiome_Marsh>
+						<ZBiome_AlpineMeadow>0.002</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_AnimusVox"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.05</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.005</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_ArcticLion"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0.07</ZBiome_GlacialShield>
+						<ZBiome_Iceberg_NoBeach>0.1</ZBiome_Iceberg_NoBeach>
+						<ZBiome_Marsh>0.07</ZBiome_Marsh>
+						<ZBiome_AlpineMeadow>0.035</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_LarvalAtispec"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.01</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.015</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_AuroraSylph"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.04</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.015</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.015</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Barbslinger"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.3</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.3</ZBiome_DesertOasis>
+						<ZBiome_Sandbar_NoBeach>0.1</ZBiome_Sandbar_NoBeach>
+						<ZBiome_Grasslands>0.25</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_BedBug"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.07</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.015</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.03</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.07</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.005</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Blizzarisk"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0.07</ZBiome_GlacialShield>
+						<ZBiome_Iceberg_NoBeach>0.1</ZBiome_Iceberg_NoBeach>
+						<ZBiome_Marsh>0.07</ZBiome_Marsh>
+						<ZBiome_AlpineMeadow>0.035</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_BloodShrimp"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.005</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.01</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.025</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_BoulderMit"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.07</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.07</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.05</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0125</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.07</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.04</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.07</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.025</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.05</ZBiome_Sandbar_NoBeach>
+						<ZBiome_Iceberg_NoBeach>0.01</ZBiome_Iceberg_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Bumbledrone"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.07</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.07</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.035</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.07</ZBiome_GlacialShield>
+						<ZBiome_Grasslands>0.105</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_BumbledroneHierophant"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.005</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.005</ZBiome_GlacialShield>
+						<ZBiome_Grasslands>0.015</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Cactipine"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.07</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.07</ZBiome_DesertOasis>
+						<ZBiome_Grasslands>0.75</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.07</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_ChameleonYak"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.07</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.07</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.07</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.3</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.15</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.07</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.225</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.02</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Cinderlisk"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.05</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.05</ZBiome_DesertOasis>
+						<ZBiome_Sandbar_NoBeach>0.05</ZBiome_Sandbar_NoBeach>
+						<ZBiome_Grasslands>0.045</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_CrescendoAnole"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.03</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.03</ZBiome_DesertOasis>
+						<ZBiome_Grasslands>0.02</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.02</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_CrystallineCaracal"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.005</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0025</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.01</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.005</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_CrystalMit"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.07</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.07</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.01</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.01</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.025</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.05</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Darkbeast"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.005</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.005</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.01</ZBiome_Marsh>
+						<ZBiome_Iceberg_NoBeach>0.01</ZBiome_Iceberg_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_DarkVandal"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0125</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.01</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.015</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_DecayDrake"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.05</ZBiome_CloudForest>
+						<ZBiome_Marsh>0.02</ZBiome_Marsh>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_DesertAve"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.8</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.8</ZBiome_DesertOasis>
+						<ZBiome_Grasslands>0.6</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.25</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_DrainerLarva"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.04</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.015</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.015</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Drainer"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.04</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.015</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.015</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Dunealisk"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_Sandbar_NoBeach>0.1</ZBiome_Sandbar_NoBeach>
+						<ZBiome_Grasslands>0.105</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_DuskProwler"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.03</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.03</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.05</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.05</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.03</ZBiome_GlacialShield>
+						<ZBiome_Iceberg_NoBeach>0.01</ZBiome_Iceberg_NoBeach>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.03</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.02</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.02</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_EmpressButterflyLarva"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.02</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0.005</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.005</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_EmpressButterfly"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.02</ZBiome_CloudForest>
+						<ZBiome_GlacialShield>0.005</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.005</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Erin"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.015</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.015</ZBiome_DesertOasis>
+						<ZBiome_Grasslands>0.0075</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.015</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Feralisk"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.15</ZBiome_CloudForest>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_FissionMouse"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.03</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.035</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.03</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.005</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.005</ZBiome_Sandbar_NoBeach>
+						<ZBiome_Iceberg_NoBeach>0.005</ZBiome_Iceberg_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_FlamingoPhoenix"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.001</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0005</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.005</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.001</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.005</ZBiome_Marsh>
+						<ZBiome_Iceberg_NoBeach>0.01</ZBiome_Iceberg_NoBeach>
+						<ZBiome_Grasslands>0.075</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_FrostAve"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0.4</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.1</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.4</ZBiome_Marsh>
+						<ZBiome_Iceberg_NoBeach>0.1</ZBiome_Iceberg_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_FrostLynx"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.005</ZBiome_AlpineMeadow>
+						<ZBiome_Iceberg_NoBeach>0.05</ZBiome_Iceberg_NoBeach>
+						<ZBiome_Marsh>0.01</ZBiome_Marsh>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Frostmite"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0.05</ZBiome_GlacialShield>
+						<ZBiome_Iceberg_NoBeach>0.5</ZBiome_Iceberg_NoBeach>
+						<ZBiome_Marsh>0.03</ZBiome_Marsh>
+						<ZBiome_AlpineMeadow>0.02</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Genix"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.005</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.01</ZBiome_Marsh>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_GiantCrownedSilkie"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_Badlands>0.0025</ZBiome_Badlands>
+						<ZBiome_AlpineMeadow>0.005</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Gigantelope"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.2</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.1</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.05</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.4</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.05</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.3</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_GreatDevourer"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_Badlands>0.01</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.01</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.005</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_GreyCoatedMouflon"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_Badlands>0.005</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.05</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.03</ZBiome_Marsh>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Groundrunner"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.07</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0.2</ZBiome_AlpineMeadow>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Helixien"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.03</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.005</ZBiome_Badlands>
+						<ZBiome_Marsh>0.01</ZBiome_Marsh>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.005</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Lockjaw"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.2</ZBiome_CloudForest>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_LuciferBug"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.03</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.03</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0025</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.005</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.005</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.015</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_MammothWorm"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.03</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.03</ZBiome_DesertOasis>
+						<ZBiome_Grasslands>0.015</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.03</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Mantrap"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+						<ZBiome_Sandbar_NoBeach>0.01</ZBiome_Sandbar_NoBeach>
+						<ZBiome_Grasslands>0.15</ZBiome_Grasslands>
+						<ZBiome_AlpineMeadow>0.005</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.05</ZBiome_Marsh>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_MatureFleshbeast"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.005</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.005</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.01</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.005</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_MeadowAve"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.03</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.03</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.07</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.1</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.07</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.3</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.07</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.06</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_MegaLouse"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.03</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.03</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.03</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.015</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.03</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.03</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.03</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.045</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Murkling"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.2</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.3</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.5</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.07</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.2</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.1</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Needlepost"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_Sandbar_NoBeach>0.04</ZBiome_Sandbar_NoBeach>
+						<ZBiome_Grasslands>0.105</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Needleroll"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>1.2</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>1.2</ZBiome_DesertOasis>
+						<ZBiome_Sandbar_NoBeach>1.5</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_NightAve"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.02</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.005</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.02</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.01</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.06</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Nightling"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.03</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.03</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.05</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.05</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.03</ZBiome_GlacialShield>
+						<ZBiome_Iceberg_NoBeach>0.01</ZBiome_Iceberg_NoBeach>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.03</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.02</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.02</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_OcularJelly"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.005</ZBiome_CloudForest>
+						<ZBiome_AlpineMeadow>0.005</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.005</ZBiome_Marsh>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_OvergrownColossus"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.02</ZBiome_CloudForest>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_PebbleMit"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.07</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.07</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.05</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.035</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.07</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.07</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.07</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.025</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.05</ZBiome_Sandbar_NoBeach>
+						<ZBiome_Iceberg_NoBeach>0.01</ZBiome_Iceberg_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_PedigreedRaptor"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.015</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.015</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.05</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.01</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.015</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_PhoenixOwlcat"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.03</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0125</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.03</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.005</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.005</ZBiome_Sandbar_NoBeach>
+						<ZBiome_Iceberg_NoBeach>0.005</ZBiome_Iceberg_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Plasmorph"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Radyak"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.001</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.00025</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.005</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.001</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.005</ZBiome_Marsh>
+						<ZBiome_Iceberg_NoBeach>0.01</ZBiome_Iceberg_NoBeach>
+						<ZBiome_Grasslands>0.0015</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_RaptorShrimp"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.04</ZBiome_CloudForest>
+						<ZBiome_Marsh>0.02</ZBiome_Marsh>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Ravager"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.0025</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.0025</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.005</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.005</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.005</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.01</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.00125</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_RayHound"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.07</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0175</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.03</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.02</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.025</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Razorjack"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.07</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.07</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.025</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0125</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.005</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.07</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_RipperHound"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.005</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.005</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.005</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.025</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_RoughPlatedMonitor"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.07</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.07</ZBiome_DesertOasis>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_Marsh>0.01</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.025</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.05</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_RoyalAve"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.005</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0025</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.005</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.005</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.015</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_SandLion"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_Sandbar_NoBeach>0.1</ZBiome_Sandbar_NoBeach>
+						<ZBiome_Grasslands>0.035</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_SandProwler"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+						<ZBiome_Sandbar_NoBeach>0.1</ZBiome_Sandbar_NoBeach>
+						<ZBiome_Grasslands>0.035</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_SandSquid"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.05</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.05</ZBiome_DesertOasis>
+						<ZBiome_Badlands>0.005</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.025</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.05</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_ShadowCharger"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.02</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.01</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.05</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.04</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.05</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.01</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_ShockGoat"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.02</ZBiome_CloudForest>
+						<ZBiome_Marsh>0.02</ZBiome_Marsh>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Skiphound"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.005</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0025</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.005</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.0025</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Slurrypede"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0025</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.01</ZBiome_Marsh>
+						<ZBiome_Iceberg_NoBeach>0.01</ZBiome_Iceberg_NoBeach>
+						<ZBiome_Grasslands>0.005</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.01</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Swarmling"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.03</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.035</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_Marsh>0.03</ZBiome_Marsh>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+						<ZBiome_Iceberg_NoBeach>0.005</ZBiome_Iceberg_NoBeach>
+						<ZBiome_Grasslands>0.015</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.005</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_TeratogenicOriginator"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0025</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.01</ZBiome_Marsh>
+						<ZBiome_Iceberg_NoBeach>0.01</ZBiome_Iceberg_NoBeach>
+						<ZBiome_Grasslands>0.005</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.01</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Terramorph"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.07</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.07</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.005</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.01</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.025</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.05</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_TetraSlug"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.001</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.001</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.001</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.00025</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.001</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.001</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.001</ZBiome_Marsh>
+						<ZBiome_Iceberg_NoBeach>0.001</ZBiome_Iceberg_NoBeach>
+						<ZBiome_Grasslands>0.0005</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.001</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Thermadon"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.0025</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.05</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.05</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.005</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "AA_Thunderbeast"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.00625</ZBiome_Badlands>
+						<ZBiome_Grasslands>0.0025</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Thunderox"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.025</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.03</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.03</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.07</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.015</ZBiome_Grasslands>
+						<ZBiome_Sandbar_NoBeach>0.02</ZBiome_Sandbar_NoBeach>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Wildpawn"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_Badlands>0.05</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.07</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.1</ZBiome_AlpineMeadow>
+						<ZBiome_Grasslands>0.025</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_Wildpod"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_Badlands>0.0175</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.07</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.1</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.07</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.025</ZBiome_Grasslands>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "AA_WindBeast"]/race/wildBiomes</xpath>
+					<value>
+						<ZBiome_CoastalDunes>0.0025</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>0.0025</ZBiome_DesertOasis>
+						<ZBiome_CloudForest>0.0025</ZBiome_CloudForest>
+						<ZBiome_Badlands>0.000625</ZBiome_Badlands>
+						<ZBiome_GlacialShield>0.0025</ZBiome_GlacialShield>
+						<ZBiome_AlpineMeadow>0.0025</ZBiome_AlpineMeadow>
+						<ZBiome_Marsh>0.0025</ZBiome_Marsh>
+						<ZBiome_Grasslands>0.00125</ZBiome_Grasslands>
+					</value>
+				</li>
+
+
+
+
+
+
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

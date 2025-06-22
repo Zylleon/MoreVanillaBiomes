@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Realistic Planets Continued</li>
+	</mods>
+
+	<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_Grasslands"]/label</xpath>
+				<value>
+					<label>stormy savanna</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_Grasslands"]/description</xpath>
+				<value>
+					<description>Warm grassy plains with few trees. Herds of grazing animals roam here, though the soil is generally poor.\n\nCompared to the rest of the savanna, this area has worse soil but more water and more frequent storms. You will see fewer creatures that are adapted for the desert.\n\n[Grasslands - More Vanilla Biomes]</description>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_Grasslands"]/baseWeatherCommonalities</xpath>
+				<value>
+					<baseWeatherCommonalities>
+					  <Clear>18</Clear>
+					  <Fog>1</Fog>
+					  <Rain>1</Rain>
+					  <DryThunderstorm>2</DryThunderstorm>
+					  <RainyThunderstorm>2</RainyThunderstorm>
+					  <FoggyRain>0.5</FoggyRain>
+					  <SnowGentle>4</SnowGentle>
+					  <SnowHard>4</SnowHard>
+					</baseWeatherCommonalities>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_DesertOasis"]/label</xpath>
+				<value>
+					<label>dense oasis</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "ZBiome_DesertOasis"]/description</xpath>
+				<value>
+					<description>An oasis with especially dense plants, attracting animals in search of food and shelter.\n\n[Desert Oasis - More Vanilla Biomes]</description>
+				</value>
+			</li>
+			
+		</operations>
+	</match>
+</Operation>
+
+</Patch>
+
