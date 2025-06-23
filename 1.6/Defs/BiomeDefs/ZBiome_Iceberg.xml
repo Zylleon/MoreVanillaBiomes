@@ -4,9 +4,9 @@
 
 <BiomeDef>							<!-- Iceberg -->
 	<defName>ZBiome_Iceberg_NoBeach</defName>
-	<label>iceberg</label>
+	<label>ice floes</label>
 	<description>Chunks of sea ice floating on water. There is no soil for plants to grow, no minerals to mine, and almost no animal life.</description>
-	<workerClass>VanillaBiomes.BiomeWorker_Iceberg</workerClass>
+	<workerClass>VanillaBiomes.BiomeWorker_IceFloes</workerClass>
 	<canAutoChoose>false</canAutoChoose>
     <allowRoads>false</allowRoads>
     <allowRivers>false</allowRivers>
@@ -20,6 +20,9 @@
     <forageability>0</forageability>
     <isExtremeBiome>true</isExtremeBiome>
     <lakeBeachTerrain>Ice</lakeBeachTerrain>
+	<preventGenSteps>
+		<li>ScatterShrines</li>
+	</preventGenSteps>
 	<soundsAmbient>
 		<li>Ambient_Wind_Desolate</li>
 	</soundsAmbient>

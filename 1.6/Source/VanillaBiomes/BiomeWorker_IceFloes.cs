@@ -10,7 +10,7 @@ using Verse.Noise;
 
 namespace VanillaBiomes
 {
-    public class BiomeWorker_Iceberg : BiomeWorker
+    public class BiomeWorker_IceFloes : BiomeWorker
     {
 
 

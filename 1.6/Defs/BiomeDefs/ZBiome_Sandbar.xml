@@ -21,6 +21,9 @@
 	<foragedFood>RawAgave</foragedFood>
     <wildPlantRegrowDays>30</wildPlantRegrowDays>
     <lakeBeachTerrain>Sand</lakeBeachTerrain>
+	<preventGenSteps>
+		<li>ScatterShrines</li>
+	</preventGenSteps>
     <soundsAmbient>
       <li>Ambient_NightInsects_Standard</li>
     </soundsAmbient>

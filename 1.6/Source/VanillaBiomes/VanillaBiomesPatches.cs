@@ -37,15 +37,16 @@ namespace VanillaBiomes
             Log.Message("More Vanilla Biomes initialized......");
         }
 
-        [HarmonyPatch(typeof(RimWorld.TileMutatorWorker_Coast), "CoastTerrainAt")]
+        [HarmonyPatch(typeof(RimWorld.TileMutatorWorker_Coast), "GeneratePostTerrain")]
         static class BeachPatch
         {
-            static void Prefix(ref IntVec3 cell, Map map)
+            static bool Prefix(Map map)
             {
                 if (map.Biome.defName.Contains("NoBeach"))
                 {
-                    return;
+                    return false;
                 }
+                return true;
             }
         }
 
