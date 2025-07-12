@@ -17,6 +17,26 @@
 	<wildPlantRegrowDays>17</wildPlantRegrowDays>
     <lakeBeachTerrain>SoilRich</lakeBeachTerrain>
     <riverbankTerrain>SoilRich</riverbankTerrain>
+	<riverbankSizeRange>6~8</riverbankSizeRange>
+	
+	    <maxFishPopulation>660</maxFishPopulation>
+    <fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
+      <freshwater_Common>
+        <Fish_Tilapia MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tilapia>
+      </freshwater_Common>
+      <freshwater_Uncommon>
+        <Fish_Piranha MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Piranha>
+      </freshwater_Uncommon>
+      <saltwater_Common>
+        <Fish_Bluefish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Bluefish>
+      </saltwater_Common>
+      <saltwater_Uncommon>
+        <Fish_Tuna MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tuna>
+        <Fish_Flounder MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Flounder>
+      </saltwater_Uncommon>
+      <rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Tropical</rareCatchesSetMaker>
+    </fishTypes>
+	
 	<forageability>0.5</forageability>
 	<foragedFood>RawAgave</foragedFood>
 

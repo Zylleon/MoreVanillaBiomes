@@ -21,6 +21,24 @@
 	<foragedFood>RawAgave</foragedFood>
     <wildPlantRegrowDays>30</wildPlantRegrowDays>
     <lakeBeachTerrain>Sand</lakeBeachTerrain>
+	
+    <maxFishPopulation>550</maxFishPopulation>
+    <fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
+      <freshwater_Common>
+        <Fish_Guppy MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Guppy>
+      </freshwater_Common>
+      <freshwater_Uncommon>
+        <Fish_Tilapia MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tilapia>
+      </freshwater_Uncommon>
+      <saltwater_Common>
+        <Fish_Bluefish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Bluefish>
+      </saltwater_Common>
+      <saltwater_Uncommon>
+        <Fish_Tuna MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tuna>
+      </saltwater_Uncommon>
+      <rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Hot</rareCatchesSetMaker>
+    </fishTypes>
+	
 	<preventGenSteps>
 		<li>ScatterShrines</li>
 	</preventGenSteps>
