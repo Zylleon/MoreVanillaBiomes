@@ -187,7 +187,6 @@
             <allowLandforms>false</allowLandforms>
             <allowBiomeTransitions>false</allowBiomeTransitions>
             <isWaterCovered>true</isWaterCovered>
-            <beachTerrain>Sand</beachTerrain>
         </li>
     </modExtensions>
     

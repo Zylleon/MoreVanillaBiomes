@@ -145,7 +145,6 @@
 			<allowLandforms>false</allowLandforms>
 			<allowBiomeTransitions>false</allowBiomeTransitions>
 			<isWaterCovered>true</isWaterCovered>
-			<beachTerrain>Ice</beachTerrain>
 		</li>
 	</modExtensions>
 	
