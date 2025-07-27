@@ -2,10 +2,10 @@
 <Defs>
 
 
-<BiomeDef>							<!-- Temperate Grasslands -->
+<BiomeDef>							<!-- stormy savannah -->
     <defName>ZBiome_Grasslands</defName>
-    <label>grasslands</label>
-    <description>Warm grassy plains with few trees. Herds of grazing animals roam here, though the soil is generally poor.</description>
+    <label>stormy savanna</label>
+    <description>Warm grassy plains with few trees. Herds of grazing animals roam here, seeking sustenance at the various watering holes. The soil is generally poor, supporting grasses and shrubs but few trees.</description>
     <workerClass>VanillaBiomes.BiomeWorker_Grasslands</workerClass>
     <animalDensity>3.0</animalDensity>
     <plantDensity>0.95</plantDensity>
@@ -137,7 +137,7 @@
       <Fog>1</Fog>
       <Rain>1.5</Rain>
       <DryThunderstorm>2</DryThunderstorm>
-      <RainyThunderstorm>1</RainyThunderstorm>
+      <RainyThunderstorm>2</RainyThunderstorm>
       <FoggyRain>0.5</FoggyRain>
       <SnowGentle>4</SnowGentle>
       <SnowHard>4</SnowHard>
@@ -151,9 +151,9 @@
 		<Plant_PincushionCactus>0.6</Plant_PincushionCactus>
 		<Plant_TreeDrago>0.2</Plant_TreeDrago>
 		<Plant_Berry>0.075</Plant_Berry>
-      <Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">2</Plant_GrayGrass>
-      <Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">0.8</Plant_Ripthorn>
-      <Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">0.6</Plant_PebbleCactus>
+		<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">2</Plant_GrayGrass>
+		<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">0.8</Plant_Ripthorn>
+		<Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">0.6</Plant_PebbleCactus>
 	</wildPlants>
     <wildAnimals>
 		<Hare>1.15</Hare>

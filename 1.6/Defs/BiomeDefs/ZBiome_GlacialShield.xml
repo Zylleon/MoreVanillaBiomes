@@ -5,7 +5,7 @@
 <BiomeDef>							
 	<defName>ZBiome_GlacialShield</defName>
 	<label>glacial shield</label>
-	<description>Where the glacier meets the tundra, this area is icy, rocky, and cold almost year-round. Thick stands of forest are concentrated in patches of soil and around lakes, attracting wildlife.</description>
+	<description>Where the glacier meets the tundra, this area is icy, rocky, and cold almost year-round. Thick stands of forest are concentrated in patches of soil and around lakes, attracting wildlife. This area is more vibrant and welcoming than the desolate glacial plain.</description>
 	<texture>World/Biomes/ZBiome_GlacialShield</texture>
 	<workerClass>VanillaBiomes.BiomeWorker_GlacialShield</workerClass>
 	<settlementSelectionWeight>0.3</settlementSelectionWeight>

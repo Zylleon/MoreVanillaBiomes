@@ -9,15 +9,9 @@
 	<match Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/BiomeDef[defName = "ZBiome_Grasslands"]/label</xpath>
-				<value>
-					<label>stormy savanna</label>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
 				<xpath>/Defs/BiomeDef[defName = "ZBiome_Grasslands"]/description</xpath>
 				<value>
-					<description>Warm grassy plains with few trees. Herds of grazing animals roam here, though the soil is generally poor.\n\nCompared to the rest of the savanna, this area has worse soil but more water and more frequent storms. You will see fewer creatures that are adapted for the desert.\n\n[Grasslands - More Vanilla Biomes]</description>
+					<description>Warm grassy plains with few trees. Herds of grazing animals roam here, though the soil is generally poor.\n\nCompared to the rest of the savanna, this area has worse soil but more water and more frequent storms. You will see fewer creatures that are adapted for the desert.</description>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">

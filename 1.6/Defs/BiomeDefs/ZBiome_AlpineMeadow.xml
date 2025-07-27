@@ -11,14 +11,13 @@
 	<settlementSelectionWeight>0.5</settlementSelectionWeight>
     <movementDifficulty>1.5</movementDifficulty>
 	<animalDensity>2.5</animalDensity>
-	<plantDensity>0.9</plantDensity>
+	<plantDensity>0.95</plantDensity>
 	<wildPlantRegrowDays>19</wildPlantRegrowDays>
 	<forageability>1</forageability>
 	<foragedFood>RawBerries</foragedFood>
     <lakeBeachTerrain>Mud</lakeBeachTerrain>
     <riverbankTerrain>Riverbank</riverbankTerrain>
     <riverbankSizeRange>6~8</riverbankSizeRange>
-    <texture>World/Biomes/BorealForest</texture>
     <maxFishPopulation>500</maxFishPopulation>
 	
     <fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
