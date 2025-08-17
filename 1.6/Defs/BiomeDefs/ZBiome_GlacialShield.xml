@@ -166,6 +166,8 @@
       <Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">1</Plant_Ripthorn>
       <Plant_TreeGrayPine MayRequire="Ludeon.RimWorld.Biotech">4</Plant_TreeGrayPine>
       <Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">9.0</Plant_GrayGrass>
+      <Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
+      <Plant_Bulrush MayRequire="Ludeon.RimWorld.Odyssey">0.2</Plant_Bulrush>
     </wildPlants>
     <wildAnimals>
       <Yak>0.12</Yak>
@@ -188,7 +190,21 @@
       <Wolf_Arctic>0.08</Wolf_Arctic>
       <Lynx>0.07</Lynx>
       <Warg>0.08</Warg>
+	  
+	  <Muskox MayRequire="Ludeon.RimWorld.Odyssey">1</Muskox>
+      <Moose MayRequire="Ludeon.RimWorld.Odyssey">0.2</Moose>
+      <Wolf_Great MayRequire="Ludeon.RimWorld.Odyssey">0.07</Wolf_Great>
+      <Wolverine MayRequire="Ludeon.RimWorld.Odyssey">0.07</Wolverine>
+      <Sparrow MayRequire="Ludeon.RimWorld.Odyssey">0.5</Sparrow>
+      <Badger MayRequire="Ludeon.RimWorld.Odyssey">0.2</Badger>
+      <Mink MayRequire="Ludeon.RimWorld.Odyssey">0.2</Mink>
+      <Crow MayRequire="Ludeon.RimWorld.Odyssey">0.5</Crow>
     </wildAnimals>
+    <coastalWildAnimals>
+      <Walrus MayRequire="Ludeon.RimWorld.Odyssey">0.1</Walrus>
+      <SeaLion MayRequire="Ludeon.RimWorld.Odyssey">0.1</SeaLion>
+    </coastalWildAnimals>
+	
 	 <pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
       <WasteRat MayRequire="Ludeon.RimWorld.Biotech">1</WasteRat>
       <Rat>0.5</Rat>

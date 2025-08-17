@@ -153,6 +153,7 @@
         <Plant_Berry>0.05</Plant_Berry>
 		<Plant_Bush>0.5</Plant_Bush>
       <Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">0.6</Plant_PebbleCactus>
+      <Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
 		
 	</wildPlants>
     <wildAnimals>
@@ -171,6 +172,12 @@
 	  
       <Fox_Fennec>0.07</Fox_Fennec>
 	  <Warg>0.2</Warg>
+	  
+      <MonitorLizard MayRequire="Ludeon.RimWorld.Odyssey">0.5</MonitorLizard>
+      <Armadillo MayRequire="Ludeon.RimWorld.Odyssey">0.2</Armadillo>
+      <Vulture MayRequire="Ludeon.RimWorld.Odyssey">0.5</Vulture>
+      <Crow MayRequire="Ludeon.RimWorld.Odyssey">0.5</Crow>
+      <Wolverine MayRequire="Ludeon.RimWorld.Odyssey">0.07</Wolverine>
     </wildAnimals>
     <pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
       <Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.1</Toxalope>
@@ -182,6 +189,13 @@
       <Megascarab>0.2</Megascarab>
       <Warg>0.05</Warg>
     </pollutionWildAnimals>
+	
+	<coastalWildAnimals>
+      <HermitCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</HermitCrab>
+      <StoneCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</StoneCrab>
+      <SeaTurtle MayRequire="Ludeon.RimWorld.Odyssey">0.02</SeaTurtle>
+    </coastalWildAnimals>
+	
     <allowedPackAnimals>
       <li>Muffalo</li>
       <li>Dromedary</li>

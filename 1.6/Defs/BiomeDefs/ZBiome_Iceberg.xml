@@ -151,6 +151,10 @@
 		<Wolf_Arctic>0.1</Wolf_Arctic>
 		<Fox_Arctic>0.1</Fox_Arctic>
 	</wildAnimals>
+    <coastalWildAnimals>
+      <Walrus MayRequire="Ludeon.RimWorld.Odyssey">0.1</Walrus>
+      <Penguin MayRequire="Ludeon.RimWorld.Odyssey">0.1</Penguin>
+    </coastalWildAnimals>
 	<wildPlants>
 		<Plant_Grass>0.1</Plant_Grass>
 	</wildPlants>
