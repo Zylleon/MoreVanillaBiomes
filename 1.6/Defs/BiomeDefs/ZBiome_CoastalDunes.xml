@@ -136,6 +136,10 @@
 			<FoggyRain>0.5</FoggyRain>
 			<SnowGentle>4</SnowGentle>
 			<SnowHard>4</SnowHard>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+			<Sandstorm MayRequire="Ludeon.RimWorld.Odyssey">1</Sandstorm>
+			<TorrentialRain MayRequire="Ludeon.RimWorld.Odyssey">0.5</TorrentialRain>
+			<Windy MayRequire="Ludeon.RimWorld.Odyssey">0.5</Windy>
 		</baseWeatherCommonalities>
 		<wildPlants>
 			<Plant_Grass>3.0</Plant_Grass>

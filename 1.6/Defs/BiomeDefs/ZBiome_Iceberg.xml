@@ -143,6 +143,10 @@
 		<FoggyRain>0</FoggyRain>
 		<SnowGentle>8</SnowGentle>
 		<SnowHard>8</SnowHard>
+		<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+		<Windy MayRequire="Ludeon.RimWorld.Odyssey">1</Windy>
+		<Overcast MayRequire="Ludeon.RimWorld.Odyssey">1</Overcast>
+		<Blizzard MayRequire="Ludeon.RimWorld.Odyssey">2</Blizzard>
 	</baseWeatherCommonalities>
 	<wildAnimals>
 		<Snowhare>2</Snowhare>
