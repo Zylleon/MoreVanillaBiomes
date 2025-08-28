@@ -315,6 +315,94 @@
 						<li>ZBiome_Marsh</li>
 					</value>	
 				</li>
+				
+		<!-- ======================== BLACKLISTS ======================== -->
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="AncientLaunchSite"]/biomeBlacklist</xpath>
+					<value>
+						<li>ZBiome_Sandbar_NoBeach</li>
+						<li>ZBiome_Iceberg_NoBeach</li>
+					</value>	
+				</li>
+		<!-- Manmade -->
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="AncientRuins"]/biomeBlacklist</xpath>
+					<value>
+						<li>ZBiome_Sandbar_NoBeach</li>
+						<li>ZBiome_Iceberg_NoBeach</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[@Name="AbandonedColonyMutatorBase"]/biomeBlacklist</xpath>
+					<value>
+						<li>ZBiome_Sandbar_NoBeach</li>
+						<li>ZBiome_Iceberg_NoBeach</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="Harbor"]/biomeBlacklist</xpath>
+					<value>
+						<li>ZBiome_Sandbar_NoBeach</li>
+						<li>ZBiome_Iceberg_NoBeach</li>
+						<li>ZBiome_Badlands</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="Stockpile"]/biomeBlacklist</xpath>
+					<value>
+						<li>ZBiome_Sandbar_NoBeach</li>
+						<li>ZBiome_Iceberg_NoBeach</li>
+					</value>	
+				</li>
+				
+		<!-- Modifiers -->
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="PlantLife_Increased"]/biomeBlacklist</xpath>
+					<value>
+						<li>ZBiome_Sandbar_NoBeach</li>
+						<li>ZBiome_Iceberg_NoBeach</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="SteamGeysers_Increased"]/biomeBlacklist</xpath>
+					<value>
+						<li>ZBiome_Sandbar_NoBeach</li>
+						<li>ZBiome_Iceberg_NoBeach</li>
+						<li>ZBiome_DesertOasis</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="MineralRich"]/biomeBlacklist</xpath>
+					<value>
+						<li>ZBiome_Sandbar_NoBeach</li>
+						<li>ZBiome_Iceberg_NoBeach</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="Fish_Increased"]/biomeBlacklist</xpath>
+					<value>
+						<li>ZBiome_Badlands</li>
+					</value>	
+				</li>
+				
+		<!-- Natural -->
+		
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="Archipelago"]/biomeBlacklist</xpath>
+					<value>
+						<li>ZBiome_Sandbar_NoBeach</li>
+						<li>ZBiome_Iceberg_NoBeach</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="CoastalIsland"]/biomeBlacklist</xpath>
+					<value>
+						<li>ZBiome_Sandbar_NoBeach</li>
+						<li>ZBiome_Iceberg_NoBeach</li>
+					</value>	
+				</li>
+				
 			</operations>
 		</match>
 	</Operation>
