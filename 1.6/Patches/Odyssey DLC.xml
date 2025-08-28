@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<!-- <success>Always</success> -->
+			<operations>
+	<!-- ======================== WHITELISTS ======================== -->
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[@Name="AncientStructureMutBase"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_Badlands</li>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_CoastalDunes</li>
+						<li>ZBiome_DesertOasis</li>
+						<li>ZBiome_GlacialShield</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_Marsh</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="AncientRuins_Frozen"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_GlacialShield</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[@Name="BaseAncientVentMut"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_Badlands</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="AncientHeatVent"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_Badlands</li>
+						<li>ZBiome_DesertOasis</li>
+						<li>ZBiome_CoastalDunes</li>
+						<li>ZBiome_Grasslands</li>
+					</value>	
+				</li>
+				
+		<!-- Modifiers -->
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="PlantGrove"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_Marsh</li>
+						<li>ZBiome_Grasslands</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="WildPlants"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_Badlands</li>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_CoastalDunes</li>
+						<li>ZBiome_DesertOasis</li>
+						<li>ZBiome_GlacialShield</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_Marsh</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="WildTropicalPlants"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_CoastalDunes</li>
+						<li>ZBiome_DesertOasis</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="ArcheanTrees"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_Badlands</li>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_CoastalDunes</li>
+						<li>ZBiome_DesertOasis</li>
+						<li>ZBiome_GlacialShield</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_Marsh</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="FoggyMutator"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_Badlands</li>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_CoastalDunes</li>
+						<li>ZBiome_DesertOasis</li>
+						<li>ZBiome_GlacialShield</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_Marsh</li>
+						<li>ZBiome_Iceberg_NoBeach</li>
+						<li>ZBiome_Sandbar_NoBeach</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="WetClimate"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_CoastalDunes</li>
+						<li>ZBiome_GlacialShield</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_Marsh</li>
+						<li>ZBiome_Iceberg_NoBeach</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="WindyMutator"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_Badlands</li>
+						<li>ZBiome_CoastalDunes</li>
+						<li>ZBiome_GlacialShield</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_Marsh</li>
+						<li>ZBiome_Sandbar_NoBeach</li>
+						<li>ZBiome_Iceberg_NoBeach</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="DryGround"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_Badlands</li>
+					</value>	
+				</li>
+				
+		<!-- Natural -->
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[@Name="BaseLakeMut"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_GlacialShield</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_Marsh</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="Pond"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_GlacialShield</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_Marsh</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="Oasis"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_DesertOasis</li>
+						<li>ZBiome_Grasslands</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="DryLake"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_Badlands</li>
+						<li>ZBiome_Grasslands</li>
+					</value>	
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="Wetland"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_Marsh</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="HotSprings"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_GlacialShield</li>
+						<li>ZBiome_Marsh</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="Crevasse"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_GlacialShield</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="Plateau"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_Badlands</li>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_GlacialShield</li>
+						<li>ZBiome_Grasslands</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="Cliffs"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_Badlands</li>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_CoastalDunes</li>
+						<li>ZBiome_DesertOasis</li>
+						<li>ZBiome_GlacialShield</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_Marsh</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="Basin"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_Badlands</li>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_DesertOasis</li>
+						<li>ZBiome_GlacialShield</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_Marsh</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="TerraformingScar"]/biomeWhitelist</xpath>
+					<value>
+					<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_Badlands</li>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_CoastalDunes</li>
+						<li>ZBiome_DesertOasis</li>
+						<li>ZBiome_GlacialShield</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_Marsh</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[@Name="BaseCoastMut"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_Badlands</li>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_CoastalDunes</li>
+						<li>ZBiome_DesertOasis</li>
+						<li>ZBiome_GlacialShield</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_Marsh</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="CoastalAtoll"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_Badlands</li>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_CoastalDunes</li>
+						<li>ZBiome_Grasslands</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="Marshy"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_GlacialShield</li>
+						<li>ZBiome_Grasslands</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="Sandy"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_GlacialShield</li>
+						<li>ZBiome_Grasslands</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="Fertile"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_CoastalDunes</li>
+						<li>ZBiome_DesertOasis</li>
+						<li>ZBiome_GlacialShield</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_Marsh</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="Muddy"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_Badlands</li>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_GlacialShield</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_Marsh</li>
+					</value>	
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/TileMutatorDef[defName="MixedBiome"]/biomeWhitelist</xpath>
+					<value>
+						<li>ZBiome_AlpineMeadow</li>
+						<li>ZBiome_Badlands</li>
+						<li>ZBiome_CloudForest</li>
+						<li>ZBiome_CoastalDunes</li>
+						<li>ZBiome_DesertOasis</li>
+						<li>ZBiome_GlacialShield</li>
+						<li>ZBiome_Grasslands</li>
+						<li>ZBiome_Marsh</li>
+					</value>	
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
+
