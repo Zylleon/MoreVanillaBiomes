@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>lingluo.ELUN982697019.AonyxCinerea</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "AonyxCinerea"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Marsh>0.5</ZBiome_Marsh>
+            <ZBiome_CloudForest>0.35</ZBiome_CloudForest>
+            <ZBiome_CoastalDunes>0.15</ZBiome_CoastalDunes>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

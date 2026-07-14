@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>DankPyon.Medieval.Overhaul</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_DireBoar"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
+            <ZBiome_CloudForest>0.1</ZBiome_CloudForest>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_Direwolf"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_AlpineMeadow>0.04</ZBiome_AlpineMeadow>
+            <ZBiome_GlacialShield>0.04</ZBiome_GlacialShield>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_NorthernBoar"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_AlpineMeadow>0.08</ZBiome_AlpineMeadow>
+            <ZBiome_CloudForest>0.15</ZBiome_CloudForest>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_Rox"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_AlpineMeadow>0.2</ZBiome_AlpineMeadow>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_UnholdPlain"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
+            <ZBiome_GlacialShield>0.01</ZBiome_GlacialShield>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_LargeCobraForest"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_CloudForest>0.04</ZBiome_CloudForest>
+            <ZBiome_Marsh>0.03</ZBiome_Marsh>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_GiantConstrictorForest"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+            <ZBiome_Marsh>0.01</ZBiome_Marsh>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_Webknecht"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_CloudForest>0.04</ZBiome_CloudForest>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_Hyena"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Badlands>0.1</ZBiome_Badlands>
+            <ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
+            <ZBiome_Grasslands>0.15</ZBiome_Grasslands>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "DankPyon_Ghoul_Stage_Three"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Badlands>0.01</ZBiome_Badlands>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

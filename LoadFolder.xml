@@ -36,23 +36,32 @@
 		<li IfModActive="Ludeon.RimWorld.Odyssey">1.6/Mods/DLC_Odyssey</li>
 		
 		<li IfModActive="sarg.alphaanimals">1.6/Mods/AlphaAnimals</li>
+		<li IfModActive="lingluo.ELUN982697019.AonyxCinerea">1.6/Mods/AonyxCinerea</li>
 		<li IfModActive="ACPteam.ACPVanillaStyle">1.6/Mods/ACPVanillaStyle</li>
 		<li IfModActive="Mlie.CamouflageandStealth">1.6/Mods/CamoAndStealth</li>
 		<li IfModActive="spincrus.dinosauria">1.6/Mods/Dinosauria</li>
+		<li IfModActive="feb.biopunklivestock">1.6/Mods/ErinsGreatPyreneanMountainDogs</li>
+		<li IfModActive="Erin.MountainDog">1.6/Mods/ErinsGreatPyreneanMountainDogs</li>
 		<li IfModActive="jamaicancastle.RF.fertilefields">1.6/Mods/FertileFields</li>
 		<li IfModActive="Mlie.FishIndustry">1.6/Mods/FishIndustry</li>
 		<li IfModActive="Mlie.JurassicRimworld">1.6/Mods/JurassicRimworld</li>
 		<li IfModActive="Mlie.JurassicRimworldDinosaursOnly">1.6/Mods/JurassicRimworld</li>
 		<li IfModActive="veterano.mythicages.megafaunabestiary">1.6/Mods/MythicAgesMegafauna</li>
+		<li IfModActive="DankPyon.Medieval.Overhaul">1.6/Mods/MedievalOverhaul</li>
 		<li IfModActive="Spino.Megafauna">1.6/Mods/Megafauna</li>
+		<li IfModActive="oracle.possumfriends">1.6/Mods/OpossumFriends</li>
+		<li IfModActive="Filippo.PenguinExpansion">1.6/Mods/PenguinExpansion</li>
 		<li IfModActive="koth.RealisticPlanets2">1.6/Mods/RealisticPlanets</li>
 		<li IfModActive="ReGrowth.BOTR.Core">1.6/Mods/ReGrowthCore</li>
 		<li IfModActive="ReGrowth.BOTR.AspenForest">1.6/Mods/ReGrowthAspen</li>
 		<li IfModActive="Mlie.ReGrowthExtinctAnimals">1.6/Mods/ReGrowthExtinctAnimals</li>
 		<li IfModActive="Mlie.RC2.Core">1.6/Mods/RimCuisine2Core</li>
+		<li IfModActive="hubertdragon.rimmessianfox">1.6/Mods/RimCuisine2Core</li>
 		<li IfModActive="VanillaExpanded.VPlantsE">1.6/Mods/VanillaPlantsExpanded</li>
 		<li IfModActive="VanillaExpanded.VanillaAnimalsExpanded">1.6/Mods/VEAnimalsCore</li>
 		<li IfModActive="VanillaExpanded.VAEWaste">1.6/Mods/VEAnimalsWaste</li>
 		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">1.6/Mods/VGPVegetableGarden</li>
+		
+
 	 </v1.6>
 </loadFolders>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Filippo.PenguinExpansion</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "EmperorPenguin"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Iceberg_NoBeach>0.3</ZBiome_Iceberg_NoBeach>
+            <ZBiome_GlacialShield>0.08</ZBiome_GlacialShield>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "AdeliePenguin"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Iceberg_NoBeach>0.25</ZBiome_Iceberg_NoBeach>
+            <ZBiome_GlacialShield>0.15</ZBiome_GlacialShield>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "ChinstrapPenguin"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Iceberg_NoBeach>0.1</ZBiome_Iceberg_NoBeach>
+            <ZBiome_GlacialShield>0.2</ZBiome_GlacialShield>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "GentooPenguin"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Iceberg_NoBeach>0.08</ZBiome_Iceberg_NoBeach>
+            <ZBiome_GlacialShield>0.25</ZBiome_GlacialShield>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "KingPenguin"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Iceberg_NoBeach>0.08</ZBiome_Iceberg_NoBeach>
+            <ZBiome_GlacialShield>0.25</ZBiome_GlacialShield>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "AfricanPenguin"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Sandbar_NoBeach>0.15</ZBiome_Sandbar_NoBeach>
+            <ZBiome_CoastalDunes>0.15</ZBiome_CoastalDunes>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "GalapagosPenguin"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Sandbar_NoBeach>0.12</ZBiome_Sandbar_NoBeach>
+            <ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "HumboldtPenguin"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Sandbar_NoBeach>0.15</ZBiome_Sandbar_NoBeach>
+            <ZBiome_CoastalDunes>0.15</ZBiome_CoastalDunes>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

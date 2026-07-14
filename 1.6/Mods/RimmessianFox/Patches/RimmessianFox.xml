@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>hubertdragon.rimmessianfox</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Rimmessian_fox"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_AlpineMeadow>0.03</ZBiome_AlpineMeadow>
+            <ZBiome_Marsh>0.03</ZBiome_Marsh>
+            <ZBiome_GlacialShield>0.03</ZBiome_GlacialShield>
+            <ZBiome_CloudForest>0.02</ZBiome_CloudForest>
+            <ZBiome_Grasslands>0.02</ZBiome_Grasslands>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

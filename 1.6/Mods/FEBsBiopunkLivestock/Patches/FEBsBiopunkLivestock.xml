@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>feb.biopunklivestock</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FEB_Apotheca"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Grasslands>0.08</ZBiome_Grasslands>
+            <ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+            <ZBiome_AlpineMeadow>0.04</ZBiome_AlpineMeadow>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FEB_Cottonfoot"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Grasslands>0.08</ZBiome_Grasslands>
+            <ZBiome_CloudForest>0.08</ZBiome_CloudForest>
+            <ZBiome_AlpineMeadow>0.06</ZBiome_AlpineMeadow>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FEB_Ferrohorn"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Grasslands>0.35</ZBiome_Grasslands>
+            <ZBiome_CloudForest>0.25</ZBiome_CloudForest>
+            <ZBiome_AlpineMeadow>0.2</ZBiome_AlpineMeadow>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FEB_Gutterhog"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Grasslands>0.08</ZBiome_Grasslands>
+            <ZBiome_CloudForest>0.12</ZBiome_CloudForest>
+            <ZBiome_AlpineMeadow>0.08</ZBiome_AlpineMeadow>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FEB_Toxoga"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Marsh>0.05</ZBiome_Marsh>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FEB_CryoToad"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Marsh>0.07</ZBiome_Marsh>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "FEB_Leadbelly"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Marsh>0.15</ZBiome_Marsh>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>
