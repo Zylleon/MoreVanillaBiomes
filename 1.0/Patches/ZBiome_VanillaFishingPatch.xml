@@ -48,7 +48,7 @@
 					</value>	
 				</li>
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/VCE_Fishing.FishableTerrainDef[defName="VCEF_VanillaFishableTerrains\"]/allowedTerrains</xpath>
+					<xpath>/Defs/VCE_Fishing.FishableTerrainDef[defName="VCEF_VanillaFishableTerrains"]/allowedTerrains</xpath>
 					<value>
 						<li>ZBiome_WaterChestDeep</li>
 					</value>
