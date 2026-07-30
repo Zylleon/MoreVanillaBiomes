@@ -40,7 +40,7 @@
 		<li IfModActive="ACPteam.ACPVanillaStyle">1.6/Mods/ACPVanillaStyle</li>
 		<li IfModActive="Mlie.CamouflageandStealth">1.6/Mods/CamoAndStealth</li>
 		<li IfModActive="spincrus.dinosauria">1.6/Mods/Dinosauria</li>
-		<li IfModActive="feb.biopunklivestock">1.6/Mods/ErinsGreatPyreneanMountainDogs</li>
+		<li IfModActive="feb.biopunklivestock">1.6/Mods/FEBsBiopunkLivestock</li>
 		<li IfModActive="Erin.MountainDog">1.6/Mods/ErinsGreatPyreneanMountainDogs</li>
 		<li IfModActive="jamaicancastle.RF.fertilefields">1.6/Mods/FertileFields</li>
 		<li IfModActive="Mlie.FishIndustry">1.6/Mods/FishIndustry</li>
@@ -56,7 +56,7 @@
 		<li IfModActive="ReGrowth.BOTR.AspenForest">1.6/Mods/ReGrowthAspen</li>
 		<li IfModActive="Mlie.ReGrowthExtinctAnimals">1.6/Mods/ReGrowthExtinctAnimals</li>
 		<li IfModActive="Mlie.RC2.Core">1.6/Mods/RimCuisine2Core</li>
-		<li IfModActive="hubertdragon.rimmessianfox">1.6/Mods/RimCuisine2Core</li>
+		<li IfModActive="hubertdragon.rimmessianfox">1.6/Mods/RimmessianFox</li>
 		<li IfModActive="VanillaExpanded.VPlantsE">1.6/Mods/VanillaPlantsExpanded</li>
 		<li IfModActive="VanillaExpanded.VanillaAnimalsExpanded">1.6/Mods/VEAnimalsCore</li>
 		<li IfModActive="VanillaExpanded.VAEWaste">1.6/Mods/VEAnimalsWaste</li>
