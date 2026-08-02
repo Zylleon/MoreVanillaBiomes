@@ -7,7 +7,6 @@
 			<RG_Plant_TigerLily>0.6</RG_Plant_TigerLily>
 			<RG_Plant_BorealFern>2.0</RG_Plant_BorealFern>
 			<RG_Plant_Coldheart>0.3</RG_Plant_Coldheart>
-			<RG_Plant_RimReed>0.4</RG_Plant_RimReed>
 			<RG_Plant_BlueTreePine>0.4</RG_Plant_BlueTreePine>
 			<RG_Plant_LargeTreePine>0.7</RG_Plant_LargeTreePine>
 			<RG_Plant_OrangeTreePine>0.2</RG_Plant_OrangeTreePine>
@@ -28,9 +27,6 @@
 			<RG_Plant_AridGrass>8.0</RG_Plant_AridGrass>
 			<Plant_DesertDandelion>0.05</Plant_DesertDandelion>
 			<RG_FlowerCactus>0.05</RG_FlowerCactus>
-			<RG_Plant_WingCactus>0.1</RG_Plant_WingCactus>
-			<RG_Plant_JoshuaTree>0.05</RG_Plant_JoshuaTree>
-			<RG_Plant_GrasslandTallGrass>1.5</RG_Plant_GrasslandTallGrass>
 		</value>
 	</Operation>
 
@@ -43,7 +39,6 @@
 			<RG_Plant_TemperateFern>0.6</RG_Plant_TemperateFern>
 			<RG_Plant_TropicalIvy>2.5</RG_Plant_TropicalIvy>
 			<RG_Plant_TropicalFern>0.4</RG_Plant_TropicalFern>
-			<RG_Plant_Bromeliad>0.6</RG_Plant_Bromeliad>
 			<RG_Plant_TropicalChokevine>1.5</RG_Plant_TropicalChokevine>
 		</value>
 	</Operation>
@@ -54,9 +49,6 @@
 			<RG_Plant_AridGrass>10.0</RG_Plant_AridGrass>
 			<Plant_DesertDandelion>0.8</Plant_DesertDandelion>
 			<RG_FlowerCactus>0.2</RG_FlowerCactus>
-			<RG_Plant_WingCactus>0.2</RG_Plant_WingCactus>
-			<RG_Plant_JoshuaTree>0.1</RG_Plant_JoshuaTree>
-			<RG_Plant_GrasslandTallGrass>2</RG_Plant_GrasslandTallGrass>
 			<RG_Plant_TropicalIvy>0.5</RG_Plant_TropicalIvy>
 			<RG_Plant_TropicalFern>0.2</RG_Plant_TropicalFern>
 			<RG_Plant_TreeDwarfPalm>0.9</RG_Plant_TreeDwarfPalm>
@@ -76,8 +68,6 @@
 			<RG_Plant_TreeDwarfPalm>0.3</RG_Plant_TreeDwarfPalm>
 			<RG_Plant_TallPalmTree>0.6</RG_Plant_TallPalmTree>
 			<RG_Plant_TropicalBrambles>0.4</RG_Plant_TropicalBrambles>
-			<RG_Plant_Bromeliad>0.6</RG_Plant_Bromeliad>
-
 			<RG_Plant_BlueDandelion>0.15</RG_Plant_BlueDandelion>
 			<RG_Plant_RedDandelion>0.3</RG_Plant_RedDandelion>
 		</value>
@@ -88,7 +78,6 @@
 		<xpath>/Defs/BiomeDef[defName="ZBiome_GlacialShield"]/wildPlants</xpath>
 		<value>
 			<RG_Plant_TigerLily>0.3</RG_Plant_TigerLily>
-			<RG_Plant_RimReed>0.25</RG_Plant_RimReed>
 			<RG_Plant_BorealFern>1.0</RG_Plant_BorealFern>
 			<RG_Plant_Coldheart>0.4</RG_Plant_Coldheart>
 			<RG_Plant_BlueTreePine>0.04</RG_Plant_BlueTreePine>
@@ -109,9 +98,6 @@
 			<RG_Plant_TreeDwarfPalm>0.5</RG_Plant_TreeDwarfPalm>
 			<Plant_DesertDandelion>0.8</Plant_DesertDandelion>
 			<RG_FlowerCactus>0.2</RG_FlowerCactus>
-			<RG_Plant_WingCactus>0.2</RG_Plant_WingCactus>
-			<RG_Plant_JoshuaTree>0.1</RG_Plant_JoshuaTree>
-			<RG_Plant_GrasslandTallGrass>4</RG_Plant_GrasslandTallGrass>
 			<RG_Plant_RedDandelion>0.35</RG_Plant_RedDandelion>
 		</value>
 	</Operation>
@@ -141,8 +127,6 @@
 			<RG_Plant_LargeTreePine>0.02</RG_Plant_LargeTreePine>
 			<RG_Plant_OrangeTreePine>0.25</RG_Plant_OrangeTreePine>
 			<RG_Plant_TundraTallGrass>1.2</RG_Plant_TundraTallGrass>
-			<RG_Plant_Saxifraga>0.5</RG_Plant_Saxifraga>
-
 			<RG_Plant_BramblesRed>0.4</RG_Plant_BramblesRed>
 			<RG_Plant_BramblesYellow>0.2</RG_Plant_BramblesYellow>
 		</value>
@@ -155,8 +139,6 @@
 		<value>
 			<RG_Plant_AridGrass>3.0</RG_Plant_AridGrass>
 			<RG_FlowerCactus>0.1</RG_FlowerCactus>
-			<RG_Plant_WingCactus>0.05</RG_Plant_WingCactus>
-			<RG_Plant_JoshuaTree>0.02</RG_Plant_JoshuaTree>
 		</value>
 	</Operation>
 

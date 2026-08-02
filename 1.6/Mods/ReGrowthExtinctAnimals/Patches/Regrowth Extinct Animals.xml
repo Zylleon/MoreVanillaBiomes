@@ -8,15 +8,5 @@
 		</value>
 	</Operation>
 
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "RG_Velociraptor"]/race/wildBiomes</xpath>
-		<value>
-			<ZBiome_Marsh>0.1</ZBiome_Marsh>
-			<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
-			<ZBiome_GlacialShield>0.15</ZBiome_GlacialShield>
-		</value>
-	</Operation>
-
 </Patch>
 

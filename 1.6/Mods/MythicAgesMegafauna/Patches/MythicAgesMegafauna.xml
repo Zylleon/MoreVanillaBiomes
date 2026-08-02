@@ -50,7 +50,7 @@
 			<MA_Worhin>0.04</MA_Worhin>
 			<MA_Raptorkhan>0.02</MA_Raptorkhan>
 			<MA_Scarodon>0.03</MA_Scarodon>
-			<MA_Simbakub>0. 5</MA_Simbakub>
+			<MA_Simbakub>0.05</MA_Simbakub>
 
 		</value>
 	</Operation>
@@ -80,7 +80,6 @@
 			<MA_Plastemmoth>0.08</MA_Plastemmoth>
 			<MA_Worhin>0.04</MA_Worhin>
 			<MA_Scarodon>0.08</MA_Scarodon>
-			<MA_Sivatherium>0.04</MA_Sivatherium>
 			<MA_Sivatherium>0.04</MA_Sivatherium>
 		</value>
 	</Operation>
