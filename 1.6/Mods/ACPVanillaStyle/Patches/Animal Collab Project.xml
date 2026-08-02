@@ -41,15 +41,6 @@
 
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "ACPTiger"]/race/wildBiomes</xpath>
-		<value>
-			<ZBiome_CloudForest>0.12</ZBiome_CloudForest>
-			<ZBiome_Grasslands>0.05</ZBiome_Grasslands>
-		</value>
-	</Operation>
-
-
-	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef[defName = "ACPCheetah"]/race/wildBiomes</xpath>
 		<value>
 			<ZBiome_CoastalDunes>0.07</ZBiome_CoastalDunes>
@@ -113,15 +104,6 @@
 		</value>
 	</Operation>
 
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "ACPFlamingo"]/race/wildBiomes</xpath>
-		<value>
-			<ZBiome_CloudForest>0.25</ZBiome_CloudForest>
-		</value>
-	</Operation>
-
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef[defName = "ACPGiraffe"]/race/wildBiomes</xpath>
 		<value>
@@ -175,21 +157,6 @@
 			<ZBiome_Marsh>0.01</ZBiome_Marsh>
 		</value>
 	</Operation>
-
-
-	<Operation Class="PatchOperationAdd">
-
-		<xpath>/Defs/ThingDef[defName = "ACPHippopotamus"]/race/wildBiomes</xpath>
-		<value>
-			<ZBiome_CoastalDunes>0.1</ZBiome_CoastalDunes>
-			<ZBiome_DesertOasis>0.1</ZBiome_DesertOasis>
-			<ZBiome_CloudForest>0.08</ZBiome_CloudForest>
-			<ZBiome_Badlands>0.0125</ZBiome_Badlands>
-			<ZBiome_Sandbar_NoBeach>0.02</ZBiome_Sandbar_NoBeach>
-			<ZBiome_Grasslands>0.175</ZBiome_Grasslands>
-		</value>
-	</Operation>
-
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef[defName = "ACPHoneyBadger"]/race/wildBiomes</xpath>
@@ -271,18 +238,6 @@
 
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "ACPKomodo"]/race/wildBiomes</xpath>
-		<value>
-			<ZBiome_CoastalDunes>0.05</ZBiome_CoastalDunes>
-			<ZBiome_DesertOasis>0.05</ZBiome_DesertOasis>
-			<ZBiome_CloudForest>0.25</ZBiome_CloudForest>
-			<ZBiome_Grasslands>0.075</ZBiome_Grasslands>
-
-		</value>
-	</Operation>
-
-
-	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef[defName = "ACPXGecko"]/race/wildBiomes</xpath>
 		<value>
 			<ZBiome_CoastalDunes>0.9</ZBiome_CoastalDunes>
@@ -355,17 +310,6 @@
 
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "ACPPanda"]/race/wildBiomes</xpath>
-		<value>
-			<ZBiome_CloudForest>0.15</ZBiome_CloudForest>
-			<ZBiome_AlpineMeadow>0.07</ZBiome_AlpineMeadow>
-			<ZBiome_Marsh>0.005</ZBiome_Marsh>
-
-		</value>
-	</Operation>
-
-
-	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef[defName = "ACPPeccary"]/race/wildBiomes</xpath>
 		<value>
 			<ZBiome_CoastalDunes>0.3</ZBiome_CoastalDunes>
@@ -380,32 +324,6 @@
 
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "ACPPenguin"]/race/wildBiomes</xpath>
-		<value>
-			<ZBiome_GlacialShield>0.2</ZBiome_GlacialShield>
-			<ZBiome_Iceberg_NoBeach>0.55</ZBiome_Iceberg_NoBeach>
-			<ZBiome_AlpineMeadow>0.02</ZBiome_AlpineMeadow>
-			<ZBiome_Marsh>0.05</ZBiome_Marsh>
-
-		</value>
-	</Operation>
-
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "ACPPorcupine"]/race/wildBiomes</xpath>
-		<value>
-			<ZBiome_CoastalDunes>0.02</ZBiome_CoastalDunes>
-			<ZBiome_DesertOasis>0.02</ZBiome_DesertOasis>
-			<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
-			<ZBiome_Badlands>0.025</ZBiome_Badlands>
-			<ZBiome_Grasslands>0.025</ZBiome_Grasslands>
-			<ZBiome_Marsh>0.1</ZBiome_Marsh>
-
-		</value>
-	</Operation>
-
-
-	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef[defName = "ACPPtarmigan"]/race/wildBiomes</xpath>
 		<value>
 			<ZBiome_GlacialShield>0.15</ZBiome_GlacialShield>
@@ -414,20 +332,6 @@
 
 		</value>
 	</Operation>
-
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "ACPValleyQuail"]/race/wildBiomes</xpath>
-		<value>
-			<ZBiome_CloudForest>0.1</ZBiome_CloudForest>
-			<ZBiome_Badlands>0.05</ZBiome_Badlands>
-			<ZBiome_Grasslands>0.12</ZBiome_Grasslands>
-			<ZBiome_AlpineMeadow>0.05</ZBiome_AlpineMeadow>
-			<ZBiome_Marsh>0.03</ZBiome_Marsh>
-
-		</value>
-	</Operation>
-
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef[defName = "ACPRedPanda"]/race/wildBiomes</xpath>
@@ -451,19 +355,6 @@
 		</value>
 	</Operation>
 
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "ACPSpottedSeal"]/race/wildBiomes</xpath>
-		<value>
-			<ZBiome_GlacialShield>0.2</ZBiome_GlacialShield>
-			<ZBiome_Iceberg_NoBeach>0.4</ZBiome_Iceberg_NoBeach>
-			<ZBiome_AlpineMeadow>0.01</ZBiome_AlpineMeadow>
-			<ZBiome_Marsh>0.035</ZBiome_Marsh>
-
-		</value>
-	</Operation>
-
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef[defName = "ACPTapir"]/race/wildBiomes</xpath>
 		<value>
@@ -484,19 +375,6 @@
 
 		</value>
 	</Operation>
-
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "ACPWalrus"]/race/wildBiomes</xpath>
-		<value>
-			<ZBiome_GlacialShield>0.15</ZBiome_GlacialShield>
-			<ZBiome_Iceberg_NoBeach>0.35</ZBiome_Iceberg_NoBeach>
-			<ZBiome_AlpineMeadow>0.02</ZBiome_AlpineMeadow>
-			<ZBiome_Marsh>0.05</ZBiome_Marsh>
-
-		</value>
-	</Operation>
-
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef[defName = "ACPWildDog"]/race/wildBiomes</xpath>
