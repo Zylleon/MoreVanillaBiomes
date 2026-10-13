@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Erin.MountainDog</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "ERN_MountainDog"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_AlpineMeadow>0.08</ZBiome_AlpineMeadow>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

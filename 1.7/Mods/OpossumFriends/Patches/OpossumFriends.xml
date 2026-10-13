@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>oracle.possumfriends</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "ERN_Opossum"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Marsh>0.35</ZBiome_Marsh>
+            <ZBiome_CloudForest>0.25</ZBiome_CloudForest>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

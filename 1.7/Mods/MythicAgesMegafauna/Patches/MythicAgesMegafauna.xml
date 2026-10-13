@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ZBiome_AlpineMeadow"]/wildAnimals</xpath>
+		<value>
+			<MA_Deermoss>0.15</MA_Deermoss>
+			<MA_Dunbear>0.01</MA_Dunbear>
+			<MA_Direhorse>0.1</MA_Direhorse>
+			<MA_Furpotamus>0.1</MA_Furpotamus>
+			<MA_Duskhorn>0.2</MA_Duskhorn>
+			<MA_Gnaut>0.3</MA_Gnaut>
+			<MA_Harpeagle>0.05</MA_Harpeagle>
+			<MA_Plastemmoth>0.08</MA_Plastemmoth>
+			<MA_Worhin>0.04</MA_Worhin>
+			<MA_Scarodon>0.05</MA_Scarodon>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ZBiome_Badlands"]/wildAnimals</xpath>
+		<value>
+			<MA_Hellboar>0.05</MA_Hellboar>
+			<MA_Direhorse>0.05</MA_Direhorse>
+			<MA_Harpeagle>0.03</MA_Harpeagle>
+			<MA_Worhin>0.01</MA_Worhin>
+			<MA_Raptorkhan>0.05</MA_Raptorkhan>
+			<MA_Scarodon>0.08</MA_Scarodon>
+			<MA_Simbakub>0.2</MA_Simbakub>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ZBiome_CloudForest"]/wildAnimals</xpath>
+		<value>
+			<MA_Furpotamus>0.1</MA_Furpotamus>
+			<MA_Harpeagle>0.035</MA_Harpeagle>
+			<MA_Raptorkhan>0.08</MA_Raptorkhan>
+
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ZBiome_CoastalDunes"]/wildAnimals</xpath>
+		<value>
+			<MA_Hellboar>0.05</MA_Hellboar>
+			<MA_Furpotamus>0.1</MA_Furpotamus>
+			<MA_Harpeagle>0.08</MA_Harpeagle>
+			<MA_Worhin>0.04</MA_Worhin>
+			<MA_Raptorkhan>0.02</MA_Raptorkhan>
+			<MA_Scarodon>0.03</MA_Scarodon>
+			<MA_Simbakub>0.05</MA_Simbakub>
+
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ZBiome_DesertOasis"]/wildAnimals</xpath>
+		<value>
+			<MA_Hellboar>0.05</MA_Hellboar>
+			<MA_Furpotamus>0.1</MA_Furpotamus>
+			<MA_Harpeagle>0.04</MA_Harpeagle>
+			<MA_Worhin>0.04</MA_Worhin>
+			<MA_Raptorkhan>0.05</MA_Raptorkhan>
+			<MA_Simbakub>0.1</MA_Simbakub>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ZBiome_GlacialShield"]/wildAnimals</xpath>
+		<value>
+			<MA_Deermoss>0.08</MA_Deermoss>
+			<MA_Dunbear>0.02</MA_Dunbear>
+			<MA_Direhorse>0.3</MA_Direhorse>
+			<MA_Furpotamus>0.1</MA_Furpotamus>
+			<MA_Duskhorn>0.4</MA_Duskhorn>
+			<MA_Gnaut>0.3</MA_Gnaut>
+			<MA_Harpeagle>0.05</MA_Harpeagle>
+			<MA_Plastemmoth>0.08</MA_Plastemmoth>
+			<MA_Worhin>0.04</MA_Worhin>
+			<MA_Scarodon>0.08</MA_Scarodon>
+			<MA_Sivatherium>0.04</MA_Sivatherium>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ZBiome_Grasslands"]/wildAnimals</xpath>
+		<value>
+			<MA_Hellboar>0.15</MA_Hellboar>
+			<MA_Direhorse>0.5</MA_Direhorse>
+			<MA_Duskhorn>0.2</MA_Duskhorn>
+			<MA_Harpeagle>0.08</MA_Harpeagle>
+			<MA_Raptorkhan>0.10</MA_Raptorkhan>
+			<MA_Scarodon>0.1</MA_Scarodon>
+			<MA_Simbakub>0.2</MA_Simbakub>
+			<MA_Sivatherium>0.08</MA_Sivatherium>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ZBiome_Iceberg_NoBeach"]/wildAnimals</xpath>
+		<value>
+			<MA_Direhorse>0.1</MA_Direhorse>
+			<MA_Furpotamus>0.1</MA_Furpotamus>
+			<MA_Duskhorn>0.05</MA_Duskhorn>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ZBiome_Marsh"]/wildAnimals</xpath>
+		<value>
+			<MA_Deermoss>0.08</MA_Deermoss>
+			<MA_Dunbear>0.02</MA_Dunbear>
+			<MA_Direhorse>0.4</MA_Direhorse>
+			<MA_Furpotamus>0.1</MA_Furpotamus>
+			<MA_Duskhorn>0.2</MA_Duskhorn>
+			<MA_Gnaut>0.5</MA_Gnaut>
+			<MA_Harpeagle>0.02</MA_Harpeagle>
+			<MA_Plastemmoth>0.03</MA_Plastemmoth>
+			<MA_Worhin>0.04</MA_Worhin>
+			<MA_Scarodon>0.05</MA_Scarodon>
+			<MA_Sivatherium>0.02</MA_Sivatherium>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ZBiome_Sandbar_NoBeach"]/wildAnimals</xpath>
+		<value>
+			<MA_Hellboar>0.07</MA_Hellboar>
+			<MA_Harpeagle>0.02</MA_Harpeagle>
+			<MA_Raptorkhan>0.05</MA_Raptorkhan>
+
+		</value>
+	</Operation>
+
+
+</Patch>
+

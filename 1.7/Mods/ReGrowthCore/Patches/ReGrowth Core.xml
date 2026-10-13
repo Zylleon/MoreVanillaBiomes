@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName="ZBiome_AlpineMeadow"]/wildPlants</xpath>
+		<value>
+			<RG_Plant_TigerLily>0.6</RG_Plant_TigerLily>
+			<RG_Plant_BorealFern>2.0</RG_Plant_BorealFern>
+			<RG_Plant_Coldheart>0.3</RG_Plant_Coldheart>
+			<RG_Plant_BlueTreePine>0.4</RG_Plant_BlueTreePine>
+			<RG_Plant_LargeTreePine>0.7</RG_Plant_LargeTreePine>
+			<RG_Plant_OrangeTreePine>0.2</RG_Plant_OrangeTreePine>
+			<RG_Potokus>0.05</RG_Potokus>
+			<RG_Plant_BlueDandelion>0.2</RG_Plant_BlueDandelion>
+			<RG_Plant_RedDandelion>0.2</RG_Plant_RedDandelion>
+			<RG_Plant_BramblesYellow>0.3</RG_Plant_BramblesYellow>
+			<RG_Plant_LupineIceland>0.2</RG_Plant_LupineIceland>
+			<RG_Tree_TundraTreePine>0.18</RG_Tree_TundraTreePine>
+			<RG_Plant_TundraCotton>0.25</RG_Plant_TundraCotton>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName="ZBiome_Badlands"]/wildPlants</xpath>
+		<value>
+			<RG_Plant_AridGrass>8.0</RG_Plant_AridGrass>
+			<Plant_DesertDandelion>0.05</Plant_DesertDandelion>
+			<RG_FlowerCactus>0.05</RG_FlowerCactus>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName="ZBiome_CloudForest"]/wildPlants</xpath>
+		<value>
+
+			<RG_Plant_TreeCornish>0.25</RG_Plant_TreeCornish>
+
+			<RG_Plant_TemperateFern>0.6</RG_Plant_TemperateFern>
+			<RG_Plant_TropicalIvy>2.5</RG_Plant_TropicalIvy>
+			<RG_Plant_TropicalFern>0.4</RG_Plant_TropicalFern>
+			<RG_Plant_TropicalChokevine>1.5</RG_Plant_TropicalChokevine>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName="ZBiome_CoastalDunes"]/wildPlants</xpath>
+		<value>
+			<RG_Plant_AridGrass>10.0</RG_Plant_AridGrass>
+			<Plant_DesertDandelion>0.8</Plant_DesertDandelion>
+			<RG_FlowerCactus>0.2</RG_FlowerCactus>
+			<RG_Plant_TropicalIvy>0.5</RG_Plant_TropicalIvy>
+			<RG_Plant_TropicalFern>0.2</RG_Plant_TropicalFern>
+			<RG_Plant_TreeDwarfPalm>0.9</RG_Plant_TreeDwarfPalm>
+			<RG_Plant_TallPalmTree>0.25</RG_Plant_TallPalmTree>
+
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName="ZBiome_DesertOasis"]/wildPlants</xpath>
+		<value>
+			<Plant_DesertDandelion>0.5</Plant_DesertDandelion>
+			<RG_FlowerCactus>0.15</RG_FlowerCactus>
+			<RG_Plant_TropicalIvy>2.5</RG_Plant_TropicalIvy>
+			<RG_Plant_TropicalFern>0.4</RG_Plant_TropicalFern>
+			<RG_Plant_TreeDwarfPalm>0.3</RG_Plant_TreeDwarfPalm>
+			<RG_Plant_TallPalmTree>0.6</RG_Plant_TallPalmTree>
+			<RG_Plant_TropicalBrambles>0.4</RG_Plant_TropicalBrambles>
+			<RG_Plant_BlueDandelion>0.15</RG_Plant_BlueDandelion>
+			<RG_Plant_RedDandelion>0.3</RG_Plant_RedDandelion>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName="ZBiome_GlacialShield"]/wildPlants</xpath>
+		<value>
+			<RG_Plant_TigerLily>0.3</RG_Plant_TigerLily>
+			<RG_Plant_BorealFern>1.0</RG_Plant_BorealFern>
+			<RG_Plant_Coldheart>0.4</RG_Plant_Coldheart>
+			<RG_Plant_BlueTreePine>0.04</RG_Plant_BlueTreePine>
+			<RG_Plant_LargeTreePine>0.02</RG_Plant_LargeTreePine>
+			<RG_Plant_OrangeTreePine>0.005</RG_Plant_OrangeTreePine>
+			<RG_Plant_TundraGrass>3</RG_Plant_TundraGrass>
+			<RG_Plant_TundraTallGrass>1</RG_Plant_TundraTallGrass>
+			<RG_Plant_BramblesYellow>0.2</RG_Plant_BramblesYellow>
+			<RG_Tree_TundraTreePine>0.25</RG_Tree_TundraTreePine>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName="ZBiome_Grasslands"]/wildPlants</xpath>
+		<value>
+			<RG_Plant_AridGrass>12.0</RG_Plant_AridGrass>
+			<RG_Plant_TreeDwarfPalm>0.5</RG_Plant_TreeDwarfPalm>
+			<Plant_DesertDandelion>0.8</Plant_DesertDandelion>
+			<RG_FlowerCactus>0.2</RG_FlowerCactus>
+			<RG_Plant_RedDandelion>0.35</RG_Plant_RedDandelion>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName="ZBiome_Iceberg_NoBeach"]/wildPlants</xpath>
+		<value>
+			<RG_Plant_LupineIceland>0.05</RG_Plant_LupineIceland>
+
+		</value>
+	</Operation>
+
+
+
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName="ZBiome_Marsh"]/wildPlants</xpath>
+		<value>
+			<RG_Plant_CreepStern>1.5</RG_Plant_CreepStern>
+			<RG_Plant_Dervish>0.08</RG_Plant_Dervish>
+			<RG_Plant_SwampPod>0.1</RG_Plant_SwampPod>
+			<RG_SychiCap>0.08</RG_SychiCap>
+			<RG_Plant_TreeWhiteWillow>0.05</RG_Plant_TreeWhiteWillow>
+			<RG_Plant_BorealFern>1.0</RG_Plant_BorealFern>
+			<RG_Plant_Coldheart>0.05</RG_Plant_Coldheart>
+			<RG_Plant_LargeTreePine>0.02</RG_Plant_LargeTreePine>
+			<RG_Plant_OrangeTreePine>0.25</RG_Plant_OrangeTreePine>
+			<RG_Plant_TundraTallGrass>1.2</RG_Plant_TundraTallGrass>
+			<RG_Plant_BramblesRed>0.4</RG_Plant_BramblesRed>
+			<RG_Plant_BramblesYellow>0.2</RG_Plant_BramblesYellow>
+		</value>
+	</Operation>
+
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName="ZBiome_Sandbar_NoBeach"]/wildPlants</xpath>
+		<value>
+			<RG_Plant_AridGrass>3.0</RG_Plant_AridGrass>
+			<RG_FlowerCactus>0.1</RG_FlowerCactus>
+		</value>
+	</Operation>
+
+
+
+	<!-- ================= ANIMALS ===================-->
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "RG_Rabbit"]/race/wildBiomes</xpath>
+		<value>
+			<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+			<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+			<ZBiome_CloudForest>0.5</ZBiome_CloudForest>
+			<ZBiome_Badlands>0.25</ZBiome_Badlands>
+			<ZBiome_GlacialShield>0.9</ZBiome_GlacialShield>
+			<ZBiome_Grasslands>0.15</ZBiome_Grasslands>
+			<ZBiome_AlpineMeadow>0.5</ZBiome_AlpineMeadow>
+			<ZBiome_Marsh>0.15</ZBiome_Marsh>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "RG_Neutrolope"]/race/wildBiomes</xpath>
+		<value>
+			<ZBiome_CoastalDunes>0.01</ZBiome_CoastalDunes>
+			<ZBiome_DesertOasis>0.01</ZBiome_DesertOasis>
+			<ZBiome_CloudForest>0.01</ZBiome_CloudForest>
+			<ZBiome_Badlands>0.0025</ZBiome_Badlands>
+			<ZBiome_Grasslands>0.015</ZBiome_Grasslands>
+
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "RG_KiwiBird"]/race/wildBiomes</xpath>
+		<value>
+			<ZBiome_CloudForest>0.35</ZBiome_CloudForest>
+
+		</value>
+	</Operation>
+
+
+
+
+
+</Patch>
+

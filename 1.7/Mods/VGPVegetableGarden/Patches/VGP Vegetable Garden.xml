@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ZBiome_AlpineMeadow"]/wildPlants</xpath>
+		<value>
+			<VG_Plant_TreeBamboo>0.012</VG_Plant_TreeBamboo>
+			<Wild_PlantPlumeria>0.02</Wild_PlantPlumeria>
+			<Plant_VG_Grass>1</Plant_VG_Grass>
+			<WildPlantCherrytree>0.004</WildPlantCherrytree>
+			<WildPlantcloudberry>0.01</WildPlantcloudberry>
+			<WildPlantgooseberry>0.01</WildPlantgooseberry>
+			<Plantmushroom>0.05</Plantmushroom>
+			<ST_WildHoneyTree>0.01</ST_WildHoneyTree>
+			<PlantTreeIronwood>0.04</PlantTreeIronwood>
+
+
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ZBiome_Badlands"]/wildPlants</xpath>
+		<value>
+			<Wild_PlantPlumeria>0.01</Wild_PlantPlumeria>
+			<Plant_VG_Grass>3</Plant_VG_Grass>
+			<WildAppletree>0.01</WildAppletree>
+			<WildPeachTree>0.01</WildPeachTree>
+			<WildPlantCherrytree>0.01</WildPlantCherrytree>
+			<Plantmushroom>0.05</Plantmushroom>
+			<ST_WildHoneyTree>0.01</ST_WildHoneyTree>
+
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ZBiome_CloudForest"]/wildPlants</xpath>
+		<value>
+			<VG_Plant_TreeBamboo>0.05</VG_Plant_TreeBamboo>
+			<Wild_PlantPlumeria>0.01</Wild_PlantPlumeria>
+			<WildAppletree>0.01</WildAppletree>
+			<WildPeachTree>0.01</WildPeachTree>
+			<WildPlantCherrytree>0.01</WildPlantCherrytree>
+			<WildPlantpineapple>0.01</WildPlantpineapple>
+			<Plantmushroom>0.05</Plantmushroom>
+			<ST_WildHoneyTree>0.01</ST_WildHoneyTree>
+			<PlantTreeIronwood>0.1</PlantTreeIronwood>
+
+
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ZBiome_CoastalDunes"]/wildPlants</xpath>
+		<value>
+			<VG_Plant_TreeBamboo>0.06</VG_Plant_TreeBamboo>
+			<WildorangeTree>0.01</WildorangeTree>
+			<Wild_PlantPlumeria>0.01</Wild_PlantPlumeria>
+			<WildBananaTree>0.01</WildBananaTree>
+			<Plant_VG_Grass>1</Plant_VG_Grass>
+			<WildPeachTree>0.01</WildPeachTree>
+			<WildCoconuttree>0.01</WildCoconuttree>
+			<WildPlantpineapple>0.01</WildPlantpineapple>
+			<Plantmushroom>0.05</Plantmushroom>
+
+			<ST_WildHoneyTree>0.01</ST_WildHoneyTree>
+
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ZBiome_DesertOasis"]/wildPlants</xpath>
+		<value>
+			<VG_Plant_TreeBamboo>0.06</VG_Plant_TreeBamboo>
+			<Wild_PlantPlumeria>0.01</Wild_PlantPlumeria>
+			<Plant_VG_Grass>1</Plant_VG_Grass>
+			<WildBananaTree>0.01</WildBananaTree>
+			<WildorangeTree>0.01</WildorangeTree>
+			<WildPeachTree>0.01</WildPeachTree>
+			<WildCoconuttree>0.01</WildCoconuttree>
+			<WildPlantpineapple>0.01</WildPlantpineapple>
+			<Plantmushroom>0.05</Plantmushroom>
+
+			<ST_WildHoneyTree>0.01</ST_WildHoneyTree>
+
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ZBiome_GlacialShield"]/wildPlants</xpath>
+		<value>
+			<Wild_PlantPlumeria>0.012</Wild_PlantPlumeria>
+			<WildPlantcloudberry>0.01</WildPlantcloudberry>
+			<WildPlantgooseberry>0.01</WildPlantgooseberry>
+
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ZBiome_Grasslands"]/wildPlants</xpath>
+		<value>
+			<Plant_VG_Grass>3</Plant_VG_Grass>
+			<WildDateTree>0.01</WildDateTree>
+			<WildFigTree>0.004</WildFigTree>
+			<ST_WildHoneyTree>0.01</ST_WildHoneyTree>
+
+		</value>
+	</Operation>
+
+	<!-- ICEBERG ommitted -->
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ZBiome_Marsh"]/wildPlants</xpath>
+		<value>
+
+			<PlantTreeIronwood>0.03</PlantTreeIronwood>
+
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "ZBiome_Sandbar_NoBeach"]/wildPlants</xpath>
+		<value>
+			<Plant_VG_Grass>1</Plant_VG_Grass>
+			<WildDateTree>0.01</WildDateTree>
+			<WildFigTree>0.01</WildFigTree>
+			<ST_WildHoneyTree>0.01</ST_WildHoneyTree>
+
+		</value>
+	</Operation>
+
+</Patch>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>JTC.Nordberg</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Nordberg_ROE_Yeti"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_AlpineMeadow>0.02</ZBiome_AlpineMeadow>
+            <ZBiome_Iceberg_NoBeach>0.03</ZBiome_Iceberg_NoBeach>
+            <ZBiome_GlacialShield>0.03</ZBiome_GlacialShield>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Nordberg_ROE_Snowhare"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Iceberg_NoBeach>0.12</ZBiome_Iceberg_NoBeach>
+            <ZBiome_GlacialShield>0.16</ZBiome_GlacialShield>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Wolf_ROE_Nordberg"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Iceberg_NoBeach>0.04</ZBiome_Iceberg_NoBeach>
+            <ZBiome_GlacialShield>0.12</ZBiome_GlacialShield>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "Nordberg_ROE_Seal"]/race/wildBiomes</xpath>
+          <value>
+            <ZBiome_Iceberg_NoBeach>0.15</ZBiome_Iceberg_NoBeach>
+            <ZBiome_GlacialShield>0.08</ZBiome_GlacialShield>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

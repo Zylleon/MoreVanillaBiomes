@@ -64,4 +64,39 @@
 		
 
 	 </v1.6>
+	 
+	 <v1.7>
+		<li>\</li>
+		<li>1.7</li>
+		<li IfModActive="Ludeon.RimWorld.Odyssey">1.7/Mods/DLC_Odyssey</li>
+		
+		<li IfModActive="sarg.alphaanimals">1.7/Mods/AlphaAnimals</li>
+		<li IfModActive="lingluo.ELUN982697019.AonyxCinerea">1.7/Mods/AonyxCinerea</li>
+		<li IfModActive="ACPteam.ACPVanillaStyle">1.7/Mods/ACPVanillaStyle</li>
+		<li IfModActive="Mlie.CamouflageandStealth">1.7/Mods/CamoAndStealth</li>
+		<li IfModActive="spincrus.dinosauria">1.7/Mods/Dinosauria</li>
+		<li IfModActive="feb.biopunklivestock">1.7/Mods/ErinsGreatPyreneanMountainDogs</li>
+		<li IfModActive="Erin.MountainDog">1.7/Mods/ErinsGreatPyreneanMountainDogs</li>
+		<li IfModActive="jamaicancastle.RF.fertilefields">1.7/Mods/FertileFields</li>
+		<li IfModActive="Mlie.FishIndustry">1.7/Mods/FishIndustry</li>
+		<li IfModActive="Mlie.JurassicRimworld">1.7/Mods/JurassicRimworld</li>
+		<li IfModActive="Mlie.JurassicRimworldDinosaursOnly">1.7/Mods/JurassicRimworld</li>
+		<li IfModActive="veterano.mythicages.megafaunabestiary">1.7/Mods/MythicAgesMegafauna</li>
+		<li IfModActive="DankPyon.Medieval.Overhaul">1.7/Mods/MedievalOverhaul</li>
+		<li IfModActive="Spino.Megafauna">1.7/Mods/Megafauna</li>
+		<li IfModActive="oracle.possumfriends">1.7/Mods/OpossumFriends</li>
+		<li IfModActive="Filippo.PenguinExpansion">1.7/Mods/PenguinExpansion</li>
+		<li IfModActive="koth.RealisticPlanets2">1.7/Mods/RealisticPlanets</li>
+		<li IfModActive="ReGrowth.BOTR.Core">1.7/Mods/ReGrowthCore</li>
+		<li IfModActive="ReGrowth.BOTR.AspenForest">1.7/Mods/ReGrowthAspen</li>
+		<li IfModActive="Mlie.ReGrowthExtinctAnimals">1.7/Mods/ReGrowthExtinctAnimals</li>
+		<li IfModActive="Mlie.RC2.Core">1.7/Mods/RimCuisine2Core</li>
+		<li IfModActive="hubertdragon.rimmessianfox">1.7/Mods/RimmessianFox</li>
+		<li IfModActive="VanillaExpanded.VPlantsE">1.7/Mods/VanillaPlantsExpanded</li>
+		<li IfModActive="VanillaExpanded.VanillaAnimalsExpanded">1.7/Mods/VEAnimalsCore</li>
+		<li IfModActive="VanillaExpanded.VAEWaste">1.7/Mods/VEAnimalsWaste</li>
+		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">1.7/Mods/VGPVegetableGarden</li>
+		
+
+	 </v1.7>
 </loadFolders>
